@@ -13,72 +13,38 @@
 
         <div class="row">
             <div class="small-16 large-8 columns">
-                <form id="ajax-contact-form">
-                    <label>
-                        <input type="text" placeholder="Your Name" name="name">
-                    </label>
-
-                    <label>
-                        <input type="text" placeholder="Your e-Mail" name="email">
-                    </label>
-
-                    <label>
-                        <textarea name="message" rows="8" cols="40" placeholder="What up?"></textarea>
-                    </label>
-
-                    <button type="submit" class="lime-button" name="submit">Send</button>
-                </form>
-                <div id="note"></div>
+                <h4>How to get in touch</h4>
+                <p>If you have any bugs reports, any questions, or just want to become a part of our community, just can reach us on our
+                    <a href="https://discordapp.com/invite/WhK8RgX">Discord channel</a>!
+                </p>
+                <p>
+                    We do not have any official Email and Telephone you can contact at the moment.
+                </p>
             </div>
-            <div class="small-16 large-7 columns addresses">
+            <div class="small-16 large-7 columns">
                 <div class="row small-up-1 medium-up-2">
+                    <h4>People to contact</h4>
                     <!--address-->
                     <div class="column">
-                        <h5>Headquarters</h5>
+                        <h5>Staff</h5>
                         <address>
                             <p>
-                                GAMEDEVS - LOCATION - LC <br>
-                                LandLand 669, PT <br>
-                                <a href="tel:+9067649321">T: 9067649321</a> <br>
-                                <a href="tel:+6732643887-1">F: 6732643887-1</a>
+                                MakaHost<br>
+                                Absent<br>
+                                Doge :-)<br>
+                                Synaxis<br>
                             </p>
                         </address>
                     </div>
                     <!--//address-->
                     <!--address-->
                     <div class="column">
-                        <h5>Europe</h5>
+                        <h5>Devs</h5>
                         <address>
                             <p>
-                                GAMEDEVS - LOCATION - LC <br>
-                                LandLand 669, PT <br>
-                                <a href="tel:+9067649321">T: 9067649321</a> <br>
-                                <a href="tel:+6732643887-1">F: 6732643887-1</a>
-                            </p>
-                        </address>
-                    </div>
-                    <!--//address-->
-                    <!--address-->
-                    <div class="column">
-                        <h5>Office 1</h5>
-                        <address>
-                            <p>
-                                GAMEDEVS - LOCATION - LC <br>
-                                LandLand 669, PT <br>
-                                <a href="tel:+9067649321">T: 9067649321</a> <br>
-                                <a href="tel:+6732643887-1">F: 6732643887-1</a>
-                            </p>
-                        </address>
-                    </div>
-                    <!--//address-->
-                    <!--address-->
-                    <div class="column">
-                        <h5>Alternate Contact</h5>
-                        <address>
-                            <p>
-                                GAMEDEVS - LOCATION - LC <br>
-                                LandLand 669, PT <br>
-                                <a href="mailto:mail@mail.com">mail@mail.com</a><br>
+                                Lyngholm<br>
+                                Wazz<br>
+                                Vahdek<br>
                             </p>
                         </address>
                     </div>
