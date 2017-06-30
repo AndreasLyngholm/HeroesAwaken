@@ -85,7 +85,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Warp Productions</h5>
-                        <p>Staff</p>
+                        <p>Staff &amp; SysAdmin &amp; Video Editor</p>
                     </div>
                     <!--//team-member-->
                     
