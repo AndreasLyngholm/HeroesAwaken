@@ -101,7 +101,7 @@
                           <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//gyazo.com/74f4fb5b1fe608e9b6a38cf414f49267" class="" alt="">
+                            <img src="FBK1.jpg" class="" alt="">
                         </div>
                         <h5>Wazz</h5>
                         <p>Web developer</p>
