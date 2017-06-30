@@ -55,10 +55,9 @@
         <div class="row">
             <div class="small-16 columns">
                 <article class="about-us-summary">
-                    <h2>About GameDevs</h2>
+                    <h2>The Hereos Awaken project</h2>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown the industry's standard dummy text ever since printer took a galley of type and scrambled it to make a type specimen book.<a href="#" class="read-more">Read More ›</a>
+                      The Heroes Awaken project started with a little boys childhood that got ruined when EA closed their servers for Battlefield Heroes 2015-07-14. Makahost saw this oppertunity to prove his love towards people whos childhood was to play Battlefield Heroes. After some trouble with the project, Makahost joined Revive Network in hope of help with his project. Things did not turn out well and Makahost decided to finish the game on his own and this community is now called Heroes Awaken and is now being developed by a team of geeks.
                     </p>
                 </article>
             </div>
