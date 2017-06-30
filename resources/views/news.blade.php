@@ -39,7 +39,7 @@
 
             </div>
 
-<section id="main-content" style="margin-top: 50px;">
+
 
         <div class="row">
             <div class="small-16 columns">
