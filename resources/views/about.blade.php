@@ -85,7 +85,7 @@
                             <img src="https://image.noelshack.com/fichiers/2017/26/6/1498862155-ezgif-1-ecdc398196.gif" class="" alt="">
                         </div>
                         <h5>Warp Productions</h5>
-                        <p>Staff &amp; SysAdmin &amp; Video Editor</p>
+                        <p>Staff, SysAdmin &amp; Video Editor</p>
                     </div>
                     <!--//team-member-->
                     
