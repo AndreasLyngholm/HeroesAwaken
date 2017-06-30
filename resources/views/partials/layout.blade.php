@@ -4,28 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameDevs Redux</title>
+    <title>HeroesAwaken</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Luckiest+Guy|Bitter:700|Open+Sans:400,600,600italic">
-    <link rel="stylesheet" href="{{ asset('css/style-min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style_new.css') }}">
+    {{--<link rel="stylesheet" href="{{ asset('css/style-min.css') }}">--}}
 </head>
 <body>
 
-<header id="main-header">
-    <div class="row">
-        <div class="small-11 large-6 columns"><a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="gamedevs" class="logo"></a></div>
-        <nav id="main-nav" class="small-16 large-10 columns">
-            <ul class="main-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="blog.html"> Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="style-guide.html">All Styles</a></li>
-            </ul>
-            <ul class="mobile-menu"></ul>
-        </nav>
-    </div>
-</header>
+@include('partials.navbar')
 
 <section id="home-slider">
     <!--slide 1-->
