@@ -51,7 +51,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Doge</h5>
-                        <p>Staf & Doge</p>
+                        <p>Staff & Doge</p>
                        
                     </div>
                     <!--//team-member-->
