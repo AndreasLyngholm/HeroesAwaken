@@ -41,11 +41,7 @@
 
 
 
-        <div class="row">
-            <div class="small-16 columns">
-                <h1>News</h1>
-                <div class="big-sep"></div>
-            </div>
+
         </div>
 
         <div class="row blog-entries">
