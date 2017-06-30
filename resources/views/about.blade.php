@@ -82,7 +82,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="https://image.noelshack.com/fichiers/2017/26/6/1498862155-ezgif-1-ecdc398196.gif" class="" alt="">
                         </div>
                         <h5>Warp Productions</h5>
                         <p>Staff &amp; SysAdmin &amp; Video Editor</p>
