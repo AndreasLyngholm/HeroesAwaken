@@ -7,6 +7,7 @@
     <title>HeroesAwaken</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Luckiest+Guy|Bitter:700|Open+Sans:400,600,600italic">
     <link rel="stylesheet" href="{{ asset('css/style_new.css') }}">
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
     {{--<link rel="stylesheet" href="{{ asset('css/style-min.css') }}">--}}
 </head>
 <body>
@@ -50,7 +51,7 @@
         <!--//social-icons-->
         <!--logo-->
         <div class="small-16 medium-4 columns">
-            <a href="#"><img src="{{ asset('images/logo_new.png') }}" alt="" class="footer-logo"/></a>
+            <a href="#"><img src="{{ asset('images/logo.png') }}" alt="" class="footer-logo"/></a>
         </div>
         <!--//logo-->
         <!--copyright-->
