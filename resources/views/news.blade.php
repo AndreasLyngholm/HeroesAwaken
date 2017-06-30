@@ -21,9 +21,9 @@
             <div class="small-16 large-16 columns">
 
                 <article class="blog-entry row">
-                    <div class="article-date small-16 medium-2 columns">
-                        <div>
-                            <p>Jun <span class="day">30</span> <span class="year">2017</span></p>
+                   <div class="article-date small-16 medium-2 columns">
+                       <div>
+                           <p>Jun <span class="day">30</span> <span class="year">2017</span></p>
                         </div>
                     </div>
 
