@@ -21,3 +21,13 @@ Route::get('/', [
     'as' => 'home',
     'uses' => 'HomeController@home'
 ]);
+
+Route::get('news', [
+    'as' => 'news',
+    'uses' => 'HomeController@news'
+]);
+
+Route::get('contact', [
+    'as' => 'contact',
+    'uses' => 'HomeController@contact'
+]);

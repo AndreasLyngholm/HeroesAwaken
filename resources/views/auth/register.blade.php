@@ -13,7 +13,7 @@
 
         <div class="row">
             <div class="small-16 large-8 columns">
-                <form method="POST" action="{{ url('register') }}" id="ajax-contact-form">
+                <form method="POST" action="{{ url('register') }}">
                     {{ csrf_field() }}
                     <label> Username
                         <input type="text" name="username" required>
@@ -31,7 +31,7 @@
                         <input type="password" name="password" required>
                     </label>
 
-                    <button type="submit" class="lime-button" name="submit">Register</button>
+                    <button type="submit" class="lime-button" name="submit" style="float: right;">Register</button>
                 </form>
                 <div id="note"></div>
                 <br><br>

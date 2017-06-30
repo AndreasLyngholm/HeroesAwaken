@@ -12,10 +12,21 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function news()
+    {
+        return view('news');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
     public function doLogout()
     {
         Auth::logout();
 
         return redirect()->route('home');
     }
+
 }

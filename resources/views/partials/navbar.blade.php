@@ -4,9 +4,10 @@
         <nav id="main-nav" class="small-16 large-10 columns">
             <ul class="main-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('news') }}">News</a></li>
                 <li><a href="#">Forum</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="{{ route('contact') }}">Contact</a></li>
                 <li>
                     @if( ! Auth::check())
                         <a href="{{ route('login') }}">Login</a>
