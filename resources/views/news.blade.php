@@ -10,9 +10,30 @@
                 <div class="big-sep"></div>
             </div>
         </div>
+       
+       <!-- Post you news below this text -->
+       <!-- // Wazz -->
+       
+        
+        <div class="row blog-entries">
 
-       
-       
+            <!--main-->
+            <div class="small-16 large-16 columns">
+
+                <article class="blog-entry row">
+                    <div class="article-date small-16 medium-2 columns">
+                        <div>
+                            <p>Jun <span class="day">30</span> <span class="year">2017</span></p>
+                        </div>
+                    </div>
+
+                    <div class="article-content small-16 medium-14 columns">
+                        <h3>Heads up.</h3>
+                        <p>
+                            Be sure to visit our discord [url=https://discordapp.com/invite/WhK8RgX]here[/url] to keep up with our latest news and announcments. / Wazz (Web Developer)
+                        </p>
+                    </div>
+                </article>
         
         <div class="row blog-entries">
 
