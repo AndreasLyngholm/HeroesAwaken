@@ -3803,7 +3803,7 @@ select {
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%28255, 255, 255%29"></polygon></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="https://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%28255, 255, 255%29"></polygon></svg>');
   background-size: 9px 6px;
   background-position: right center;
   background-origin: content-box;
