@@ -7,6 +7,50 @@
 
 @section('content')
 
+    <section id="home-slider">
+        <!--slide 1-->
+        <div style="background: url({{ asset('images/placeholders/slider_1.jpg') }})">
+            <div class="row">
+                <div class="small-16 columns">
+                    <div class="cta-text">
+                        <p> <span>We are back!</span></p>
+                        <p> <span>BFH is returning!</span></p>
+                        <a href="#" class="button cta-button">Download now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//slide 1-->
+        <!--slide-2-->
+    {{--<div style="background: url({{ asset('images/placeholders/slider_2.jpg') }})">--}}
+    {{--<div class="row">--}}
+    {{--<div class="small-16 columns">--}}
+    {{--<div class="cta-text">--}}
+    {{--<p> <span>X Game Update!</span></p>--}}
+    {{--<p> <span>Lorem Ipsum is simply</span></p>--}}
+    {{--<p> <span>dummy text!</span></p><a href="#" class="button cta-button">Try the Demo! <span>for Windows</span></a>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    <!--//slide-2-->
+        <!--slide 3-->
+    {{--<div style="background: url({{ asset('images/placeholders/slider_3.jpg') }})">--}}
+    {{--<div class="row">--}}
+    {{--<div class="small-16 columns">--}}
+    {{--<div class="cta-text">--}}
+    {{--<p> <span>New Game on The Way!</span></p>--}}
+    {{--<p> <span>Lorem Ipsum is simply</span></p>--}}
+    {{--<p> <span>dummy text!</span></p>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    <!--//slide-3-->
+    </section>
+
+    <div class="content-top" style="background: url({{ asset('images/backgrounds/bg-body-top.png') }}) repeat-x center top;"></div>
+
     <section id="main-content">
         <div class="row">
             <div class="small-16 columns">

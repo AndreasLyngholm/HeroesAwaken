@@ -10,8 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
-Route::get('', [
+Route::get('logout', [
+    'as' => 'doLogout',
+    'uses' => 'HomeController@doLogout'
+]);
+
+Route::get('/', [
     'as' => 'home',
     'uses' => 'HomeController@home'
 ]);

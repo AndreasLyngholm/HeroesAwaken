@@ -7,7 +7,13 @@
                 <li><a href="#">Forum</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Login</a></li>
+                <li>
+                    @if( ! Auth::check())
+                        <a href="{{ route('login') }}">Login</a>
+                    @else
+                        <a href="{{ route('doLogout') }}">Logout</a>
+                    @endif
+                </li>
             </ul>
             <ul class="mobile-menu"></ul>
         </nav>
