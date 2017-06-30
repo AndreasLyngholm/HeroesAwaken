@@ -21,7 +21,7 @@
                 <div class="cta-text">
                     <p> <span>We are back!</span></p>
                     <p> <span>BFH is returning!</span></p>
-                    <a href="#" class="button cta-button">Download now!</a>
+                    <a href="#" class="button cta-button">Download here!</a>
                 </div>
             </div>
         </div>
