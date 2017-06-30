@@ -26,7 +26,7 @@
                     <div class="article-content small-16 medium-14 columns">
                         <h3>Patch notes.</h3>
                         <p>
-                            I just want to inform you that we have fixed some errors on the sight and fixed som minor issues. Thanks for your support. /Wazz (Web Developer)
+                            I just want to inform you that we have fixed some errors on the site and fixed som minor issues. Thanks for your support. /Wazz (Web Developer)
                         </p>
                     </div>
                 </article>
