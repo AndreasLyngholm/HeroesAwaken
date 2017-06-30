@@ -95,7 +95,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Lyngholm</h5>
-                        <p>Web developer</p>
+                        <p>Web developer, Boss</p>
                     </div>
 
                           <!--team-member-->
@@ -104,7 +104,7 @@
                             <img src="https://i.gyazo.com/74f4fb5b1fe608e9b6a38cf414f49267.png" class="" alt="">
                         </div>
                         <h5>Wazz</h5>
-                        <p>Web developer</p>
+                        <p>Web developer, Youtuber</p>
                     </div>
                         
                           <!--team-member-->
