@@ -30,7 +30,7 @@
                     <div class="article-content small-16 medium-14 columns">
                         <h3>Heads up.</h3>
                         <p>
-                            Be sure to visit our discord (link in contact page) to keep up with our latest news and announcments. / Wazz (Web Developer)
+                            Be sure to visit our <a href="https://discordapp.com/invite/WhK8RgX">Discord channel</a to keep up with our latest news and announcments. / Wazz (Web Developer)
                         </p>
                     </div>
                 </article>
