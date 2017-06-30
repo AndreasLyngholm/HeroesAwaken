@@ -38,7 +38,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Makahost</h5>
-                        <p>Founder, Dev &amp; Go-To Guy</p>
+                        <p>Founder, Developer &amp; Go-To Guy</p>
                         <ul class="inline-list centered-list social-icons">  
                            
                             <li>
@@ -115,7 +115,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Lyngholm</h5>
-                        <p>Web dev</p>
+                        <p>Web developer</p>
                         
                           <!--team-member-->
                     <div class="column team-member">
@@ -123,7 +123,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Wazz</h5>
-                        <p>Web dev</p>
+                        <p>Web developer</p>
                         
                           <!--team-member-->
                     <div class="column team-member">
@@ -131,7 +131,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Vahdek</h5>
-                        <p>Web dev</p>
+                        <p>Web developer</p>
                         
                           <!--team-member-->
                     <div class="column team-member">
@@ -139,7 +139,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>National_Mando</h5>
-                        <p>Web dev</p>
+                        <p>Web developer</p>
                         
                           <!--team-member-->
                     <div class="column team-member">
@@ -147,7 +147,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>BloodRecon</h5>
-                        <p>Web dev</p>
+                        <p>Web developer</p>
                       
                     </div>
 
