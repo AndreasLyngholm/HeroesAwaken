@@ -45,7 +45,7 @@
         <div class="row">
             <div class="small-16 columns">
                 <article class="about-us-summary">
-                    <h2>The Hereos Awaken project</h2>
+                    <h2>The Heroes Awaken project</h2>
                     <p>
                       The Heroes Awaken project started with a little boys childhood that got ruined when EA closed their servers for Battlefield Heroes 2015-07-14. Makahost saw this opportunity to prove his love towards people whos childhood was to play Battlefield Heroes. After some trouble with the project, Makahost joined Revive Network in hope of help with his project. Things did not turn out well and Makahost decided to finish the game on his own and this community is now called Heroes Awaken and is now being developed by a team of geeks.
                     </p>
