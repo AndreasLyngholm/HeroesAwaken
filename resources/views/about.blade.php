@@ -95,7 +95,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Lyngholm</h5>
-                        <p>Web developer & Boss</p>
+                       <p>Web developer & Coordinator</p>
                     </div>
 
                           <!--team-member-->
