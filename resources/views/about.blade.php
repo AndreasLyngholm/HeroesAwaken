@@ -121,7 +121,7 @@
                           <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="https://i.gyazo.com/8cbc34d7ab066e905754379cbd51eef5.gif" class="" alt="">
                         </div>
                         <h5>National_Mando</h5>
                         <p>Web developer</p>
