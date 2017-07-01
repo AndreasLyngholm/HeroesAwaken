@@ -99,7 +99,18 @@
                         <p>Staff, SysAdmin &amp; Video Editor</p>
                     </div>
                     <!--//team-member-->
-
+                   
+                    <!--team-member-->
+                    <div class="column team-member">
+                        <div class="photo">
+                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                        </div>
+                        <h5>Heax</h5>
+                        <p>Staff</p>
+                       
+                    </div>
+                  <!--//team-member-->
+                  
                   <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
