@@ -44,7 +44,7 @@ Images:             All photos used for placement purposes on the screenshots ar
 --------------------------------*/
 /* line 12, ../scss/_mixins.scss */
 .lime {
-  color: #c5db3b;
+  color: #7e922a;
 }
 
 /* line 16, ../scss/_mixins.scss */
@@ -158,21 +158,21 @@ span.amp {
 
 /* line 210, ../scss/_mixins.scss */
 .lime-button, .gd-button, #home-slider .cta-button {
-  background: #c5db3b;
+  background: #7e922a;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #c5db3b 0%, #8ab52d 100%);
+  background: -moz-linear-gradient(top, #7e922a 0%, #8ab52d 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c5db3b), color-stop(100%, #8ab52d));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7e922a), color-stop(100%, #8ab52d));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #c5db3b 0%, #8ab52d 100%);
+  background: -webkit-linear-gradient(top, #7e922a 0%, #8ab52d 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #c5db3b 0%, #8ab52d 100%);
+  background: -o-linear-gradient(top, #7e922a 0%, #8ab52d 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #c5db3b 0%, #8ab52d 100%);
+  background: -ms-linear-gradient(top, #7e922a 0%, #8ab52d 100%);
   /* IE10+ */
-  background: linear-gradient(to bottom, #c5db3b 0%, #8ab52d 100%);
+  background: linear-gradient(to bottom, #7e922a 0%, #8ab52d 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5db3b', endColorstr='#8ab52d',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e922a', endColorstr='#8ab52d',GradientType=0 );
   /* IE6-9 */
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1) ;
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1) ;
@@ -187,7 +187,7 @@ span.amp {
   color: #fff;
   text-transform: uppercase;
   font-size: rem-calc(25);
-  border-top: 1px solid #c5db3b;
+  border-top: 1px solid #7e922a;
   border-left: 1px solid #8ab52d;
   border-right: 1px solid #8ab52d;
   border-bottom: 1px solid #8ab52d;
@@ -208,7 +208,7 @@ span.amp {
   /* IE10+ */
   background: linear-gradient(to bottom, #cbdf4c 0%, #9ac03c 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5db3b', endColorstr='#8ab52d',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e922a', endColorstr='#8ab52d',GradientType=0 );
   /* IE6-9 */
 }
 /* line 227, ../scss/_mixins.scss */
@@ -227,7 +227,7 @@ span.amp {
   /* IE10+ */
   background: linear-gradient(to bottom, #9ac03c 0%, #cbdf4c 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5db3b', endColorstr='#8ab52d',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e922a', endColorstr='#8ab52d',GradientType=0 );
   /* IE6-9 */
 }
 
@@ -2984,7 +2984,7 @@ h6 {
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #c5db3b;
+  color: #7e922a;
   text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -3064,7 +3064,7 @@ h6 {
 }
 /* line 317, ../../foundation/bower_components/foundation-sites/scss/typography/_base.scss */
 a {
-  color: #c5db3b;
+  color: #7e922a;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer;
@@ -3404,7 +3404,7 @@ p + .stat {
   padding: 0.7em 1em;
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
-  background-color: #c5db3b;
+  background-color: #7e922a;
   color: #fff;
 }
 /* line 167, ../../foundation/bower_components/foundation-sites/scss/util/_mixins.scss */
@@ -3437,7 +3437,7 @@ p + .stat {
 }
 /* line 205, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
 .button.primary {
-  background-color: #c5db3b;
+  background-color: #7e922a;
   color: #fff;
 }
 /* line 112, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
@@ -3487,8 +3487,8 @@ p + .stat {
 }
 /* line 222, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
 .button.hollow {
-  border: 1px solid #c5db3b;
-  color: #c5db3b;
+  border: 1px solid #7e922a;
+  color: #7e922a;
 }
 /* line 120, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
 .button.hollow, .button.hollow:hover, .button.hollow:focus {
@@ -3501,8 +3501,8 @@ p + .stat {
 }
 /* line 227, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
 .button.hollow.primary {
-  border: 1px solid #c5db3b;
-  color: #c5db3b;
+  border: 1px solid #7e922a;
+  color: #7e922a;
 }
 /* line 132, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
 .button.hollow.primary:hover, .button.hollow.primary:focus {
@@ -3883,7 +3883,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 /* line 75, ../../foundation/bower_components/foundation-sites/scss/forms/_range.scss */
 input[type="range"]::-webkit-slider-handle {
   -webkit-appearance: none;
-  background: #c5db3b;
+  background: #7e922a;
   width: 1.4rem;
   height: 1.4rem;
   margin-top: -0.45rem;
@@ -3897,7 +3897,7 @@ input[type="range"]::-moz-range-track {
 /* line 94, ../../foundation/bower_components/foundation-sites/scss/forms/_range.scss */
 input[type="range"]::-moz-range-thumb {
   -moz-appearance: none;
-  background: #c5db3b;
+  background: #7e922a;
   width: 1.4rem;
   height: 1.4rem;
   margin-top: -0.45rem;
@@ -3914,7 +3914,7 @@ input[type="range"]::-ms-track {
 }
 /* line 117, ../../foundation/bower_components/foundation-sites/scss/forms/_range.scss */
 input[type="range"]::-ms-thumb {
-  background: #c5db3b;
+  background: #7e922a;
   width: 1.4rem;
   height: 1.4rem;
   border: 0;
@@ -3987,7 +3987,7 @@ output {
   font-size: 0.6rem;
   text-align: center;
   border-radius: 50%;
-  background: #c5db3b;
+  background: #7e922a;
   color: #fff;
 }
 /* line 48, ../../foundation/bower_components/foundation-sites/scss/components/_badge.scss */
@@ -4046,7 +4046,7 @@ output {
 }
 /* line 77, ../../foundation/bower_components/foundation-sites/scss/components/_breadcrumbs.scss */
 .breadcrumbs a {
-  color: #c5db3b;
+  color: #7e922a;
 }
 /* line 80, ../../foundation/bower_components/foundation-sites/scss/components/_breadcrumbs.scss */
 .breadcrumbs a:hover {
@@ -4256,7 +4256,7 @@ output {
 /* line 289, ../../foundation/bower_components/foundation-sites/scss/components/_menu.scss */
 .menu .active > a {
   color: #fff;
-  background: #c5db3b;
+  background: #7e922a;
 }
 
 /* line 295, ../../foundation/bower_components/foundation-sites/scss/components/_menu.scss */
@@ -4380,7 +4380,7 @@ output {
   width: 0;
   height: 0;
   border: inset 6px;
-  border-color: transparent transparent transparent #c5db3b;
+  border-color: transparent transparent transparent #7e922a;
   border-left-style: solid;
   border-right-width: 0;
   position: absolute;
@@ -4396,7 +4396,7 @@ output {
   width: 0;
   height: 0;
   border: inset 6px;
-  border-color: transparent #c5db3b transparent transparent;
+  border-color: transparent #7e922a transparent transparent;
   border-right-style: solid;
   border-left-width: 0;
   border-left-width: 0;
@@ -4462,7 +4462,7 @@ output {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: #c5db3b transparent transparent;
+  border-color: #7e922a transparent transparent;
   border-top-style: solid;
   border-bottom-width: 0;
   right: 5px;
@@ -4502,7 +4502,7 @@ output {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent #c5db3b transparent transparent;
+  border-color: transparent #7e922a transparent transparent;
   border-right-style: solid;
   border-left-width: 0;
 }
@@ -4513,7 +4513,7 @@ output {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent #c5db3b;
+  border-color: transparent transparent transparent #7e922a;
   border-left-style: solid;
   border-right-width: 0;
 }
@@ -4542,7 +4542,7 @@ output {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #c5db3b transparent transparent;
+    border-color: #7e922a transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -4574,7 +4574,7 @@ output {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #c5db3b transparent transparent;
+    border-color: transparent #7e922a transparent transparent;
     border-right-style: solid;
     border-left-width: 0;
   }
@@ -4585,7 +4585,7 @@ output {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #c5db3b;
+    border-color: transparent transparent transparent #7e922a;
     border-left-style: solid;
     border-right-width: 0;
   }
@@ -4615,7 +4615,7 @@ output {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #c5db3b transparent transparent;
+    border-color: #7e922a transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -4647,7 +4647,7 @@ output {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #c5db3b transparent transparent;
+    border-color: transparent #7e922a transparent transparent;
     border-right-style: solid;
     border-left-width: 0;
   }
@@ -4658,7 +4658,7 @@ output {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #c5db3b;
+    border-color: transparent transparent transparent #7e922a;
     border-left-style: solid;
     border-right-width: 0;
   }
@@ -4724,7 +4724,7 @@ output {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent #c5db3b transparent transparent;
+  border-color: transparent #7e922a transparent transparent;
   border-right-style: solid;
   border-left-width: 0;
 }
@@ -4735,7 +4735,7 @@ output {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent #c5db3b;
+  border-color: transparent transparent transparent #7e922a;
   border-left-style: solid;
   border-right-width: 0;
 }
@@ -4789,7 +4789,7 @@ output {
   white-space: nowrap;
   cursor: default;
   border-radius: 0;
-  background: #c5db3b;
+  background: #7e922a;
   color: #fff;
 }
 /* line 49, ../../foundation/bower_components/foundation-sites/scss/components/_label.scss */
@@ -5044,7 +5044,7 @@ body {
 /* line 134, ../../foundation/bower_components/foundation-sites/scss/components/_pagination.scss */
 .pagination .active {
   padding: 0.2rem 0.66667rem;
-  background: #c5db3b;
+  background: #7e922a;
   color: #fff;
   cursor: default;
 }
@@ -5090,7 +5090,7 @@ body {
 }
 /* line 48, ../../foundation/bower_components/foundation-sites/scss/components/_progress-bar.scss */
 .progress.primary .progress-meter {
-  background-color: #c5db3b;
+  background-color: #7e922a;
 }
 /* line 48, ../../foundation/bower_components/foundation-sites/scss/components/_progress-bar.scss */
 .progress.secondary .progress-meter {
@@ -5115,7 +5115,7 @@ body {
   display: block;
   width: 0%;
   height: 100%;
-  background-color: #c5db3b;
+  background-color: #7e922a;
 }
 
 /* line 61, ../../foundation/bower_components/foundation-sites/scss/components/_progress-bar.scss */
@@ -5151,25 +5151,25 @@ progress::-webkit-progress-bar {
 }
 /* line 54, ../../foundation/bower_components/foundation-sites/scss/forms/_progress.scss */
 progress::-webkit-progress-value {
-  background: #c5db3b;
+  background: #7e922a;
   border-radius: 0;
 }
 /* line 62, ../../foundation/bower_components/foundation-sites/scss/forms/_progress.scss */
 progress::-moz-progress-bar {
-  background: #c5db3b;
+  background: #7e922a;
   border-radius: 0;
 }
 /* line 71, ../../foundation/bower_components/foundation-sites/scss/forms/_progress.scss */
 progress.primary {
-  color: #c5db3b;
+  color: #7e922a;
 }
 /* line 75, ../../foundation/bower_components/foundation-sites/scss/forms/_progress.scss */
 progress.primary::-webkit-progress-value {
-  background: #c5db3b;
+  background: #7e922a;
 }
 /* line 79, ../../foundation/bower_components/foundation-sites/scss/forms/_progress.scss */
 progress.primary::-moz-progress-bar {
-  background: #c5db3b;
+  background: #7e922a;
 }
 /* line 71, ../../foundation/bower_components/foundation-sites/scss/forms/_progress.scss */
 progress.secondary {
@@ -5249,7 +5249,7 @@ meter::-webkit-meter-even-less-good-value {
 }
 /* line 89, ../../foundation/bower_components/foundation-sites/scss/forms/_meter.scss */
 meter::-moz-meter-bar {
-  background: #c5db3b;
+  background: #7e922a;
 }
 /* line 97, ../../foundation/bower_components/foundation-sites/scss/forms/_meter.scss */
 meter:-moz-meter-optimum::-moz-meter-bar {
@@ -5303,7 +5303,7 @@ meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
-  background-color: #c5db3b;
+  background-color: #7e922a;
   transition: all 0.2s ease-in-out;
   touch-action: manipulation;
   border-radius: 0;
@@ -5561,7 +5561,7 @@ input + .switch-paddle {
 }
 /* line 116, ../../foundation/bower_components/foundation-sites/scss/components/_switch.scss */
 input:checked ~ .switch-paddle {
-  background: #c5db3b;
+  background: #7e922a;
 }
 /* line 119, ../../foundation/bower_components/foundation-sites/scss/components/_switch.scss */
 input:checked ~ .switch-paddle::after {
@@ -5786,7 +5786,7 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 137, ../../foundation/bower_components/foundation-sites/scss/components/_tabs.scss */
 .tabs.primary {
-  background: #c5db3b;
+  background: #7e922a;
 }
 /* line 140, ../../foundation/bower_components/foundation-sites/scss/components/_tabs.scss */
 .tabs.primary > li > a {
@@ -5843,7 +5843,7 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 51, ../../foundation/bower_components/foundation-sites/scss/components/_thumbnail.scss */
 .thumbnail {
-  border: solid 5px #c5db3b;
+  border: solid 5px #7e922a;
   box-shadow: 0 4px 0 0 rgba(10, 10, 10, 0.2);
   display: inline-block;
   line-height: 0;
@@ -6267,14 +6267,14 @@ table.hover tr:nth-of-type(even):hover {
 --------------------------------*/
 /* line 4, ../scss/_app-styles.scss */
 ::-moz-selection {
-  background: #c5db3b;
+  background: #7e922a;
   color: #302429;
   text-shadow: none;
 }
 
 /* line 5, ../scss/_app-styles.scss */
 ::selection {
-  background: #c5db3b;
+  background: #7e922a;
   color: #302429;
   text-shadow: none;
 }
@@ -6307,9 +6307,14 @@ table.hover tr:nth-of-type(even):hover {
 body a {
   color: #fff;
 }
+
+tr td p a {
+    color: #000000;
+}
+
 /* line 15, ../scss/_app-styles.scss */
 body a:hover, body a:active, body a:focus {
-  color: #c5db3b;
+  color: #7e922a;
 }
 /* line 20, ../scss/_app-styles.scss */
 body p a {
@@ -6325,7 +6330,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 /* line 27, ../scss/_app-styles.scss */
 body h1 a, body h2 a, body h3 a, body h4 a, body h5 a, body h6 a {
-  color: #c5db3b;
+  color: #7e922a;
 }
 /* line 29, ../scss/_app-styles.scss */
 body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:active, body h2 a:focus, body h3 a:hover, body h3 a:active, body h3 a:focus, body h4 a:hover, body h4 a:active, body h4 a:focus, body h5 a:hover, body h5 a:active, body h5 a:focus, body h6 a:hover, body h6 a:active, body h6 a:focus {
@@ -6396,7 +6401,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 }
 /* line 86, ../scss/_app-styles.scss */
 #main-header #main-nav ul li a:hover, #main-header #main-nav ul li a:active, #main-header #main-nav ul li a:focus, #main-header #main-nav ul li a.active {
-  color: #c5db3b;
+  color: #7e922a;
 }
 
 /* line 1, ../scss/_mobile-menu.scss */
@@ -6797,7 +6802,7 @@ a.read-more:hover, a.read-more:active, a.read-more:focus {
 /* line 276, ../scss/_app-styles.scss */
 .notebook .blog-entries .entry .date {
   float: left;
-  color: #c5db3b;
+  color: #7e922a;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -6862,7 +6867,7 @@ a.read-more:hover, a.read-more:active, a.read-more:focus {
 }
 /* line 326, ../scss/_app-styles.scss */
 .twitter-feed .icon-container svg {
-  fill: #c5db3b;
+  fill: #7e922a;
 }
 /* line 330, ../scss/_app-styles.scss */
 .twitter-feed .triangle-container {
@@ -7331,7 +7336,7 @@ footer.main-footer p.copyright {
 }
 /* line 493, ../scss/_app-styles.scss */
 .pagination li a:hover, .pagination li a:active, .pagination li a:focus {
-  color: #c5db3b;
+  color: #7e922a;
 }
 
 /*--------------------------------
@@ -7374,7 +7379,7 @@ footer.main-footer p.copyright {
     line-height: 1.66667rem;
     text-align: center;
     padding: 0.66667rem;
-    color: #c5db3b;
+    color: #7e922a;
     font-size: 1.6rem;
   }
 }
@@ -7383,7 +7388,7 @@ footer.main-footer p.copyright {
   .blog-entries .blog-entry .article-date p span.day {
     font-size: 2.4rem;
     line-height: 2.33333rem;
-    color: #c5db3b;
+    color: #7e922a;
   }
 }
 @media screen and (min-width: 40em) {
@@ -7410,7 +7415,7 @@ footer.main-footer p.copyright {
 }
 /* line 567, ../scss/_app-styles.scss */
 .blog-entries aside ul li a:hover, .blog-entries aside ul li a:active, .blog-entries aside ul li a:focus {
-  color: #c5db3b;
+  color: #7e922a;
 }
 
 /* line 575, ../scss/_app-styles.scss */
@@ -7421,7 +7426,7 @@ footer.main-footer p.copyright {
 }
 /* line 580, ../scss/_app-styles.scss */
 .blog-pagination p a:hover, .blog-pagination p a:active, .blog-pagination p a:focus {
-  color: #c5db3b;
+  color: #7e922a;
 }
 
 /*--------------------------------
@@ -7515,7 +7520,7 @@ footer.main-footer p.copyright {
 
 /* line 649, ../scss/_app-styles.scss */
 .notification_ok {
-  color: #c5db3b;
+  color: #7e922a;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
 }
 
@@ -7552,7 +7557,7 @@ address {
 /* line 675, ../scss/_app-styles.scss */
 .accordion-item.is-active .accordion-title {
   background: #302429;
-  color: #c5db3b;
+  color: #7e922a;
 }
 
 /* line 682, ../scss/_app-styles.scss */
@@ -7567,7 +7572,7 @@ address {
 }
 /* line 691, ../scss/_app-styles.scss */
 .close-button:hover, .close-button:active, .close-button:focus {
-  color: #c5db3b;
+  color: #7e922a;
 }
 
 /*--------------------------------
