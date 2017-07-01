@@ -30,14 +30,16 @@
                     </div>
                     <div class="panel-body callout secondary" style="margin-top: -15px;">
                         {!! $topic->text !!}
-                        {{--<hr>--}}
-                        {{--<div data-type="user-signature">--}}
-                            {{--<div class="text-center">--}}
-                                {{--<a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank">--}}
-                                    {{--<img src="https://i.imgur.com/lDLfpiM.png" alt="">--}}
-                                {{--</a>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
+                        @if(\App\User::find($topic->user_id)->signature != null)
+                            <hr>
+                            <div data-type="user-signature">
+                                <div class="text-center">
+                                    <a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank">
+                                        <img src="{{ \App\User::find($topic->user_id)->signature->image }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        @endif
                     </div>
 
                 </div>
@@ -55,8 +57,16 @@
                         </div>
                         <div class="panel-body callout secondary" style="margin-top: -15px;">
                             {!! $comment->comment !!}
-                            {{--<hr><div data-type="user-signature"><div class="text-center"><a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank"><img src="https://i.imgur.com/lDLfpiM.png" alt=""></a></div></div>--}}
-                        </div>
+                            @if(\App\User::find($topic->user_id)->signature != null)
+                                <hr>
+                                <div data-type="user-signature">
+                                    <div class="text-center">
+                                        <a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank">
+                                            <img src="{{ \App\User::find($topic->user_id)->signature->image }}" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            @endif                        </div>
 
                     </div>
                     <div class="big-sep" style="margin-top: 25px;"></div>
