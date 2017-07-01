@@ -34,7 +34,7 @@
                             <hr>
                             <div data-type="user-signature">
                                 <div class="text-center">
-                                    <a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank">
+                                    <a href="#" data-type="userlink">
                                         <img src="{{ \App\User::find($topic->user_id)->signature->image }}" alt="">
                                     </a>
                                 </div>
@@ -57,12 +57,12 @@
                         </div>
                         <div class="panel-body callout secondary" style="margin-top: -15px;">
                             {!! $comment->comment !!}
-                            @if(\App\User::find($topic->user_id)->signature != null)
+                            @if(\App\User::find($comment->user_id)->signature != null)
                                 <hr>
                                 <div data-type="user-signature">
                                     <div class="text-center">
-                                        <a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank">
-                                            <img src="{{ \App\User::find($topic->user_id)->signature->image }}" alt="">
+                                        <a href="#" data-type="userlink">
+                                            <img src="{{ \App\User::find($comment->user_id)->signature->image }}" alt="">
                                         </a>
                                     </div>
                                 </div>
