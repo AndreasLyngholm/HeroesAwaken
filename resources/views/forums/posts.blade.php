@@ -30,14 +30,14 @@
                     </div>
                     <div class="panel-body callout secondary" style="margin-top: -15px;">
                         {!! $topic->text !!}
-                        <hr>
-                        <div data-type="user-signature">
-                            <div class="text-center">
-                                <a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank">
-                                    <img src="https://i.imgur.com/lDLfpiM.png" alt="">
-                                </a>
-                            </div>
-                        </div>
+                        {{--<hr>--}}
+                        {{--<div data-type="user-signature">--}}
+                            {{--<div class="text-center">--}}
+                                {{--<a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank">--}}
+                                    {{--<img src="https://i.imgur.com/lDLfpiM.png" alt="">--}}
+                                {{--</a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
                     </div>
 
                 </div>
