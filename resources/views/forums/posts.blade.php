@@ -22,15 +22,22 @@
             <section  class="small-16 columns">
                 <div class="panel panel-rv">
                     <div class="callout">
-                        <a href="#" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2">{{ \App\User::find($topic->user_id)->username }}</a>
+                        <a href="#" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2">Created by {{ \App\User::find($topic->user_id)->username }}</a>
                         <i class="sprite-forum sprite-forum-alpha"></i>
                         <span class="pull-right">
                                 <span data-type="datetime">{{ $topic->created_at }}</span>
                             </span>
                     </div>
-                    <div class="panel-body callout">
+                    <div class="panel-body callout secondary" style="margin-top: -15px;">
                         {!! $topic->text !!}
-                        {{--<hr><div data-type="user-signature"><div class="text-center"><a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank"><img src="https://i.imgur.com/lDLfpiM.png" alt=""></a></div></div>--}}
+                        <hr>
+                        <div data-type="user-signature">
+                            <div class="text-center">
+                                <a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank">
+                                    <img src="https://i.imgur.com/lDLfpiM.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -38,15 +45,15 @@
                 <h2>Comments</h2>
 
                 @foreach($comments as $comment)
-                    <div class="panel panel-rv">
+                    <div class="panel">
                         <div class="callout">
-                            <a href="#" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2">{{ \App\User::find($comment->user_id)->username }}</a>
+                            <a href="#" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2"><i class="fa fa-user"></i> {{ \App\User::find($comment->user_id)->username }}</a>
                             <i class="sprite-forum sprite-forum-alpha"></i>
                             <span class="pull-right">
                                 <span data-type="datetime">{{ $comment->created_at }}</span>
                             </span>
                         </div>
-                        <div class="panel-body callout">
+                        <div class="panel-body callout secondary" style="margin-top: -15px;">
                             {!! $comment->comment !!}
                             {{--<hr><div data-type="user-signature"><div class="text-center"><a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank"><img src="https://i.imgur.com/lDLfpiM.png" alt=""></a></div></div>--}}
                         </div>

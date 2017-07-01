@@ -4068,7 +4068,6 @@ output {
   background-color: #E2D3C0;
 }
 
-
 .callout a {
     color: #000000;
     font-weight: bold;
@@ -4087,7 +4086,7 @@ output {
 }
 /* line 92, ../../foundation/bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.secondary {
-  background-color: #3d2d34;
+  background-color: #f4ebe0;
 }
 /* line 92, ../../foundation/bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.success {
