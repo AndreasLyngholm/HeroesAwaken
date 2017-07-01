@@ -64,7 +64,7 @@
                     {{ csrf_field() }}
 
                     <label> <b style="color: black;">Write comment</b>
-                        <textarea name="comment" rows="5" cols="40" placeholder="What do you have on your mind?" {{ ! Auth::check() ? 'disabled' : '' }}></textarea>
+                        <textarea name="comment" rows="5" cols="40" placeholder="What do you have on your mind?" {{ ! Auth::check() ? 'disabled' : '' }} required></textarea>
                     </label>
 
                     @if(Auth::check())

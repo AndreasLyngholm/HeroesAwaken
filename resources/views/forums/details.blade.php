@@ -76,15 +76,15 @@
                     <br><br>
 
                     <label> <b style="color: black;">Title</b>
-                        <input type="text" name="name" {{ ! Auth::check() ? 'disabled' : '' }}>
+                        <input type="text" name="name" {{ ! Auth::check() ? 'disabled' : '' }} required>
                     </label>
 
                     <label> <b style="color: black;">Description</b>
-                        <input type="text" name="description" {{ ! Auth::check() ? 'disabled' : '' }}>
+                        <input type="text" name="description" {{ ! Auth::check() ? 'disabled' : '' }} required>
                     </label>
 
                     <label> <b style="color: black;">Write your post</b>
-                        <textarea name="text" rows="5" cols="40" placeholder="Write your post here..." {{ ! Auth::check() ? 'disabled' : '' }}></textarea>
+                        <textarea name="text" rows="5" cols="40" placeholder="Write your post here..." {{ ! Auth::check() ? 'disabled' : '' }} required></textarea>
                     </label>
 
                     @if(Auth::check())
