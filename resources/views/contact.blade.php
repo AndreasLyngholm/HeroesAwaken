@@ -34,7 +34,8 @@
                                 Doge :-)<br>
                                 Synaxis<br>
                                 Ray<br>
-                                Warp Productions<br>
+                                Warp Productions
+                                Heax<br>
                             </p>
                         </address>
                     </div>
