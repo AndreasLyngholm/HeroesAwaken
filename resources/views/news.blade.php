@@ -117,7 +117,7 @@
                     <div class="article-content small-16 medium-14 columns">
                         <h3>We are bringing back BFH!</h3>
                         <p>
-                            The Heroes Awaken project started with a little boys childhood that got ruined when EA closed their servers for Battlefield Heroes 2015-07-14. Makahost saw this oppertunity to prove his love towards people whos childhood was to play Battlefield Heroes. After some trouble with the project, Makahost joined ReviveThe Heroes Awaken project started with a little boys childhood that got ruined when EA closed their servers for Battlefield Heroes 2015-07-14. <br><br> Makahost saw this opportunity to prove his love towards people whos childhood was to play Battlefield Heroes. After some trouble with the project, Makahost joined Revive Network in hope of help with his project. Things did not turn out well and Makahost decided to finish the game on his own and this community is now called Heroes Awaken and is now being developed by a team of geeks.
+                            The Heroes Awaken project started with a little boys childhood that got ruined when EA closed their servers for Battlefield Heroes 2015-07-14. <br><br> Makahost saw this opportunity to prove his love towards people whos childhood was to play Battlefield Heroes. After some trouble with the project, Makahost joined Revive Network in hope of help with his project. Things did not turn out well and Makahost decided to finish the game on his own and this community is now called Heroes Awaken and is now being developed by a team of geeks.
                         </p>
                     </div>
                 </article>
