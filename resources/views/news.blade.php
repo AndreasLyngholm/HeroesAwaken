@@ -16,121 +16,88 @@
        
        <div class="row blog-entries">
 
-            <!--main-->
+            <!-- NEWS POST START -->
             <div class="small-16 large-16 columns">
 
                 <article class="blog-entry row">
-                   <div class="article-date small-16 medium-2 columns">
-                       <div>
-                           <p>Jul <span class="day">01</span> <span class="year">2017</span></p>
+                    <div class="article-date small-16 medium-2 columns">
+                        <div>
+                            <p>Jul <span class="day">01</span> <span class="year">2017</span></p>
                         </div>
                     </div>
 
                     <div class="article-content small-16 medium-14 columns">
                         <h3>Ddos protection.</h3>
                         <p>
-                           We always want to make sure you guys know when we have some downtime, these can almost everytime be found on our discord server. We recently had some downtime since we installed a new ddos protection for our site. Thanks for your support :). / Wazz (Web Developer)
+                            We always want to make sure you guys know when we have some downtime, these can almost everytime be found on our discord server. We recently had some downtime since we installed a new ddos protection for our site. Thanks for your support :). / Wazz (Web Developer)
                         </p>
                     </div>
                 </article>
-             <div class="row">
-          <div class="small-16 columns">
-        <div class="big-sep"></div>
-      </div>
-    </div>
-       
-        
-        <div class="row blog-entries">
+            </div>
 
-            <!--main-->
-            <div class="small-16 large-16 columns">
+           <div class="row">
+              <div class="small-16 columns">
+                  <div class="big-sep"></div>
+              </div>
+           </div>
 
-                <article class="blog-entry row">
+           <!-- NEWS POST END -->
+
+           <!-- NEWS POST START -->
+           <div class="small-16 large-16 columns">
+
+               <article class="blog-entry row">
                    <div class="article-date small-16 medium-2 columns">
                        <div>
                            <p>Jun <span class="day">30</span> <span class="year">2017</span></p>
-                        </div>
-                    </div>
+                       </div>
+                   </div>
 
-                    <div class="article-content small-16 medium-14 columns">
-                        <h3>Heads up.</h3>
-                        <p>
-                            Be sure to visit our <a href="https://discordapp.com/invite/WhK8RgX">Discord channel</a> to keep up with our latest news and announcements. / Wazz (Web Developer)
-                        </p>
-                    </div>
-                </article>
-             <div class="row">
-          <div class="small-16 columns">
-        <div class="big-sep"></div>
-      </div>
-    </div>
+                   <div class="article-content small-16 medium-14 columns">
+                       <h3>Heads up.</h3>
+                       <p>
+                           Be sure to visit our <a href="https://discordapp.com/invite/WhK8RgX">Discord channel</a> to keep up with our latest news and announcements.
+                       </p>
+                   </div>
+               </article>
+           </div>
 
-     </div>
-        
-        
-        
-        <div class="row blog-entries">
+           <div class="row">
+               <div class="small-16 columns">
+                   <div class="big-sep"></div>
+               </div>
+           </div>
 
-            <!--main-->
-            <div class="small-16 large-16 columns">
+           <!-- NEWS POST END -->
 
-                <article class="blog-entry row">
-                    <div class="article-date small-16 medium-2 columns">
-                        <div>
-                            <p>Jun <span class="day">30</span> <span class="year">2017</span></p>
-                        </div>
-                    </div>
+           <!-- NEWS POST START -->
+           <div class="small-16 large-16 columns">
 
-                    <div class="article-content small-16 medium-14 columns">
-                        <h3>Patch notes.</h3>
-                        <p>
-                            I just want to inform you that we have fixed some errors on the site and fixed som minor issues. Thanks for your support. /Wazz (Web Developer)
-                        </p>
-                    </div>
-                </article>
+               <article class="blog-entry row">
+                   <div class="article-date small-16 medium-2 columns">
+                       <div>
+                           <p>Jun <span class="day">30</span> <span class="year">2017</span></p>
+                       </div>
+                   </div>
 
-                <div class="row">
-                    <div class="small-16 columns">
-                        <div class="big-sep"></div>
-                    </div>
-                </div>
+                   <div class="article-content small-16 medium-14 columns">
+                       <h3>We are bringing back BFH!</h3>
+                       <p>
+                           Be sure to visit our <a href="https://discordapp.com/invite/WhK8RgX">Discord channel</a> to keep up with our latest news and announcements.
+                       </p>
+                   </div>
+               </article>
+           </div>
 
-            </div>
+           <div class="row">
+               <div class="small-16 columns">
+                   <div class="big-sep"></div>
+               </div>
+           </div>
 
+           <!-- NEWS POST END -->
 
-
-
-        </div>
-
-        <div class="row blog-entries">
-
-            <!--main-->
-            <div class="small-16 large-16 columns">
-
-                <article class="blog-entry row">
-                    <div class="article-date small-16 medium-2 columns">
-                        <div>
-                            <p>Jun <span class="day">30</span> <span class="year">2017</span></p>
-                        </div>
-                    </div>
-
-                    <div class="article-content small-16 medium-14 columns">
-                        <h3>We are bringing back BFH!</h3>
-                        <p>
-                            The Heroes Awaken project started with a little boys childhood that got ruined when EA closed their servers for Battlefield Heroes 2015-07-14. <br><br> Makahost saw this opportunity to prove his love towards people whos childhood was to play Battlefield Heroes. After some trouble with the project, Makahost joined Revive Network in hope of help with his project. Things did not turn out well and Makahost decided to finish the game on his own and this community is now called Heroes Awaken and is now being developed by a team of geeks.
-                        </p>
-                    </div>
-                </article>
-
-                <div class="row">
-                    <div class="small-16 columns">
-                        <div class="big-sep"></div>
-                    </div>
-                </div>
-
-            </div>
-            <!--//main-->
-        </div>
+       </div>
 
     </section>
 
