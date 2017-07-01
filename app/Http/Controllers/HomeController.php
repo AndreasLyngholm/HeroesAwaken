@@ -31,7 +31,7 @@ class HomeController extends Controller
     {
         Auth::logout();
 
-        return redirect()->route('home');
+        return redirect()->back();
     }
 
 }

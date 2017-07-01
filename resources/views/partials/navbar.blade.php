@@ -5,7 +5,7 @@
             <ul class="main-menu">
                 <li><a @if(Request::is('/')) class="active" @endif href="{{ route('home') }}">Home</a></li>
                 <li><a @if(Request::is('news')) class="active" @endif href="{{ route('news') }}">News</a></li>
-                <li><a @if(Request::is('receipts')) class="active" @endif href="{{ route('forums.lists') }}">Forum</a></li>
+                <li><a @if(Request::is('forums')) class="active" @endif href="{{ route('forums.lists') }}">Forum</a></li>
                 <li><a @if(Request::is('about')) class="active" @endif href="{{ route('about') }}">About</a></li>
                 <li><a @if(Request::is('contact')) class="active" @endif href="{{ route('contact') }}">Contact</a></li>
                 <li>

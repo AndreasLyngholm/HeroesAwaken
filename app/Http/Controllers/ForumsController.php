@@ -38,7 +38,7 @@ class ForumsController extends Controller
             'forum_id' => $forum->id
         ]);
 
-        return redirect()->back()->with('success', 'Your topic was created');
+        return redirect()->route('forums.details', $forum->id);
     }
 
     public function forumsPosts(Forum $forum, Topic $topic) //POSTS
@@ -54,6 +54,6 @@ class ForumsController extends Controller
             'topic_id' => $topic->id,
             'comment' => nl2br(Input::get('comment'))
         ]);
-        return redirect()->back()->with('success', 'Your comment was written!');
+        return redirect()->route('forums.posts', [$forum->id, $topic->id]);
     }
 }

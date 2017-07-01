@@ -49,7 +49,7 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
         'uses' => 'ForumsController@forumsDetails'
     ]);
 
-    Route::post('{forum}/create', [
+    Route::get('{forum}/create', [
         'middleware' => 'auth',
         'as' => 'details.doCreate',
         'uses' => 'ForumsController@forumsDetailsDoCreate'
@@ -60,7 +60,7 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
         'uses' => 'ForumsController@forumsPosts'
     ]);
 
-    Route::post('{forum}/{topic}/create', [
+    Route::get('{forum}/{topic}/create', [
         'middleware' => 'auth',
         'as' => 'posts.doCreate',
         'uses' => 'ForumsController@forumsPostsDoCreate'

@@ -70,29 +70,24 @@
 
         <div class="row">
             <div class="small-16 large-16 columns callout">
-                <form method="POST" action="{{ route('forums.details.doCreate', $forum->id) }}">
+                <form method="get" action="{{ route('forums.details.doCreate', $forum->id) }}">
                     {{ csrf_field() }}
                     <b style="color: black;">Create new topic</b>
                     <br><br>
 
                     <label> <b style="color: black;">Title</b>
-                        <input type="text" name="name" {{ ! Auth::check() ? 'disabled' : '' }} required>
+                        <input type="text" name="name" required>
                     </label>
 
                     <label> <b style="color: black;">Description</b>
-                        <input type="text" name="description" {{ ! Auth::check() ? 'disabled' : '' }} required>
+                        <input type="text" name="description" required>
                     </label>
 
                     <label> <b style="color: black;">Write your post</b>
-                        <textarea name="text" id="editor1" rows="5" cols="40" placeholder="Write your post here..." {{ ! Auth::check() ? 'disabled' : '' }} required></textarea>
+                        <textarea name="text" id="editor1" rows="5" cols="40" placeholder="Write your post here..." required></textarea>
                     </label>
                     <br>
-
-                    @if(Auth::check())
-                        <button type="submit" class="lime-button" name="submit" style="float: right;" {{ ! Auth::check() ? 'disabled' : '' }}>Create Topic</button>
-                    @else
-                        <a class="lime-button" href="{{ route('login') }}" style="float: right;">Login to create topic</a>
-                    @endif
+                    <button type="submit" class="lime-button" name="submit" style="float: right;">Create Topic</button>
                     <script>
                         CKEDITOR.replace( 'editor1', {
                             uiColor: '#E2D3C0'
