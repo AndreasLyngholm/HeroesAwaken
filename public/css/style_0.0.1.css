@@ -6307,6 +6307,11 @@ table.hover tr:nth-of-type(even):hover {
 body a {
   color: #fff;
 }
+
+tr td p a {
+    color: #000000;
+}
+
 /* line 15, ../scss/_app-styles.scss */
 body a:hover, body a:active, body a:focus {
   color: #c5db3b;
