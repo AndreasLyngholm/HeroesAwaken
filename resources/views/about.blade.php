@@ -37,6 +37,17 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                            <img src="https://68.media.tumblr.com/3247f2e328338fb3611f66e4e8db1d71/tumblr_ok5qlhqffa1w3tdgro9_250.gif" class="" alt="">
+                        </div>
+                        <h5>Lyngholm</h5>
+                        <p>Staff, Web developer &amp; Coordinator</p>
+
+                    </div>
+                    <!--//team-member-->
+
+                    <!--team-member-->
+                    <div class="column team-member">
+                        <div class="photo">
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Absent</h5>
@@ -88,17 +99,8 @@
                         <p>Staff, SysAdmin &amp; Video Editor</p>
                     </div>
                     <!--//team-member-->
-                    
-                     <!--team-member-->
-                    <div class="column team-member">
-                        <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
-                        </div>
-                        <h5>Lyngholm</h5>
-                       <p>Web developer &amp; Coordinator</p>
-                    </div>
 
-                          <!--team-member-->
+                  <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
                             <img src="https://i.gyazo.com/4303468045ef9f0c0867da880b284847.png" class="" alt="">

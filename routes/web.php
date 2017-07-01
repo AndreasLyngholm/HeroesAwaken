@@ -36,3 +36,33 @@ Route::get('about', [
     'as' => 'about',
     'uses' => 'HomeController@about'
 ]);
+
+Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
+
+    Route::get('/', [
+        'as' => 'lists',
+        'uses' => 'ForumsController@forumsLists'
+    ]);
+
+    Route::get('{forum}', [
+        'as' => 'details',
+        'uses' => 'ForumsController@forumsDetails'
+    ]);
+
+    Route::post('{forum}/create', [
+        'middleware' => 'auth',
+        'as' => 'details.doCreate',
+        'uses' => 'ForumsController@forumsDetailsDoCreate'
+    ]);
+
+    Route::get('{forum}/{topic}', [
+        'as' => 'posts',
+        'uses' => 'ForumsController@forumsPosts'
+    ]);
+
+    Route::post('{forum}/{topic}/create', [
+        'middleware' => 'auth',
+        'as' => 'posts.doCreate',
+        'uses' => 'ForumsController@forumsPostsDoCreate'
+    ]);
+});

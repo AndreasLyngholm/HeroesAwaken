@@ -7,8 +7,8 @@
     <title>HeroesAwaken</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Bitter:700|Open+Sans:400,600,600italic">
     <link rel="stylesheet" href="{{ asset('css/style_new.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
-    {{--<link rel="stylesheet" href="{{ asset('css/style-min.css') }}">--}}
 </head>
 <body>
 

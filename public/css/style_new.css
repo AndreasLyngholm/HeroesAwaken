@@ -4064,8 +4064,13 @@ output {
   border: 1px solid #231a1e;
   border-radius: 0;
   position: relative;
-  color: #fff;
-  background-color: #3d2d34;
+  color: #000000;
+  background-color: #E2D3C0;
+}
+
+.callout a {
+    color: #000000;
+    font-weight: bold;
 }
 /* line 55, ../../foundation/bower_components/foundation-sites/scss/components/_callout.scss */
 .callout > :first-child {
@@ -5037,7 +5042,7 @@ body {
   background: rgba(255, 255, 255, 0);
 }
 /* line 134, ../../foundation/bower_components/foundation-sites/scss/components/_pagination.scss */
-.pagination .current {
+.pagination .active {
   padding: 0.2rem 0.66667rem;
   background: #c5db3b;
   color: #fff;
@@ -5652,7 +5657,13 @@ thead,
 tbody,
 tfoot {
   border: 1px solid #231a1e;
-  background-color: #302429;
+  background-color: #c0b8a3;
+}
+
+tbody p,
+tbody tr,
+tbody td {
+  color: #000000;
 }
 
 /* line 72, ../../foundation/bower_components/foundation-sites/scss/components/_table.scss */
@@ -5664,7 +5675,7 @@ caption {
 /* line 78, ../../foundation/bower_components/foundation-sites/scss/components/_table.scss */
 thead,
 tfoot {
-  background: #36292e;
+  background: #532929;
   color: #fff;
 }
 /* line 84, ../../foundation/bower_components/foundation-sites/scss/components/_table.scss */
@@ -5684,7 +5695,7 @@ tfoot td {
 
 /* line 102, ../../foundation/bower_components/foundation-sites/scss/components/_table.scss */
 tbody tr:nth-child(even) {
-  background-color: #3c2d33;
+  background-color: #E2D3C0;
 }
 /* line 115, ../../foundation/bower_components/foundation-sites/scss/components/_table.scss */
 tbody th,
@@ -7299,13 +7310,10 @@ footer.main-footer p.copyright {
   text-transform: uppercase;
 }
 /* line 478, ../scss/_app-styles.scss */
-.pagination li.current, .pagination li.disabled {
+.pagination li.active, .pagination li.disabled {
   padding: 0.66667rem 1.66667rem;
 }
-/* line 482, ../scss/_app-styles.scss */
-.pagination li.current {
-  border: 0 none;
-}
+
 /* line 485, ../scss/_app-styles.scss */
 .pagination li.ellipsis {
   border: 0 none;
