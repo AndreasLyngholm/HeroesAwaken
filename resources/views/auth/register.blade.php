@@ -24,7 +24,7 @@
                     </label>
 
                     <label> Birthday
-                        <input type="date" name="birthday" required>
+                        <input id="date" type="text" name="birthday" required>
                     </label>
 
                     <label> Password
@@ -46,3 +46,11 @@
     </section>
 
 @endsection
+
+@section('scripts')
+    <script>
+        $(document).ready(function(){
+            $('#date').mask("99-99-9999",{placeholder:"dd-mm-yyyy"});
+        });
+    </script>
+@stop
