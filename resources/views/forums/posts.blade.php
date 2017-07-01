@@ -34,7 +34,8 @@
                     </div>
 
                 </div>
-                <div class="big-sep" style="margin-top: 25px;"></div>
+                <hr>
+                <h2>Comments</h2>
 
                 @foreach($comments as $comment)
                     <div class="panel panel-rv">

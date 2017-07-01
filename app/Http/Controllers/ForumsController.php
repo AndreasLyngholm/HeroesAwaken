@@ -43,7 +43,7 @@ class ForumsController extends Controller
 
     public function forumsPosts(Forum $forum, Topic $topic) //POSTS
     {
-        $comments = $topic->comments()->orderBy('id', 'desc')->paginate(25);
+        $comments = $topic->comments()->paginate(25);
         return view('forums.posts', compact('forum', 'topic', 'comments'));
     }
 
