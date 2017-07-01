@@ -6528,6 +6528,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
   top: 0;
   left: 0;
   display: block;
+  margin: 8em 0 4em 0;
 }
 
 /* line 61, ../scss/_slider.scss */
