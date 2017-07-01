@@ -20,6 +20,22 @@
 
         <div class="row">
             <section  class="small-16 columns">
+                <div class="panel panel-rv">
+                    <div class="callout">
+                        <a href="#" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2">{{ \App\User::find($topic->user_id)->username }}</a>
+                        <i class="sprite-forum sprite-forum-alpha"></i>
+                        <span class="pull-right">
+                                <span data-type="datetime">{{ $topic->created_at }}</span>
+                            </span>
+                    </div>
+                    <div class="panel-body callout">
+                        {!! $topic->text !!}
+                        {{--<hr><div data-type="user-signature"><div class="text-center"><a href="https://steamcommunity.com/id/poep123" data-type="userlink" target="_blank"><img src="https://i.imgur.com/lDLfpiM.png" alt=""></a></div></div>--}}
+                    </div>
+
+                </div>
+                <div class="big-sep" style="margin-top: 25px;"></div>
+
                 @foreach($comments as $comment)
                     <div class="panel panel-rv">
                         <div class="callout">

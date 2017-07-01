@@ -83,6 +83,10 @@
                         <input type="text" name="description" {{ ! Auth::check() ? 'disabled' : '' }}>
                     </label>
 
+                    <label> <b style="color: black;">Write your post</b>
+                        <textarea name="text" rows="5" cols="40" placeholder="Write your post here..." {{ ! Auth::check() ? 'disabled' : '' }}></textarea>
+                    </label>
+
                     @if(Auth::check())
                         <button type="submit" class="lime-button" name="submit" style="float: right;" {{ ! Auth::check() ? 'disabled' : '' }}>Create Topic</button>
                     @else

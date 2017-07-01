@@ -33,6 +33,7 @@ class ForumsController extends Controller
         Topic::create([
             'name' => Input::get('name'),
             'description' => Input::get('description'),
+            'text' => nl2br(Input::get('text')),
             'user_id' => Auth::id(),
             'forum_id' => $forum->id
         ]);

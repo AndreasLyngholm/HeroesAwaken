@@ -11,7 +11,7 @@ class Topic extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'description', 'user_id', 'forum_id'];
+    protected $fillable = ['name', 'description', 'user_id', 'forum_id', 'text'];
 
     public function forum()
     {
