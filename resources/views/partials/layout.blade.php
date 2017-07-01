@@ -58,7 +58,7 @@
         <!--copyright-->
         <div class="small-16 medium-6 columns">
             <p class="copyright">
-                Copyright &copy; HeroesAwaken <span class="date"></span>. All Rights Reserved.
+                This web site is not endorsed by or affiliated with Electronic Arts Inc. or DICE. All trademarks and copyrights belong to their respective owners. For more information, please visit the official website at battlefield.com.
             </p>
         </div>
         <!--//copyright-->
