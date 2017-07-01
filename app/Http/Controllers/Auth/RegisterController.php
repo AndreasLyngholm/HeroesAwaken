@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -65,7 +66,7 @@ class RegisterController extends Controller
         return User::create([
             'username' => $data['username'],
             'email' => $data['email'],
-            'birthday' => $data['birthday'],
+            'birthday' => Carbon::createFromFormat('d-m-Y', $data['birthday'])->format('Y-m-d'),
             //'language' => $data['language'],
             //'country' => $data['country'],
             'password' => bcrypt($data['password']),
