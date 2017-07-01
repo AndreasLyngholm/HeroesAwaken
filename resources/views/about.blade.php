@@ -41,7 +41,6 @@
                         </div>
                         <h5>Lyngholm</h5>
                         <p>Staff, Web developer &amp; Coordinator</p>
-
                     </div>
                     <!--//team-member-->
 
@@ -52,7 +51,6 @@
                         </div>
                         <h5>Absent</h5>
                         <p>Staff &amp; Designer</p>
-                        
                     </div>
                     <!--//team-member-->
 
@@ -74,8 +72,6 @@
                         </div>
                         <h5>Ray</h5>
                         <p>Staff</p>
- 
-                       
                     </div>
                     <!--//team-member-->
 
@@ -119,6 +115,7 @@
                         <h5>Wazz</h5>
                         <p>Web developer &amp; Youtuber</p>
                     </div>
+                    <!--//team-member-->
                         
                           <!--team-member-->
                     <div class="column team-member">
@@ -128,16 +125,8 @@
                         <h5>Vahdek</h5>
                         <p>Web developer</p>
                     </div>
-                        
-                          <!--team-member-->
-                    <div class="column team-member">
-                        <div class="photo">
-                            <img src="https://i.gyazo.com/2a87844eeb516e53bdf3dfb842aacbb8.gif" class="" alt="">
-                        </div>
-                        <h5>National_Mando</h5>
-                        <p>Web developer</p>
-                    </div>
-                        
+                    <!--//team-member-->
+                    
                           <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
@@ -145,8 +134,8 @@
                         </div>
                         <h5>BloodRecon</h5>
                         <p>Web developer</p>
-                      
                     </div>
+                    <!--//team-member-->
 
                 </div>
             </div>
