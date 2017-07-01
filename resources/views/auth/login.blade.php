@@ -45,9 +45,8 @@
                 </div>
                 @endif
             </div>
-            <div class="small-16 large-7 columns">
-                <img src="{{ asset('images/join.png') }}" alt="" style="width: 50%;">
-                <a href="{{ route('register') }}" class="lime-button">Join us!</a>
+            <div class="small-16 large-6 columns">
+                <a href="{{ route('register') }}"><img src="{{ asset('images/register.png') }}" alt="" style="width: 50%;"></a>
             </div>
         </div>
 
