@@ -14,7 +14,7 @@
         <div class="row">
             <div class="small-16 columns">
                 <p>
-                    The heroes awaken team only has one goal, and that is to revive the game EA once made and closed their servers for. Heroes Awaken is a non profit community with open ideas for new suggestions and even new devs or staff members. If you feel like this is any kind of role for you, go to our contact us page and talk to someone there.
+                    The heroes awaken was found and opened for the public 2017-06-30 and the team only has one goal, and that is to revive the game EA once made and closed their servers for. Heroes Awaken is a non profit community with open ideas for new suggestions and even new devs or staff members. If you feel like this is any kind of role for you, go to our contact us page and talk to someone there.
                 </p>
 
             </div>
