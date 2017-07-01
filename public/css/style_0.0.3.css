@@ -6907,8 +6907,10 @@ a.read-more:hover, a.read-more:active, a.read-more:focus {
 footer.main-footer {
   background: #88332E url(../images/backgrounds/bg-footer-fill.png) repeat-x center top;
   padding: 2rem 0 1rem;
-  margin-top: 6.66667rem;
+  padding-top: 4em;
+  margin-top: none;
 }
+
 /* line 361, ../scss/_app-styles.scss */
 footer.main-footer p {
   font-size: 0.8rem;
