@@ -44,8 +44,13 @@
                         <td>{{ \App\User::find($topic->user_id)->username }}</td>
                         <td>{{ $topic->comments()->count() }}</td>
                         <td>
-                            <p><b><a href="#">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a></b></p>
-                            <p>Last comment by: <a href="#">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a> - {{ $topic->comments->last()->created_at->diffForHumans() }}</p>
+                            @if($topic->comments->count() > 0)
+                                <p><b><a href="#">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a></b></p>
+                                <p>Last comment by: <a href="#">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a> - {{ $topic->comments->last()->created_at->diffForHumans() }}</p>
+                            @else
+                                <p><b><a href="#"></a></b></p>
+                                <p>No comments posted yet</p>
+                            @endif
                         </td>
                     </tr>
                 @endforeach
