@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Bitter:700|Open+Sans:400,600,600italic">
     <link rel="stylesheet" href="{{ asset('css/style_updated.css') }}">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
 </head>
 <body>
@@ -66,6 +67,7 @@
 
 <script src="{{ asset('js/app-min.js') }}"></script>
 <script src="{{ asset('js/functions.js') }}"></script>
+@yield('scripts')
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

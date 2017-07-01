@@ -57,22 +57,26 @@
 
             </section>
         </div>
-
         <div class="row">
             <div class="small-16 large-16 columns callout">
                 <div id="note"></div>
                 <form method="POST" action="{{ route('forums.posts.doCreate', [$forum->id, $topic->id]) }}">
                     {{ csrf_field() }}
-
                     <label> <b style="color: black;">Write comment</b>
-                        <textarea name="comment" rows="5" cols="40" placeholder="What do you have on your mind?" {{ ! Auth::check() ? 'disabled' : '' }} required></textarea>
+                        <textarea name="comment" id="editor1" rows="5" cols="40" placeholder="What do you have on your mind?" {{ ! Auth::check() ? 'disabled' : '' }} required></textarea>
                     </label>
+                    <br>
 
                     @if(Auth::check())
                         <button type="submit" class="lime-button" name="submit" style="float: right;">Add comment</button>
                     @else
                         <a class="lime-button" href="{{ route('login') }}" style="float: right;">Login to comment on posts</a>
                     @endif
+                    <script>
+                        CKEDITOR.replace( 'editor1', {
+                            uiColor: '#E2D3C0'
+                        });
+                    </script>
                 </form>
             </div>
         </div>
