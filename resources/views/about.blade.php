@@ -43,6 +43,16 @@
                         <p>Staff, Web developer &amp; Coordinator</p>
                     </div>
                     <!--//team-member-->
+                     
+                    <!--team-member-->
+                    <div class="column team-member">
+                        <div class="photo">
+                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                        </div>
+                        <h5>SD149</h5>
+                        <p>Staff &amp; Developer</p>
+                    </div>
+                    <!--//team-member-->
 
                     <!--team-member-->
                     <div class="column team-member">
