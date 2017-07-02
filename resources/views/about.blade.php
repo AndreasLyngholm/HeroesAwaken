@@ -37,7 +37,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="www.heroesawaken.com/images/about/lyngholm.gif" class="" alt="">
+                            <img src="images/about/lyngholm.gif" class="" alt="">
                         </div>
                         <h5>Lyngholm</h5>
                         <p>Staff, Web developer &amp; Coordinator</p>
@@ -99,7 +99,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="www.heroesawaken.com/images/about/warp.gif" class="" alt="">
+                            <img src="images/about/warp.gif" class="" alt="">
                         </div>
                         <h5>Warp Productions</h5>
                         <p>Staff, SysAdmin &amp; Video Editor</p>
@@ -120,7 +120,7 @@
                   <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="www.heroesawaken.com/images/about/wazz.png" class="" alt="">
+                            <img src="images/about/wazz.png" class="" alt="">
                         </div>
                         <h5>Wazz</h5>
                         <p>Web developer &amp; Youtuber</p>
@@ -130,7 +130,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="www.heroesawaken.com/images/about/snow_.jpg" class="" alt="">
+                            <img src="images/about/snow_.jpg" class="" alt="">
                         </div>
                         <h5>Snow</h5>
                         <p>Web Developer &amp; Designer</p>
