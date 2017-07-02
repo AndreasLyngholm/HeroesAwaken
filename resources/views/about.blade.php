@@ -27,7 +27,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/placeholder_.png" class="" alt="">
                         </div>
                         <h5>Makahost</h5>
                         <p>Founder, Developer &amp; Go-To Guy</p>
@@ -47,7 +47,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/placeholder_.png" class="" alt="">
                         </div>
                         <h5>SD149</h5>
                         <p>Staff &amp; Developer</p>
@@ -57,7 +57,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/placeholder_.png" class="" alt="">
                         </div>
                         <h5>Absent</h5>
                         <p>Staff &amp; Designer</p>
@@ -67,7 +67,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/placeholder_.png" class="" alt="">
                         </div>
                         <h5>Doge</h5>
                         <p>Staff &amp; Doge</p>
@@ -78,7 +78,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/placeholder_.png" class="" alt="">
                         </div>
                         <h5>Ray</h5>
                         <p>Staff</p>
@@ -88,7 +88,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/placeholder_.png" class="" alt="">
                         </div>
                         <h5>Synaxis</h5>
                         <p>Staff</p>
@@ -109,7 +109,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/placeholder_.png" class="" alt="">
                         </div>
                         <h5>Heax</h5>
                         <p>Staff</p>
@@ -140,7 +140,7 @@
                           <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/placeholder_.png" class="" alt="">
                         </div>
                         <h5>Vahdek</h5>
                         <p>Web developer</p>
@@ -150,7 +150,7 @@
                           <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/placeholder_.png" class="" alt="">
                         </div>
                         <h5>BloodRecon</h5>
                         <p>Web developer</p>
