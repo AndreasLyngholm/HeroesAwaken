@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeroesAwaken</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Bitter:700|Open+Sans:400,600,600italic">
-    <link rel="stylesheet" href="{{ asset('css/style_0.0.3.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style_0.0.6.css') }}">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
     <script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
@@ -59,7 +59,7 @@
         <!--//social-icons-->
         <!--logo-->
         <div class="small-16 medium-4 columns">
-            <a href="#"><img src="{{ asset('images/logo.png') }}" alt="" class="footer-logo"/></a>
+            <a href="#"><img src="{{ asset('images/logo_small.png') }}" alt="" class="footer-logo"/></a>
         </div>
         <!--//logo-->
         <!--copyright-->
