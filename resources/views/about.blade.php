@@ -37,7 +37,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="https://68.media.tumblr.com/3247f2e328338fb3611f66e4e8db1d71/tumblr_ok5qlhqffa1w3tdgro9_250.gif" class="" alt="">
+                            <img src="www.heroesawaken.com/images/about/lyngholm.gif" class="" alt="">
                         </div>
                         <h5>Lyngholm</h5>
                         <p>Staff, Web developer &amp; Coordinator</p>
@@ -99,7 +99,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="https://image.noelshack.com/fichiers/2017/26/6/1498862155-ezgif-1-ecdc398196.gif" class="" alt="">
+                            <img src="www.heroesawaken.com/images/about/warp.gif" class="" alt="">
                         </div>
                         <h5>Warp Productions</h5>
                         <p>Staff, SysAdmin &amp; Video Editor</p>
@@ -120,7 +120,7 @@
                   <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="https://i.gyazo.com/d1da65c3dac7b507e4e490b05acc1f1b.png" class="" alt="">
+                            <img src="www.heroesawaken.com/images/about/wazz.png" class="" alt="">
                         </div>
                         <h5>Wazz</h5>
                         <p>Web developer &amp; Youtuber</p>
@@ -130,7 +130,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="https://i.gyazo.com/4ee84e0a81cb664635c2bb7ef7b6122e.png" class="" alt="">
+                            <img src="www.heroesawaken.com/images/about/snow_.jpg" class="" alt="">
                         </div>
                         <h5>Snow</h5>
                         <p>Web Developer &amp; Designer</p>
