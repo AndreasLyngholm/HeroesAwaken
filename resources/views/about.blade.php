@@ -120,7 +120,7 @@
                   <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="https://i.gyazo.com/963950fa39c21f67239b3519e6888886.png" class="" alt="">
+                            <img src="https://i.gyazo.com/d1da65c3dac7b507e4e490b05acc1f1b.png" class="" alt="">
                         </div>
                         <h5>Wazz</h5>
                         <p>Web developer &amp; Youtuber</p>
