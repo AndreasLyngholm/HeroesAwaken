@@ -9,7 +9,10 @@
 
     <section id="home-slider">
         <!--slide 1-->
-        <div style="background: url({{ asset('images/slider_.png') }})"></div>
+        <div style="background: url({{ asset('images/slider_.png') }})">
+        background-repeat:no-repeat;
+        background-size:cover;
+        </div>
         <!--//slide 1-->
         <!--slide-2-->
     {{--<div style="background: url({{ asset('images/placeholders/slider_2.jpg') }})">--}}
