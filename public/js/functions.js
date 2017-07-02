@@ -30,7 +30,7 @@ $(document).ready(function (){
 /*-----------------------------------------------------------------------------------*/
   $('#main-nav ul').slicknav({
     prependTo:'.mobile-menu',
-    label: '<img src="images/icons/burger.svg"/>',
+    label: '<img src="images/icons/burger_.svg"/>',
     //label: 'menu',
     closeOnClick: true
   });
