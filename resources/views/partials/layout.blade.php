@@ -59,7 +59,7 @@
         <!--//social-icons-->
         <!--logo-->
         <div class="small-16 medium-4 columns">
-            <a href="#"><img src="{{ asset('images/logo_small_.png') }}" alt="" class="footer-logo"/></a>
+            <a href="#"><img src="{{ asset('images/logo_small.png') }}" alt="" class="footer-logo"/></a>
         </div>
         <!--//logo-->
         <!--copyright-->
