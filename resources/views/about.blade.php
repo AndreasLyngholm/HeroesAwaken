@@ -133,7 +133,7 @@
                             <img src="https://i.gyazo.com/e79d6f9670402f31a451854d3d0a32ca.png" class="" alt="">
                         </div>
                         <h5>Snow</h5>
-                        <p>Web Developer</p>
+                        <p>Web Developer &amp; Designer</p>
                     </div>
                     <!--//team-member-->
                         
