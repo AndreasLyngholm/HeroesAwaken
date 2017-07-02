@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
     <script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8715450313943907",
+        enable_page_level_ads: true
+    });
+    </script>
 </head>
 <body>
 
