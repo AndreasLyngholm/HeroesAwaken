@@ -130,7 +130,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="https://i.gyazo.com/e79d6f9670402f31a451854d3d0a32ca.png" class="" alt="">
+                            <img src="https://i.gyazo.com/4ee84e0a81cb664635c2bb7ef7b6122e.png" class="" alt="">
                         </div>
                         <h5>Snow</h5>
                         <p>Web Developer &amp; Designer</p>
