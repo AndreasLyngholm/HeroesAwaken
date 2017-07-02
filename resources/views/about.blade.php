@@ -130,7 +130,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/about/snow_.jpg" class="" alt="">
+                            <img src="images/about/Snow_.jpg" class="" alt="">
                         </div>
                         <h5>Snow</h5>
                         <p>Web Developer &amp; Designer</p>
