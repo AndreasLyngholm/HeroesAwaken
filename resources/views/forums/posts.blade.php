@@ -29,7 +29,7 @@
                             </span>
                     </div>
                     <div class="panel-body callout secondary" style="margin-top: -15px;">
-                        {{ $topic->text }}
+                        {{ $topic->getText() }}
                         @if(\App\User::find($topic->user_id)->signature != null)
                             <hr>
                             <div data-type="user-signature">
@@ -56,7 +56,7 @@
                             </span>
                         </div>
                         <div class="panel-body callout secondary" style="margin-top: -15px;">
-                            {{ $comment->comment }}
+                            {{ $comment->getComment() }}
                             @if(\App\User::find($comment->user_id)->signature != null)
                                 <hr>
                                 <div data-type="user-signature">

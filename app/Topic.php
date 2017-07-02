@@ -22,4 +22,13 @@ class Topic extends Model
     {
         return $this->hasMany('App\Comment');
     }
+
+    // Really really dirty, please fix me!
+    public function getText()
+    {
+        $filter = array("<p>", "</p>", "<em>", "</em>", "<strong>", "</strong>", "<h1>", "</h1>", "<h2>", "</h2>", "<h3>", "</h3>", "<h4>", "</h4>");
+        $text = str_replace($filter, "", $this->text);
+        $text = str_replace("<br />", "\n", $text);
+        return $text;
+    }
 }
