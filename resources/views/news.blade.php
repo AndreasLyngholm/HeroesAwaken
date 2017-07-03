@@ -30,7 +30,7 @@
                <article class="blog-entry row">
                    <div class="article-date small-16 medium-2 columns">
                        <div>
-                           <p>Jun <span class="day">30</span> <span class="year">2017</span></p>
+                           <p>Jul <span class="day">03</span> <span class="year">2017</span></p>
                        </div>
                    </div>
 
