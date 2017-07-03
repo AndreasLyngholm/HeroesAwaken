@@ -42,7 +42,7 @@
     </section>
 
     <div class="content-top" style="background: url({{ asset('images/backgrounds/bg-body-top.png') }}) repeat-x center top;"></div>
-    <p>test. <img src="images/download.png" alt="download" align="middle"> test.</p>
+  
 
     <section id="main-content">
         <div class="row">
