@@ -6342,7 +6342,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 --------------------------------*/
 /* line 49, ../scss/_app-styles.scss */
 #main-header {
-  background: url(../images/backgrounds/bg-menu.png) repeat-x center top;
+  background: url(../images/backgrounds/bg-menu2.png) repeat-x center top;
   z-index: 1001;
   height: 6.33333rem;
   margin-top: 1.66667rem;
@@ -6667,7 +6667,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 --------------------------------*/
 /* line 177, ../scss/_app-styles.scss */
 .content-top {
-  background: url(../images/backgrounds/bg-body-top.png) repeat-x center top;
+  background: url(../images/backgrounds/bg-body-top2.png) repeat-x center top;
   height: 52px;
   margin-top: -140px;
   position: relative;
@@ -6683,7 +6683,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 
 /* line 191, ../scss/_app-styles.scss */
 #main-content {
-  background: #88332e url(../images/backgrounds/bg-body.png) no-repeat center top;
+  background: #88332e url(../images/backgrounds/bg-body2.png) no-repeat center top;
   min-height: 450px;
 }
 
@@ -6899,7 +6899,7 @@ a.read-more:hover, a.read-more:active, a.read-more:focus {
 --------------------------------*/
 /* line 357, ../scss/_app-styles.scss */
 footer.main-footer {
-  background: #75302c url(../images/backgrounds/bg-footer-fill.png) repeat-x center top;
+  background: #75302c url(../images/backgrounds/bg-footer-fill2.png) repeat-x center top;
   padding: 2rem 0 1rem;
   /*margin-top: 6.66667rem;*/
 }
