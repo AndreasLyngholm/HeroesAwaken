@@ -127,7 +127,7 @@
                             <img src="images/about/wazz.png" class="" alt="">
                         </div>
                         <h5>Wazz</h5>
-                        <p>Web developer &amp; Youtuber</p>
+                        <p>Awaken developer &amp; Youtuber</p>
                     </div>
                     <!--//team-member-->
                     
@@ -137,7 +137,7 @@
                             <img src="images/about/Snow_.jpg" class="" alt="">
                         </div>
                         <h5>Snow</h5>
-                        <p>Web Developer &amp; Designer</p>
+                        <p>Awaken developer &amp; Designer</p>
                     </div>
                     <!--//team-member-->
                         
@@ -147,7 +147,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Vahdek</h5>
-                        <p>Web developer</p>
+                        <p>Awaken developer</p>
                     </div>
                     <!--//team-member-->
                     
@@ -157,7 +157,17 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Crowscream</h5>
-                        <p>Web developer</p>
+                        <p>Awaken developer</p>
+                    </div>
+                    <!--//team-member-->
+                    
+                      <!--team-member-->
+                    <div class="column team-member">
+                        <div class="photo">
+                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                        </div>
+                        <h5>Lord Quirrel</h5>
+                        <p>Awaken developer</p>
                     </div>
                     <!--//team-member-->
                     
