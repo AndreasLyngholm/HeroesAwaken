@@ -124,7 +124,7 @@
                   <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/about/Wazz1.png" class="" alt="">
+                            <img src="images/about/Wazz.png" class="" alt="">
                         </div>
                         <h5>Wazz</h5>
                         <p>Web developer &amp; Youtuber</p>
