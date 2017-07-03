@@ -58,6 +58,7 @@
                                 Snow<br>
                                 Vahdek<br>
                                 Crowscream<br>
+                                Lord Squirrel<br>
                             </p>
                         </address>
                     </div>
