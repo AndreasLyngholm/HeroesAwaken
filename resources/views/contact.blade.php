@@ -18,7 +18,7 @@
         <div class="row">
             <div class="small-16 large-8 columns">
                 <h4>How to get in touch</h4>
-                <p>If you have any bugs reports, any questions, or just want to become a part of our community, just can reach us on our
+                <p>If you have any bug reports, any questions, or just want to become a part of our community, you can reach us on our
                     <a href="https://discordapp.com/invite/WhK8RgX">Discord channel</a>
                     or
                     <a href="https://www.facebook.com/Heroes-Awaken-197852317403720/?fref=ts">Facebook page</a>!
