@@ -2,21 +2,22 @@
 
 @section('content')
 
-    <section id="main-content" style="margin-top: 50px;">
+    <section class="inner-slider">
+      <div style="background: url('{{ asset('images/slider_bg.png') }}')"></div>
+    </section>
+
+    <div class="content-top"></div>
+
+    <section id="main-content">
 
         <div class="row">
             <div class="small-16 columns">
                 <nav>
-                    <ul class="breadcrumbs" style="margin-top: 10px;">
-                        <li class="active">Forum</li>
-                    </ul>
+                    <h3>
+                        Forum
+                    </h3>
                 </nav>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="small-16 columns">
-                <h1>Forum</h1>
+                <div class="big-sep"></div>
             </div>
         </div>
 

@@ -2,22 +2,26 @@
 
 @section('content')
 
-    <section id="main-content" style="margin-top: 50px; padding-bottom: 100px;">
+    <section class="inner-slider">
+      <div style="background: url('{{ asset('images/slider_bg.png') }}')"></div>
+    </section>
+
+    <div class="content-top"></div>
+
+    <section id="main-content">
 
         <div class="row">
             <div class="small-16 columns">
                 <nav>
-                    <ul class="breadcrumbs" style="margin-top: 10px;">
-                        <li><a href="{{ route('forums.lists') }}">Forum</a></li>
-                        <li class="active">{{ $forum->name }}</li>
-                    </ul>
+                    <h3>
+                        <small>
+                            <a href="{{ route('forums.lists') }}">Forum</a>
+                             / 
+                        </small>
+                        {{ $forum->name }}
+                    </h3>
                 </nav>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="small-16 columns">
-                <h1>Topics</h1>
+                <div class="big-sep"></div>
             </div>
         </div>
 
