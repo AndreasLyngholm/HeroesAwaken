@@ -66,3 +66,19 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
         'uses' => 'ForumsController@forumsPostsDoCreate'
     ]);
 });
+
+// API
+Route::group(['prefix' => 'api', 'as' => 'api.', 'namespace' => 'Api', 'middleware' => 'api'], function ()
+{
+    Route::get('token', [
+        'uses' => 'ApiController@token'
+    ]);
+
+    Route::get('check', [
+        'uses' => 'ApiController@check'
+    ]);
+
+    Route::get('user', [
+        'uses' => 'ApiController@user'
+    ]);
+});
