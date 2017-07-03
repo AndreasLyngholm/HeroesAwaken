@@ -36,7 +36,7 @@
                 @if ($errors->has('email'))
                     <div class="alert callout" data-closable style="margin-top: 50px;">
                         <h5>ooops!!</h5>
-                        <p>{{ $errors->first('email') }}</p>
+                        <p>Wrong email?</p>
                         <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
                             <span aria-hidden="true">&times;</span>
                         </button>
