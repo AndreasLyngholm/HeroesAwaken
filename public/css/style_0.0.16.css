@@ -6342,6 +6342,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 --------------------------------*/
 /* line 49, ../scss/_app-styles.scss */
 #main-header {
+  background: url(../images/backgrounds/bg-menu.png) repeat-x center top;
   z-index: 1001;
   height: 6.33333rem;
   margin-top: 1.66667rem;
