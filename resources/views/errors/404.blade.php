@@ -2,6 +2,10 @@
 
 @section('content')
 
+-    <section class="inner-slider">
+ -      <div style="background: url('{{ asset('images/404_slider.png') }}')"></div>
+ -    </section>
+ 
     <div class="content-top"></div>
 
     <section id="main-content">
