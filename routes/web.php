@@ -12,6 +12,10 @@
 */
 Auth::routes();
 
+Route::get('home', function () {
+    return redirect()->route('home');
+});
+
 Route::get('logout', [
     'as' => 'doLogout',
     'uses' => 'HomeController@doLogout'
@@ -50,6 +54,12 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
     ]);
 
     Route::get('{forum}/create', [
+        'middleware' => 'auth',
+        'as' => 'details.doCreate',
+        'uses' => 'ForumsController@forumsDetailsDoCreate'
+    ]);
+
+    Route::post('{forum}/edit', [
         'middleware' => 'auth',
         'as' => 'details.doCreate',
         'uses' => 'ForumsController@forumsDetailsDoCreate'
