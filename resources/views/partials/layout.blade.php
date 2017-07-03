@@ -21,7 +21,6 @@
 <body>
 
 @include('partials.navbar')
-<div style="background: #ddd5c0;height: 6rem;"></div>
 
 @yield('content')
 
