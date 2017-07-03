@@ -47,7 +47,7 @@
                         <p>Staff, Developer &amp; Coordinator</p>
                     </div>
                     <!--//team-member-->
-                     
+
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
@@ -75,7 +75,7 @@
                         </div>
                         <h5>Doge</h5>
                         <p>Staff &amp; Doge</p>
-                       
+
                     </div>
                     <!--//team-member-->
 
@@ -96,7 +96,7 @@
                         </div>
                         <h5>Synaxis</h5>
                         <p>Staff</p>
-                      
+
                     </div>
                     <!--//team-member-->
 
@@ -109,7 +109,7 @@
                         <p>Staff, SysAdmin &amp; Video Editor</p>
                     </div>
                     <!--//team-member-->
-                   
+
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
@@ -117,10 +117,10 @@
                         </div>
                         <h5>Heax</h5>
                         <p>Staff</p>
-                       
+
                     </div>
                   <!--//team-member-->
-                  
+
                   <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
@@ -130,7 +130,7 @@
                         <p>Awaken Developer &amp; Youtuber</p>
                     </div>
                     <!--//team-member-->
-                    
+
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
@@ -140,7 +140,7 @@
                         <p>Awaken Developer &amp; Designer</p>
                     </div>
                     <!--//team-member-->
-                        
+
                           <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
@@ -150,7 +150,7 @@
                         <p>Awaken Developer</p>
                     </div>
                     <!--//team-member-->
-                    
+
                            <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
@@ -160,18 +160,18 @@
                         <p>Awaken Developer</p>
                     </div>
                     <!--//team-member-->
-                    
+
                       <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/lord_squirrel.gif" class="" alt="">
                         </div>
                         <h5>Lord Squirrel</h5>
                         <p>Awaken Developer</p>
                     </div>
                     <!--//team-member-->
-                    
-                      
+
+
                 </div>
             </div>
         </div>
