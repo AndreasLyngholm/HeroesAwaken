@@ -2,23 +2,18 @@
 
 @section('content')
 
-    @include('partials.inner_slider')
-
     <div class="content-top"></div>
 
     <section id="main-content">
 
         <div class="row">
-            <div class="small-16 columns">
-                <h1>404</h1>
-                <div class="big-sep"></div>
+            <div class="large-16 columns">
+                <h1 style="text-align: center;">404</h1>
+                <h3 style="text-align: center;">The page you tried to visit does not exist!</h3>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="small-16 columns">
-                <h3>Sorry Soldier!</h3>
-                <h4>The page you tried to reach does not exist!</h4>
+            <div class="clearfix"></div>
+            <div class="large-16 columns">
+                <img class="float-center" src="{{ asset('images/error.png') }}">
             </div>
         </div>
 

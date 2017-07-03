@@ -59,12 +59,6 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
         'uses' => 'ForumsController@forumsDetailsDoCreate'
     ]);
 
-    Route::post('{forum}/edit', [
-        'middleware' => 'auth',
-        'as' => 'details.doCreate',
-        'uses' => 'ForumsController@forumsDetailsDoCreate'
-    ]);
-
     Route::get('{forum}/{topic}', [
         'as' => 'posts',
         'uses' => 'ForumsController@forumsPosts'
