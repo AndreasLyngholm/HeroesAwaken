@@ -9,7 +9,7 @@
 
     <section id="home-slider">
         <!--slide 1-->
-        <img src="{{ asset('images/slider_.png') }}">
+        <img src="{{ asset('images/slider_.png') }}" alt="">
         <!--//slide 1-->
         <!--slide-2-->
     {{--<div style="background: url({{ asset('images/placeholders/slider_2.jpg') }})">--}}
