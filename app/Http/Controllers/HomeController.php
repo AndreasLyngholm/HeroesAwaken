@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Download;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -36,6 +37,7 @@ class HomeController extends Controller
 
     public function downloadClient()
     {
+        Download::create(['user_id' => Auth::id()]);
         return redirect()->away('https://www.dropbox.com/s/38mm00cpuxuwt6u/Official%20Heroes-Awaken%20Game-Client.rar?dl=1');
     }
 }
