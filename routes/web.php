@@ -16,6 +16,12 @@ Route::get('home', function () {
     return redirect()->route('home');
 });
 
+Route::get('download', [
+    'middleware' => 'auth',
+    'as' => 'download',
+    'uses' => 'HomeController@downloadClient'
+]);
+
 Route::get('logout', [
     'as' => 'doLogout',
     'uses' => 'HomeController@doLogout'

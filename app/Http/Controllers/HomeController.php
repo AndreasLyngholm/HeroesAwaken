@@ -34,4 +34,8 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    public function downloadClient()
+    {
+        return redirect()->away('https://www.dropbox.com/s/38mm00cpuxuwt6u/Official%20Heroes-Awaken%20Game-Client.rar?dl=1');
+    }
 }
