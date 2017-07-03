@@ -20,6 +20,8 @@
 </head>
 <body>
 
+<div style="background: #ddd5c0;height: 6rem;"></div>
+
 @include('partials.navbar')
 
 @yield('content')
