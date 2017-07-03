@@ -36,7 +36,7 @@
                 @if ($errors->has('email'))
                     <div class="alert callout" data-closable style="margin-top: 50px;">
                         <h5>ooops!!</h5>
-                        <p style="color: #fff;">Beep! Wrong password or email. Try again!</p>
+                        <p style="color: #fff;">Hey soldier! Wrong password or email. Try again!</p>
                         <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -44,7 +44,7 @@
                 @elseif($errors->has('password'))
                 <div class="alert callout" data-closable style="margin-top: 50px;">
                     <h5>ooops!!</h5>
-                    <p style="color: #fff;">Beep! Wrong password or email. Try again!</p>
+                    <p style="color: #fff;">Hey soldier! Wrong password or email. Try again!</p>
                     <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
                         <span aria-hidden="true">&times;</span>
                     </button>
