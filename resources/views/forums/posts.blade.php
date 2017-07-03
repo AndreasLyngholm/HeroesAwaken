@@ -2,19 +2,29 @@
 
 @section('content')
 
-    <section id="main-content" style="margin-top: 50px;">
+    <section class="inner-slider">
+      <div style="background: url('{{ asset('images/slider_bg.png') }}')"></div>
+    </section>
+
+    <div class="content-top"></div>
+
+    <section id="main-content">
 
         <div class="row">
             <div class="small-16 columns">
                 <nav>
-                    <ul class="breadcrumbs" style="margin-top: 10px;">
-                        <li><a href="{{ route('forums.lists') }}">Forum</a></li>
-                        <li><a href="{{ route('forums.details', $forum->id) }}">{{ $forum->name }}</a></li>
-                        <li class="active">{{ $topic->name }}</li>
-                    </ul>
+                    <h3>
+                        <small>
+                            <a href="{{ route('forums.lists') }}">Forum</a>
+                             / 
+                             <a href="{{ route('forums.details', $forum->id) }}">{{ $forum->name }}</a>
+                             /
+                        </small>
+                        {{ $topic->name }}
+                    </h3>
                 </nav>
-                <h1>{{ $topic->name }}</h1>
                 <h5>{{ $topic->description }}</h5>
+                <div class="big-sep"></div>
             </div>
         </div>
 
@@ -43,7 +53,7 @@
                     </div>
 
                 </div>
-                <hr>
+                <div class="big-sep"></div>
                 <h2>Comments</h2>
 
                 @foreach($comments as $comment)
