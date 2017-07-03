@@ -2,9 +2,7 @@
 
 @section('content')
 
-    <section class="inner-slider">
-      <div style="background: url('{{ asset('images/slider_small.png') }}')"></div>
-    </section>
+    @include('partials.inner_slider')
 
     <div class="content-top"></div>
 
