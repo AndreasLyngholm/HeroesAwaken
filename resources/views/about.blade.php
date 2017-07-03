@@ -44,7 +44,7 @@
                             <img src="images/about/lyngholm.gif" class="" alt="">
                         </div>
                         <h5>Lyngholm</h5>
-                        <p>Staff, Web developer &amp; Coordinator</p>
+                        <p>Staff, developer &amp; Coordinator</p>
                     </div>
                     <!--//team-member-->
                      
@@ -166,7 +166,7 @@
                         <div class="photo">
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
-                        <h5>Lord Quirrel</h5>
+                        <h5>Lord Squirrel</h5>
                         <p>Awaken developer</p>
                     </div>
                     <!--//team-member-->
