@@ -9,33 +9,18 @@
     <div class="content-top"></div>
 
     <section id="main-content">
-
- 
-           
-           <!-- NEWS POST START -->
-            <div class="small-16 large-16 columns">
-
-                <article class="blog-entry row">
-                    <div class="article-date small-16 medium-2 columns">
-                        <div>
-                            <p>Jul <span class="day">01</span> <span class="year">2017</span></p>
-                        </div>
-                    </div>
-
-                    <div class="article-content small-16 medium-14 columns">
-                        <h3>Ddos protection.</h3>
-                        <p>
-                            We always want to make sure you guys know when we have some downtime, these can almost everytime be found on our discord server. We recently had some downtime since we installed a new ddos protection for our site. Thanks for your support :). / Wazz (Web Developer)
-                        </p>
-                    </div>
-                </article>
+    
+          <div class="row">
+            <div class="small-16 columns">
+                <h1>News</h1>
+                <div class="big-sep"></div>
             </div>
-
-           <div class="row">
-              <div class="small-16 columns">
-                  <div class="big-sep"></div>
-              </div>
-           </div>
+        </div>
+       
+       <!-- Post you news below this text -->
+       <!-- // Wazz -->
+       
+     <div class="row blog-entries">
 
            <!-- NEWS POST END -->
 
