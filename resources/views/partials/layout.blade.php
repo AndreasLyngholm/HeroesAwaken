@@ -21,7 +21,7 @@
 <body>
 
 
-<a href="{{ route('download') }}"><img class="hide-for-small-only" style="position: fixed; right: 50px; z-index:2500; width: 10rem;" src="{{ asset('images/downloadButton.png') }}"></a>
+<a href="{{ route('download') }}"><img class="hide-for-small-only" style="position: fixed; right: 50px; z-index:2500; width: 10rem;" src="{{ asset('images/dl.png') }}"></a>
 
 @include('partials.navbar')
 
