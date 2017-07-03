@@ -63,6 +63,20 @@
                         </address>
                     </div>
                     <!--//address-->
+                     <!--address-->
+                    <div class="column">
+                        <h5>Community Managers</h5>
+                        <address>
+                            <p>
+                                DraksTOP<br>
+                                Lagniss<br>
+                                LordHardness_<br>
+                                MeanSpeed<br>
+                                Pasolero<br>
+                            </p>
+                        </address>
+                    </div>
+                    <!--//address-->
                 </div>
             </div>
         </div>
