@@ -10,6 +10,7 @@
     <section id="home-slider">
         <!--slide 1-->
         <div style="background: url('{{ asset('images/slider_.png') }}')">
+        <p>test. <img src="images/download.png" alt="download" align="middle"> test.</p>
            
         </div>
         <!--//slide 1-->
