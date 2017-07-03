@@ -44,7 +44,7 @@
                             <img src="images/about/lyngholm.gif" class="" alt="">
                         </div>
                         <h5>Lyngholm</h5>
-                        <p>Staff, developer &amp; Coordinator</p>
+                        <p>Staff, Developer &amp; Coordinator</p>
                     </div>
                     <!--//team-member-->
                      
@@ -127,7 +127,7 @@
                             <img src="images/about/wazz.png" class="" alt="">
                         </div>
                         <h5>Wazz</h5>
-                        <p>Awaken developer &amp; Youtuber</p>
+                        <p>Awaken Developer &amp; Youtuber</p>
                     </div>
                     <!--//team-member-->
                     
@@ -137,7 +137,7 @@
                             <img src="images/about/Snow_.jpg" class="" alt="">
                         </div>
                         <h5>Snow</h5>
-                        <p>Awaken developer &amp; Designer</p>
+                        <p>Awaken Developer &amp; Designer</p>
                     </div>
                     <!--//team-member-->
                         
@@ -147,7 +147,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Vahdek</h5>
-                        <p>Awaken developer</p>
+                        <p>Awaken Developer</p>
                     </div>
                     <!--//team-member-->
                     
@@ -157,7 +157,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Crowscream</h5>
-                        <p>Awaken developer</p>
+                        <p>Awaken Developer</p>
                     </div>
                     <!--//team-member-->
                     
@@ -167,7 +167,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Lord Squirrel</h5>
-                        <p>Awaken developer</p>
+                        <p>Awaken Developer</p>
                     </div>
                     <!--//team-member-->
                     
