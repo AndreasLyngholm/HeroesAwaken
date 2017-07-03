@@ -9,7 +9,10 @@
 
     <section id="home-slider">
         <!--slide 1-->
-        <div style="background: url('{{ asset('images/slider_.png') }}')"></div>
+        <div style="background: url('{{ asset('images/slider_.png') }}')">
+        <p> <img src="downloadbutton.png" alt="download" align="top"> </p>
+           
+        </div>
         <!--//slide 1-->
         <!--slide-2-->
     {{--<div style="background: url({{ asset('images/placeholders/slider_2.jpg') }})">--}}
@@ -40,6 +43,7 @@
     </section>
 
     <div class="content-top" style="background: url({{ asset('images/backgrounds/bg-body-top.png') }}) repeat-x center top;"></div>
+    <p>test. <img src="images/download.png" alt="download" align="middle"> test.</p>
 
     <section id="main-content">
         <div class="row">
