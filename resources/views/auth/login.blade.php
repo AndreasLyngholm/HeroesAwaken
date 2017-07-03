@@ -35,7 +35,7 @@
                 </form>
                 @if ($errors->has('email'))
                     <div class="alert callout" data-closable style="margin-top: 50px;">
-                        <h5>An error occurred!</h5>
+                        <h5>ooops!!</h5>
                         <p>{{ $errors->first('email') }}</p>
                         <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
                             <span aria-hidden="true">&times;</span>
@@ -43,7 +43,7 @@
                     </div>
                 @elseif($errors->has('password'))
                 <div class="alert callout" data-closable style="margin-top: 50px;">
-                    <h5>An error occurred!</h5>
+                    <h5>ooops!!</h5>
                     <p>{{ $errors->first('password') }}</p>
                     <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
                         <span aria-hidden="true">&times;</span>
