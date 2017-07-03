@@ -3,7 +3,7 @@
 @section('content')
 
     <section class="inner-slider">
-      <div style="background: url('{{ asset('images/slider_bg.png') }}')"></div>
+      <div style="background: url('{{ asset('images/slider_small.png') }}')"></div>
     </section>
 
     <div class="content-top"></div>
