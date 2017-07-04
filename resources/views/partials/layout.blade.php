@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Bitter:700|Open+Sans:400,600,600italic">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v16">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    
+    <!-- THIS MUST BE LOADED HERE! DO NOT REMOVE -->
+        <script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+    <!-- THIS MUST BE LOADED HERE! DO NOT REMOVE -->
+
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
 </head>
 <body>
@@ -70,7 +75,6 @@
 <script src="{{ asset('js/app-min.js') }}"></script>
 <script src="{{ asset('js/functions.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-<script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
 @yield('scripts')
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
