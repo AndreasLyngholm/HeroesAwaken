@@ -21,6 +21,33 @@
      <div class="row blog-entries">
 
            <!-- NEWS POST END -->
+           
+           <!-- NEWS POST START -->
+           <div class="small-16 large-16 columns">
+
+               <article class="blog-entry row">
+                   <div class="article-date small-16 medium-2 columns">
+                       <div>
+                           <p>Jul <span class="day">04</span> <span class="year">2017</span></p>
+                       </div>
+                   </div>
+
+                   <div class="article-content small-16 medium-14 columns">
+                       <h3>Latest version of BFH</h3>
+                       <p>
+                           We just released our latest version of BFH, the link is in our <a href="https://discordapp.com/invite/WhK8RgX">Discord channel</a>. /Wazz (Web Developer)
+                       </p>
+                   </div>
+               </article>
+           </div>
+
+           <div class="row">
+               <div class="small-16 columns">
+                   <div class="big-sep"></div>
+               </div>
+           </div>
+
+           <!-- NEWS POST END -->
 
            <!-- NEWS POST START -->
            <div class="small-16 large-16 columns">
