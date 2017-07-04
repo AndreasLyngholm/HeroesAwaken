@@ -4013,7 +4013,6 @@ output {
 
 /* line 87, ../../foundation/bower_components/foundation-sites/scss/components/_breadcrumbs.scss */
 .breadcrumbs {
-  display: none;
   list-style: none;
   margin: 0 0 1rem 0;
 }
