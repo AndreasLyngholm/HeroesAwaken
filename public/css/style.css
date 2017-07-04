@@ -3968,7 +3968,7 @@ output {
 }
 /* line 79, ../../foundation/bower_components/foundation-sites/scss/components/_accordion.scss */
 .is-active > .accordion-title::before {
-  content: '�';
+  content: '?';
 }
 
 /* line 106, ../../foundation/bower_components/foundation-sites/scss/components/_accordion.scss */
@@ -6274,7 +6274,7 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 5, ../scss/_app-styles.scss */
 ::selection {
-  background: #8ab15f;
+  background: #ccc;
   color: #302429;
   text-shadow: none;
 }
