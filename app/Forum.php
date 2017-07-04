@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Forum extends Model
 {
+    protected $dates = ['last_comment'];
+
     public function topics()
     {
         return $this->hasMany('App\Topic');

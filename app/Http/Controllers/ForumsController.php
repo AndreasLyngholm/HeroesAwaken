@@ -26,7 +26,7 @@ class ForumsController extends Controller
 
     public function forumsDetails(Forum $forum) //TOPICS
     {
-        $topics = $forum->topics()->orderBy('id', 'desc')->paginate(25);
+        $topics = $forum->topics()->orderBy('last_comment', 'desc')->paginate(25);
         return view('forums.details', compact('forum', 'topics'));
     }
 
