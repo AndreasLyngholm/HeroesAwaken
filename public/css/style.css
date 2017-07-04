@@ -174,23 +174,6 @@ span.amp {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ab15f', endColorstr='#8ab52d',GradientType=0 );
   /* IE6-9 */
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1) ;
-  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1) ;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1) ;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: rem-calc(25);
-  border-top: 1px solid #8ab15f;
-  border-left: 1px solid #8ab52d;
-  border-right: 1px solid #8ab52d;
-  border-bottom: 1px solid #8ab52d;
 }
 /* line 224, ../scss/_mixins.scss */
 .lime-button:hover, .gd-button:hover, #home-slider .cta-button:hover {
@@ -1329,7 +1312,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
-  background: #DDD5C0;
+  background: #88332E;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -2997,6 +2980,16 @@ h3 small,
 h4 small,
 h5 small,
 h6 small {
+  color: #231a1e;
+  line-height: 0;
+}
+
+nav h1 small a,
+nav h2 small a,
+nav h3 small a,
+nav h4 small a,
+nav h5 small a,
+nav h6 small a{
   color: #231a1e;
   line-height: 0;
 }
@@ -6349,7 +6342,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 --------------------------------*/
 /* line 49, ../scss/_app-styles.scss */
 #main-header {
-  background: url(../images/backgrounds/bg-menu.png) repeat-x center top;
+  background: url(../images/backgrounds/bg-menu2.png) repeat-x center top;
   z-index: 1001;
   height: 6.33333rem;
   margin-top: 1.66667rem;
@@ -6528,7 +6521,6 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
   top: 0;
   left: 0;
   display: block;
-  margin: 8em 0 4em 0;
 }
 
 /* line 61, ../scss/_slider.scss */
@@ -6607,6 +6599,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 }
 /* line 107, ../scss/_app-styles.scss */
 #home-slider .slick-slide {
+  min-height: 745px;
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
@@ -6674,7 +6667,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 --------------------------------*/
 /* line 177, ../scss/_app-styles.scss */
 .content-top {
-
+  background: url(../images/backgrounds/bg-body-top2.png) repeat-x center top;
   height: 52px;
   margin-top: -140px;
   position: relative;
@@ -6690,7 +6683,8 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 
 /* line 191, ../scss/_app-styles.scss */
 #main-content {
-  background: #DDD5C0 url(../images/backgrounds/bg-body.jpg) repeat center top;
+  background: #88332e url(../images/backgrounds/bg-body2.png) no-repeat center top;
+  min-height: 450px;
 }
 
 /*--------------------------------
@@ -6905,10 +6899,9 @@ a.read-more:hover, a.read-more:active, a.read-more:focus {
 --------------------------------*/
 /* line 357, ../scss/_app-styles.scss */
 footer.main-footer {
-  background: #88332E url(../images/backgrounds/bg-footer-fill.png) repeat-x center top;
+  background: #75302c url(../images/backgrounds/bg-footer-fill2.png) repeat-x center top;
   padding: 2rem 0 1rem;
-  padding-top: 4em;
-  margin-top: none;
+  /*margin-top: 6.66667rem;*/
 }
 
 /* line 361, ../scss/_app-styles.scss */
@@ -7453,7 +7446,7 @@ footer.main-footer p.copyright {
 /* line 598, ../scss/_app-styles.scss */
 .team .column.team-member div.photo img, .team .team-member.columns div.photo img {
   display: block;
-  height: 280px;
+  width: 215px;
   border-radius: 2rem;
   margin: 0 auto;
 }
