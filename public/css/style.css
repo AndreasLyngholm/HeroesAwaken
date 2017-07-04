@@ -7452,6 +7452,7 @@ footer.main-footer p.copyright {
 /* line 598, ../scss/_app-styles.scss */
 .team .column.team-member div.photo img, .team .team-member.columns div.photo img {
   display: block;
+  width: 215px;
   border-radius: 2rem;
   margin: 0 auto;
 }
