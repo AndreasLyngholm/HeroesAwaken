@@ -8,6 +8,7 @@ use App\Forum;
 use App\HeroesAwaken\FormValidation;
 use App\Post;
 use App\Topic;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -26,7 +27,7 @@ class ForumsController extends Controller
 
     public function forumsDetails(Forum $forum) //TOPICS
     {
-        $topics = $forum->topics()->orderBy('last_comment', 'desc')->paginate(25);
+        $topics = $forum->topics()->orderBy('last_comment')->paginate(25);
         return view('forums.details', compact('forum', 'topics'));
     }
 
@@ -62,6 +63,8 @@ class ForumsController extends Controller
             'topic_id' => $topic->id,
             'comment' => nl2br($comment)
         ]);
+
+        $topic->update(['last_comment' => Carbon::now()]);
         return redirect()->route('forums.posts', [$forum->id, $topic->id]);
     }
 }
