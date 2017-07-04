@@ -7445,13 +7445,14 @@ footer.main-footer p.copyright {
 }
 /* line 594, ../scss/_app-styles.scss */
 .team .column.team-member div.photo, .team .team-member.columns div.photo {
-  background: url("../images/backgrounds/team-bg.png") no-repeat top center;
-  padding: 0.66667rem 0;
+  background: none;
+  padding: 0.5rem 0;
   margin-bottom: 1rem;
 }
 /* line 598, ../scss/_app-styles.scss */
 .team .column.team-member div.photo img, .team .team-member.columns div.photo img {
   display: block;
+  border-radius: 2rem;
   margin: 0 auto;
 }
 /* line 603, ../scss/_app-styles.scss */
