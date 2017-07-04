@@ -8,6 +8,7 @@
 @section('content')
 
     <section id="home-slider">
+        <div style="background: #ddd5c0; height:8rem; top: -8rem;"></div>
         <!--slide 1-->
         <img src="{{ asset('images/slider_home.jpg') }}" alt="">
         <!--//slide 1-->
