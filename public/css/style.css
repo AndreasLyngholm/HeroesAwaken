@@ -6596,7 +6596,6 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
   top: -8rem;
   background: #ddd5c0;
   width: 100%;
-  padding: 5rem 0;
   z-index: 500;
 }
 /* line 107, ../scss/_app-styles.scss */
