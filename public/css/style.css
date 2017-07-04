@@ -6649,7 +6649,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 .inner-slider {
   position: relative;
   top: -8rem;
-  padding: 3rem 0 0 0;
+  padding-top: 8rem;
   width: 100%;
   background: #ddd5c0;
   z-index: 500;
