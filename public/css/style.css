@@ -6656,7 +6656,6 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 }
 /* line 160, ../scss/_app-styles.scss */
 .inner-slider .slick-slide {
-  min-height: 400px;
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
