@@ -11,7 +11,7 @@
         
         <!--slide 1-->
 
-        <img src="{{ asset('images/slider_home.jpg') }}" alt="">
+        <img src="{{ asset('images/slider_main.jpg') }}" alt="">
 
         <!--//slide 1-->
         <!--slide-2-->
