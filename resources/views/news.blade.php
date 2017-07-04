@@ -35,7 +35,7 @@
                    <div class="article-content small-16 medium-14 columns">
                        <h3>Latest version of BFH</h3>
                        <p>
-                           We just released our latest version of BFH, the link is in our <a href="https://discordapp.com/invite/WhK8RgX">Discord channel</a>. /Wazz (Web Developer)
+                           We just released our latest version of BFH, the link is in our <a href="https://discordapp.com/invite/WhK8RgX">Discord channel</a>. If you need any help with installing or if the game crashed feel free to contact anyone in the contact list. /Wazz (Web Developer)
                        </p>
                    </div>
                </article>
