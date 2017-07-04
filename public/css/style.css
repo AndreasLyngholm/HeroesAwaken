@@ -7446,13 +7446,14 @@ footer.main-footer p.copyright {
 /* line 594, ../scss/_app-styles.scss */
 .team .column.team-member div.photo, .team .team-member.columns div.photo {
   background: none;
+  height: 280px;
   padding: 0.5rem 0;
   margin-bottom: 1rem;
 }
 /* line 598, ../scss/_app-styles.scss */
 .team .column.team-member div.photo img, .team .team-member.columns div.photo img {
   display: block;
-  width: 215px;
+  height: 280px;
   border-radius: 2rem;
   margin: 0 auto;
 }
