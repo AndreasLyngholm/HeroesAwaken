@@ -160,19 +160,19 @@ span.amp {
 .lime-button, .gd-button, #home-slider .cta-button {
   background: #8ab15f;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #8ab15f 0%, #8ab52d 100%);
+  background: -moz-linear-gradient(top, #8ab15f 0%, #5b723f 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8ab15f), color-stop(100%, #8ab52d));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8ab15f), color-stop(100%, #5b723f));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #8ab15f 0%, #8ab52d 100%);
+  background: -webkit-linear-gradient(top, #8ab15f 0%, #5b723f 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #8ab15f 0%, #8ab52d 100%);
+  background: -o-linear-gradient(top, #8ab15f 0%, #5b723f 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #8ab15f 0%, #8ab52d 100%);
+  background: -ms-linear-gradient(top, #8ab15f 0%, #5b723f 100%);
   /* IE10+ */
-  background: linear-gradient(to bottom, #8ab15f 0%, #8ab52d 100%);
+  background: linear-gradient(to bottom, #8ab15f 0%, #5b723f 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ab15f', endColorstr='#8ab52d',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ab15f', endColorstr='#5b723f',GradientType=0 );
   /* IE6-9 */
 }
 /* line 224, ../scss/_mixins.scss */
@@ -191,7 +191,7 @@ span.amp {
   /* IE10+ */
   background: linear-gradient(to bottom, #cbdf4c 0%, #9ac03c 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ab15f', endColorstr='#8ab52d',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ab15f', endColorstr='#5b723f',GradientType=0 );
   /* IE6-9 */
 }
 /* line 227, ../scss/_mixins.scss */
@@ -210,7 +210,7 @@ span.amp {
   /* IE10+ */
   background: linear-gradient(to bottom, #9ac03c 0%, #cbdf4c 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ab15f', endColorstr='#8ab52d',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ab15f', endColorstr='#5b723f',GradientType=0 );
   /* IE6-9 */
 }
 
@@ -4091,7 +4091,7 @@ output {
 }
 /* line 92, ../../foundation/bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.alert {
-  background-color: #e95e5a;
+  background-color: #75302c;
 }
 /* line 97, ../../foundation/bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.small {
