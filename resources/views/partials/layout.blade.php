@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeroesAwaken</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Bitter:700|Open+Sans:400,600,600italic">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v22">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v23">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
     
     <!-- THIS MUST BE LOADED HERE! DO NOT REMOVE -->
