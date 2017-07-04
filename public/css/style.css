@@ -6594,7 +6594,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 #home-slider {
   position: relative;
   top: -8rem;
-  padding: 5rem 0;
+  padding-top: 5rem;
   background: #ddd5c0;
   width: 100%;
   z-index: 500;
