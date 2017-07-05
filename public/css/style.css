@@ -6355,8 +6355,8 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 }
 @media screen and (min-width: 64em) {
   /* line 55, ../scss/_app-styles.scss */
-  #main-header .logo {
-    margin-top: 1.2rem;
+#main-header .logo {
+  margin-top: 1.2rem;
   }
 }
 /* line 63, ../scss/_app-styles.scss */
@@ -6366,7 +6366,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 @media screen and (min-width: 64em) {
   /* line 63, ../scss/_app-styles.scss */
   #main-header #main-nav ul.main-menu {
-    margin: 2.06667rem 0 0;
+  margin: 2.06667rem 0 0;
   }
 }
 /* line 68, ../scss/_app-styles.scss */
