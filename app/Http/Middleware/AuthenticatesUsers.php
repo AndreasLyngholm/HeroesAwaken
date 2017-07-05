@@ -108,7 +108,7 @@ trait AuthenticatesUsers
      */
     protected function authenticated(Request $request, $user)
     {
-        $user->ip_address = $request->getClientIp();
+        $user->ip_address = $request->ip();
         $user->save();
     }
 
