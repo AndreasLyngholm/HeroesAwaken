@@ -70,7 +70,7 @@
                                 <div data-type="user-signature">
                                     <div class="text-center">
                                         <a href="#" data-type="userlink">
-                                            <img src="{{ \App\User::find($comment->user_id)->signature->image }}" alt="">
+                                            <img style="max-height: 250px;" src="{{ \App\User::find($comment->user_id)->signature->image }}" alt="">
                                         </a>
                                     </div>
                                 </div>
