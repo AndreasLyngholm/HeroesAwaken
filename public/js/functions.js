@@ -30,7 +30,7 @@ $(document).ready(function (){
 /*-----------------------------------------------------------------------------------*/
   $('#main-nav ul').slicknav({
     prependTo:'.mobile-menu',
-    label: '<img src="images/icons/burger_.svg"/>',
+    label: '<img src="https://heroesawaken.com/images/icons/burger_.svg"/>',
     //label: 'menu',
     closeOnClick: true
   });
