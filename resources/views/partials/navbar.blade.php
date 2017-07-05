@@ -7,12 +7,13 @@
                 <li><a @if(Request::is('news')) class="active" @endif href="{{ route('news') }}">News</a></li>
                 <li><a @if(Request::is('forums')) class="active" @endif href="{{ route('forums.lists') }}">Forum</a></li>
                 <li><a @if(Request::is('about')) class="active" @endif href="{{ route('about') }}">About</a></li>
-                <li><a @if(Request::is('contact')) class="active" @endif href="{{ route('contact') }}">Contact</a></li>
+                {{--<li><a @if(Request::is('contact')) class="active" @endif href="{{ route('contact') }}">Contact</a></li>--}}
+                {{--<li><a @if(Request::is('profile')) class="active" @endif href="{{ route('profile.lists') }}">Profile</a></li>--}}
                 <li>
                     @if( ! Auth::check())
                         <a href="{{ route('login') }}">Login</a>
                     @else
-                        <a href="{{ route('doLogout') }}">Logout</a>
+                        <a @if(Request::is('profile')) class="active" @endif href="{{ route('profile.lists') }}">{{ Auth::user()->username }}</a>
                     @endif
                 </li>
             </ul>

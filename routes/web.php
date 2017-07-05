@@ -47,6 +47,20 @@ Route::get('about', [
     'uses' => 'HomeController@about'
 ]);
 
+Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => 'auth'], function() {
+
+    Route::get('/', [
+        'as' => 'lists',
+        'uses' => 'ProfileController@lists'
+    ]);
+
+    Route::post('signature', [
+        'as' => 'addSignature',
+        'uses' => 'ProfileController@addSignature'
+    ]);
+
+});
+
 Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
 
     Route::get('/', [
