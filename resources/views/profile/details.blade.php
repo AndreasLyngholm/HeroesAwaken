@@ -29,9 +29,9 @@
                 {!! $user->description != null ? $user->description : 'This soldier has no description yet!' !!}
 
             </div>
-            @if(Auth::user()->signature != null)
+            @if($user->signature != null)
                 <div class="large-10 columns">
-                    <img src="{{ Auth::user()->signature->image }}">
+                    <img src="{{ $user->signature->image }}">
                 </div>
             @endif
         </div>
