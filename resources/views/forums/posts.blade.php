@@ -30,7 +30,7 @@
             <section  class="small-16 columns">
                 <div class="panel panel-rv">
                     <div class="callout">
-                        <a href="#" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2">Created by {{ \App\User::find($topic->user_id)->username }}</a>
+                        <a href="{{ route('profile.details', \App\User::find($topic->user_id)->username) }}" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2">Created by {{ \App\User::find($topic->user_id)->username }}</a>
                         <i class="sprite-forum sprite-forum-alpha"></i>
                         <span class="pull-right">
                                 <span data-type="datetime">{{ $topic->created_at }}</span>
@@ -42,7 +42,7 @@
                             <hr>
                             <div data-type="user-signature">
                                 <div class="text-center">
-                                    <a href="#" data-type="userlink">
+                                    <a href="{{ route('profile.details', \App\User::find($topic->user_id)->username) }}" data-type="userlink">
                                         <img style="max-height: 250px;" src="{{ \App\User::find($topic->user_id)->signature->image }}" alt="">
                                     </a>
                                 </div>
@@ -57,7 +57,7 @@
                 @foreach($comments as $comment)
                     <div class="panel">
                         <div class="callout">
-                            <a href="#" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2"><i class="fa fa-user"></i> {{ \App\User::find($comment->user_id)->username }}</a>
+                            <a href="{{ route('profile.details', \App\User::find($comment->user_id)->username) }}" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2"><i class="fa fa-user"></i> {{ \App\User::find($comment->user_id)->username }}</a>
                             <i class="sprite-forum sprite-forum-alpha"></i>
                             <span class="pull-right">
                                 <span data-type="datetime">{{ $comment->created_at }}</span>
@@ -69,7 +69,7 @@
                                 <hr>
                                 <div data-type="user-signature">
                                     <div class="text-center">
-                                        <a href="#" data-type="userlink">
+                                        <a href="{{ route('profile.details', \App\User::find($comment->user_id)->username) }}" data-type="userlink">
                                             <img style="max-height: 250px;" src="{{ \App\User::find($comment->user_id)->signature->image }}" alt="">
                                         </a>
                                     </div>
