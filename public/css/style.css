@@ -6351,6 +6351,7 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 /* line 55, ../scss/_app-styles.scss */
 #main-header .logo {
   margin-top: 1.4rem;
+  max-height: 5rem;
 }
 @media screen and (min-width: 64em) {
   /* line 55, ../scss/_app-styles.scss */
