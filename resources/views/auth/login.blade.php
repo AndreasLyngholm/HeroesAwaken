@@ -50,7 +50,7 @@
                 @endif
             </div>
             <div class="small-16 large-6 columns">
-                <a href="{{ route('register') }}"><img src="{{ asset('images/register.png') }}" alt="" style="width: 50%;"></a>
+                <a href="{{ route('register') }}"><img src="{{ asset('images/register.png') }}" alt=""></a>
             </div>
         </div>
 
