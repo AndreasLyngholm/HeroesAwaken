@@ -59,6 +59,16 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => 'auth']
         'uses' => 'ProfileController@addSignature'
     ]);
 
+    Route::post('description', [
+        'as' => 'addDescription',
+        'uses' => 'ProfileController@addDescription'
+    ]);
+
+    Route::get('{username}', [
+        'as' => 'details',
+        'uses' => 'ProfileController@details'
+    ]);
+
 });
 
 Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {

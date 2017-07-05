@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Bitter:700|Open+Sans:400,600,600italic">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v24">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <link href="{{ asset('css/sweetalert.css') }}" rel="stylesheet" type="text/css">
+    <script src="{{ asset('js/sweetalert.min.js') }}"></script>
     
     <!-- THIS MUST BE LOADED HERE! DO NOT REMOVE -->
         <script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
@@ -76,6 +78,17 @@
 <script src="{{ asset('js/functions.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 @yield('scripts')
+<script>
+    @if(Session::has('success'))
+        swal("Success!", "{{ Session::get('success') }}", "success")
+    @endif
+    @if(Session::has('error'))
+        swal("Error!", "{{ Session::get('error') }}", "error")
+    @endif
+    @if(Session::has('warning'))
+        swal("Warning!", "{{ Session::get('warning') }}", "warning")
+    @endif
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

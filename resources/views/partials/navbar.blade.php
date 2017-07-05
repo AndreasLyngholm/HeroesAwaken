@@ -9,6 +9,7 @@
                 <li><a @if(Request::is('about')) class="active" @endif href="{{ route('about') }}">About</a></li>
                 {{--<li><a @if(Request::is('contact')) class="active" @endif href="{{ route('contact') }}">Contact</a></li>--}}
                 {{--<li><a @if(Request::is('profile')) class="active" @endif href="{{ route('profile.lists') }}">Profile</a></li>--}}
+                <li><a href="{{ route('doLogout') }}">Logout</a></li>
                 <li>
                     @if( ! Auth::check())
                         <a href="{{ route('login') }}">Login</a>

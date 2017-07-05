@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\UserSignature;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -38,5 +39,28 @@ class ProfileController extends Controller
             ]);
 
         return redirect()->back()->with('success', 'Your signature got added!');
+    }
+
+    public function addDescription()
+    {
+        if(Input::get('description') == '')
+            return redirect()->back()->with('error', 'The description cannot be empty!');
+        $description = str_replace(['&lt;script&gt;'], '', Input::get('description'));
+        $description = str_replace(['&lt;/script&gt;'], '', $description);
+
+        Auth::user()->update([
+            'description' => $description
+        ]);
+
+        return redirect()->back()->with('success', 'Your description got updated!');
+    }
+
+    public function details($username)
+    {
+        if( ! User::where('username', $username)->exists())
+            abort(404);
+
+        $user = User::where('username', $username)->first();
+        return view('profile.details', compact('user'));
     }
 }
