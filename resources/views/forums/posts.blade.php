@@ -55,7 +55,7 @@
                 <h2>Comments</h2>
 
                 @foreach($comments as $comment)
-                    <div class="panel">
+                    <div class="panel" id="{{ $comment->id }}">
                         <div class="callout">
                             <a href="{{ route('profile.details', \App\User::find($comment->user_id)->username) }}" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2"><i class="fa fa-user"></i> {{ \App\User::find($comment->user_id)->username }}</a>
                             <i class="sprite-forum sprite-forum-alpha"></i>

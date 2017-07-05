@@ -48,7 +48,7 @@
                         <td>
                             @if($topic->comments->count() > 0)
                                 <p><b><a href="{{ route('profile.details', \App\User::find($topic->comments->last()->user_id)->username) }}">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a></b></p>
-                                <p>Last comment by: <a href="{{ route('profile.details', \App\User::find($topic->comments->last()->user_id)->username) }}">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a> - {{ $topic->comments->last()->created_at->diffForHumans() }}</p>
+                                <p>Last comment by: <a href="{{ route('forums.posts', [$forum->id, $topic->id]) }}#{{ $topic->comments->last()->id }}">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a> - {{ $topic->comments->last()->created_at->diffForHumans() }}</p>
                             @else
                                 <p><b><a href="#"></a></b></p>
                                 <p>No comments posted yet</p>
