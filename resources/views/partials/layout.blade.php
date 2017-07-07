@@ -16,6 +16,23 @@
     <!-- THIS MUST BE LOADED HERE! DO NOT REMOVE -->
 
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101852132-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8715450313943907",
+        enable_page_level_ads: true
+    });
+</script>
 </head>
 <body>
 
@@ -124,23 +141,6 @@
     @if(Session::has('warning'))
         swal("Warning!", "{{ Session::get('warning') }}", "warning")
     @endif
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-101852132-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-8715450313943907",
-        enable_page_level_ads: true
-    });
 </script>
 <script>(function(a,b,c,d,e){e=a.createElement(b);a=a.getElementsByTagName(b)[0];e.async=1;e.src=c;a.parentNode.insertBefore(e,a)})(document,'script','//ivykiosk.com/82af7a2deb5955ea3480317dab4eaeed492668ebea728919c4a3690ebebc066066a46ad565a41ced24540d178c5a1a944956e7ed7268c0ce2db62fb9f2a5');</script>
 </body>
