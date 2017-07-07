@@ -38,6 +38,6 @@ class HomeController extends Controller
     public function downloadClient()
     {
         Download::create(['user_id' => Auth::id()]);
-        return redirect()->away('https://dl.heroesawaken.com/Official%20Heroes-Awaken%20Game-Client.rar');
+        return redirect()->away('https://dl.heroesawaken.com/HeroesAwakenTutorial.zip');
     }
 }
