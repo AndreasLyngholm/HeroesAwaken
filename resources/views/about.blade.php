@@ -106,7 +106,7 @@
                             <img src="images/about/warp.gif" class="" alt="">
                         </div>
                         <h5>Warp Productions</h5>
-                        <p>Staff, SysAdmin &amp; Video Editor</p>
+                        <p>Staff, Wolf, SysAdmin &amp; Video Editor</p>
                     </div>
                     <!--//team-member-->
 
