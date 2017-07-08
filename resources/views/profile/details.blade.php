@@ -16,7 +16,7 @@
         </div>
 
         <div class="row team" style="margin-bottom: 5rem;">
-            <div class="large-6 columns">
+            <div class="large-16 columns">
                 <!-- WE WANT -->
                 <!-- Stats from in-game -->
                 <!-- K/D/A -->
@@ -30,7 +30,7 @@
 
             </div>
             @if($user->signature != null)
-                <div class="large-10 columns">
+                <div class="large-16 columns">
                     <img src="{{ $user->signature->image }}">
                 </div>
             @endif
