@@ -29,7 +29,7 @@
                     </label>
 
                     <button type="submit" class="lime-button" name="submit" style="float: right;">Login</button>
-                    <a href="#">Forgot password?</a>
+                    <a href="{{ url('password/reset') }}">Forgot password?</a>
                 </form>
                 @if ($errors->has('email'))
                     <div class="alert callout" data-closable style="margin-top: 50px;">
