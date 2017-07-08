@@ -66,7 +66,7 @@
 You might have noticed that recently we changed the name of our project and that happened for a good reason.
 Our Project started within the BFH community and from the beginning we had some set up goals, some time passed and we joined the Revive Network, a community of every EA cracked game which would help us a lot but things did not turn out well.<br>
 We didn’t had much freedom to work like we wanted to and the Revive Network stated that they only want to bring the game to the last known official version and make no further improvements.
-Our end goal is to release and make modifications to the game such as nerf overpowered guns, buff underpowered games, add more content, if possible remove the luck based gameplay and make it more of a skilled gameplay by removing random criticals which may give advantage to some players without any skilled involved, etc.<br>
+Our end goal is to release and make modifications to the game such as nerf overpowered guns, buff underpowered games, add more content, if possible remove the luck based gameplay and make it more of a skilled gameplay by removing random criticals which may give advantage to some players without any skilled involved etc.<br>
 For all the previously mentioned reasons we decided to split from the Revive Network and there are now 2 different groups working separately to bring back BFH.
 Our Heroes Awaken community is now working with MakaHost, one of the developers who wrote the backend for being able to load the client and play the tutorial and if everything goes as planned we estimate the online multiplayer version to be released within 1-3 months.<br><br> / Made by BFHPTPIRATE (Community Manager) <br>/ Published by Wazz (Web Developer)                 
                      </p>
