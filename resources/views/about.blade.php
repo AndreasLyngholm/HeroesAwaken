@@ -74,7 +74,7 @@
                             <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
                         </div>
                         <h5>Doge</h5>
-                        <p>Staff &amp; Doge</p>
+                        <p>Awaken Developer &amp; Doge</p>
 
                     </div>
                     <!--//team-member-->
@@ -106,7 +106,7 @@
                             <img src="images/about/warp.gif" class="" alt="">
                         </div>
                         <h5>Warp Productions</h5>
-                        <p>Staff, Wolf, SysAdmin &amp; Video Editor</p>
+                        <p>Awaken Developer, Wolf, SysAdmin &amp; Video Editor</p>
                     </div>
                     <!--//team-member-->
 
@@ -137,7 +137,7 @@
                             <img src="images/about/Snow_.jpg" class="" alt="">
                         </div>
                         <h5>Snow</h5>
-                        <p>Awaken Developer &amp; Designer</p>
+                        <p>Staff &amp; Designer</p>
                     </div>
                     <!--//team-member-->
 
