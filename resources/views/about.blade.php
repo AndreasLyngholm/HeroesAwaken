@@ -170,6 +170,26 @@
                         <p>Awaken Developer</p>
                     </div>
                     <!--//team-member-->
+                    
+                     <!--team-member-->
+                    <div class="column team-member">
+                        <div class="photo">
+                            <img src="images/about/lord_squirrel.gif" class="" alt="">
+                        </div>
+                        <h5>Hazriel</h5>
+                        <p>Awaken Developer</p>
+                    </div>
+                    <!--//team-member-->
+                    
+                     <!--team-member-->
+                    <div class="column team-member">
+                        <div class="photo">
+                            <img src="images/about/lord_squirrel.gif" class="" alt="">
+                        </div>
+                        <h5>Jefalo</h5>
+                        <p>Awaken Developer &amp; Game Contributer</p>
+                    </div>
+                    <!--//team-member-->
 
 
                 </div>
