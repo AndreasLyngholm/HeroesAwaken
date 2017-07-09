@@ -164,7 +164,7 @@
                       <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/lord_squirrel.gif" class="" alt="">
                         </div>
                         <h5>Lord Squirrel</h5>
                         <p>Awaken Developer</p>
@@ -184,7 +184,7 @@
                      <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/about/lord_squirrel.gif" class="" alt="">
+                            <img src="//placehold.it/215x280/fff/c5db3b"" alt="">
                         </div>
                         <h5>Jefalo</h5>
                         <p>Awaken Developer &amp; Game Contributer</p>
