@@ -136,7 +136,7 @@
         
     </div>
     <div class="row">
-        <div class="small-6 large-centered columns">
+        <div class="small-16 large-centered columns" style="text-align: center">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- Footer-Leaderboard -->
             <ins class="adsbygoogle"
