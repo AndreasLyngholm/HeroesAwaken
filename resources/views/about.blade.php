@@ -154,7 +154,7 @@
                            <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/crowscream.png" class="" alt="">
                         </div>
                         <h5>Crowscream</h5>
                         <p>Awaken Developer</p>
