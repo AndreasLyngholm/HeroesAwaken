@@ -34,10 +34,10 @@
                         <i class="sprite-forum sprite-forum-alpha"></i>
                         <span class="pull-right">
                             <span data-type="datetime">{{ $topic->created_at }}</span>
-                            @if(\App\FriendRequest::where('receiver', Auth::user()->id)->where('sender', $topic->user_id)->exists())
-                            |
-                            <a class="pull-right" href="{{ route('profile.addFriend', $topic->user_id) }}"> <i class="fa fa-user-plus"></i> </a>
-                            @endif
+                            {{--@if(\App\FriendRequest::where('receiver', Auth::user()->id)->where('sender', $topic->user_id)->exists())--}}
+                            {{--|--}}
+                            {{--<a class="pull-right" href="{{ route('profile.addFriend', $topic->user_id) }}"> <i class="fa fa-user-plus"></i> </a>--}}
+                            {{--@endif--}}
                         </span>
                     </div>
                     <div class="panel-body callout secondary" style="margin-top: -15px;">

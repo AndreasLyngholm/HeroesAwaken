@@ -12,7 +12,7 @@
             <div class="small-16 columns">
                 <h1>{{ $user->username }}</h1>
                 <!-- MAKE BIGGER!! -->
-                <a class="pull-right" href="{{ route('profile.addFriend', $user->id) }}"><i class="fa fa-user-plus"></i></a>
+                {{--<a class="pull-right" href="{{ route('profile.addFriend', $user->id) }}"><i class="fa fa-user-plus"></i></a>--}}
                 <div class="big-sep"></div>
             </div>
         </div>
