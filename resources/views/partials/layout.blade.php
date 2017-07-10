@@ -106,13 +106,12 @@
                    </a>
                </li>
 
-                <!-- This is Steam -->
+                <!-- This is Twitch -->
                 <li>
-                    <a href="https://www.twitch.tv/lyngholm" title="Stream" target="_blank">
-                        <svg height="35" viewBox="0 0 1792 1792" width="35" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M896 434v434h-145v-434h145zm398 0v434h-145v-434h145zm0 760l253-254v-795h-1194v1049h326v217l217-217h398zm398-1194v1013l-434 434h-326l-217 217h-217v-217h-398v-1158l109-289h1483z"/>
+                    <a href="https://www.twitch.tv/lyngholm" title="Twitch" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 2963 2963" fill-rule="evenodd">
+                          <path d="M1482 195c710,0 1287,576 1287,1287 0,710 -577,1287 -1287,1287 -711,0 -1287,-577 -1287,-1287 0,-711 576,-1287 1287,-1287zm773 563l0 984 -422 422 -316 0 -211 210 -211 0 0 -210 -386 0 0 -1125 106 -281 1440 0zm-387 422l0 421 -141 0 0 -421 141 0zm-386 0l0 421 -141 0 0 -421 141 0zm386 738l246 -247 0 -772 -1160 0 0 1019 317 0 0 211 211 -211 386 0z"/>
                         </svg>
-
                     </a>
                 </li>
             </ul>
