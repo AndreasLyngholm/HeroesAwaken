@@ -126,7 +126,7 @@
                         <div class="photo">
                             <img src="images/about/wazz.png" class="" alt="">
                         </div>
-                        <h5>Wazz</h5>
+                        <h5><a href="https://heroesawaken.com/profile/wazz/"target="_blank">Wazz</a></h5>
                         <p>Awaken Developer &amp; <a href="https://www.youtube.com/channel/UCHkNbfx2zlWizm1Tevux6bw"target="_blank"><u>Youtuber</u></a></p>
                     </div>
                     <!--//team-member-->
