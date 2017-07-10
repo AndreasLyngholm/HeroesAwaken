@@ -39,6 +39,8 @@ class User extends Authenticatable
         $friends = new Collection();
         foreach (UserFriend::where('user_id', $this->id)->get() as $friend)
             $friends->push(User::find($friend->friend_id));
+        foreach (UserFriend::where('friend_id', $this->id)->get() as $friend)
+            $friends->push(User::find($friend->friend_id));
         return $friends;
     }
 
