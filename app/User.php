@@ -33,6 +33,10 @@ class User extends Authenticatable
         return $this->hasOne('App\UserSignature');
     }
 
+    /**
+     * Adds the user to a group
+     * @param $groupName string The name of the group to add the user
+     */
     public function addToGroup($groupName)
     {
         $group = DB::table('groups')
@@ -47,4 +51,25 @@ class User extends Authenticatable
             ]);
         }
     }
+
+    /**
+     * Check if the user is in the group
+     * @param $groupName The name of the group
+     * @return boolean True if the user is in the group, false otherwise
+     */
+    public function hasGroup($groupName)
+    {
+        foreach ($this->groups as $group)
+        {
+            if ($group->name === $groupName)
+                return true;
+        }
+        return false;
+    }
+
+    public function groups()
+    {
+        return $this->belongsToMany('App\Group', 'user_group');
+    }
+
 }

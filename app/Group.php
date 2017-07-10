@@ -20,4 +20,9 @@ class Group extends Model
 
     protected $table = 'groups';
     public $timestamps = false;
+
+    public function users()
+    {
+        return $this->belongsToMany('App\User', 'user_group');
+    }
 }
