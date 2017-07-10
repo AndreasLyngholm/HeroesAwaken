@@ -45,6 +45,20 @@
 
 <footer class="main-footer">
     <div class="row">
+        <div class="small-6 large-centered columns">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- FooterAd -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-8715450313943907"
+                data-ad-slot="5593939078"
+                data-ad-format="auto"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    <div class="row">
         <!--social-icons-->
         <div class="small-16 medium-6 columns">
             <ul class="inline-list social-icons">
