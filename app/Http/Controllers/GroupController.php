@@ -26,14 +26,16 @@ class GroupController extends Controller
 
     /**
      * Creates basic groups and sets the current user's group to Admin
+     * You can call this method to first generate groups and set yourself as an admin
      */
     public function generateSampleGroups()
     {
         $user = Auth::user();
         if ($user)
         {
-            $this->createGroup('admin', 'Admin','Administrators group');
-            $this->createGroup('mod', 'Moderator','Moderators group');
+            $this->createGroup('admin', 'Admin','Administrators\' group');
+            $this->createGroup('mod', 'Moderator','Moderators\' group');
+            $this->createGroup('member', 'Member', 'Members\' group');
             $user->addToGroup('admin');
         }
         return redirect('home');
