@@ -42,8 +42,12 @@
                             <td>{{ $forum->topics()->count() }}</td>
                             <td>{{ $forum->countComments() }}</td>
                             <td>
-                                <p><b><a href="{{ route('profile.details', \App\User::find($forum->lastComment()->user_id)->username) }}">{{ \App\User::find($forum->lastComment()->user_id)->username }}</a></b></p>
-                                <p>Last post by: <a href="{{ route('profile.details', \App\User::find($forum->lastComment()->user_id)->username) }}">{{ \App\User::find($forum->lastComment()->user_id)->username }}</a> - {{ $forum->lastComment()->created_at->diffForHumans() }}</p>
+                                @if($forum->lastComment())
+                                    <p><b><a href="{{ route('profile.details', \App\User::find($forum->lastComment()->user_id)->username) }}">{{ \App\User::find($forum->lastComment()->user_id)->username }}</a></b></p>
+                                    <p>Last post by: <a href="{{ route('profile.details', \App\User::find($forum->lastComment()->user_id)->username) }}">{{ \App\User::find($forum->lastComment()->user_id)->username }}</a> - {{ $forum->lastComment()->created_at->diffForHumans() }}</p>
+                                @else
+                                    <p>No last comment.</p>
+                                @endif
                             </td>
                         </tr>
                     @endforeach
