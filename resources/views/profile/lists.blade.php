@@ -108,4 +108,8 @@
 
 @section('styles')
     <link href="{{ asset('css/components-rounded.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/plugins.min.css') }}" rel="stylesheet" type="text/css" />
+@stop
+@section('scripts')
+    <script src="{{ asset('js/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
 @stop
