@@ -138,12 +138,11 @@
     <div class="row">
         <div class="small-6 large-centered columns">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- FooterAd -->
+            <!-- Footer-Leaderboard -->
             <ins class="adsbygoogle"
-                style="display:block"
+                style="display:inline-block;width:728px;height:90px"
                 data-ad-client="ca-pub-8715450313943907"
-                data-ad-slot="5593939078"
-                data-ad-format="auto"></ins>
+                data-ad-slot="6512269079"></ins>
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
