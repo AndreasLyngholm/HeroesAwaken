@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Bitter:700|Open+Sans:400,600,600italic">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v30">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    @yield('styles')
     <link href="{{ asset('css/sweetalert.css') }}" rel="stylesheet" type="text/css">
     <script src="{{ asset('js/sweetalert.min.js') }}"></script>
     

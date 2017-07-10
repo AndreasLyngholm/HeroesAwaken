@@ -65,9 +65,11 @@ class ProfileController extends Controller
         return view('profile.details', compact('user'));
     }
 
-    public function answerFriendRequest($user)
+    public function answerFriendRequest()
     {
+        Auth::user()->friendRequestAnswer(Input::get('sender'), Input::get('answer'));
 
+        return redirect()->back()->with('success', Input::get('answer') == 'accepted' ? 'You accepted the friend request!' : 'You declined the friend request!');
     }
 
     public function addFriend($user)

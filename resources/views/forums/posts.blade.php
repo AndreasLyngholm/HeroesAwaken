@@ -34,10 +34,7 @@
                         <i class="sprite-forum sprite-forum-alpha"></i>
                         <span class="pull-right">
                             <span data-type="datetime">{{ $topic->created_at }}</span>
-                            {{--@if(\App\FriendRequest::where('receiver', Auth::user()->id)->where('sender', $topic->user_id)->exists())--}}
-                            {{--|--}}
-                            {{--<a class="pull-right" href="{{ route('profile.addFriend', $topic->user_id) }}"> <i class="fa fa-user-plus"></i> </a>--}}
-                            {{--@endif--}}
+                            @include('partials.addFriend', ['user_id' => $topic->user_id])
                         </span>
                     </div>
                     <div class="panel-body callout secondary" style="margin-top: -15px;">
@@ -67,8 +64,7 @@
                                 <span data-type="datetime">{{ $comment->created_at }}</span>
                                 |
                                 <a onclick="copied()" class="clipboard" data-clipboard-text="{{ URL::current() }}#{{ $comment->id }}"> <i class="fa fa-link"></i> </a>
-                                |
-                                <a class="pull-right" href="{{ route('profile.addFriend', $comment->user_id) }}"> <i class="fa fa-user-plus"></i> </a>
+                                @include('partials.addFriend', ['user_id' => $comment->user_id])
                             </span>
                         </div>
                         <div class="panel-body callout secondary" style="margin-top: -15px;">

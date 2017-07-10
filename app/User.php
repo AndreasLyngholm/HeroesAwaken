@@ -47,6 +47,7 @@ class User extends Authenticatable
         FriendRequest::where('receiver', $this->id)->where('sender', $sender)->first()->update([
             'status' => $answer
         ]);
+        $this->addFriend($sender);
     }
 
     public function friendRequests()
@@ -83,7 +84,12 @@ class User extends Authenticatable
 
     public function isFriend($user)
     {
-
+        if (UserFriend::where('user_id', $this->id)->where('friend_id', $user)->exists())
+            return true;
+        elseif (UserFriend::where('friend_id', $this->id)->where('user_id', $user)->exists())
+            return true;
+        else
+            return false;
     }
 
     /**

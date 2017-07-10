@@ -12,13 +12,18 @@
             <div class="small-16 columns">
                 <h1>{{ $user->username }}</h1>
                 <!-- MAKE BIGGER!! -->
-                {{--<a class="pull-right" href="{{ route('profile.addFriend', $user->id) }}"><i class="fa fa-user-plus"></i></a>--}}
+                @include('partials.addFriend', ['user_id' => $user->id])
                 <div class="big-sep"></div>
             </div>
         </div>
 
         <div class="row team" style="margin-bottom: 5rem;">
             <div class="large-16 columns">
+                @if($user->friends()->count() > 0)
+                    <p>{{ $user->username }} has {{ $user->friends()->count() }} {{ $user->friends()->count() > 1 ? 'friends' : 'friend' }}</p>
+                @else
+                    <p>No friends to display</p>
+                @endif
                 <!-- WE WANT -->
                 <!-- Stats from in-game -->
                 <!-- K/D/A -->
