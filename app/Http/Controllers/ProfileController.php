@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\FriendRequest;
 use App\User;
 use App\UserSignature;
 use Illuminate\Http\Request;
@@ -62,5 +63,27 @@ class ProfileController extends Controller
 
         $user = User::where('username', $username)->first();
         return view('profile.details', compact('user'));
+    }
+
+    public function answerFriendRequest($user)
+    {
+
+    }
+
+    public function addFriend($user)
+    {
+        // Check if a friend request already exists.
+        // If it does, add friend.
+        if (FriendRequest::where('receiver', Auth::id())->where('sender', $user)->exists())
+        {
+            Auth::user()->addFriend($user);
+            return redirect()->back()->with('success', User::find($user)->username . ' was added to your friend list');
+        }
+        else
+        // If not, send one.
+        {
+            Auth::user()->sendFriendRequest($user);
+            return redirect()->back()->with('success', 'A friend request was sent!');
+        }
     }
 }
