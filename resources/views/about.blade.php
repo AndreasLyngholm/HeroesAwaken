@@ -31,7 +31,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/placeholders/about.png" class="" alt="">
                         </div>
                         <h5>Makahost</h5>
                         <p>Founder, Developer &amp; Go-To Guy</p>
@@ -51,7 +51,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/placeholders/about.png" class="" alt="">
                         </div>
                         <h5>SD149</h5>
                         <p>Staff &amp; Developer</p>
@@ -61,7 +61,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/placeholders/about.png" class="" alt="">
                         </div>
                         <h5>Absent</h5>
                         <p>Staff &amp; Designer</p>
@@ -71,7 +71,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/placeholders/about.png" class="" alt="">
                         </div>
                         <h5>Doge</h5>
                         <p>Awaken Developer &amp; Doge</p>
@@ -82,7 +82,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/placeholders/about.png" class="" alt="">
                         </div>
                         <h5>Ray</h5>
                         <p>Staff</p>
@@ -92,7 +92,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/placeholders/about.png" class="" alt="">
                         </div>
                         <h5>Synaxis</h5>
                         <p>Staff</p>
@@ -113,7 +113,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/placeholders/about.png" class="" alt="">
                         </div>
                         <h5>Heax</h5>
                         <p>Staff</p>
@@ -144,7 +144,7 @@
                           <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/placeholders/about.png" class="" alt="">
                         </div>
                         <h5>Vahdek</h5>
                         <p>Awaken Developer</p>
@@ -174,7 +174,7 @@
                      <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/placeholders/about.png" class="" alt="">
                         </div>
                         <h5>Hazriel</h5>
                         <p>Awaken Developer</p>
@@ -184,7 +184,7 @@
                      <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b"" alt="">
+                            <img src="images/placeholders/about.png"" alt="">
                         </div>
                         <h5>Jefalo</h5>
                         <p>Awaken Developer &amp; Game Contributer</p>
