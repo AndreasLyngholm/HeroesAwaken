@@ -135,6 +135,19 @@
         <!--//copyright-->
         
     </div>
+    <div class="row">
+        <div class="small-16 large-centered columns" style="text-align: center">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Footer-Leaderboard -->
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-8715450313943907"
+                data-ad-slot="6512269079"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
 </footer>
 
 <script src="{{ asset('js/app-min.js') }}"></script>

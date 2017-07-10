@@ -126,8 +126,8 @@
                         <div class="photo">
                             <img src="images/about/wazz.png" class="" alt="">
                         </div>
-                        <h5>Wazz</h5>
-                        <p>Awaken Developer &amp; Youtuber</p>
+                        <h5><a href="https://heroesawaken.com/profile/wazz/"target="_blank">Wazz</a></h5>
+                        <p>Awaken Developer &amp; <a href="https://www.youtube.com/channel/UCHkNbfx2zlWizm1Tevux6bw"target="_blank"><u>Youtuber</u></a></p>
                     </div>
                     <!--//team-member-->
 
@@ -154,7 +154,7 @@
                            <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                            <img src="images/about/crowscream.png" class="" alt="">
                         </div>
                         <h5>Crowscream</h5>
                         <p>Awaken Developer</p>
@@ -168,6 +168,26 @@
                         </div>
                         <h5>Lord Squirrel</h5>
                         <p>Awaken Developer</p>
+                    </div>
+                    <!--//team-member-->
+                    
+                     <!--team-member-->
+                    <div class="column team-member">
+                        <div class="photo">
+                            <img src="//placehold.it/215x280/fff/c5db3b" class="" alt="">
+                        </div>
+                        <h5>Hazriel</h5>
+                        <p>Awaken Developer</p>
+                    </div>
+                    <!--//team-member-->
+                    
+                     <!--team-member-->
+                    <div class="column team-member">
+                        <div class="photo">
+                            <img src="//placehold.it/215x280/fff/c5db3b"" alt="">
+                        </div>
+                        <h5>Jefalo</h5>
+                        <p>Awaken Developer &amp; Game Contributer</p>
                     </div>
                     <!--//team-member-->
 
