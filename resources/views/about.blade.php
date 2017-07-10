@@ -18,7 +18,7 @@
         <div class="row">
             <div class="small-16 columns">
                 <p>
-                    The heroes awaken was found and opened by Makahost for the public 2017-06-30 and the team only has one goal, and that is to revive the game EA once made and closed their servers for. Heroes Awaken is a non profit community with open ideas for new suggestions and even new devs or staff members. If you feel like this is any kind of role for you, go to our contact us page and talk to someone there.
+                    The heroes awaken was found and opened by Makahost for the public 2017-06-30 and the team only has one goal, and that is to revive the game EA once made and closed their servers for. Heroes Awaken is a non profit community with open ideas for new suggestions and even new devs or staff members. If you feel like this is any kind of role for you, go to our contact page and talk to someone there.
                 </p>
 
             </div>
@@ -43,7 +43,7 @@
                         <div class="photo">
                             <img src="images/about/lyngholm.gif" class="" alt="">
                         </div>
-                        <h5>Lyngholm</h5>
+                        <h5><a href="https://heroesawaken.com/profile/lyngholm/"target="_blank">Lyngholm</a></h5>
                         <p>Staff, Developer &amp; Coordinator</p>
                     </div>
                     <!--//team-member-->
@@ -136,7 +136,7 @@
                         <div class="photo">
                             <img src="images/about/Snow_.jpg" class="" alt="">
                         </div>
-                        <h5>Snow</h5>
+                        <h5><a href="https://heroesawaken.com/profile/snow/"target="_blank">Snow</a></h5>
                         <p>Staff &amp; Designer</p>
                     </div>
                     <!--//team-member-->
