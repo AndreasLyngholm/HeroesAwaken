@@ -69,6 +69,11 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => 'auth']
         'uses' => 'ProfileController@details'
     ]);
 
+    Route::get('{user_id}/add', [
+        'as' => 'addFriend',
+        'uses' => 'ProfileController@addFriend'
+    ]);
+
 });
 
 Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
