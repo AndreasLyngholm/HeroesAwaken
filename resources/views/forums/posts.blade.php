@@ -52,8 +52,8 @@
                     </div>
 
                 </div>
-                <div class="big-sep"></div>
                 <h2>Comments</h2>
+                <div class="big-sep"></div>
 
                 @foreach($comments as $comment)
                     <div class="panel" id="{{ $comment->id }}">
@@ -82,7 +82,7 @@
                         </div>
 
                     </div>
-                    <div class="big-sep" style="margin-top: 25px;"></div>
+                    
                 @endforeach
 
             </section>
