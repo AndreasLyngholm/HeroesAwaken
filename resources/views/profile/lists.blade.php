@@ -47,16 +47,16 @@
 		    <tbody>
 			@foreach(Auth::user()->friendRequests as $request)                  
 			<tr>
-			    <td>
+			    <td width="60%;">
 			    You have a pending friend request from <a style="color: black; font-weight: bolder;" href="{{ route('profile.details', App\User::find($request->sender)->username) }}">{{ App\User::find($request->sender)->username }}</a>
 			    </td>
-			    <td>
+			    <td width="40%;">
 			    	<a class="label success" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'accepted']) }}">
-                        	    <i class="fa fa-check"></i> Accept
-                    		</a>
-                    		<a class="label alert" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'declined']) }}">
-                        	    <i class="fa fa-ban"></i> Decline
-                    		</a>
+                        <i class="fa fa-check"></i> Accept
+                    </a>
+                    <a class="label alert" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'declined']) }}">
+                        <i class="fa fa-ban"></i> Decline
+                    </a>
 			    </td>
 			</tr>
 			@endforeach
