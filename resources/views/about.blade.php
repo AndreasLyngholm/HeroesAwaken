@@ -184,7 +184,7 @@
                      <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png"" alt="">
+                            <img src="images/placeholders/about.png" alt="">
                         </div>
                         <h5>Jefalo</h5>
                         <p>Awaken Developer &amp; Game Contributer</p>

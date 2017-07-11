@@ -1,6 +1,9 @@
 @extends('partials.layout')
 
 @section('content')
+
+    @include('partials.inner_slider')
+
     <div class="content-top"></div>
 
     <section id="main-content">
