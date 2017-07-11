@@ -124,7 +124,7 @@
                   <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                          <a href="{{ route('profile.details', 'wazz') }}">
+                          <a href="{{ route('profile.details', 'wazz') }}"target="_blank">
                             <img src="{{ asset('images/about/wazz.png') }}" class="" alt="">
                           </a>
                         </div>
