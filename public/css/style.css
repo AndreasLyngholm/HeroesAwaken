@@ -3461,7 +3461,7 @@ p + .stat {
 /* line 205, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
 .button.warning {
   background-color: #8a7f72;
-  color: #444;
+  color: #e6e0d1;
 }
 /* line 112, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
 .button.warning:hover, .button.warning:focus {
