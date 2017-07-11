@@ -79,6 +79,11 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => 'auth']
         'uses' => 'ProfileController@addFriend'
     ]);
 
+    Route::get('{user_id}/remove', [
+        'as' => 'removeFriend',
+        'uses' => 'ProfileController@removeFriend'
+    ]);
+
 });
 
 Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {

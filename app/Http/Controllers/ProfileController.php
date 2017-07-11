@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\FriendRequest;
 use App\User;
+use App\UserFriend;
 use App\UserSignature;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -15,7 +16,8 @@ class ProfileController extends Controller
     // A users own profile
     public function lists()
     {
-        return view('profile.lists');
+        $friends = Auth::user()->friends()->sortByDesc('online');
+        return view('profile.lists', compact('friends'));
     }
 
     public function addSignature()
@@ -70,6 +72,20 @@ class ProfileController extends Controller
         Auth::user()->friendRequestAnswer(Input::get('sender'), Input::get('answer'));
 
         return redirect()->back()->with('success', Input::get('answer') == 'accepted' ? 'You accepted the friend request!' : 'You declined the friend request!');
+    }
+
+    public function removeFriend($user_id)
+    {
+        if(UserFriend::where('user_id', $user_id)->where('friend_id', Auth::id())->exists())
+        {
+            UserFriend::where('user_id', $user_id)->where('friend_id', Auth::id())->first()->delete();
+            return redirect()->back()->with('success', 'Your friend was removed!');
+        } elseif (UserFriend::where('friend_id', $user_id)->where('user_id', Auth::id())->exists())
+        {
+            UserFriend::where('friend_id', $user_id)->where('user_id', Auth::id())->first()->delete();
+            return redirect()->back()->with('success', 'Your friend was removed!');
+        } else
+            return redirect()->back()->with('error', 'This user is not your friend!');
     }
 
     public function addFriend($user)
