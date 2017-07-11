@@ -37,6 +37,10 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        // Gates
+        // AdminAccess
+        Gate::define('admin-access', function ($user) {
+            return $user->hasGroup('admin');
+        });
     }
 }

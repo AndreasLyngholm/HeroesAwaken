@@ -47,19 +47,19 @@
                             <i class=" icon-layers font-green"></i>
                             <span class="caption-subject lime bold uppercase">Friend requests</span>
                         </div>
-                    </div>
-                    <div class="portlet-body" style="background-color: #DDD5C0;">
-                        <!--BEGIN TABS-->
-                        <div class="tab-content">
-                            <div class="scroller" style="height: 250px;" data-always-visible="1" data-rail-visible="0">
-                                <ul class="feeds">
-                                    @foreach(Auth::user()->friendRequests as $request)
-                                        <li>
-                                            <div class="col1" style="background-color: #DDD5C0">
-                                                <div class="cont">
-                                                    <div class="cont-col1">
-                                                        <div class="label label-sm lime">
-                                                            <i class="fa fa-bell-o"></i>
+                        <div class="portlet-body" style="background-color: #DDD5C0;">
+                            <!--BEGIN TABS-->
+                            <div class="tab-content">
+                                <div class="scroller" data-always-visible="1" data-rail-visible="0">
+                                    <ul class="feeds">
+                                        @foreach(Auth::user()->friendRequests as $request)
+                                            <li>
+                                                <div class="col1" style="background-color: #DDD5C0">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm lime">
+                                                                <i class="fa fa-bell-o"></i>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="cont-col2">

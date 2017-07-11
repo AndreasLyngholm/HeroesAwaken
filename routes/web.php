@@ -121,6 +121,24 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
     ]);
 });
 
+// Admin interface
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], function () {
+    Route::get('/', [
+        'as' => 'dashboard',
+        'uses' => 'AdminController@dashboard'
+    ]);
+
+    Route::post('creategroup', [
+        'as' => 'createGroup',
+        'uses' => 'AdminController@createGroup'
+    ]);
+
+    Route::post('deletegroup', [
+        'as' => 'deleteGroup',
+        'uses' => 'AdminController@deleteGroup'
+    ]);
+});
+
 // API
 Route::group(['prefix' => 'api', 'as' => 'api.', 'namespace' => 'Api', 'middleware' => 'api'], function ()
 {

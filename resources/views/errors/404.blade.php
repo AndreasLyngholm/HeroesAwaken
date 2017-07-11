@@ -3,7 +3,9 @@
 @section('content')
 
     <section class="inner-slider">
-        <div style="background: url({{ asset('images/404_slider.png') }}); height: 750px;"></div>
+        <img src="{{ asset('images/404_slider.png') }}" alt="">
     </section>
+
+    <div class="content-top"></div>
 
 @endsection
