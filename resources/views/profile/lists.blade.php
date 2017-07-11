@@ -51,10 +51,10 @@
 			    You have a pending friend request from <a style="color: black; font-weight: bolder;" href="{{ route('profile.details', App\User::find($request->sender)->username) }}">{{ App\User::find($request->sender)->username }}</a>
 			    </td>
 			    <td width="40%;">
-			    	<a class="label success" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'accepted']) }}">
+			    	<a style="cursor: pointer;" class="label success" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'accepted']) }}">
                         <i class="fa fa-check"></i> Accept
                     </a>
-                    <a class="label alert" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'declined']) }}">
+                    <a style="cursor: pointer;" class="label alert" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'declined']) }}">
                         <i class="fa fa-ban"></i> Decline
                     </a>
 			    </td>
@@ -106,12 +106,4 @@
 
     </section>
 
-@stop
-
-@section('styles')
-    <link href="{{ asset('css/components-rounded.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/plugins.min.css') }}" rel="stylesheet" type="text/css" />
-@stop
-@section('scripts')
-    <script src="{{ asset('js/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
 @stop
