@@ -28,7 +28,7 @@
                         <div class="portlet-body" style="background-color: #DDD5C0;">
                             <!--BEGIN TABS-->
                             <div class="tab-content">
-                                <div class="scroller" style="height: 250px;" data-always-visible="1" data-rail-visible="0">
+                                <div class="scroller" data-always-visible="1" data-rail-visible="0">
                                     <ul class="feeds">
                                         @foreach(Auth::user()->friendRequests as $request)
                                             <li>
