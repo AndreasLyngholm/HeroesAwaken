@@ -124,7 +124,9 @@
                   <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                          <a href="{{ route('profile.details', 'wazz') }}">
                             <img src="{{ asset('images/about/wazz.png') }}" class="" alt="">
+                          </a>
                         </div>
                         <h5><a href="{{ route('profile.details', 'wazz') }}">Wazz</a></h5>
                         <p>Awaken Developer &amp; <a href="https://www.youtube.com/channel/UCHkNbfx2zlWizm1Tevux6bw"target="_blank"><u>Youtuber</u></a></p>
