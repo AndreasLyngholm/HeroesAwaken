@@ -136,13 +136,14 @@
         
     </div>
     <div class="row">
-        <div class="small-16 large-centered columns" style="text-align: center">
+        <div class="small-16 large-centered columns" style="text-align: center; height:5rem; margin-top:1rem; vertical-align:middle;">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- Footer-Leaderboard -->
+            <!-- FooterAd -->
             <ins class="adsbygoogle"
-                style="display:inline-block;width:728px;height:90px"
+                style="display:block"
                 data-ad-client="ca-pub-8715450313943907"
-                data-ad-slot="6512269079"></ins>
+                data-ad-slot="5593939078"
+                data-ad-format="auto"></ins>
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
