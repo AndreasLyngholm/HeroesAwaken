@@ -19,3 +19,10 @@ function me()
     }
     return $user;
 }
+
+function canDo($perm)
+{
+    $permission = app('App\HeroesAwaken\Permission');
+
+    return $permission->can($perm);
+}

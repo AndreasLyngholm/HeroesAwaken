@@ -94,43 +94,85 @@ class User extends Authenticatable
             return false;
     }
 
-    /**
-     * Adds the user to a group
-     * @param $groupName string The name of the group to add the user
-     */
-    public function addToGroup($groupName)
+    public function roles()
     {
-        $group = DB::table('groups')
-                           ->where('name', $groupName)
-                           ->first();
-
-        if ($group)
-        {
-            DB::table('user_group')->insert([
-                'user_id' => $this->getAuthIdentifier(),
-                'group_id' => $group->id
-            ]);
-        }
+        return $this->belongsToMany(Role::class);
     }
 
-    /**
-     * Check if the user is in the group
-     * @param $groupName The name of the group
-     * @return boolean True if the user is in the group, false otherwise
-     */
-    public function hasGroup($groupName)
+    #region Permissions and Roles
+    public function canDo($perm = null)
     {
-        foreach ($this->groups as $group)
+        if ($this->roles->count() == 0)
+            return false;
+        if ($perm)
+            return $this->checkPermission($this->getArray($perm));
+        return false;
+    }
+
+    public function getArray($perm)
+    {
+        return is_array($perm) ? $perm : explode('|', $perm);
+    }
+
+    public function checkPermission(Array $permissionArray = [])
+    {
+        foreach($this->roles as $role)
+            $permissions[] = $role->permissions->pluck('slug')->toArray();
+        $perms = array_unique(array_flatten($permissions));
+        $perms = array_map('strtolower', $perms);
+        return count(array_intersect($perms, $permissionArray)) == count($permissionArray);
+    }
+
+    public function hasPermission($perm = null)
+    {
+        return $this->canDo($perm);
+    }
+
+    public function hasRole($role = null)
+    {
+        if(is_null($role))
+            return false;
+        return strtolower($this->role->role_slug) == strtolower($role);
+    }
+
+    public function have($role)
+    {
+        return $this->role->role_slug == $role;
+    }
+
+    public function hasRoute($routeName)
+    {
+        $route = app('router')->getRoutes()->getByName($routeName);
+        if($route)
         {
-            if ($group->name === $groupName)
+            $action = $route->getAction();
+            if(isset($action['permission']))
+            {
+                $array = explode('|', $action['permission']);
+                return $this->checkPermission($array);
+            }
+        }
+        return false;
+    }
+
+    protected function hasAnyLike($perm)
+    {
+        $parts = explode('.', $perm);
+        $requiredPerm = array_pop($parts);
+        $perms = $this->role->permissions->fetch('permission_slug');
+        foreach($perms as $perm)
+        {
+            if (ends_with($perm, $requiredPerm))
                 return true;
         }
         return false;
     }
 
-    public function groups()
+    public function isRole($role)
     {
-        return $this->belongsToMany('App\Group', 'user_group');
+        $roles = $this->roles()->lists('slug')->all();
+        return in_array($role, $roles);
     }
+    #endregion
 
 }

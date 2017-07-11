@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use function App\Http\canDo;
+
 Auth::routes();
 
 Route::get('home', function () {
@@ -52,7 +54,7 @@ Route::get('about', [
     'uses' => 'HomeController@about'
 ]);
 
-Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => 'auth'], function() {
+Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth', 'acl']], function() {
 
     Route::get('/', [
         'as' => 'lists',
@@ -122,7 +124,7 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
 });
 
 // Admin interface
-Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'acl']], function () {
     Route::get('/', [
         'as' => 'dashboard',
         'uses' => 'AdminController@dashboard'

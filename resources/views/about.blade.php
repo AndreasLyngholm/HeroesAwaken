@@ -31,9 +31,9 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png" class="" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                         </div>
-                        <h5><a href="https://heroesawaken.com/profile/makahost"target="_blank">MakaHost</a></h5>
+                        <h5><a href="{{ route('profile.details', 'makahost') }}">MakaHost</a></h5>
                         <p>Founder, Developer &amp; Go-To Guy</p>
                     </div>
                     <!--//team-member-->
@@ -41,9 +41,9 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/about/lyngholm.gif" class="" alt="">
+                            <img src="{{ asset('images/about/lyngholm.gif') }}" class="" alt="">
                         </div>
-                        <h5><a href="https://heroesawaken.com/profile/lyngholm/"target="_blank">Lyngholm</a></h5>
+                        <h5><a href="{{ route('profile.details', 'lyngholm') }}">Lyngholm</a></h5>
                         <p>Staff, Developer &amp; Coordinator</p>
                     </div>
                     <!--//team-member-->
@@ -51,7 +51,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png" class="" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                         </div>
                         <h5>SD149</h5>
                         <p>Staff &amp; Developer</p>
@@ -61,7 +61,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png" class="" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                         </div>
                         <h5>Absent</h5>
                         <p>Staff &amp; Designer</p>
@@ -71,7 +71,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png" class="" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                         </div>
                         <h5>Doge</h5>
                         <p>Awaken Developer &amp; Doge</p>
@@ -82,7 +82,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png" class="" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                         </div>
                         <h5>Ray</h5>
                         <p>Staff</p>
@@ -92,7 +92,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png" class="" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                         </div>
                         <h5>Synaxis</h5>
                         <p>Staff</p>
@@ -103,7 +103,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/about/warp.gif" class="" alt="">
+                            <img src="{{ asset('images/about/warp.gif') }}" class="" alt="">
                         </div>
                         <h5>Warp Productions</h5>
                         <p>Awaken Developer, Wolf, SysAdmin &amp; Video Editor</p>
@@ -113,7 +113,7 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png" class="" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                         </div>
                         <h5>Heax</h5>
                         <p>Staff</p>
@@ -124,9 +124,9 @@
                   <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/about/wazz.png" class="" alt="">
+                            <img src="{{ asset('images/about/wazz.png') }}" class="" alt="">
                         </div>
-                        <h5><a href="https://heroesawaken.com/profile/wazz/"target="_blank">Wazz</a></h5>
+                        <h5><a href="{{ route('profile.details', 'wazz') }}">Wazz</a></h5>
                         <p>Awaken Developer &amp; <a href="https://www.youtube.com/channel/UCHkNbfx2zlWizm1Tevux6bw"target="_blank"><u>Youtuber</u></a></p>
                     </div>
                     <!--//team-member-->
@@ -134,9 +134,9 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/about/Snow_.jpg" class="" alt="">
+                            <img src="{{ asset('images/about/Snow_.jpg') }}" class="" alt="">
                         </div>
-                        <h5><a href="https://heroesawaken.com/profile/snow/"target="_blank">Snow</a></h5>
+                        <h5><a href="{{ route('profile.details', 'snow') }}">Snow</a></h5>
                         <p>Staff &amp; Designer</p>
                     </div>
                     <!--//team-member-->
@@ -144,7 +144,7 @@
                           <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png" class="" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                         </div>
                         <h5>Vahdek</h5>
                         <p>Awaken Developer</p>
@@ -154,7 +154,7 @@
                            <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/about/crowscream.png" class="" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                         </div>
                         <h5>Crowscream</h5>
                         <p>Staff &amp; Developer</p>
@@ -164,7 +164,7 @@
                       <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/about/lord_squirrel.gif" class="" alt="">
+                            <img src="{{ asset('images/about/lord_squirrel.gif') }}" class="" alt="">
                         </div>
                         <h5>Lord Squirrel</h5>
                         <p>Awaken Developer</p>
@@ -174,7 +174,7 @@
                      <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png" class="" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                         </div>
                         <h5>Hazriel</h5>
                         <p>Awaken Developer</p>
@@ -184,7 +184,7 @@
                      <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="images/placeholders/about.png" alt="">
+                            <img src="{{ asset('images/placeholders/about.png') }}" alt="">
                         </div>
                         <h5>Jefalo</h5>
                         <p>Awaken Developer &amp; Game Contributer</p>
