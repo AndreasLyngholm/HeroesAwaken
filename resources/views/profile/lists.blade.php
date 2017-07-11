@@ -59,13 +59,6 @@
                                     @foreach(Auth::user()->friendRequests as $request)
                                         <li>
                                             <div class="col1" style="background-color: #DDD5C0">
-                                                <div class="cont">
-                                                    <div class="cont-col1">
-                                                        <div class="label label-sm lime">
-                                                            <i class="fa fa-bell-o"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                 <div class="cont-col2">
                                                     <div class="desc" style="color: black;"> You have a pending friend request from
                                                         <a style="color: black; font-weight: bolder;" href="{{ route('profile.details', App\User::find($request->sender)->username) }}">{{ App\User::find($request->sender)->username }}
