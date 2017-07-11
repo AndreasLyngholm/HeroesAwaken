@@ -33,7 +33,7 @@
                         <div class="photo">
                             <img src="images/placeholders/about.png" class="" alt="">
                         </div>
-                        <h5><a href="https://heroesawaken.com/profile/makahost"taget="_blank">Makahost</a></h5>
+                        <h5><a href="https://heroesawaken.com/profile/makahost"target="_blank">Makahost</a></h5>
                         <p>Founder, Developer &amp; Go-To Guy</p>
                     </div>
                     <!--//team-member-->
