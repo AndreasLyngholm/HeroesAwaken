@@ -16,8 +16,32 @@
         </div>
 
         <div class="row team" style="margin-bottom: 2rem;">
-                    
-                    @if(Auth::user()->friendRequests()->count() > 0)
+            
+            <div class="large-8 columns">
+                <h2>Friend list</h2>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Status</th>
+                        <th>Options</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @forelse($friends as $friend)
+                        <tr>
+                            <td><a style="color: black; font-weight: bolder;" href="{{ route('profile.details', $friend->username) }}">{{ $friend->username }}</a></td>
+                            <td>{!! $friend->online ? "<i class='label success'>ONLINE</i>" : "<i class='label alert'>OFFLINE</i>" !!}</td>
+                            <td><a class="button warning" href="{{ route('profile.removeFriend', $friend->id) }}"><i class="fa fa-times"></i> Remove friend</a></td>
+                        </tr>
+                    @empty
+                    @endforelse
+                    </tbody>
+                </table>
+            </div>
+            
+            @if(Auth::user()->friendRequests()->count() > 0)
             <div class="large-8 columns">
                 <div class="portlet light portlet-fit bordered" style="background-color: #DDD5C0;">
                     <div class="portlet-title">
@@ -64,29 +88,6 @@
             </div>
             @endif
             
-            <div class="large-8 columns">
-                <h2>Friend list</h2>
-
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>Status</th>
-                        <th>Options</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @forelse($friends as $friend)
-                        <tr>
-                            <td><a style="color: black; font-weight: bolder;" href="{{ route('profile.details', $friend->username) }}">{{ $friend->username }}</a></td>
-                            <td>{!! $friend->online ? "<i class='label success'>ONLINE</i>" : "<i class='label alert'>OFFLINE</i>" !!}</td>
-                            <td><a class="button warning" href="{{ route('profile.removeFriend', $friend->id) }}"><i class="fa fa-times"></i> Remove friend</a></td>
-                        </tr>
-                    @empty
-                    @endforelse
-                    </tbody>
-                </table>
-            </div>
         </div>
 
         <div class="row team" style="margin-bottom: 2rem;">
