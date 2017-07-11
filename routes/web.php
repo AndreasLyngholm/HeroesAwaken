@@ -16,6 +16,11 @@ Route::get('home', function () {
     return redirect()->route('home');
 });
 
+Route::get('set-state/{state}', [
+    'as' => 'setState',
+    'uses' => 'HomeController@setState'
+]);
+
 Route::get('download', [
     'middleware' => 'auth',
     'as' => 'download',

@@ -90,6 +90,9 @@ trait AuthenticatesUsers
      */
     protected function sendLoginResponse(Request $request)
     {
+        $user = Auth::user();
+        $user->online = 1;
+        $user->save();
         $test = Session::pull('intented');
         $request->session()->regenerate();
 
