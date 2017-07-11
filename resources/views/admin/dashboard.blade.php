@@ -37,8 +37,12 @@
                                 <h4>Create Group</h4>
                                 <form method="post" action="{{ route('admin.createGroup') }}">
                                     {{ csrf_field() }}
-                                    <label>Name: </label>
-                                    <input id="group_name" type="text" required>
+                                    <label>Name : </label>
+                                    <input id="group_name" name="group_name" type="text" required>
+                                    <label>Display name : </label>
+                                    <input id="group_display_name" name="group_display_name" type="text" required>
+                                    <label>Description : </label>
+                                    <textarea id="group_description" name="group_description" cols="40" rows="8"></textarea>
                                     <button class="lime-button" type="submit">Create</button>
                                 </form>
                             </div>
@@ -47,8 +51,12 @@
                                 <h4>Delete Group</h4>
                                 <form method="post" action="{{ route('admin.deleteGroup') }}">
                                     {{ csrf_field() }}
-                                    <label>Group: </label>
-                                    <input id="group_name" type="text" required>
+                                    <label>Group to delete : </label>
+                                    <select id="group_id" name="group_id">
+                                        @foreach($groups as $group)
+                                            <option value="{{ $group->id }}">{{ $group->display_name }}</option>
+                                        @endforeach
+                                    </select>
                                     <button class="lime-button" type="submit">Delete</button>
                                 </form>
                             </div>
