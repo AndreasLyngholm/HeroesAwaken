@@ -10,7 +10,7 @@
 
         <div class="row">
             <div class="small-16 columns">
-                <h1>{{ $user->username }}</h1>
+                <h1>{{ $user->username }}  <td>{!! $user->online ? "<i class='label success'>ONLINE</i>" : "<i class='label alert'>OFFLINE</i>" !!}</td></h1>
                 <!-- MAKE BIGGER!! -->
                 @include('partials.addFriend', ['user_id' => $user->id])
                 <div class="big-sep"></div>
