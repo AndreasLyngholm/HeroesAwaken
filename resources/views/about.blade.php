@@ -31,7 +31,9 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'MakaHost') }}"target="_blank">
                             <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
+                         </a>   
                         </div>
                         <h5><a href="{{ route('profile.details', 'makahost') }}">MakaHost</a></h5>
                         <p>Founder, Developer &amp; Go-To Guy</p>
@@ -41,7 +43,9 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'Lyngholm') }}"target="_blank">
                             <img src="{{ asset('images/about/lyngholm.gif') }}" class="" alt="">
+                         </a>   
                         </div>
                         <h5><a href="{{ route('profile.details', 'lyngholm') }}">Lyngholm</a></h5>
                         <p>Staff, Developer &amp; Coordinator</p>
@@ -136,7 +140,9 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details','Snow') }}"target="_blank">
                             <img src="{{ asset('images/about/Snow_.jpg') }}" class="" alt="">
+                         </a>   
                         </div>
                         <h5><a href="{{ route('profile.details', 'snow') }}">Snow</a></h5>
                         <p>Staff &amp; Designer</p>
