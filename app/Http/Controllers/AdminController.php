@@ -10,4 +10,16 @@ class AdminController extends Controller
     {
         return view('admin.dashboard');
     }
+
+    public function createGroup()
+    {
+        // TODO: Not implemented
+        return redirect('admin');
+    }
+
+    public function deleteGroup()
+    {
+        // TODO: Not implemented
+        return redirect('admin');
+    }
 }

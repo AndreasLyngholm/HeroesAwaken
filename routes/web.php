@@ -117,6 +117,16 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], f
         'as' => 'dashboard',
         'uses' => 'AdminController@dashboard'
     ]);
+
+    Route::post('creategroup', [
+        'as' => 'createGroup',
+        'uses' => 'AdminController@createGroup'
+    ]);
+
+    Route::post('deletegroup', [
+        'as' => 'deleteGroup',
+        'uses' => 'AdminController@deleteGroup'
+    ]);
 });
 
 // API
