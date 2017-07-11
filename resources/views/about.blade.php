@@ -157,7 +157,7 @@
                             <img src="images/about/crowscream.png" class="" alt="">
                         </div>
                         <h5>Crowscream</h5>
-                        <p>Awaken Developer</p>
+                        <p>Staff &amp; Developer</p>
                     </div>
                     <!--//team-member-->
 
