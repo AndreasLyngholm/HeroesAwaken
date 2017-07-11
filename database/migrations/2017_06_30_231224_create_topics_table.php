@@ -20,7 +20,7 @@ class CreateTopicsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->integer('forum_id')->unsigned();
             $table->text('text');
-            $table->timestamp('last_column');
+            $table->timestamp('last_comment');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
