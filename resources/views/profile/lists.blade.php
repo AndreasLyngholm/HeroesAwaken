@@ -18,30 +18,6 @@
         <div class="row team" style="margin-bottom: 2rem;">
             
             <div class="large-8 columns">
-	    
-                <h2>Friend requests</h2>
-		@if(Auth::user()->friendRequests()->count() > 0)
-		<table>
-		    <tbody>
-			@foreach(Auth::user()->friendRequests as $request)                  
-			<tr>
-			    <td>
-			    You have a pending friend request from <a style="color: black; font-weight: bolder;" href="{{ route('profile.details', App\User::find($request->sender)->username) }}">{{ App\User::find($request->sender)->username }}</a>
-			    </td>
-			    <td>
-			    	<a class="label success" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'accepted']) }}">
-                        	    <i class="fa fa-check"></i> Accept
-                    		</a>
-                    		<a class="label alert" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'declined']) }}">
-                        	    <i class="fa fa-ban"></i> Decline
-                    		</a>
-			    </td>
-			</tr>
-			@endforeach
-		    </tbody>
-		</table>
-		@endif
-		
 		<h2>Friend list</h2>
                 <table>
                     <thead>
@@ -62,7 +38,32 @@
                     @endforelse
                     </tbody>
                 </table>
-            </div>            
+            </div> 
+	    
+	    @if(Auth::user()->friendRequests()->count() > 0)
+	    <div class="large-8 columns">
+                <h2>Friend requests</h2>
+		<table>
+		    <tbody>
+			@foreach(Auth::user()->friendRequests as $request)                  
+			<tr>
+			    <td>
+			    You have a pending friend request from <a style="color: black; font-weight: bolder;" href="{{ route('profile.details', App\User::find($request->sender)->username) }}">{{ App\User::find($request->sender)->username }}</a>
+			    </td>
+			    <td>
+			    	<a class="label success" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'accepted']) }}">
+                        	    <i class="fa fa-check"></i> Accept
+                    		</a>
+                    		<a class="label alert" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'declined']) }}">
+                        	    <i class="fa fa-ban"></i> Decline
+                    		</a>
+			    </td>
+			</tr>
+			@endforeach
+		    </tbody>
+		</table>
+	    </div>
+	    @endif
         </div>
 
         <div class="row team" style="margin-bottom: 2rem;">
