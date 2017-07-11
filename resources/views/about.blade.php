@@ -35,7 +35,7 @@
                             <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
                          </a>   
                         </div>
-                        <h5><a href="{{ route('profile.details', 'makahost') }}">MakaHost</a></h5>
+                        <h5><a href="{{ route('profile.details', 'makahost') }}"target="_blank">MakaHost</a></h5>
                         <p>Founder, Developer &amp; Go-To Guy</p>
                     </div>
                     <!--//team-member-->
@@ -47,7 +47,7 @@
                             <img src="{{ asset('images/about/lyngholm.gif') }}" class="" alt="">
                          </a>   
                         </div>
-                        <h5><a href="{{ route('profile.details', 'lyngholm') }}">Lyngholm</a></h5>
+                        <h5><a href="{{ route('profile.details', 'lyngholm') }}"target="_blank">Lyngholm</a></h5>
                         <p>Staff, Developer &amp; Coordinator</p>
                     </div>
                     <!--//team-member-->
@@ -132,7 +132,7 @@
                             <img src="{{ asset('images/about/wazz.png') }}" class="" alt="">
                           </a>
                         </div>
-                        <h5><a href="{{ route('profile.details', 'wazz') }}">Wazz</a></h5>
+                        <h5><a href="{{ route('profile.details', 'wazz') }}"target="_blank">Wazz</a></h5>
                         <p>Awaken Developer &amp; <a href="https://www.youtube.com/channel/UCHkNbfx2zlWizm1Tevux6bw"target="_blank"><u>Youtuber</u></a></p>
                     </div>
                     <!--//team-member-->
@@ -144,7 +144,7 @@
                             <img src="{{ asset('images/about/Snow_.jpg') }}" class="" alt="">
                          </a>   
                         </div>
-                        <h5><a href="{{ route('profile.details', 'snow') }}">Snow</a></h5>
+                        <h5><a href="{{ route('profile.details', 'snow') }}"target="_blank">Snow</a></h5>
                         <p>Staff &amp; Designer</p>
                     </div>
                     <!--//team-member-->
