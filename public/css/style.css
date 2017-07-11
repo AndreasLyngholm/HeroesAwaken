@@ -3395,7 +3395,7 @@ p + .stat {
   border: 1px solid transparent;
   border-radius: 3px;
   padding: 0.7em 1em;
-  margin: 0 0 1rem 0;
+  margin: 0;
   font-size: 0.9rem;
   background-color: #8ab15f;
   color: #fff;
@@ -3460,12 +3460,12 @@ p + .stat {
 }
 /* line 205, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
 .button.warning {
-  background-color: #F8BE38;
-  color: #fff;
+  background-color: #8a7f72;
+  color: #e6e0d1;
 }
 /* line 112, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
 .button.warning:hover, .button.warning:focus {
-  background-color: #eba608;
+  background-color: #6b6155;
   color: #fff;
 }
 /* line 205, ../../foundation/bower_components/foundation-sites/scss/components/_button.scss */
@@ -5649,8 +5649,8 @@ table {
 thead,
 tbody,
 tfoot {
-  border: 1px solid #231a1e;
-  background-color: #c0b8a3;
+  border: none;
+  background-color: #d6c6b3;
 }
 
 tbody p,
