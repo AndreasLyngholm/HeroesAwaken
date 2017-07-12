@@ -4081,6 +4081,11 @@ output {
 .callout.secondary {
   background-color: #f4ebe0;
 }
+div.staff {
+    background-image: url("../images/staff_bg.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
 /* line 92, ../../foundation/bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.success {
   background-color: #8fcc68;
