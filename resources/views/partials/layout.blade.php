@@ -44,16 +44,6 @@
 
 @yield('content')
 
-<div class="reveal" id="idle-timeout-dialog" data-reveal data-options="closeOnClick:false; closeOnEsc:false;">
-    <h1>Are you there?!</h1>
-    <p class="lead">You have been gone for 10 minutes and will be logged out if you do not press "Keep me logged in!"</p>
-    <button class="button" id="idle-timeout-dialog-keepalive">Keep me logged in!</button>
-    <button class="button" id="idle-timeout-dialog-logout">Log me out</button>
-    <button>
-    </button>
-</div>
-
-
 <footer class="main-footer">
     <div class="row">
         <!--social-icons-->
@@ -166,14 +156,6 @@
 
 <script src="{{ asset('js/app-min.js') }}"></script>
 <script src="{{ asset('js/functions.js') }}?v1"></script>
-<script src="{{ asset('js/jquery.idletimeout.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/jquery.idletimer.js') }}" type="text/javascript"></script>
-<script type="text/javascript">
-    @if(Auth::check())
-        var $modal = $('#idle-timeout-dialog');
-        var UIIdleTimeout=function(){return{init:function(){var o;$("body").append(""),$.idleTimeout("#idle-timeout-dialog",".modal-content button:last",{idleAfter:1200,timeout:3e4,pollingInterval:5,keepAliveURL:"{{ route('home') }}",serverResponseEquals:"OK",onTimeout:function(){window.location="{{ route('doLogout') }}"},onIdle:function(){$modal.foundation('open'),o=$("#idle-timeout-counter"),$("#idle-timeout-dialog-keepalive").on("click",function(){$modal.foundation('close')}),$("#idle-timeout-dialog-logout").on("click",function(){$modal.foundation('close'),$.idleTimeout.options.onTimeout.call(this)})},onCountdown:function(e){o.html(e)}})}}}();jQuery(document).ready(function(){UIIdleTimeout.init()});
-    @endif
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 @yield('scripts')
 <script>
