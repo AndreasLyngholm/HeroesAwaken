@@ -56,9 +56,6 @@
                                     {{ csrf_field() }}
                                     <label>Group to delete : </label>
                                     <select id="group_id" name="group_id">
-                                        @foreach($groups as $group)
-                                            <option value="{{ $group->id }}">{{ $group->display_name }}</option>
-                                        @endforeach
                                     </select>
                                     <button class="lime-button" type="submit">Delete</button>
                                 </form>

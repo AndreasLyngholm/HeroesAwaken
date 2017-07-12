@@ -124,21 +124,65 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
 });
 
 // Admin interface
-Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'acl']], function () {
-    Route::get('/', [
-        'as' => 'dashboard',
-        'uses' => 'AdminController@dashboard'
-    ]);
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth', 'acl'], 'canDo' => 'user.update'], function () {
 
-    Route::post('creategroup', [
-        'as' => 'createGroup',
-        'uses' => 'AdminController@createGroup'
-    ]);
+    Route::group(['prefix' => 'users'], function ()
+    {
+        Route::group(['prefix' => 'manage'], function ()
+        {
+            Route::get('/', [
+                'as'   => 'user.manage',
+                'uses' => 'UserController@manage',
+                'can'  => 'user.update'
+            ]);
 
-    Route::post('deletegroup', [
-        'as' => 'deleteGroup',
-        'uses' => 'AdminController@deleteGroup'
-    ]);
+            Route::get('{user}', [
+                'as'   => 'user.details',
+                'uses' => 'UserController@details',
+                'can'  => 'user.update'
+            ]);
+
+            Route::post('{user}/assign/role/{role}', [
+                'as'   => 'assign.role',
+                'uses' => 'UserController@assignRole',
+                'can'  => 'user.roles'
+            ]);
+
+            Route::get('{user}/remove/{role}', [
+                'as'   => 'remove.role',
+                'uses' => 'UserController@removeRole',
+                'can'  => 'user.roles'
+            ]);
+
+            Route::get('{user}/punish/{type}/{expiration}',[
+                'as' => 'ban.user',
+                'uses' => 'UserController@banUser',
+                'can' => 'user.ban'
+            ]);
+        });
+
+        Route::group(['prefix' => 'roles'], function ()
+        {
+            Route::get('/', [
+                'as'   => 'user.roles',
+                'uses' => 'UserController@roles',
+                'can'  => 'user.roles'
+            ]);
+
+            Route::get('add', [
+                'as'   => 'user.roles.add',
+                'uses' => 'UserController@addRole',
+                'can'  => 'user.roles'
+            ]);
+
+            Route::post('add', [
+                'as'   => 'user.roles.doAdd',
+                'uses' => 'UserController@doAddRole',
+                'can'  => 'user.roles'
+            ]);
+        });
+    });
+
 });
 
 // API

@@ -30,6 +30,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
     public function isOnline()
     {
         return Cache::has('user-is-online-' . $this->id);
