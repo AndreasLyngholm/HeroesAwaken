@@ -16,7 +16,7 @@ class ProfileController extends Controller
     // A users own profile
     public function lists()
     {
-        $friends = Auth::user()->friends()->sortByDesc('online');
+        $friends = Auth::user()->friends();
         return view('profile.lists', compact('friends'));
     }
 
