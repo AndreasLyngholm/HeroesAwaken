@@ -49,7 +49,9 @@ class User extends Authenticatable
         FriendRequest::where('receiver', $this->id)->where('sender', $sender)->first()->update([
             'status' => $answer
         ]);
-        $this->addFriend($sender);
+        if ($answer == "accepted") {
+            $this->addFriend($sender);
+        }
     }
 
     public function friendRequests()
