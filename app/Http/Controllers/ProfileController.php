@@ -9,6 +9,7 @@ use App\UserSignature;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Validator;
 
 class ProfileController extends Controller
 {
@@ -22,6 +23,12 @@ class ProfileController extends Controller
 
     public function addSignature()
     {
+        $validation = Validator::make(Input::all(), [
+            'image' => 'image|mimes:jpg,png,gif',
+        ]);
+        if ($validation->fails())
+            return redirect()->back()->with('error', 'You must only upload PNG, JPG, and GIF files!');
+
         if( ! Input::hasFile('image'))
             return redirect()->back()->with('error', 'You need to have a image chosen.');
 
