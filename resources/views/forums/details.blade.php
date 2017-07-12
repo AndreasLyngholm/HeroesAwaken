@@ -28,7 +28,6 @@
                 <thead>
                 <tr>
                     <th>Title</th>
-                    <th>Owner</th>
                     <th>Replies</th>
                     <th>Last post</th>
                 </tr>
@@ -39,19 +38,24 @@
                 {{--</tr>--}}
                 @foreach($topics as $topic)
                     <tr>
-                        <td style="max-width:425px">
-                            <p><b><a href="{{ route('forums.posts', [$forum->id, $topic->id]) }}">{{ $topic->name }}</a></b></p>
-                            <p>{{ $topic->description }}</p>
+                        <td style="width:75%">
+                            <p style="margin-bottom: 0rem;">
+                                <b><a href="{{ route('forums.posts', [$forum->id, $topic->id]) }}">{{ $topic->name }}</a></b><br />
+                                {{ $topic->description }}<br />
+                                <small>by <a href="{{ route('profile.details', \App\User::find($topic->user_id)->username) }}">{{ \App\User::find($topic->user_id)->username }}</a></small>
+                            </p>
                         </td>
-                        <td>{{ \App\User::find($topic->user_id)->username }}</td>
                         <td>{{ $topic->comments()->count() }}</td>
                         <td>
                             @if($topic->comments->count() > 0)
-                                <p><b><a href="{{ route('profile.details', \App\User::find($topic->comments->last()->user_id)->username) }}">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a></b></p>
-                                <p>Last comment by: <a href="{{ route('forums.posts', [$forum->id, $topic->id]) }}#{{ $topic->comments->last()->id }}">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a> - {{ $topic->comments->last()->created_at->diffForHumans() }}</p>
+                                <p style="margin-bottom: 0rem;">
+                                    <a href="{{ route('forums.posts', [$forum->id, $topic->id]) }}#{{ $topic->comments->last()->id }}">{{ $topic->comments->last()->created_at->diffForHumans() }}</a><br />
+                                    <small>by <a href="{{ route('profile.details', \App\User::find($topic->comments->last()->user_id)->username) }}">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a></small>
+                                </p>
                             @else
-                                <p><b><a href="#"></a></b></p>
-                                <p>No comments posted yet</p>
+                                <p style="margin-bottom: 0rem;">
+                                    No comments posted yet
+                                </p>
                             @endif
                         </td>
                     </tr>
