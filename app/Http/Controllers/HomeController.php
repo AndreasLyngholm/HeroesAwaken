@@ -32,9 +32,6 @@ class HomeController extends Controller
 
     public function doLogout()
     {
-        $user = Auth::user();
-        $user->online = 0;
-        $user->save();
         Auth::logout();
 
         return redirect()->back();

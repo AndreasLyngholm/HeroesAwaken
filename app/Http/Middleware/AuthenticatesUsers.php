@@ -90,16 +90,13 @@ trait AuthenticatesUsers
      */
     protected function sendLoginResponse(Request $request)
     {
-        $user = Auth::user();
-        $user->online = 1;
-        $user->save();
-        $test = Session::pull('intented');
+        $previousPage = Session::pull('intented');
         $request->session()->regenerate();
 
         $this->clearLoginAttempts($request);
 
         return $this->authenticated($request, $this->guard()->user())
-            ?: redirect()->intended($test);
+            ?: redirect()->intended($previousPage);
     }
 
     /**
