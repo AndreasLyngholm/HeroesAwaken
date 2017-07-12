@@ -35,18 +35,24 @@
                     {{--</tr>--}}
                     @foreach(\App\Forum::all() as $index => $forum)
                         <tr>
-                            <td>
-                                <p><b><a href="{{ route('forums.details', $forum->id) }}">{{ $forum->name }}</a></b></p>
-                                <p>{{ $forum->description }}</p>
+                            <td style="width:75%">
+                                <p style="margin-bottom: 0rem;">
+                                    <b><a href="{{ route('forums.details', $forum->id) }}">{{ $forum->name }}</a></b><br />
+                                    {{ $forum->description }}
+                                </p>
                             </td>
                             <td>{{ $forum->topics()->count() }}</td>
                             <td>{{ $forum->countComments() }}</td>
                             <td>
                                 @if($forum->lastComment())
-                                    <p><b><a href="{{ route('profile.details', \App\User::find($forum->lastComment()->user_id)->username) }}">{{ \App\User::find($forum->lastComment()->user_id)->username }}</a></b></p>
-                                    <p>Last post by: <a href="{{ route('profile.details', \App\User::find($forum->lastComment()->user_id)->username) }}">{{ \App\User::find($forum->lastComment()->user_id)->username }}</a> - {{ $forum->lastComment()->created_at->diffForHumans() }}</p>
+                                    <p style="margin-bottom: 0rem;">
+                                        <a href="{{ route('forums.posts', [$forum->id, $forum->lastComment()->topic_id]) }}#{{ $forum->lastComment()->id }}">{{ $forum->lastComment()->created_at->diffForHumans() }}</a><br />
+                                        <small>by <a href="{{ route('profile.details', \App\User::find($forum->lastComment()->user_id)->username) }}">{{ \App\User::find($forum->lastComment()->user_id)->username }}</a></small>
+                                    </p>
                                 @else
-                                    <p>No last comment.</p>
+                                    <p style="margin-bottom: 0rem;">
+                                        No comments posted yet
+                                    </p>
                                 @endif
                             </td>
                         </tr>
