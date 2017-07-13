@@ -161,9 +161,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
             ]);
 
             Route::get('{user}/punish/{type}/{expiration}',[
-                'as' => 'ban.user',
+                'as'   => 'ban.user',
                 'uses' => 'UserController@banUser',
-                'can' => 'user.ban'
+                'can'  => 'user.ban'
             ]);
         });
 
@@ -185,6 +185,18 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
                 'as'   => 'user.roles.doAdd',
                 'uses' => 'UserController@doAddRole',
                 'can'  => 'user.roles'
+            ]);
+
+            Route::get('{role}', [
+                'as'   => 'role.details',
+                'uses' => 'RoleController@details',
+                'can'  => 'role.update'
+            ]);
+
+            Route::post('{role}/update', [
+                'as'   => 'role.update',
+                'uses' => 'RoleController@update',
+                'can'  => 'role.update'
             ]);
         });
     });
