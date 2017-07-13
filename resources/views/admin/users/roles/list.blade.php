@@ -54,9 +54,9 @@
                             <td>
                                 <a class="button small radius alert-success" href="{{ route('admin.role.details', $role->slug) }}"><i class="fa fa-wrench"></i> Details</a>
                             @if($role->users()->count() > 0)
-                                <a class="button small radius alert disabled"><i class="fa fa-trash-o"></i> Delete</a>
+                                <a class="button small radius alert disabled" href="{{ route('admin.role.delete', $role->slug) }}"><i class="fa fa-trash-o"></i> Delete</a>
                             @else
-                                <a class="button small radius alert"><i class="fa fa-trash-o"></i> Delete</a>
+                                <a class="button small radius alert" href="{{ route('admin.role.delete', $role->slug) }}"><i class="fa fa-trash-o"></i> Delete</a>
                             @endif
                             </td>
                         </tr>

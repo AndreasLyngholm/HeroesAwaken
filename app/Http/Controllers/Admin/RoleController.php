@@ -42,4 +42,13 @@ class RoleController extends Controller
 
         return \Redirect::route('admin.user.roles')->withSuccess('The role has been updated.');
     }
+
+    public function delete($roleSlug)
+    {
+        if ($roleSlug === 'admin')
+            return \Redirect::route('admin.user.roles')->withErrors('You cannot delete the Admin role.');
+        $role = Role::where('slug', $roleSlug);
+        $role->delete();
+        return \Redirect::route('admin.user.roles')->withSuccess('The role has been deleted.');
+    }
 }

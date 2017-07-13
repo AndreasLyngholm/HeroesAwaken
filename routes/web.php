@@ -198,6 +198,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
                 'uses' => 'RoleController@update',
                 'can'  => 'role.update'
             ]);
+
+            Route::get('{role}/delete', [
+                'as'   => 'role.delete',
+                'uses' => 'RoleController@delete',
+                'can'  => 'role.delete'
+            ]);
         });
     });
 
