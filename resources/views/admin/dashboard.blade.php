@@ -66,12 +66,15 @@
                         <h2 class="title">Manage Users</h2>
                         <hr>
                         <div class="row">
-                            <div class="small-offset-1 small-12 columns">
+                            <div class="small-offset-1 small-15 columns">
                                 <h4>Search Users</h4>
                                 <form action="{{ route('admin.dashboard') }}#users-panel">
-                                    <label>Name : </label>
-                                    <input value="{{ \Illuminate\Support\Facades\Input::get('user_search') }}" id="user_search" name="user_search" type="text" placeholder="Name" required>
-                                    <button class="lime-button" type="submit">Search</button>
+                                    <div class="small-12 columns" style="padding-left:0rem;">
+                                        <input value="{{ \Illuminate\Support\Facades\Input::get('user_search') }}" id="user_search" name="user_search" type="text" placeholder="Name" required>
+                                    </div>
+                                    <div class="small-4 text-center columns">
+                                        <button class="lime-button" type="submit">Search</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
