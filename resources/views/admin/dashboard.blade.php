@@ -64,6 +64,43 @@
                     </div>
                     <div id="users-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="users-panel-label">
                         <h2 class="title">Manage Users</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="small-offset-1 small-12 columns">
+                                <h4>Search Users</h4>
+                                <form action="{{ route('admin.dashboard') }}#users-panel">
+                                    <label>Name : </label>
+                                    <input value="{{ \Illuminate\Support\Facades\Input::get('user_search') }}" id="user_search" name="user_search" type="text" placeholder="Name" required>
+                                    <button class="lime-button" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                        @if(isset($searchResults))
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="large-16 columns">
+                                    <table class="large-16">
+                                        <thead>
+                                        <tr>
+                                            <th>Username</th>
+                                            <th>Email</th>
+                                            <th>State</th>
+                                            <th>Options</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($searchResults as $user)
+                                            <tr>
+                                                <td>{{ $user->username }}</td>
+                                                <td>{{ $user->email }}</td>
+                                                <td>{!! App\User::find($user->id)->isOnline() ? "<i class='label success'>ONLINE</i>" : "<i class='label alert'>OFFLINE</i>" !!}</td>
+                                                <td><a style="cursor: pointer;" class="label radius success" href="{{ route('admin.user.details', [$user->id]) }}"><i class="fa fa-info"></i> Details</a></td>
+                                            </tr>
+                                        @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        @endif
                     </div>
                     <div id="news-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="news-panel-label">
                         <h2 class="title">Manage News</h2>

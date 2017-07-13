@@ -8,6 +8,12 @@ $(document).ready(function () {
     tabs.click(function() {
         update(this);
     });
+
+    var hash = window.location.hash.substr(1);
+    if (hash != "") {
+        var tab = $('a[aria-controls="'+hash+'"]')[0].parentElement;
+        update(tab);
+    }
 });
 
 function update(activeTab) {

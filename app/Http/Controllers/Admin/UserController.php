@@ -13,7 +13,30 @@ class UserController extends Controller {
 
     public function dashboard()
     {
-        return view('admin.dashboard');
+       if (Input::has('user_search'))
+        {
+            $words = explode(' ', $query =  Input::get('user_search'));
+            $query = \DB::table('users');
+            $queries = ['username' => true, 'email' => true];
+            foreach ($queries as $group => $first)
+            {
+                foreach ($words as $word)
+                {
+                    if ($first)
+                    {
+                        $query->orWhere($group, 'like', "%$word%");
+                        $first = false;
+                    }
+                    else
+                        $query->where($group, 'like', "%$word%");
+                }
+            }
+            $searchResults = $query->get();
+        }
+        if (Input::get('role'))
+            $searchResults = User::whereIn('id', Role::find(Input::get('role'))->users()->pluck('id'))->get();
+
+        return view('admin.dashboard', compact('searchResults'));
     }
 
     #region manage
