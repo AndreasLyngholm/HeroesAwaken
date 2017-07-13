@@ -11,12 +11,12 @@
         
         <!--slide 1-->
 
-        <img src="{{ asset('images/slider_main.jpg') }}" alt="">
+        <img class="slick-slide" src="{{ asset('images/slider_main.jpg') }}" alt="">
 
         <!--//slide 1-->
         <!--slide-2-->
 
-        <a href="https://discord.io/heroesawaken"><img src="{{ asset('images/slider_discord.png') }}" alt=""></a>
+        <a class="slick-slide" href="https://discord.io/heroesawaken"><img src="{{ asset('images/slider_discord.png') }}" alt=""></a>
     {{--<div style="background: url({{ asset('images/placeholders/slider_2.jpg') }})">--}}
     {{--<div class="row">--}}
     {{--<div class="small-16 columns">--}}
