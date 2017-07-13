@@ -54,7 +54,7 @@ class PermissionChecker {
     public function requiredPermission($request)
     {
         $action = $request->route()->getAction();
-        return isset($action['canDo']) ? explode('|', $action['canDo']) : null;
+        return isset($action['can']) ? explode('|', $action['can']) : null;
     }
 
     public function forbiddenRoute($request)

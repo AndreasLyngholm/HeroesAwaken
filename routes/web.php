@@ -10,8 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use function App\Http\canDo;
-
 Auth::routes();
 
 Route::get('home', function () {
@@ -124,13 +122,7 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
 });
 
 // Admin interface
-Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth', 'acl'], 'canDo' => 'user.update'], function () {
-
-    Route::get('/', [
-        'as'   => 'dashboard',
-        'uses' => 'UserController@dashboard',
-        'can'  => 'user.update'
-    ]);
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth', 'acl']], function () {
 
     Route::group(['prefix' => 'users'], function ()
     {
@@ -151,19 +143,19 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
             Route::post('{user}/assign/role/{role}', [
                 'as'   => 'assign.role',
                 'uses' => 'UserController@assignRole',
-                'can'  => 'user.roles'
+                'can'  => 'user.update'
             ]);
 
             Route::get('{user}/remove/{role}', [
                 'as'   => 'remove.role',
                 'uses' => 'UserController@removeRole',
-                'can'  => 'user.roles'
+                'can'  => 'user.update'
             ]);
 
             Route::get('{user}/punish/{type}/{expiration}',[
                 'as'   => 'ban.user',
                 'uses' => 'UserController@banUser',
-                'can'  => 'user.ban'
+                'can'  => 'user.update'
             ]);
         });
 
@@ -172,37 +164,37 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
             Route::get('/', [
                 'as'   => 'user.roles',
                 'uses' => 'UserController@roles',
-                'can'  => 'user.roles'
+                'can'  => 'user.update'
             ]);
 
             Route::get('add', [
                 'as'   => 'user.roles.add',
                 'uses' => 'UserController@addRole',
-                'can'  => 'user.roles'
+                'can'  => 'user.update'
             ]);
 
             Route::post('add', [
                 'as'   => 'user.roles.doAdd',
                 'uses' => 'UserController@doAddRole',
-                'can'  => 'user.roles'
+                'can'  => 'user.update'
             ]);
 
             Route::get('{role}', [
                 'as'   => 'role.details',
                 'uses' => 'RoleController@details',
-                'can'  => 'role.update'
+                'can'  => 'user.update'
             ]);
 
             Route::post('{role}/update', [
                 'as'   => 'role.update',
                 'uses' => 'RoleController@update',
-                'can'  => 'role.update'
+                'can'  => 'user.update'
             ]);
 
             Route::get('{role}/delete', [
                 'as'   => 'role.delete',
                 'uses' => 'RoleController@delete',
-                'can'  => 'role.delete'
+                'can'  => 'user.update'
             ]);
         });
     });

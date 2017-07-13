@@ -37,10 +37,13 @@
 </head>
 <body>
 
-
 @if( ! Request::is('admin*'))<a href="{{ route('download') }}"><img class="hide-for-small-only" style="position: fixed; right: 10rem; top: 10rem; z-index:2500; width: 10rem;" src="{{ asset('images/dl.png') }}"></a>@endif
 
-@include('partials.navbar')
+@if( ! Request::is('admin*'))
+    @include('partials.navbar')
+@else
+    @include('partials.admin-navbar')
+@endif
 
 @yield('content')
 

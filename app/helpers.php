@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http;
+namespace App;
 
 use App\AuthenticationToken;
 use App\EntranceUser;
 use App\User;
 use App\Year;
-use Davibennun\LaravelPushNotification\Facades\PushNotification;
 use Illuminate\Support\Facades\Input;
 
 function me()
@@ -20,7 +19,7 @@ function me()
     return $user;
 }
 
-function canDo($perm)
+function can($perm)
 {
     $permission = app('App\HeroesAwaken\Permission');
 
