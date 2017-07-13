@@ -162,7 +162,7 @@
                            <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
+                            <img src="{{ asset('images/about/crowscream.png') }}" class="" alt="">
                         </div>
                         <h5>Crowscream</h5>
                         <p>Staff &amp; Developer</p>
