@@ -162,9 +162,11 @@
                            <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'Crowscream') }}"target="_blank">
                             <img src="{{ asset('images/about/crowscream.png') }}" class="" alt="">
+                         </a>
                         </div>
-                        <h5>Crowscream</h5>
+                        <h5><a href="{{ route('profile.details', 'Crowscream') }}"target="_blank">Crowscream</a></h5>
                         <p>Staff &amp; Developer</p>
                     </div>
                     <!--//team-member-->
