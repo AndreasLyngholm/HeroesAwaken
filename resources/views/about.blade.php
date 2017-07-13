@@ -55,9 +55,11 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'SD149') }}"target="_blank">
                             <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
+                         </a>  
                         </div>
-                        <h5>SD149</h5>
+                        <h5><a href="{{ route('profile.details', 'SD149') }}"target="_blank">SD149</a></h5>
                         <p>Staff &amp; Developer</p>
                     </div>
                     <!--//team-member-->
@@ -65,9 +67,11 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'Absent') }}"target="_blank">
                             <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
+                         </a>
                         </div>
-                        <h5>Absent</h5>
+                        <h5><a href="{{ route('profile.details', 'Absent') }}"target="_blank">Absent</a></h5>
                         <p>Staff &amp; Designer</p>
                     </div>
                     <!--//team-member-->
@@ -86,9 +90,11 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'Ray') }}"target="_blank">
                             <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
+                         </a>   
                         </div>
-                        <h5>Ray</h5>
+                        <h5><a href="{{ route('profile.details', 'Ray') }}"target="_blank">Ray</a></h5>
                         <p>Staff</p>
                     </div>
                     <!--//team-member-->
@@ -96,9 +102,11 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'Synaxis') }}"target="_blank">
                             <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
+                         </a>
                         </div>
-                        <h5>Synaxis</h5>
+                        <h5><a href="{{ route('profile.details', 'Synaxis') }}"target="_blank">Synaxis</a></h5>
                         <p>Staff</p>
 
                     </div>
@@ -107,9 +115,11 @@
                     <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'Warp') }}"target="_blank">
                             <img src="{{ asset('images/about/warp.gif') }}" class="" alt="">
+                         </a>
                         </div>
-                        <h5>Warp Productions</h5>
+                        <h5><a href="{{ route('profile.details', 'Warp') }}"target="_blank">Warp Productions</a></h5>
                         <p>Awaken Developer, Wolf, SysAdmin &amp; Video Editor</p>
                     </div>
                     <!--//team-member-->
@@ -152,9 +162,11 @@
                           <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'Vahdek') }}"target="_blank">
                             <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
+                         </a>   
                         </div>
-                        <h5>Vahdek</h5>
+                        <h5><a href="{{ route('profile.details', 'Vahdek') }}"target="_blank">Vahdek</a></h5>
                         <p>Awaken Developer</p>
                     </div>
                     <!--//team-member-->
@@ -174,9 +186,11 @@
                       <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'Lord Squirrel') }}"target="_blank">
                             <img src="{{ asset('images/about/lord_squirrel.gif') }}" class="" alt="">
+                         </a>   
                         </div>
-                        <h5>Lord Squirrel</h5>
+                        <h5><a href="{{ route('profile.details', 'Lord Squirrel') }}"target="_blank">Lord Squirrel</a></h5>
                         <p>Awaken Developer</p>
                     </div>
                     <!--//team-member-->
@@ -184,9 +198,11 @@
                      <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'Hazriel') }}"target="_blank">
                             <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
+                         </a>   
                         </div>
-                        <h5>Hazriel</h5>
+                        <h5><a href="{{ route('profile.details', 'Hazriel') }}"target="_blank">Hazriel</a></h5>
                         <p>Awaken Developer</p>
                     </div>
                     <!--//team-member-->
@@ -194,9 +210,11 @@
                      <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
+                         <a href="{{ route('profile.details', 'Jefalo') }}"target="_blank">
                             <img src="{{ asset('images/placeholders/about.png') }}" alt="">
+                         </a>   
                         </div>
-                        <h5>Jefalo</h5>
+                        <h5><a href="{{ route('profile.details', 'Jefalo') }}"target="_blank">Jefalo</a></h5>
                         <p>Awaken Developer &amp; Game Contributer</p>
                     </div>
                     <!--//team-member-->
