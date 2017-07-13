@@ -11,6 +11,11 @@ use Illuminate\Support\Facades\Input;
 
 class UserController extends Controller {
 
+    public function dashboard()
+    {
+        return view('admin.dashboard');
+    }
+
     #region manage
     public function manage()
     {

@@ -38,7 +38,7 @@
                         <div class="row">
                             <div class="small-offset-1 small-6 columns">
                                 <h4>Create Group</h4>
-                                <form method="post" action="{{ route('admin.createGroup') }}">
+                                <form method="post" action="">
                                     {{ csrf_field() }}
                                     <label>Name : </label>
                                     <input id="group_name" name="group_name" type="text" required>
@@ -52,7 +52,7 @@
 
                             <div class="small-pull-1 small-6 columns">
                                 <h4>Delete Group</h4>
-                                <form method="post" action="{{ route('admin.deleteGroup') }}">
+                                <form method="post" action="">
                                     {{ csrf_field() }}
                                     <label>Group to delete : </label>
                                     <select id="group_id" name="group_id">

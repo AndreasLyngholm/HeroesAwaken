@@ -126,6 +126,12 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
 // Admin interface
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth', 'acl'], 'canDo' => 'user.update'], function () {
 
+    Route::get('/', [
+        'as'   => 'dashboard',
+        'uses' => 'UserController@dashboard',
+        'can'  => 'user.update'
+    ]);
+
     Route::group(['prefix' => 'users'], function ()
     {
         Route::group(['prefix' => 'manage'], function ()
