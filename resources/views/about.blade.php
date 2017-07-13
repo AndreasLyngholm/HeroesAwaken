@@ -174,17 +174,11 @@
                            <!--team-member-->
                     <div class="column team-member">
                         <div class="photo">
-<<<<<<< HEAD
-                            <a href="{{ route('profile.details', 'crowscream') }}" target="_blank"><img src="{{ asset('images/about/crowscream.png') }}" class="" alt=""></a>
-                        </div>
-                        <h5><a href="{{ route('profile.details', 'crowscream') }}" target="_blank">Crowscream</a></h5>
-=======
                          <a href="{{ route('profile.details', 'Crowscream') }}"target="_blank">
                             <img src="{{ asset('images/about/crowscream.png') }}" class="" alt="">
                          </a>
                         </div>
                         <h5><a href="{{ route('profile.details', 'Crowscream') }}"target="_blank">Crowscream</a></h5>
->>>>>>> origin/master
                         <p>Staff &amp; Developer</p>
                     </div>
                     <!--//team-member-->
