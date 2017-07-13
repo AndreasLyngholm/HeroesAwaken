@@ -16,26 +16,21 @@
                     {{ csrf_field() }}
                     <div class="row">
                         <div class="large-12 columns">
-                            @if($errors->has('name'))
-                                <input class="error">Name of the role
-                                    <input type="text" name="name" placeholder="Name of the role">
-                                </label>
-                                <small class="error">{{ $errors->first('name') }}</small>
-                            @else
+                            @if($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                                 <label>Name of the role
                                     <input type="text" name="name" placeholder="Name of the role" value="{{ $role->title }}"/>
                                 </label>
-                            @endif
-                            @if($errors->has('slug'))
-                                <input class="error">Slug of the role
-                                <input type="text" name="slug" placeholder="Slug of the role">
-                                </label>
-                                <small class="error">{{ $errors->first('slug') }}</small>
-                            @else
                                 <label>Slug of the role
                                     <input type="text" name="slug" placeholder="Slug of the role" value="{{ $role->slug }}"/>
                                 </label>
-                            @endif
                         </div>
                     </div>
                     <div class="row">
