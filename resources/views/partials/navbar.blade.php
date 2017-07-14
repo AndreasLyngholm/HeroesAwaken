@@ -18,7 +18,7 @@
                     <li class="has-dropdown @if(Request::is('profile')) active @endif">
                         <a @if(Request::is('profile')) class="active" @endif href="{{ route('profile.lists') }}">{{ Auth::user()->username }} @if(Auth::user()->friendRequests->count() > 0)<b class="badge">{{ Auth::user()->friendRequests->count() }}</b>@endif</a>
                         <ul class="menu dropdown">
-                            <li style="background-color: #88332E;"><a href="{{ route('doLogout') }}">Logout</a></li>
+                            <li><a href="{{ route('doLogout') }}">Logout</a></li>
                         </ul>
                     </li>
                     @endif
