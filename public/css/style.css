@@ -7663,10 +7663,10 @@ table td, table th {
 }
 
 
-.google-auto-placede:before {
+div.google-auto-placede:before {
   content: "<dl><dt style=\"text-transform: uppercase;font-size: 0.73333rem;color: #271d21;\">Advertisement</dt><dd>";
 }
 
-.google-auto-placede:after {
+div.google-auto-placede:after {
   content: "</dd></dl>";
 }
