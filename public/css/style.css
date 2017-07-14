@@ -4086,6 +4086,12 @@ div.staff {
     background-repeat: no-repeat;
     background-position: left top;
 }
+div.google-auto-placede:before {
+  content: "<dl><dt style=\"text-transform: uppercase;font-size: 0.73333rem;color: #271d21;\">Advertisement</dt><dd>";
+}
+div.google-auto-placede:after {
+  content: "</dd></dl>";
+}
 /* line 92, ../../foundation/bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.success {
   background-color: #8fcc68;
@@ -7660,13 +7666,4 @@ table td, table th {
   table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td {
     display: none;
   }
-}
-
-
-div.google-auto-placede:before {
-  content: "<dl><dt style=\"text-transform: uppercase;font-size: 0.73333rem;color: #271d21;\">Advertisement</dt><dd>";
-}
-
-div.google-auto-placede:after {
-  content: "</dd></dl>";
 }

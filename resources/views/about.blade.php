@@ -32,7 +32,7 @@
                     <div class="column team-member">
                         <div class="photo">
                          <a href="{{ route('profile.details', 'MakaHost') }}"target="_blank">
-                            <img src="{{ asset('images/placeholders/about.png') }}" class="" alt="">
+                            <img src="{{ asset('images/about/makahost.png') }}" class="" alt="">
                          </a>   
                         </div>
                         <h5><a href="{{ route('profile.details', 'makahost') }}"target="_blank">MakaHost</a></h5>
