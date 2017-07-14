@@ -139,7 +139,7 @@
         
     </div>
     <div class="row">
-        <div class="card small-16 large-centered columns" style="text-align: center; height:8rem; margin-top:1rem; vertical-align:middle;">
+        <div class="card small-16 large-centered columns" style="text-align: center; margin-top:1rem; vertical-align:middle;">
             <dl>
                 <dt style="text-transform: uppercase;font-size: 0.73333rem;color: #271d21;">Advertisement</dt>
                 <dd>
