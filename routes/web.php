@@ -198,6 +198,20 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
             ]);
         });
     });
+    Route::group(['prefix' => 'news'], function ()
+    {
+        Route::get('create', [
+            'as' => 'news.create',
+            'uses' => 'NewsController@create',
+            'can' => 'user.update'
+        ]);
+
+        Route::post('create', [
+            'as' => 'news.doCreate',
+            'uses' => 'NewsController@doCreate',
+            'can' => 'user.update'
+        ]);
+    });
 
 });
 

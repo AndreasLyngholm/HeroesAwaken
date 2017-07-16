@@ -30,7 +30,7 @@
                             <a><i class="fa fa-envelope"></i>News</a>
                             <ul class="submenu menu vertical" data-submenu>
                                 <li style="background-color: #88332E;"><a><i class="fa fa-cogs"></i>Management</a></li>
-                                <li style="background-color: #88332E;"><a><i class="fa fa-plus"></i>Add news</a></li>
+                                <li style="background-color: #88332E;"><a href="{{ route('admin.news.create') }}"><i class="fa fa-plus"></i>Add news</a></li>
                             </ul>
                         </li>
                     </ul>
