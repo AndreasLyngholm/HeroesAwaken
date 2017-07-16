@@ -17,7 +17,7 @@
        
     <div class="row blog-entries">
 
-        @foreach(\App\News::all() as $news)
+        @foreach(\App\News::all()->sortByDesc('date') as $news)
             <!-- NEWS POST START -->
             <div class="small-16 large-16 columns">
 
