@@ -200,6 +200,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     });
     Route::group(['prefix' => 'news'], function ()
     {
+        Route::get('/', [
+            'as' => 'news.lists',
+            'uses' => 'NewsController@lists',
+            'can' => 'user.update'
+        ]);
+
         Route::get('create', [
             'as' => 'news.create',
             'uses' => 'NewsController@create',

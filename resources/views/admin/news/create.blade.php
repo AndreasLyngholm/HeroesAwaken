@@ -18,7 +18,7 @@
                     <br><br>
 
                     <label> <b style="color: black;">Title</b>
-                        <input type="text" name="name" required>
+                        <input type="text" name="title" required>
                     </label>
 
                     <label> <b style="color: black;">Write your news post</b>
