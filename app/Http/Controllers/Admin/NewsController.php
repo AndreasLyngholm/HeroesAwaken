@@ -32,4 +32,26 @@ class NewsController extends Controller
 
 		return redirect()->back()->with('success', 'Your news post was submitted');
     }
+
+    public function edit(News $news)
+    {
+        return view('admin.news.edit', compact('news'));
+    }
+
+    public function doEdit(News $news)
+    {
+        $news->update([
+            'title' => Input::get('title'),
+            'text' => Input::get('text'),
+            'user_id' => Auth::id(),
+        ]);
+
+        return redirect()->back()->with('success', 'Your news post was successfully updated!');
+    }
+
+    public function delete(News $news)
+    {
+        $news->delete();
+        return redirect()->back()->with('success', 'Your news post was successfully deleted!');
+    }
 }

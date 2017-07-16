@@ -217,6 +217,24 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
             'uses' => 'NewsController@doCreate',
             'can' => 'user.update'
         ]);
+
+        Route::get('{news}/delete', [
+            'as' => 'news.delete',
+            'uses' => 'NewsController@delete',
+            'can' => 'user.update'
+        ]);
+
+        Route::get('{news}/edit', [
+            'as' => 'news.edit',
+            'uses' => 'NewsController@edit',
+            'can' => 'user.update'
+        ]);
+
+        Route::post('{news}/edit', [
+            'as' => 'news.doEdit',
+            'uses' => 'NewsController@doEdit',
+            'can' => 'user.update'
+        ]);
     });
 
 });

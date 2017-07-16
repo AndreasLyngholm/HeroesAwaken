@@ -39,10 +39,10 @@
                     @foreach(\App\News::all() as $news)
                         <tr>
                             <td class="large-3">{{ $news->title }}</td>
-                            <td>{{ $news->date }}</td>
+                            <td>{{ $news->date->format('d M Y') }}</td>
                             <td>
-                                <a class="button small radius alert-success" href=""><i class="fa fa-wrench"></i> Details</a>
-                                <a class="button small radius alert" href=""><i class="fa fa-trash-o"></i> Delete</a>
+                                <a class="button small radius alert-success" href="{{ route('admin.news.edit', $news->id) }}"><i class="fa fa-wrench"></i> Details</a>
+                                <a class="button small radius alert" href="{{ route('admin.news.delete', $news->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
                             </td>
                         </tr>
                     @endforeach

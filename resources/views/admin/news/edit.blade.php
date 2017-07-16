@@ -10,27 +10,27 @@
 
         <div class="row">
             <div class="small-16 columns">
-                <h1><i class="fa fa-plus"></i> Create News</h1>
+                <h1><i class="fa fa-plus"></i> Edit News</h1>
                 <div class="big-sep"></div>
             </div>
         </div>
 
         <div class="row team">
             <div class="small-16 large-16 columns callout">
-                <form method="post" action="{{ route('admin.news.doCreate') }}">
+                <form method="post" action="{{ route('admin.news.doEdit', $news->id) }}">
                     {{ csrf_field() }}
-                    <b style="color: black;">Create news post</b>
+                    <b style="color: black;">Edit News</b>
                     <br><br>
 
                     <label> <b style="color: black;">Title</b>
-                        <input type="text" name="title" required>
+                        <input type="text" value="{{ $news->title }}" name="title" required>
                     </label>
 
                     <label> <b style="color: black;">Write your news post</b>
-                        <textarea name="text" id="editor1" rows="5" cols="40" placeholder="Write your post here..." required></textarea>
+                        <textarea name="text" id="editor1" rows="5" cols="40" placeholder="Write your post here..." required>{!! $news->text !!}</textarea>
                     </label>
                     <br>
-                    <button type="submit" class="lime-button" name="submit" style="float: right;">Create news post</button>
+                    <button type="submit" class="lime-button" name="submit" style="float: right;">Update news post</button>
                     <script>
                         CKEDITOR.replace( 'editor1', {
                             uiColor: '#E2D3C0'

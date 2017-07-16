@@ -12,7 +12,7 @@
                 <div class="top-bar-left" style="background-color: transparent;">
                     <ul class="dropdown menu" style="background-color: transparent;" data-dropdown-menu>
                         <li class="menu-text">Admin Dashboard</li>
-                        <li class="has-submenu">
+                        <li class="has-submenu @if(Request::is('admin/users*')) active @endif">
                             <a><i class="fa fa-users"></i>Users</a>
                             <ul class="submenu menu vertical" data-submenu>
                                 @if(\App\can('user.update'))<li style="background-color: #88332E;"  @if(Request::is('admin/users/manage*')) class="active" @endif><a href="{{ route('admin.user.manage') }}"><i class="fa fa-cogs"></i>Management</a></li>@endif
@@ -20,17 +20,17 @@
                                 @if(\App\can('user.update'))<li style="background-color: #88332E;" @if(Request::is('admin/users/create*')) class="active" @endif><a><i class="fa fa-user-plus"></i>New User</a></li>@endif
                             </ul>
                         </li>
-                        <li class="has-submenu">
+                        <li class="has-submenu @if(Request::is('admin/forums*')) active @endif">
                             <a><i class="fa fa-envelope"></i>Forum</a>
                             <ul class="submenu menu vertical" data-submenu>
                                 <li style="background-color: #88332E;"><a><i class="fa fa-cogs"></i>Management</a></li>
                             </ul>
                         </li>
-                        <li class="has-submenu">
+                        <li class="has-submenu @if(Request::is('admin/news*')) active @endif">
                             <a><i class="fa fa-newspaper-o"></i>News</a>
                             <ul class="submenu menu vertical" data-submenu>
-                                <li style="background-color: #88332E;"><a href="{{ route('admin.news.lists') }}"><i class="fa fa-cogs"></i>Management</a></li>
-                                <li style="background-color: #88332E;"><a href="{{ route('admin.news.create') }}"><i class="fa fa-plus"></i>Add news</a></li>
+                                <li style="background-color: #88332E;" @if(Request::is('admin/news')) class="active" @endif><a href="{{ route('admin.news.lists') }}"><i class="fa fa-cogs"></i>Management</a></li>
+                                <li style="background-color: #88332E;" @if(Request::is('admin/news/create')) class="active" @endif><a href="{{ route('admin.news.create') }}"><i class="fa fa-plus"></i>Add news</a></li>
                             </ul>
                         </li>
                     </ul>
