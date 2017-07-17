@@ -13,6 +13,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(PermissionsTableSeeder::class);
         $this->call(RolesTableSeeder::class);
-        $this->call(UserRolesTableSeeder::class);
+
+        // Assigns all users to role 1. This has been run and was a one time thing!
+        // $this->call(UserRolesTableSeeder::class);
     }
 }
