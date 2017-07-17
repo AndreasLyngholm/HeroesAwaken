@@ -63,7 +63,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'username' => $data['username'],
             'email' => $data['email'],
             'birthday' => Carbon::createFromFormat('d-m-Y', $data['birthday'])->format('Y-m-d'),
@@ -71,5 +71,8 @@ class RegisterController extends Controller
             //'country' => $data['country'],
             'password' => bcrypt($data['password']),
         ]);
+        $user->roles()->attach(1);
+
+        return $user;
     }
 }

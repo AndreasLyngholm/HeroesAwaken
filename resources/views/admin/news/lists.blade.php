@@ -25,7 +25,7 @@
 
         <div class="row team">
             <div class="large-16 columns">
-                <a href="{{ route('admin.user.roles.add') }}" style="margin-bottom: 10px;" class="large button lime"><i class="fa fa-plus"></i> Create News</a>
+                @if(\App\can('news.add'))<a href="{{ route('admin.user.roles.add') }}" style="margin-bottom: 10px;" class="large button lime"><i class="fa fa-plus"></i> Create News</a>@endif
 
                 <table class="large-16">
                     <thead>

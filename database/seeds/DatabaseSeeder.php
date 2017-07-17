@@ -11,6 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(PermissionsTableSeeder::class);
+        $this->call(RolesTableSeeder::class);
+
+        // Assigns all users to role 1. This has been run and was a one time thing!
+        // $this->call(UserRolesTableSeeder::class);
     }
 }
