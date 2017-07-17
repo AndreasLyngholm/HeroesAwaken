@@ -59,6 +59,11 @@ class PermissionsTableSeeder extends Seeder
             ['slug' => 'forum.delete'],
             ['description' => 'Ability to delete forum related stuff.']
         );
+
+        Permission::updateOrCreate(
+            ['slug' => 'forum.manage'],
+            ['description' => 'Ability to manage forum related stuff.']
+        );
         #endregion
 
         #region news

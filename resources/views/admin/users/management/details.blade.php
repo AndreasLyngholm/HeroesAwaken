@@ -32,18 +32,20 @@
                         <h4>Roles</h4>
                         <ul style="list-style: none;">
                             @foreach($roles as $role => $roleId)
-                                <li>{{ $role }} - <a class="tiny button alert" href="{{ route('admin.remove.role', [$user->id, $roleId]) }}">Remove</a></li>
+                                <li>{{ $role }} @if(\App\can('user.roles')) - <a class="tiny button alert" href="{{ route('admin.remove.role', [$user->id, $roleId]) }}">Remove</a>@endif</li>
                             @endforeach
                         </ul>
-                        <form method="POST" action="{{ route('admin.assign.role', [$user->id, 'role']) }}">
-                            {{ csrf_field() }}
-                            <select name="role">
-                                @foreach($applicableRoles as $roleId => $role)
-                                    <option value="{{ $roleId }}">{{ $role }}</option>
-                                @endforeach
-                            </select>
-                            <button type="submit" class="button radius" style="margin-bottom:0px;margin-top:10px;">Add</button>
-                        </form>
+                        @if(\App\can('user.roles'))
+                            <form method="POST" action="{{ route('admin.assign.role', [$user->id, 'role']) }}">
+                                {{ csrf_field() }}
+                                <select name="role">
+                                    @foreach($applicableRoles as $roleId => $role)
+                                        <option value="{{ $roleId }}">{{ $role }}</option>
+                                    @endforeach
+                                </select>
+                                <button type="submit" class="button radius" style="margin-bottom:0px;margin-top:10px;">Add</button>
+                            </form>
+                        @endif
                     </div>
                 </div>
 

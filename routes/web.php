@@ -106,18 +106,21 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
     Route::get('{forum}/create', [
         'middleware' => 'auth',
         'as' => 'details.doCreate',
-        'uses' => 'ForumsController@forumsDetailsDoCreate'
+        'uses' => 'ForumsController@forumsDetailsDoCreate',
+        'can'  => 'forum.topic'
     ]);
 
     Route::get('{forum}/{topic}', [
         'as' => 'posts',
-        'uses' => 'ForumsController@forumsPosts'
+        'uses' => 'ForumsController@forumsPosts',
+        'can'  => 'forum.post'
     ]);
 
     Route::get('{forum}/{topic}/create', [
         'middleware' => 'auth',
         'as' => 'posts.doCreate',
-        'uses' => 'ForumsController@forumsPostsDoCreate'
+        'uses' => 'ForumsController@forumsPostsDoCreate',
+        'can'  => 'forum.comment'
     ]);
 });
 
@@ -143,19 +146,19 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
             Route::post('{user}/assign/role/{role}', [
                 'as'   => 'assign.role',
                 'uses' => 'UserController@assignRole',
-                'can'  => 'user.update'
+                'can'  => 'user.roles'
             ]);
 
             Route::get('{user}/remove/{role}', [
                 'as'   => 'remove.role',
                 'uses' => 'UserController@removeRole',
-                'can'  => 'user.update'
+                'can'  => 'user.roles'
             ]);
 
             Route::get('{user}/punish/{type}/{expiration}',[
                 'as'   => 'ban.user',
                 'uses' => 'UserController@banUser',
-                'can'  => 'user.update'
+                'can'  => 'user.ban'
             ]);
         });
 
@@ -164,37 +167,37 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
             Route::get('/', [
                 'as'   => 'user.roles',
                 'uses' => 'UserController@roles',
-                'can'  => 'user.update'
+                'can'  => 'user.roles'
             ]);
 
             Route::get('add', [
                 'as'   => 'user.roles.add',
                 'uses' => 'UserController@addRole',
-                'can'  => 'user.update'
+                'can'  => 'user.roles'
             ]);
 
             Route::post('add', [
                 'as'   => 'user.roles.doAdd',
                 'uses' => 'UserController@doAddRole',
-                'can'  => 'user.update'
+                'can'  => 'user.roles'
             ]);
 
             Route::get('{role}', [
                 'as'   => 'role.details',
                 'uses' => 'RoleController@details',
-                'can'  => 'user.update'
+                'can'  => 'user.roles'
             ]);
 
             Route::post('{role}/update', [
                 'as'   => 'role.update',
                 'uses' => 'RoleController@update',
-                'can'  => 'user.update'
+                'can'  => 'user.roles'
             ]);
 
             Route::get('{role}/delete', [
                 'as'   => 'role.delete',
                 'uses' => 'RoleController@delete',
-                'can'  => 'user.update'
+                'can'  => 'user.roles'
             ]);
         });
     });
@@ -203,37 +206,37 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
         Route::get('/', [
             'as' => 'news.lists',
             'uses' => 'NewsController@lists',
-            'can' => 'user.update'
+            'can' => 'news.manage'
         ]);
 
         Route::get('create', [
             'as' => 'news.create',
             'uses' => 'NewsController@create',
-            'can' => 'user.update'
+            'can' => 'news.add'
         ]);
 
         Route::post('create', [
             'as' => 'news.doCreate',
             'uses' => 'NewsController@doCreate',
-            'can' => 'user.update'
+            'can' => 'news.add'
         ]);
 
         Route::get('{news}/delete', [
             'as' => 'news.delete',
             'uses' => 'NewsController@delete',
-            'can' => 'user.update'
+            'can' => 'news.manage'
         ]);
 
         Route::get('{news}/edit', [
             'as' => 'news.edit',
             'uses' => 'NewsController@edit',
-            'can' => 'user.update'
+            'can' => 'news.manage'
         ]);
 
         Route::post('{news}/edit', [
             'as' => 'news.doEdit',
             'uses' => 'NewsController@doEdit',
-            'can' => 'user.update'
+            'can' => 'news.manage'
         ]);
     });
 
