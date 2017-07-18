@@ -47,9 +47,9 @@ Route::get('contact', [
     'uses' => 'HomeController@contact'
 ]);
 
-Route::get('about', [
-    'as' => 'about',
-    'uses' => 'HomeController@about'
+Route::get('team', [
+    'as' => 'team',
+    'uses' => 'HomeController@team'
 ]);
 
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth', 'acl']], function() {
@@ -67,6 +67,11 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth'
     Route::post('signature', [
         'as' => 'addSignature',
         'uses' => 'ProfileController@addSignature'
+    ]);
+
+    Route::post('avatar', [
+        'as' => 'addAvatar',
+        'uses' => 'ProfileController@addAvatar'
     ]);
 
     Route::post('description', [

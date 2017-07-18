@@ -9,7 +9,7 @@
                 <li><a @if(Request::is('/')) class="active" @endif href="{{ route('home') }}">Home</a></li>
                 <li><a @if(Request::is('news')) class="active" @endif href="{{ route('news') }}">News @if(Auth::check()) @if(Auth::user()->notifications['news'])<b class="badge"><i class="fa fa-bell"></i></b>@endif @endif</a></li>
                 <li><a @if(Request::is('forums')) class="active" @endif href="{{ route('forums.lists') }}">Forum</a></li>
-                <li><a @if(Request::is('about')) class="active" @endif href="{{ route('about') }}">About</a></li>
+                <li><a @if(Request::is('team')) class="active" @endif href="{{ route('team') }}">Team</a></li>
                 <li><a @if(Request::is('contact')) class="active" @endif href="{{ route('contact') }}">Contact</a></li>
                     @if( ! Auth::check())
                         <li><a href="{{ route('login') }}">Login</a></li>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Download;
 use function App\can;
 use App\Jobs\NotificationQueue;
+use App\Role;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -29,9 +30,12 @@ class HomeController extends Controller
         return view('contact');
     }
 
-    public function about()
+    public function team()
     {
-        return view('about');
+        $staffs = Role::where('slug', 'staff')->first()->users;
+        $leads = Role::where('slug', 'awokenlead')->first()->users;
+        $devs = Role::where('slug', 'awokendev')->first()->users;
+        return view('team', compact('staffs', 'leads', 'devs'));
     }
 
     public function doLogout()
