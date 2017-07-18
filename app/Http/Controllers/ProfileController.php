@@ -25,7 +25,7 @@ class ProfileController extends Controller
     public function addSignature()
     {
         $validation = Validator::make(Input::all(), [
-            'image' => 'image|mimes:jpg,png,gif',
+            'image' => 'image|mimes:jpg,jpeg,png,gif',
         ]);
         if ($validation->fails())
             return redirect()->back()->with('error', 'You must only upload PNG, JPG, and GIF files!');
@@ -55,7 +55,7 @@ class ProfileController extends Controller
     public function addAvatar()
     {
         $validation = Validator::make(Input::all(), [
-        'image' => 'image|mimes:jpg,png,gif',
+            'image' => 'image|mimes:jpg,jpeg,png,gif',
         ]);
         if ($validation->fails())
             return redirect()->back()->with('error', 'You must only upload PNG, JPG, and GIF files!');
