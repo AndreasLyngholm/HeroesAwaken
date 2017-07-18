@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
+use Intervention\Image\Facades\Image;
 
 class ProfileController extends Controller
 {
@@ -49,6 +50,26 @@ class ProfileController extends Controller
             ]);
 
         return redirect()->back()->with('success', 'Your signature got added!');
+    }
+
+    public function addAvatar()
+    {
+        $validation = Validator::make(Input::all(), [
+        'image' => 'image|mimes:jpg,png,gif',
+        ]);
+        if ($validation->fails())
+            return redirect()->back()->with('error', 'You must only upload PNG, JPG, and GIF files!');
+
+        if( ! Input::hasFile('image'))
+            return redirect()->back()->with('error', 'You need to have a image chosen.');
+
+        $newFileName = str_random(48) . ".png";
+        $file = Image::make(Input::file('image'))->resize(250, 250)->encode('png', 75);
+        $file->save(public_path('images/avatars/'. $newFileName));
+
+        Auth::user()->update(['avatar' => '/images/avatars/' . $newFileName]);
+
+        return redirect()->back()->with('success', 'Your avatar got added!');
     }
 
     public function addDescription()

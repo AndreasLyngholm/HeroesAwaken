@@ -19,6 +19,7 @@
             <div class="large-16 columns">
                 <div class="large-7 columns">
                     <div class="panel">
+                        <img src="{{ $user->avatar ? $user->avatar : 'https://via.placeholder.com/250x250' }}" alt="">
                         <h4>User Information</h4>
                         <ul class="no-bullet">
                             <li>Username: <strong>{{ $user->username }}</strong></li>

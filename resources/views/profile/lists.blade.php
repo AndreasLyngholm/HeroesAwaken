@@ -69,11 +69,28 @@
         <div class="row team" style="margin-bottom: 2rem;">
             <div class="large-8 columns">
                 <p>Add your own personal signature below.</p>
+                <p>We suggest images with the dimensions of 1:1 as we force the format after upload.</p>
+                <form action="{{ route('profile.addAvatar') }}" method="POST" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <input type="file" name="image" required>
+                    <button type="submit" class="lime-button" style="float: left;">Submit Avatar</button>
+                </form>
+            </div>
+            @if(Auth::user()->avatar != null)
+                <div class="large-8 columns">
+                    <img src="{{ Auth::user()->avatar }}">
+                </div>
+            @endif
+        </div>
+
+        <div class="row team" style="margin-bottom: 2rem;">
+            <div class="large-8 columns">
+                <p>Add your own personal signature below.</p>
                 <p>We suggest images with the dimensions of 900 x 250px</p>
                 <form action="{{ route('profile.addSignature') }}" method="POST" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <input type="file" name="image" required>
-                    <button type="submit" class="lime-button" style="float: left;">Submit image</button>
+                    <button type="submit" class="lime-button" style="float: left;">Submit Signature</button>
                 </form>
             </div>
             @if(Auth::user()->signature != null)
