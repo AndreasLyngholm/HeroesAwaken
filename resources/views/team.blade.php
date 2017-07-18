@@ -28,7 +28,7 @@
                                     <img src="{{ $user->avatar ? $user->avatar : asset('images/placeholders/about.png')  }}" class="" alt="">
                                 </a>
                             </div>
-                            <h5><a href="{{ route('profile.details', $user->username) }}">Lyngholm</a></h5>
+                            <h5><a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a></h5>
                         </div>
                         <!--//team-member-->
                     @endforeach
@@ -48,7 +48,7 @@
                                     <img src="{{ $user->avatar ? $user->avatar : asset('images/placeholders/about.png')  }}" class="" alt="">
                                 </a>
                             </div>
-                            <h5><a href="{{ route('profile.details', $user->username) }}">Lyngholm</a></h5>
+                            <h5><a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a></h5>
                         </div>
                         <!--//team-member-->
                     @endforeach
@@ -68,7 +68,7 @@
                                     <img src="{{ $user->avatar ? $user->avatar : asset('images/placeholders/about.png')  }}" class="" alt="">
                                 </a>
                             </div>
-                            <h5><a href="{{ route('profile.details', $user->username) }}">Lyngholm</a></h5>
+                            <h5><a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a></h5>
                         </div>
                         <!--//team-member-->
                     @endforeach
