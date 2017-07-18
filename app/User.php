@@ -18,7 +18,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username', 'email', 'password', 'country', 'language', 'birthday', 'description', 'ip_address'
+        'username', 'email', 'password', 'country', 'language', 'birthday', 'description', 'ip_address', 'notifications'
+    ];
+
+    protected $casts = [
+        'notifications' => 'json',
     ];
 
     /**
@@ -185,6 +189,32 @@ class User extends Authenticatable
     {
         $roles = $this->roles()->lists('slug')->all();
         return in_array($role, $roles);
+    }
+    #endregion
+
+    #region Notifications
+    public function notificationAdd($data)
+    {
+        if ($this->notifications == null)
+            $this->notifications = [];
+
+        $update = array_merge(
+            $this->notifications,
+            $data
+        );
+
+        $this->update(['notifications' => $update]);
+
+        return $this->notifications;
+    }
+
+    public function notificationRemove($data)
+    {
+        $update = $this->notifications;
+        unset($update[$data]);
+        $this->update(['notifications' => $update]);
+
+        return $this->notifications;
     }
     #endregion
 

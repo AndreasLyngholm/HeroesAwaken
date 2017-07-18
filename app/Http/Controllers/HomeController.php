@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Download;
 use function App\can;
+use App\Jobs\NotificationQueue;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Queue;
 
 class HomeController extends Controller
 {
@@ -17,6 +19,8 @@ class HomeController extends Controller
 
     public function news()
     {
+        if (Auth::check())
+            Auth::user()->notificationAdd(['news' => false]);
         return view('news');
     }
 

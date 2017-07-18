@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Jobs\NotificationQueue;
 use App\News;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Queue;
 
 class NewsController extends Controller
 {
@@ -29,6 +32,9 @@ class NewsController extends Controller
             'date' => Carbon::now(),
             'user_id' => Auth::id(),
         ]);
+
+        foreach (User::pluck('id')->all() as $id)
+            Queue::push(new NotificationQueue($id, ['news' => true]));
 
 		return redirect()->back()->with('success', 'Your news post was submitted');
     }
