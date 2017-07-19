@@ -59,6 +59,11 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth'
         'uses' => 'ProfileController@lists'
     ]);
 
+    Route::get('link/discord', [
+        'as' => 'linkDiscord',
+        'uses' => 'ProfileController@linkDiscord'
+    ]);
+
     Route::get('answerFriendRequest', [
         'as' => 'answerFriendRequest',
         'uses' => 'ProfileController@answerFriendRequest'

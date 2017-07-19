@@ -49,6 +49,11 @@ class User extends Authenticatable
         return $this->hasOne('App\UserSignature');
     }
 
+    public function discordLink()
+    {
+        return $this->hasOne('App\UserDiscord');
+    }
+
     public function friends()
     {
         $friends = new Collection();
