@@ -59,6 +59,11 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth'
         'uses' => 'ProfileController@lists'
     ]);
 
+    Route::get('link/discord', [
+        'as' => 'linkDiscord',
+        'uses' => 'ProfileController@linkDiscord'
+    ]);
+
     Route::get('answerFriendRequest', [
         'as' => 'answerFriendRequest',
         'uses' => 'ProfileController@answerFriendRequest'
@@ -108,7 +113,7 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
         'uses' => 'ForumsController@forumsDetails'
     ]);
 
-    Route::get('{forum}/create', [
+    Route::post('{forum}/create', [
         'middleware' => 'auth',
         'as' => 'details.doCreate',
         'uses' => 'ForumsController@forumsDetailsDoCreate',
@@ -121,7 +126,7 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
         'can'  => 'forum.post'
     ]);
 
-    Route::get('{forum}/{topic}/create', [
+    Route::post('{forum}/{topic}/create', [
         'middleware' => 'auth',
         'as' => 'posts.doCreate',
         'uses' => 'ForumsController@forumsPostsDoCreate',

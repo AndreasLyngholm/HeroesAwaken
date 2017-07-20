@@ -6,6 +6,7 @@ use App\FriendRequest;
 use App\User;
 use App\UserFriend;
 use App\UserSignature;
+use App\UserDiscord;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
@@ -130,6 +131,60 @@ class ProfileController extends Controller
         {
             Auth::user()->sendFriendRequest($user);
             return redirect()->back()->with('success', 'A friend request was sent!');
+        }
+    }
+
+    public function linkDiscord()
+    {
+        $provider = new \Discord\OAuth\Discord([
+            'clientId'                => '332411803877376001',    // The client ID assigned to you by the provider
+            'clientSecret'            => 'vYUQusAzlOyzm6Fzr5bhwkEoJ6wND_Ic',   // The client password assigned to you by the provider
+            'redirectUri'             =>  route('profile.linkDiscord'),
+        ]);
+
+        // If we don't have an authorization code then get one
+        if (!isset($_GET['code'])) {
+
+            // Fetch the authorization URL from the provider; this returns the
+            // urlAuthorize option and generates and applies any necessary parameters
+            // (e.g. state).
+            $authorizationUrl = $provider->getAuthorizationUrl();
+
+            // Get the state generated for you and store it to the session.
+            //$_SESSION['oauth2state'] = $provider->getState();
+
+            // Redirect the user to the authorization URL.
+            header('Location: ' . $authorizationUrl);
+            exit;
+
+        } else {
+
+            $token = $provider->getAccessToken('authorization_code', [
+                'code' => $_GET['code'],
+            ]);
+
+            // Get the user object.
+            $user = $provider->getResourceOwner($token);
+
+            if(UserDiscord::where('user_id', Auth::id())->exists())
+                UserDiscord::where('user_id', Auth::id())->first()->update([
+                    'discord_id' => $user->id,
+                    'discord_name' => $user->username,
+                    'discord_email' => $user->email,
+                    'discord_discriminator' => $user->discriminator,
+                ]);
+            else
+                UserDiscord::create([
+                    'user_id' => Auth::id(),
+                    'discord_id' => $user->id,
+                    'discord_name' => $user->username,
+                    'discord_email' => $user->email,
+                    'discord_discriminator' => $user->discriminator,
+
+                ]);
+
+            return redirect()->route('profile.lists')->with('success', 'We linked your discord account!');
+
         }
     }
 }
