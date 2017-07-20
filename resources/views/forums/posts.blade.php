@@ -171,25 +171,6 @@
 
         @if(\App\can('forum.comment'))
             <div class="row">
-<<<<<<< HEAD
-                <div class="small-16 large-16 columns">
-					<div class="callout">
-						<div id="note"></div>
-						<form method="get" action="{{ route('forums.posts.doCreate', [$forum->id, $topic->id]) }}">
-							{{ csrf_field() }}
-							<label> <b style="color: black;">Write comment</b>
-								<textarea name="comment" id="editor1" rows="5" cols="40" placeholder="What do you have on your mind?"  required></textarea>
-							</label>
-							<br>
-								<button type="submit" class="lime-button" name="submit" style="float: right; margin: 40px 0px;">Add comment</button>
-							<script>
-								CKEDITOR.replace( 'editor1', {
-									uiColor: '#E2D3C0'
-								});
-							</script>
-						</form>
-					</div>
-=======
                 <div class="small-16 large-16 columns callout">
                     <div id="note"></div>
                     <form method="post" action="{{ route('forums.posts.doCreate', [$forum->id, $topic->id]) }}">
@@ -204,8 +185,7 @@
                                 uiColor: '#E2D3C0'
                             });
                         </script>
-                    </form>
->>>>>>> fa671a6b177d74f8354b921c2146a64ec2c4d7c3
+					</form>
                 </div>
             </div>
         @endif
