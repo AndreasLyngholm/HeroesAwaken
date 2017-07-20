@@ -126,7 +126,7 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
         'can'  => 'forum.post'
     ]);
 
-    Route::get('{forum}/{topic}/create', [
+    Route::post('{forum}/{topic}/create', [
         'middleware' => 'auth',
         'as' => 'posts.doCreate',
         'uses' => 'ForumsController@forumsPostsDoCreate',
