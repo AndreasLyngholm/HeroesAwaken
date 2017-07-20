@@ -77,7 +77,7 @@
         @if(\App\can('forum.topic'))
             <div class="row">
                 <div class="small-16 large-16 columns callout">
-                    <form method="get" action="{{ route('forums.details.doCreate', $forum->id) }}">
+                    <form method="post" action="{{ route('forums.details.doCreate', $forum->id) }}">
                         {{ csrf_field() }}
                         <b style="color: black;">Create new topic</b>
                         <br><br>
