@@ -100,8 +100,8 @@
 								<a  href="{{ route('profile.details', \App\User::find($comment->user_id)->username) }}" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2"> {{ \App\User::find($comment->user_id)->username }}</a>
 							</div>
 							<div class="user-content">
-								@if(\App\User::find($comment->user_id)->avatar != null) 
-								<img src="{{ str_replace("?", "", route('home', \App\User::find($comment->user_id)->avatar)) }}">
+								@if($comment->author->avatar != null)
+								<img src="{{ str_replace("?", "", route('home', $comment->author->avatar)) }}">
 								@else
 								<img src="http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-30/512/Battlefield-Heroes-new-1-icon.png">
 								@endif
@@ -110,15 +110,15 @@
 									<table>
 										<tr class="joindate">
 											<td>Member since:</td>
-											<td>21-07-2015</td>
+											<td>{{ $comment->author->created_at->format('d-m-Y') }}</td>
 										</tr>
 										<tr class="posts">
-											<td>Posts:</td>
-											<td>20</td>
+											<td>Comments:</td>
+											<td>{{ $comment->author->comments()->count() }}</td>
 										</tr>
 										<tr class="heroes">
 											<td>Heroes:</td>
-											<td>3</td>
+											<td>0</td>
 										<tr>
 									</table>
 								</div>
@@ -139,11 +139,11 @@
 							</div>
 							<div class="message-contents">
 								{!! $comment->comment !!}	
-								@if(\App\User::find($comment->user_id)->signature != null)
+								@if($comment->author->signature != null)
 									<hr>
 									<div data-type="user-signature">
 										<div class="text-center">
-											<a href="{{ route('profile.details', \App\User::find($comment->user_id)->username) }}" data-type="userlink">
+											<a href="{{ route('profile.details', $comment->author->username) }}" data-type="userlink">
 												<img style="max-height: 200px;" src="{{ str_replace("?", "", route('home', App\User::find($comment->user_id)->signature->image)) }}" alt="">
 											</a>
 										</div>
