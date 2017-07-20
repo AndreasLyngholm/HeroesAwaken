@@ -4080,6 +4080,7 @@ output {
 /* line 92, ../../foundation/bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.secondary {
   background-color: #f4ebe0;
+  min-height: 71.8%;
 }
 div.staff {
     background-image: url("../images/staff_bg.png");
@@ -7664,6 +7665,90 @@ table td, table th {
 
   /* line 19, ../scss/_responsive-tables.scss */
   table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td {
+    display: none;
+  }
+}
+
+.float-left {
+	float: left;
+}
+
+.panel.panel-rv {
+	display: flex;
+}
+
+.post-left {
+	float: left;
+	background-color: #E2D3C0;
+	color: #000000;
+	width: 25%; 
+	padding-bottom: 20px; 
+	border-right: 2px solid #464646;
+}
+
+.post-left .username {
+	text-align: center; 
+	padding: 10px; 
+	background-color: #E2D3C0; 
+	margin-bottom: 5px;
+}
+
+.post-left .username a {
+	color: #464646; 
+	font-weight: bold;
+}
+
+.post-left .user-content {
+	text-align: center;
+}
+
+.post-left .user-content img {
+	max-height: 250px;
+	max-width: 250px;
+}
+
+.post-left .user-info {
+	margin-top: 20px;
+}
+
+.post-right {
+	float: left;
+	padding-bottom: 500em;
+	margin-bottom: -500em;
+	width: 75%;
+	overflow: hidden;
+}
+
+.post-right .panel-body.callout {
+	padding: 0;
+	min-height: 100%;
+	border: none;
+}
+
+.post-right .message-header {
+	padding: 10px;
+	background-color: #E2D3C0;
+}
+
+span.push {
+	visibility: hidden;
+}
+
+.post-right .message-contents {
+	padding: 10px;
+}
+
+.panel {
+	display: flex;
+	margin-top: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .post-left .user-content img {
+    display: none;
+  }
+
+  .post-left table {
     display: none;
   }
 }
