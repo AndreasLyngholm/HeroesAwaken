@@ -113,7 +113,7 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
         'uses' => 'ForumsController@forumsDetails'
     ]);
 
-    Route::get('{forum}/create', [
+    Route::post('{forum}/create', [
         'middleware' => 'auth',
         'as' => 'details.doCreate',
         'uses' => 'ForumsController@forumsDetailsDoCreate',
