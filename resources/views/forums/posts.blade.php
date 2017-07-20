@@ -41,11 +41,12 @@
 								<img src="http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-30/512/Battlefield-Heroes-new-1-icon.png">
 								@endif
 								<div class="user-info">
-									<!-- DEV TAG EXAMPLE <div class="tag dev" style="color: white; padding: 5px; margin: 5px auto; width: 80%; border-radius: 10px;background: radial-gradient(ellipse at center, #cc2626 0%,#cc2626 66%,#cd5c5c 100%);">Developer</div> -->
+									@include('partials.forum_banner', ['user_id' => $topic->user_id])
+
 									<table>
 										<tr class="joindate">
 											<td>Member since:</td>
-											<td>21-07-2015</td>
+											<td>{{ \App\User::find($topic->user_id)->created_at->format('d-m-Y') }}</td>
 										</tr>
 										<tr class="posts">
 											<td>Posts:</td>
@@ -53,7 +54,7 @@
 										</tr>
 										<tr class="heroes">
 											<td>Heroes:</td>
-											<td>3</td>
+											<td>0</td>
 										<tr>
 									</table>
 								</div>
@@ -105,7 +106,7 @@
 								<img src="http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-30/512/Battlefield-Heroes-new-1-icon.png">
 								@endif
 								<div class="user-info">
-									<!-- DEV TAG EXAMPLE <div class="tag dev" style="color: white; padding: 5px; margin: 5px auto; width: 80%; border-radius: 10px;background: radial-gradient(ellipse at center, #cc2626 0%,#cc2626 66%,#cd5c5c 100%);">Developer</div>-->
+									@include('partials.forum_banner', ['user_id' => $comment->user_id])
 									<table>
 										<tr class="joindate">
 											<td>Member since:</td>
