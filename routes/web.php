@@ -59,6 +59,11 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth'
         'uses' => 'ProfileController@lists'
     ]);
 
+    Route::post('change/password', [
+        'as' => 'changePassword',
+        'uses' => 'ProfileController@changePassword'
+    ]);
+
     Route::get('link/discord', [
         'as' => 'linkDiscord',
         'uses' => 'ProfileController@linkDiscord'

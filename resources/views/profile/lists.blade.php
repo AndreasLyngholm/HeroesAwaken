@@ -31,6 +31,9 @@
                     <li class="tabs-title" role="presentation" >
                         <a id="description-panel-label" href="#description-panel" role="tab" aria-controls="description-panel" aria-selected="false">Description</a>
                     </li>
+                    <li class="tabs-title" role="presentation" >
+                        <a id="change-password-panel-label" href="#change-password-panel" role="tab" aria-controls="change-password-panel" aria-selected="false">Change Password</a>
+                    </li>
                 </ul>
             </div>
             <div class="small-14 columns">
@@ -100,6 +103,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div id="avatar-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="avatar-panel-label">
                         <h2 class="title">Manage your avatar</h2>
                         <div class="row team" style="margin-bottom: 2rem;">
@@ -160,6 +164,30 @@
                             </div>
                             <div class="large-8 columns">
                                 {!! Auth::user()->description !!}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="change-password-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="description-panel-label">
+                        <h2 class="title">Change password</h2>
+                        <div class="row" style="margin-bottom: 2rem;">
+                            <div class="large-8 columns">
+                                <form method="post" action="{{ route('profile.changePassword') }}">
+                                    {{ csrf_field() }}
+                                    <label> Current password <b style="color: black;"></b>
+                                        <input type="password" name="current_password" required>
+                                    </label>
+
+                                    <label> New password <b style="color: black;"></b>
+                                        <input type="password" name="new_password" required>
+                                    </label>
+
+                                    <label> New password confirmed <b style="color: black;"></b>
+                                        <input type="password" name="new_password_confirmed" required>
+                                    </label>
+
+                                    <button type="submit" class="lime-button" name="submit" style="float: left;">Change password</button>
+                                </form>
                             </div>
                         </div>
                     </div>
