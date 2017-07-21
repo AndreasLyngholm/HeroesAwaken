@@ -13,8 +13,6 @@ class NotificationQueue implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    protected $user;
-
     protected $data;
 
     /**
@@ -22,9 +20,8 @@ class NotificationQueue implements ShouldQueue
      *
      * @return void
      */
-    public function __construct($user, $data)
+    public function __construct($data)
     {
-        $this->user = $user;
         $this->data = $data;
     }
 
@@ -35,6 +32,7 @@ class NotificationQueue implements ShouldQueue
      */
     public function handle()
     {
-        User::find($this->user)->notificationAdd($this->data);
+        foreach (User::all() as $user)
+            $user->notificationAdd($this->data);
     }
 }
