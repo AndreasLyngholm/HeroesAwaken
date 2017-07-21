@@ -156,17 +156,19 @@
                     
                 @endforeach
 
+				<section class="row">
+					<div class="small-16 columns">
+						<!--PAGINATION-->
+						<ul class="pagination">
+							{!! $comments->render() !!}
+						</ul>
+						<!--//PAGINATION-->
+					</div>
+				</section>
+
             </section>
 
-            <section class="row">
-                <div class="small-16 columns">
-                    <!--PAGINATION-->
-                    <ul class="pagination">
-                        {!! $comments->render() !!}
-                    </ul>
-                    <!--//PAGINATION-->
-                </div>
-            </section>
+
 
         </div>
 
