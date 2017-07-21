@@ -40,7 +40,7 @@
             <div class="small-16 columns">
                 <div class="row small-up-2 medium-up-4 large-up-5">
                     @foreach($staffs as $user)
-                        @if( ! $leads->where('id', $user->id))
+                        @if($leads->where('id', $user->id)->first() == null)
                         <!--team-member-->
                             <div class="column team-member">
                                 <div class="photo">
