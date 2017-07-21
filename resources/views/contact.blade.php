@@ -33,32 +33,38 @@
                     <h4>People to contact</h4>
                     <!--address-->
                     <div class="column">
-                        <h5>Staff</h5>
+                        <h5>AwokenLead</h5>
                         <address>
                             <p>
                                 MakaHost<br>
-                                Absent<br>
-                                Doge :-)<br>
-                                Synaxis<br>
-                                Ray<br>
-                                Warp Productions<br>
-                                Heax<br>
+                                Lyngholm<br>
+                                Crowscream<br>
+                                Spencer<br>
                             </p>
                         </address>
                     </div>
                     <!--//address-->
                     <!--address-->
                     <div class="column">
-                        <h5>Devs</h5>
+                        <h5>Staff</h5>
                         <address>
                             <p>
-                                Lyngholm<br>
-                                Wazz<br>
-                                SD149<br>
+                                Absent<br> 
                                 Snow<br>
-                                Vahdek<br>
-                                Crowscream<br>
+                                Ray<br>
+                            </p>
+                        </address>
+                    </div>
+                    <!--//address-->
+                    <!--address-->
+                    <div class="column">
+                        <h5>AwokenDevs</h5>
+                        <address>
+                            <p>
+                                Wazz<br>
                                 Lord Squirrel<br>
+                                Jefalo<br>
+                                Lars.n7<br>
                             </p>
                         </address>
                     </div>
