@@ -77,5 +77,12 @@ class PermissionsTableSeeder extends Seeder
             ['description' => 'Ability to add new news.']
         );
         #endregion
+
+        #region audit
+        Permission::updateOrCreate(
+            ['slug' => 'audit.manage'],
+            ['description' => 'Access to audit panel.']
+        );
+        #endregion
     }
 }

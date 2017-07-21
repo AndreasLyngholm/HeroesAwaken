@@ -267,6 +267,15 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
         ]);
     });
 
+    Route::group(['prefix' => 'audit'], function ()
+    {
+        Route::get('/', [
+            'as' => 'audit.lists',
+            'uses' => 'AuditController@lists',
+            'can' => 'audit.manage'
+        ]);
+    });
+
 });
 
 // API

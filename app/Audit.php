@@ -11,4 +11,9 @@ class Audit extends Model
     public $casts = [
         'log' => 'json'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 }

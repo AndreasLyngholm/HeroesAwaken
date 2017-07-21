@@ -14,28 +14,36 @@
                         <li class="menu-text">Admin Dashboard</li>
                         @if(\App\can('user.update'))
                             <li class="has-submenu @if(Request::is('admin/users*')) active @endif">
-                                <a><i class="fa fa-users"></i>Users</a>
+                                <a><i class="fa fa-users"></i> Users</a>
                                 <ul class="submenu menu vertical" data-submenu>
-                                    @if(\App\can('user.update'))<li style="background-color: #88332E;"  @if(Request::is('admin/users/manage*')) class="active" @endif><a href="{{ route('admin.user.manage') }}"><i class="fa fa-cogs"></i>Management</a></li>@endif
-                                    @if(\App\can('user.roles'))<li style="background-color: #88332E;" @if(Request::is('admin/users/roles*')) class="active" @endif><a href="{{ route('admin.user.roles') }}"><i class="fa fa-users"></i>Roles and Permissions</a></li>@endif
-                                    @if(\App\can('user.add'))<li style="background-color: #88332E;" @if(Request::is('admin/users/create*')) class="active" @endif><a><i class="fa fa-user-plus"></i>New User</a></li>@endif
+                                    @if(\App\can('user.update'))<li style="background-color: #88332E;"  @if(Request::is('admin/users/manage*')) class="active" @endif><a href="{{ route('admin.user.manage') }}">Management</a></li>@endif
+                                    @if(\App\can('user.roles'))<li style="background-color: #88332E;" @if(Request::is('admin/users/roles*')) class="active" @endif><a href="{{ route('admin.user.roles') }}">Roles and Permissions</a></li>@endif
+                                    @if(\App\can('user.add'))<li style="background-color: #88332E;" @if(Request::is('admin/users/create*')) class="active" @endif><a>New User</a></li>@endif
                                 </ul>
                             </li>
                         @endif
                         @if(\App\can('forum.manage'))
                             <li class="has-submenu @if(Request::is('admin/forums*')) active @endif">
-                                <a><i class="fa fa-envelope"></i>Forum</a>
+                                <a><i class="fa fa-envelope"></i> Forum</a>
                                 <ul class="submenu menu vertical" data-submenu>
-                                    @if(\App\can('forum.manage'))<li style="background-color: #88332E;"><a><i class="fa fa-cogs"></i>Management</a></li>@endif
+                                    @if(\App\can('forum.manage'))<li style="background-color: #88332E;"><a>Management</a></li>@endif
                                 </ul>
                             </li>
                         @endif
                         @if(\App\can('news.manage'))
                             <li class="has-submenu @if(Request::is('admin/news*')) active @endif">
-                                <a><i class="fa fa-newspaper-o"></i>News</a>
+                                <a><i class="fa fa-newspaper-o"></i> News</a>
                                 <ul class="submenu menu vertical" data-submenu>
-                                    @if(\App\can('news.manage'))<li style="background-color: #88332E;" @if(Request::is('admin/news')) class="active" @endif><a href="{{ route('admin.news.lists') }}"><i class="fa fa-cogs"></i>Management</a></li>@endif
-                                    @if(\App\can('news.add'))<li style="background-color: #88332E;" @if(Request::is('admin/news/create')) class="active" @endif><a href="{{ route('admin.news.create') }}"><i class="fa fa-plus"></i>Add news</a></li>@endif
+                                    @if(\App\can('news.manage'))<li style="background-color: #88332E;" @if(Request::is('admin/news')) class="active" @endif><a href="{{ route('admin.news.lists') }}">Management</a></li>@endif
+                                    @if(\App\can('news.add'))<li style="background-color: #88332E;" @if(Request::is('admin/news/create')) class="active" @endif><a href="{{ route('admin.news.create') }}">Add news</a></li>@endif
+                                </ul>
+                            </li>
+                        @endif
+                        @if(\App\can('audit.manage'))
+                            <li class="has-submenu @if(Request::is('admin/audit*')) active @endif">
+                                <a><i class="fa fa-sitemap"></i> Audit</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                    @if(\App\can('audit.manage'))<li style="background-color: #88332E;" @if(Request::is('admin/audit')) class="active" @endif><a href="{{ route('admin.audit.lists') }}">Management</a></li>@endif
                                 </ul>
                             </li>
                         @endif
