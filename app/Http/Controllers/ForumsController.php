@@ -7,6 +7,7 @@ use App\Comment;
 use App\Convasation;
 use App\Forum;
 use App\HeroesAwaken\FormValidation;
+use function App\logAction;
 use App\Post;
 use App\Topic;
 use Carbon\Carbon;
@@ -76,6 +77,8 @@ class ForumsController extends Controller
         if( can('forum.delete') || $comment->user_id == Auth::id())
         {
             $comment->delete();
+            if(can('forum.delete'))
+                logAction('forum.delete', 'Comment ID: ' . $comment->id . ' was removed.', request()->route()->action);
             return redirect()->back()->with('success', 'Your comment got deleted!');
         } else {
             return redirect()->back()->with('error', 'You do not have permissions to do this action!');
@@ -89,6 +92,8 @@ class ForumsController extends Controller
             $topic->delete();
             foreach ($topic->comments as $comment)
                 $comment->delete();
+            if(can('forum.delete'))
+                logAction('forum.delete', 'Topic ID: ' . $topic->id . ' was removed.', request()->route()->action);
             return redirect()->route('forums.lists')->with('success', 'Your topic got deleted!');
         } else {
             return redirect()->back()->with('error', 'You do not have permissions to do this action!');
