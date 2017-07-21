@@ -7713,8 +7713,6 @@ table td, table th {
 
 .post-right {
 	float: left;
-	padding-bottom: 500em;
-	margin-bottom: -500em;
 	width: 75%;
 	overflow: hidden;
 }

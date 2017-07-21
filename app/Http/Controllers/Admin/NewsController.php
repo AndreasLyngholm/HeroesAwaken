@@ -33,8 +33,7 @@ class NewsController extends Controller
             'user_id' => Auth::id(),
         ]);
 
-        foreach (User::pluck('id')->all() as $id)
-            Queue::push(new NotificationQueue($id, ['news' => true]));
+        Queue::push(new NotificationQueue(['news' => true]));
 
 		return redirect()->back()->with('success', 'Your news post was submitted');
     }
