@@ -108,13 +108,25 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
         'uses' => 'ForumsController@forumsLists'
     ]);
 
+    Route::get('comment/delete/{comment}', [
+        'middleware' => ['auth', 'acl'],
+        'as' => 'commentDelete',
+        'uses' => 'ForumsController@commentDelete'
+    ]);
+
+    Route::get('topic/delete/{topic}', [
+        'middleware' => ['auth', 'acl'],
+        'as' => 'topicDelete',
+        'uses' => 'ForumsController@topicDelete'
+    ]);
+
     Route::get('{forum}', [
         'as' => 'details',
         'uses' => 'ForumsController@forumsDetails'
     ]);
 
     Route::post('{forum}/create', [
-        'middleware' => 'auth',
+        'middleware' => ['auth', 'acl'],
         'as' => 'details.doCreate',
         'uses' => 'ForumsController@forumsDetailsDoCreate',
         'can'  => 'forum.topic'
@@ -127,7 +139,7 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
     ]);
 
     Route::post('{forum}/{topic}/create', [
-        'middleware' => 'auth',
+        'middleware' => ['auth', 'acl'],
         'as' => 'posts.doCreate',
         'uses' => 'ForumsController@forumsPostsDoCreate',
         'can'  => 'forum.comment'

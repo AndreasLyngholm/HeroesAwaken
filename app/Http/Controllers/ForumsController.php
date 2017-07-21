@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use function App\can;
 use App\Comment;
 use App\Convasation;
 use App\Forum;
@@ -68,5 +69,29 @@ class ForumsController extends Controller
 
         $topic->update(['last_comment' => Carbon::now()]);
         return redirect()->route('forums.posts', [$forum->id, $topic->id]);
+    }
+
+    public function commentDelete(Comment $comment)
+    {
+        if( can('forum.delete') || $comment->user_id == Auth::id())
+        {
+            $comment->delete();
+            return redirect()->back()->with('success', 'Your comment got deleted!');
+        } else {
+            return redirect()->back()->with('error', 'You do not have permissions to do this action!');
+        }
+    }
+
+    public function topicDelete(Topic $topic)
+    {
+        if( can('forum.delete') || $topic->user_id == Auth::id())
+        {
+            $topic->delete();
+            foreach ($topic->comments as $comment)
+                $comment->delete();
+            return redirect()->route('forums.lists')->with('success', 'Your topic got deleted!');
+        } else {
+            return redirect()->back()->with('error', 'You do not have permissions to do this action!');
+        }
     }
 }

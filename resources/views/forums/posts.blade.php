@@ -73,6 +73,11 @@
 									|
 									<a onclick="copied()" class="clipboard" data-clipboard-text="{{ URL::current() }}#{{ 0 }}"> <i class="fa fa-link"></i> </a>
 									@include('partials.addFriend', ['user_id' => $topic->user_id])
+                                    @if(Auth::check())
+                                        @if(\App\can('forum.delete') || $comment->user_id == Auth::id())
+                                            | <a href="{{ route('forums.topicDelete', $topic->id) }}"><i class="fa fa-times"></i></a>
+                                        @endif
+                                    @endif
 								</span>
 							</div>
 							<div class="message-contents">
@@ -152,6 +157,13 @@
                                             <i class="fa fa-check"></i>
                                         @endif
                                     @endif
+
+                                    @if(Auth::check())
+                                        @if(\App\can('forum.delete') || $comment->user_id == Auth::id())
+                                            | <a href="{{ route('forums.commentDelete', $comment->id) }}"><i class="fa fa-times"></i></a>
+                                        @endif
+                                    @endif
+
 								</span>
 							</div>
 							<div class="message-contents">
