@@ -3974,8 +3974,8 @@ output {
 
 /* line 40, ../../foundation/bower_components/foundation-sites/scss/components/_badge.scss */
 .badge {
-  display: inline-block;
-  padding: 0.3em;
+  display: inline;
+  padding: 0.1em 0.5em 0.5em 0.5em;
   min-width: 2.1em;
   font-size: 0.6rem;
   text-align: center;
@@ -4178,8 +4178,7 @@ div.google-auto-placede:after {
 /* line 180, ../../foundation/bower_components/foundation-sites/scss/components/_menu.scss */
 .menu > li > a img,
 .menu > li > a i {
-  margin-right: 0.25rem;
-  display: inline-block;
+  display: inline;
 }
 /* line 100, ../../foundation/bower_components/foundation-sites/scss/components/_menu.scss */
 .menu > li {
