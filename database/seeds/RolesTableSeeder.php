@@ -16,7 +16,7 @@ class RolesTableSeeder extends Seeder
             ['title' => 'Normal User'],
             ['slug'  => 'normalUser']
         );
-        $normaluser->permissions()->sync([7, 8, 9]);
+        $normaluser->permissions()->sync([6, 7, 8]);
 
         $administrator = Role::updateOrCreate(
             ['title' => 'Administrator'],
