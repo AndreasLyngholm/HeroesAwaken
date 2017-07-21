@@ -65,6 +65,7 @@
                                 Lord Squirrel<br>
                                 Jefalo<br>
                                 Lars.n7<br>
+                                Warpy<br>
                             </p>
                         </address>
                     </div>
@@ -75,7 +76,6 @@
                         <address>
                             <p>
                                 DraksTOP<br>
-                                Lagniss<br>
                                 LordHardness_<br>
                                 MeanSpeed<br>
                                 Pasolero<br>
