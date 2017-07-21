@@ -32,8 +32,8 @@ class HomeController extends Controller
 
     public function team()
     {
-        $staffs = Role::where('slug', 'staff')->first()->users;
         $leads = Role::where('slug', 'awokenlead')->first()->users;
+        $staffs = Role::where('slug', 'staff')->first()->users;
         $devs = Role::where('slug', 'awokendev')->first()->users;
         return view('team', compact('staffs', 'leads', 'devs'));
     }

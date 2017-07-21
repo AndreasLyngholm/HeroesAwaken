@@ -15,12 +15,11 @@
             </div>
         </div>
 
-
         <div class="row team">
-            <h2>Staff</h2>
+            <h2>Awoken Lead</h2>
             <div class="small-16 columns">
                 <div class="row small-up-2 medium-up-4 large-up-5">
-                @foreach($staffs as $user)
+                @foreach($leads as $user)
                     <!--team-member-->
                         <div class="column team-member">
                             <div class="photo">
@@ -37,20 +36,22 @@
         </div>
 
         <div class="row team">
-            <h2>Awoken Lead</h2>
+            <h2>Staff</h2>
             <div class="small-16 columns">
                 <div class="row small-up-2 medium-up-4 large-up-5">
-                @foreach($leads as $user)
-                    <!--team-member-->
-                        <div class="column team-member">
-                            <div class="photo">
-                                <a href="{{ route('profile.details', $user->username) }}">
-                                    <img src="{{ $user->avatar ? $user->avatar : asset('images/placeholders/about.png')  }}" class="" alt="">
-                                </a>
+                    @foreach($staffs as $user)
+                        @if( ! $leads->where('id', $user->id))
+                        <!--team-member-->
+                            <div class="column team-member">
+                                <div class="photo">
+                                    <a href="{{ route('profile.details', $user->username) }}">
+                                        <img src="{{ $user->avatar ? $user->avatar : asset('images/placeholders/about.png')  }}" class="" alt="">
+                                    </a>
+                                </div>
+                                <h5><a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a></h5>
                             </div>
-                            <h5><a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a></h5>
-                        </div>
-                        <!--//team-member-->
+                            <!--//team-member-->
+                        @endif
                     @endforeach
                 </div>
             </div>
