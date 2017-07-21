@@ -7452,7 +7452,6 @@ footer.main-footer p.copyright {
 /* line 594, ../scss/_app-styles.scss */
 .team .column.team-member div.photo, .team .team-member.columns div.photo {
   background: none;
-  height: 280px;
   padding: 0.5rem 0;
   margin-bottom: 1rem;
 }
@@ -7681,20 +7680,20 @@ table td, table th {
 	float: left;
 	background-color: #E2D3C0;
 	color: #000000;
-	width: 25%; 
-	padding-bottom: 20px; 
+	width: 25%;
+	padding-bottom: 20px;
 	border-right: 2px solid #464646;
 }
 
 .post-left .username {
-	text-align: center; 
-	padding: 10px; 
-	background-color: #E2D3C0; 
+	text-align: center;
+	padding: 10px;
+	background-color: #E2D3C0;
 	margin-bottom: 5px;
 }
 
 .post-left .username a {
-	color: #464646; 
+	color: #464646;
 	font-weight: bold;
 }
 
