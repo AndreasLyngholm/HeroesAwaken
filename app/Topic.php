@@ -18,6 +18,11 @@ class Topic extends Model
         return $this->belongsTo('App\Forum');
     }
 
+    public function author()
+    {
+        return $this->belongsTo('App\User', 'user_id');
+    }
+
     public function comments()
     {
         return $this->hasMany('App\Comment')->with('author');

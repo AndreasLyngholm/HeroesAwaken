@@ -33,7 +33,7 @@
                     {{--<tr class="forum-category">--}}
                         {{--<td colspan="5">Official Threads</td>--}}
                     {{--</tr>--}}
-                    @foreach(\App\Forum::all() as $index => $forum)
+                    @foreach($forums as $index => $forum)
                         <tr>
                             <td style="width:75%">
                                 <p style="margin-bottom: 0rem;">
@@ -41,13 +41,13 @@
                                     {{ $forum->description }}
                                 </p>
                             </td>
-                            <td>{{ $forum->topics()->count() }}</td>
+                            <td>{{ $forum->topics->count() }}</td>
                             <td>{{ $forum->countComments() }}</td>
                             <td>
-                                @if($forum->lastComment())
+                                @if($forum->topics->last())
                                     <p style="margin-bottom: 0rem;">
-                                        <a href="{{ route('forums.posts', [$forum->id, $forum->lastComment()->topic_id]) }}#{{ $forum->lastComment()->id }}">{{ $forum->lastComment()->created_at->diffForHumans() }}</a><br />
-                                        <small>by <a href="{{ route('profile.details', \App\User::find($forum->lastComment()->user_id)->username) }}">{{ \App\User::find($forum->lastComment()->user_id)->username }}</a></small>
+                                        <a href="{{ route('forums.posts', [$forum->id, $forum->topics->last()->topic_id]) }}">{{ $forum->topics->last()->created_at->diffForHumans() }}</a><br />
+                                        <small>by <a href="{{ route('profile.details', $forum->topics->last()->author->username) }}">{{ $forum->topics->last()->author->username }}</a></small>
                                     </p>
                                 @else
                                     <p style="margin-bottom: 0rem;">

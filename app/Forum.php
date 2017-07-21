@@ -11,14 +11,19 @@ class Forum extends Model
 
     public function topics()
     {
-        return $this->hasMany('App\Topic');
+        return $this->hasMany('App\Topic')->with('author');
+    }
+
+    public function topicsWithComments()
+    {
+        return $this->hasMany('App\Topic')->with('comments');
     }
 
     public function countComments()
     {
         $count = 0;
-        foreach ($this->topics as $topic)
-            $count = $count + $topic->comments()->count();
+        foreach ($this->topicsWithComments as $topic)
+            $count = $count + $topic->comments->count();
         return $count;
     }
 

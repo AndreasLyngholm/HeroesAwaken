@@ -37,7 +37,7 @@
 </head>
 <body>
 
-@if( ! Request::is('admin*'))<a href="{{ route('download') }}"><img class="hide-for-small-only" style="position: absolute; right: 0.2rem; top: 8rem; z-index:2500; width: 10rem;" src="{{ asset('images/dl.png') }}"></a>@endif
+@if( ! Request::is('admin*'))<a href="{{ route('download') }}"><img class="hide-for-small-only" style="position: absolute; left: 1rem; top: 8rem; z-index:2500; width: 10rem;" src="{{ asset('images/dl.png') }}"></a>@endif
 
 @if( ! Request::is('admin*'))
     @include('partials.navbar')

@@ -14,7 +14,7 @@
                     <h3>
                         <small>
                             <a href="{{ route('forums.lists') }}">Forum</a>
-                             / 
+                             /
                              <a href="{{ route('forums.details', $forum->id) }}">{{ $forum->name }}</a>
                              /
                         </small>
@@ -32,25 +32,27 @@
 					<div class="post-left">
 						<div class="user">
 							<div class="username">
-								<a href="{{ route('profile.details', \App\User::find($topic->user_id)->username) }}" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2">{{ \App\User::find($topic->user_id)->username }}</a>
+								<a href="{{ route('profile.details', $topic->author->username) }}" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2">{{ \App\User::find($topic->user_id)->username }}</a>
 							</div>
 							<div class="user-content">
-								@if(\App\User::find($topic->user_id)->avatar != null) 
-								<img src="{{ str_replace("?", "", route('home', \App\User::find($topic->user_id)->avatar)) }}">
+								@if($topic->author->avatar != null)
+								<img src="{{ str_replace("?", "", route('home', $topic->author->avatar)) }}">
 								@else
-								<img src="http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-30/512/Battlefield-Heroes-new-1-icon.png">
+								<img src="{{ asset('images/placeholders/comment.png') }}">
 								@endif
 								<div class="user-info">
-									@include('partials.forum_banner', ['user_id' => $topic->user_id])
+                                    <div class="tag dev" style="color: white; padding: 5px; margin: 5px auto; width: 80%; border-radius: 10px; background: radial-gradient(ellipse at center, #88332E 0%,#88332E 66%,#88332E 100%);">
+                                        {{ $topic->author->roles->last()->title }}
+                                    </div>
 
 									<table>
 										<tr class="joindate">
 											<td>Member since:</td>
-											<td>{{ \App\User::find($topic->user_id)->created_at->format('d-m-Y') }}</td>
+											<td>{{ $topic->author->created_at->format('d-m-Y') }}</td>
 										</tr>
 										<tr class="posts">
-											<td>Posts:</td>
-											<td>20</td>
+											<td>Comments:</td>
+											<td>{{ $topic->author->comments()->count() }}</td>
 										</tr>
 										<tr class="heroes">
 											<td>Heroes:</td>
@@ -74,7 +76,7 @@
 								</span>
 							</div>
 							<div class="message-contents">
-								{!! $topic->text !!}	
+								{!! $topic->text !!}
 								@if(\App\User::find($topic->user_id)->signature != null)
 									<hr>
 									<div data-type="user-signature">
@@ -89,24 +91,26 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<br>
-				
+
                 @foreach($comments as $comment)
 				<div class="panel" id="{{ $comment->id }}">
 					<div class="post-left">
 						<div class="user">
 							<div class="username">
-								<a  href="{{ route('profile.details', \App\User::find($comment->user_id)->username) }}" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2"> {{ \App\User::find($comment->user_id)->username }}</a>
+								<a  href="{{ route('profile.details', $comment->author->username) }}" data-toggle="popover" class="user-hovercard" data-placement="bottom" data-user-id="2"> {{ $comment->author->username }}</a>
 							</div>
 							<div class="user-content">
 								@if($comment->author->avatar != null)
-								<img src="{{ str_replace("?", "", route('home', $comment->author->avatar)) }}">
+									<img src="{{ str_replace("?", "", route('home', $comment->author->avatar)) }}">
 								@else
-								<img src="http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-30/512/Battlefield-Heroes-new-1-icon.png">
+									<img src="{{ asset('images/placeholders/comment.png') }}">
 								@endif
 								<div class="user-info">
-									@include('partials.forum_banner', ['user_id' => $comment->user_id])
+									<div class="tag dev" style="color: white; padding: 5px; margin: 5px auto; width: 80%; border-radius: 10px; background: radial-gradient(ellipse at center, #88332E 0%,#88332E 66%,#88332E 100%);">
+										{{ $comment->author->roles->last()->title }}
+									</div>
 									<table>
 										<tr class="joindate">
 											<td>Member since:</td>
@@ -114,7 +118,7 @@
 										</tr>
 										<tr class="posts">
 											<td>Comments:</td>
-											<td>{{ $comment->author->comments()->count() }}</td>
+											<td>{{ $comment->author->comments->count() }}</td>
 										</tr>
 										<tr class="heroes">
 											<td>Heroes:</td>
@@ -134,17 +138,30 @@
 									<span data-type="datetime">{{ $comment->created_at }}</span>
 									|
 									<a onclick="copied()" class="clipboard" data-clipboard-text="{{ URL::current() }}#{{ $comment->id }}"> <i class="fa fa-link"></i> </a>
-									@include('partials.addFriend', ['user_id' => $comment->user_id])
+                                    @if(Auth::check() && $comment->user_id != Auth::id())
+                                        |
+                                        @if(! Auth::user()->isFriend($comment->user_id))
+                                            @if(\App\FriendRequest::where('receiver', Auth::user()->id)->where('sender', $comment->user_id)->exists())
+                                                <a class="pull-right" href="{{ route('profile.addFriend', $comment->user_id) }}"> <i class="fa fa-user-plus"></i> </a>
+                                            @elseif(\App\FriendRequest::where('sender', Auth::user()->id)->where('receiver', $comment->user_id)->exists())
+                                                <i class="fa fa-hourglass-end pull-right"></i>
+                                            @else
+                                                <a class="pull-right" href="{{ route('profile.addFriend', $comment->user_id) }}"> <i class="fa fa-user-plus"></i> </a>
+                                            @endif
+                                        @else
+                                            <i class="fa fa-check"></i>
+                                        @endif
+                                    @endif
 								</span>
 							</div>
 							<div class="message-contents">
-								{!! $comment->comment !!}	
+								{!! $comment->comment !!}
 								@if($comment->author->signature != null)
 									<hr>
 									<div data-type="user-signature">
 										<div class="text-center">
 											<a href="{{ route('profile.details', $comment->author->username) }}" data-type="userlink">
-												<img style="max-height: 200px;" src="{{ str_replace("?", "", route('home', App\User::find($comment->user_id)->signature->image)) }}" alt="">
+												<img style="max-height: 200px;" src="{{ str_replace("?", "", route('home', $comment->author->signature->image)) }}" alt="">
 											</a>
 										</div>
 									</div>
@@ -153,7 +170,7 @@
 						</div>
 					</div>
 				</div>
-                    
+
                 @endforeach
 
 				<section class="row">

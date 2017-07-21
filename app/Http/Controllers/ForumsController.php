@@ -21,13 +21,15 @@ class ForumsController extends Controller
 {
     public function forumsLists() //FORUMS
     {
-        $forums = Forum::orderBy('id', 'desc')->paginate(25);
+        $forums = Forum::with('topics', 'topics.comments')->orderBy('id', 'desc')->paginate(25);
+
         return view('forums.lists', compact('forums'));
     }
 
     public function forumsDetails(Forum $forum) //TOPICS
     {
-        $topics = $forum->topics()->orderBy('last_comment', 'desc')->paginate(25);
+        $topics = Topic::where('forum_id', $forum->id)->orderBy('last_comment', 'desc')->with('comments')->paginate(25);
+
         return view('forums.details', compact('forum', 'topics'));
     }
 
@@ -49,7 +51,7 @@ class ForumsController extends Controller
 
     public function forumsPosts(Forum $forum, Topic $topic) //POSTS
     {
-        $comments = $topic->comments()->paginate(25);
+        $comments = Comment::where('topic_id', $topic->id)->with('author', 'author.comments', 'author.roles')->paginate(25);
         return view('forums.posts', compact('forum', 'topic', 'comments'));
     }
 
