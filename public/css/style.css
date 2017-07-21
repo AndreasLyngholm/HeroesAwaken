@@ -4457,13 +4457,12 @@ div.google-auto-placede:after {
 }
 /* line 68, ../../foundation/bower_components/foundation-sites/scss/components/_dropdown-menu.scss */
 .dropdown.menu > li.is-dropdown-submenu-parent > a {
-  padding-right: 1.5rem;
   position: relative;
 }
 /* line 73, ../../foundation/bower_components/foundation-sites/scss/components/_dropdown-menu.scss */
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
   content: '';
-  display: block;
+  display: none;
   width: 0;
   height: 0;
   border: inset 5px;
@@ -6377,13 +6376,15 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 @media screen and (min-width: 64em) {
   /* line 63, ../scss/_app-styles.scss */
   #main-header #main-nav ul.main-menu {
-  margin: 2.06667rem 0 0;
+  margin: 1.7rem 0 0;
   }
 }
 /* line 68, ../scss/_app-styles.scss */
 #main-header #main-nav ul.main-menu li {
   display: inline-block;
-  margin-right: 2.66667rem;
+}
+.main-menu > li {
+  margin-right: 1rem;
 }
 /* line 71, ../scss/_app-styles.scss */
 #main-header #main-nav ul.main-menu li:last-child {
