@@ -10,45 +10,45 @@ return [
     |
     */
 
-    'friend_list' => 'Vrienden lijst',
+    'friend_list' => 'Vriendenlijst',
     'username' => 'Gebruikersnaam',
     'status' => 'Status',
     'options' => 'Opties',
-    'remove_friend' => 'Vriend verwijderen',
-    'pending_request' => 'Je hebt een vriendenverzoek in afwachting van ',
+    'remove_friend' => 'Verwijderd vriend',
+    'pending_request' => 'U heeft een vriendschapsverzoek van ',
     'friend_requests' => 'Vriendschapsverzoeken',
 
-    'linked_accounts' => 'Verbonden Accounts',
-    'link_account' => 'Verbind je discord account',
+    'linked_accounts' => 'Gekoppelde accounts',
+    'link_account' => 'Koppel je Discord account',
 
     'avatar' => [
         'title' => 'Avatar',
-        'manage' => 'Beheer je avatar',
-        'below_1' => 'Voeg je persoonlijke avatar hieronder toe.',
-        'below_2' => 'We bevelen plaatjes aan met dimensies van 1:1, aangezien we dit forceren na de upload.',
-        'submit' => 'Avatar indienen',
+        'manage' => 'Bewerk je avatar',
+        'below_1' => 'Voeg hier je persoonlijke avatar toe.',
+        'below_2' => 'We raden je aan afbeeldingen te gebruiken met een 1:1 afmeting. ',
+        'submit' => 'Voeg Avatar toe',
     ],
 
     'signature' => [
         'title' => 'Handtekening',
-        'manage' => 'Beheer je handtekeningen',
-        'below_1' => 'Voeg je persoonlijke handtekening hieronder toe.',
-        'below_2' => 'We bevelen plaatjes aan met dimensies van 900x250 pixels.',
-        'submit' => 'Handtekening indienen',
+        'manage' => 'Bewerk je handtekening',
+        'below_1' => 'Voeg hier uw eigen handtekening toe.',
+        'below_2' => 'We raden afbeeldingen aan met afmetingen van 900x250. ',
+        'submit' => 'Voeg handtekening toe',
     ],
 
     'description' => [
-        'title' => 'Omschrijving',
-        'manage' => 'Beheer je omschrijving',
-        'submit' => 'Voeg een omschrijving toe',
+        'title' => 'Beschrijving',
+        'manage' => 'Bewerk je beschrijving.',
+        'submit' => 'Voeg beschrijving toe',
     ],
 
     'change_password' => 'Verander wachtwoord',
     'current_password' => 'Huidig wachtwoord',
     'new_password' => 'Nieuw wachtwoord',
-    'new_password_confirmed' => 'Nieuw wachtwoord bevestigd',
+    'new_password_confirmed' => 'Bevestig nieuw wachtwoord',
 
-    'change_language' => 'Change Language',
+    'change_language' => 'Verander taal',
     'en' => 'English',
     'da' => 'Danish',
     'fr' => 'French',

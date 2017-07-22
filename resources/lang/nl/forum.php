@@ -12,34 +12,34 @@ return [
 
     'forum_name' => 'Forum naam',
     'posts' => 'Berichten',
-    'comments' => 'Commentaren',
-    'last_post' => 'Laatste Bericht',
+    'comments' => 'Reacties',
+    'last_post' => 'Laaste Bericht',
     'by' => 'Door',
-    'no_comments' => 'Nog geen berichten geplaatst.',
+    'no_comments' => 'Er zijn nog geen reacties geplaatst',
 
-    'general' => 'Algemeen',
-    'general_description' => 'Praat over iets dat HeroesAwaken gerelateerd is, dat niet bij een andere categorie thuishoort.',
+    'general' => 'Discussies',
+    'general_description' => 'Bespreek over alles wat Heroes Awaken gerelateerd is en niet in andere categorieën past',
 
     'off_topic' => 'Off-topic',
-    'off_topic_description' => 'Praat over onderwerpen die niets met HeroesAwaken te maken hebben',
+    'off_topic_description' => 'Bespreek niet gerelateerde Heroes Awaken zaken hier',
 
-    'recruits' => 'Sollicitaties',
-    'recruits_description' => 'Wil je ons helpen?',
+    'recruits' => 'Rekruten',
+    'recruits_description' => 'Kun jij ons helpen? Meld je hier!',
 
     'feedback' => 'Feedback & Suggesties',
-    'feedback_description' => 'Heb je feedback of suggesties?',
+    'feedback_description' => 'Heb jij feedback of suggesties voor ons? Laat het weten!',
 
     'title' => 'Titel',
     'replies' => 'Antwoorden',
-    'create_new' => 'Maak een nieuw topic',
-    'description' => 'Omschrijving',
+    'create_new' => 'Nieuw onderwerp',
+    'description' => 'Beschrijving',
     'write_post' => 'Schrijf je bericht',
-    'create_topic' => 'Maak Topic',
+    'create_topic' => 'Maak onderwerp',
 
     'member_since' => 'Lid sinds',
-    'heroes' => 'Helden',
-    'write_comment' => 'Schrijf commentaar',
-    'add_comment' => 'Voeg commentaar toe',
+    'heroes' => Helden',
+    'write_comment' => 'Schrijf reactie',
+    'add_comment' => 'Voeg reactie toe',
 
 
 ];

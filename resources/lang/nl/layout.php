@@ -10,10 +10,10 @@ return [
     |
     */
 
-    'home' => 'Home',
+    'home' => 'Heroes Awaken',
     'news' => 'Nieuws',
     'forum' => 'Forum',
-    'team' => 'Team',
+    'team' => 'Het Team',
     'contact' => 'Contact',
     'profile' => 'Profiel',
     'login' => 'Inloggen',

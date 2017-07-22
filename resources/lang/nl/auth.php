@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Je gebruikersnaam/wachtwoord komt niet overheen met onze gegevens.',
-    'throttle' => 'Je hebt te vaak geprobeerd in the loggen, je kunt het over :seconds seconden opnieuw proberen.',
+    'failed' => 'Deze referenties komen niet overeen met ons archief ',
+    'throttle' => 'Te veel aanmeldpogingen. Probeer het opnieuw in :seconden seconden.',
 
 ];
