@@ -17,19 +17,25 @@
             <div class="small-2 columns">
                 <ul id="admin-actions-tab" class="tabs vertical">
                     <li class="tabs-title is-active" role="presentation" >
-                        <a id="friends-panel-label" href="#friends-panel" role="tab" aria-controls="friends-panel" aria-selected="true">Friend List</a>
+                        <a id="friends-panel-label" href="#friends-panel" role="tab" aria-controls="friends-panel" aria-selected="true">@lang('profile.friend_list')</a>
                     </li>
                     <li class="tabs-title is-active" role="presentation" >
-                        <a id="links-panel-label" href="#links-panel" role="tab" aria-controls="links-panel" aria-selected="false">Linked Accounts</a>
+                        <a id="links-panel-label" href="#links-panel" role="tab" aria-controls="links-panel" aria-selected="false">@lang('profile.linked_accounts')</a>
                     </li>
                     <li class="tabs-title" role="presentation" >
-                        <a id="avatar-panel-label" href="#avatar-panel" role="tab" aria-controls="avatar-panel" aria-selected="false">Avatar</a>
+                        <a id="avatar-panel-label" href="#avatar-panel" role="tab" aria-controls="avatar-panel" aria-selected="false">@lang('profile.avatar.title')</a>
                     </li>
                     <li class="tabs-title" role="presentation" >
-                        <a id="signature-panel-label" href="#signature-panel" role="tab" aria-controls="signature-panel" aria-selected="false">Signature</a>
+                        <a id="signature-panel-label" href="#signature-panel" role="tab" aria-controls="signature-panel" aria-selected="false">@lang('profile.signature.title')</a>
                     </li>
                     <li class="tabs-title" role="presentation" >
-                        <a id="description-panel-label" href="#description-panel" role="tab" aria-controls="description-panel" aria-selected="false">Description</a>
+                        <a id="description-panel-label" href="#description-panel" role="tab" aria-controls="description-panel" aria-selected="false">@lang('profile.description.title')</a>
+                    </li>
+                    <li class="tabs-title" role="presentation" >
+                        <a id="change-password-panel-label" href="#change-password-panel" role="tab" aria-controls="change-password-panel" aria-selected="false">@lang('profile.change_password')</a>
+                    </li>
+                    <li class="tabs-title" role="presentation" >
+                        <a id="language-panel-label" href="#language-panel" role="tab" aria-controls="language-panel" aria-selected="false">@lang('profile.change_language')</a>
                     </li>
                 </ul>
             </div>
@@ -38,13 +44,13 @@
                     <div id="friends-panel" class="tabs-panel is-active" role="tabpanel" aria-hidden="false" aria-labelledby="friends-panel-label">
                         <div class="row">
                             <div class="small-8 columns">
-                                <h2>Friend list</h2>
+                                <h2>@lang('profile.friend_list')</h2>
                                 <table>
                                     <thead>
                                     <tr>
-                                        <th>Username</th>
-                                        <th>Status</th>
-                                        <th>Options</th>
+                                        <th>@lang('profile.username')</th>
+                                        <th>@lang('profile.status')</th>
+                                        <th>@lang('profile.options')</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -52,7 +58,7 @@
                                         <tr>
                                             <td><a style="color: black; font-weight: bolder;" href="{{ route('profile.details', $friend->username) }}">{{ $friend->username }}</a></td>
                                             <td>{!! $friend->isOnline() ? "<i class='label success'>ONLINE</i>" : "<i class='label alert'>OFFLINE</i>" !!}</td>
-                                            <td><a class="button warning" href="{{ route('profile.removeFriend', $friend->id) }}"><i class="fa fa-times"></i> Remove friend</a></td>
+                                            <td><a class="button warning" href="{{ route('profile.removeFriend', $friend->id) }}"><i class="fa fa-times"></i> @lang('profile.remove_friend')</a></td>
                                         </tr>
                                     @empty
                                     @endforelse
@@ -62,13 +68,13 @@
                         
                             @if(Auth::user()->friendRequests()->count() > 0)
                             <div class="large-8 columns">
-                                <h2>Friend requests</h2>
+                                <h2>@lang('profile.friend_requests')</h2>
                                 <table>
                                     <tbody>
                                     @foreach(Auth::user()->friendRequests as $request)                  
                                     <tr>
                                         <td width="70%;">
-                                        You have a pending friend request from <a style="color: black; font-weight: bolder;" href="{{ route('profile.details', App\User::find($request->sender)->username) }}">{{ App\User::find($request->sender)->username }}</a>
+                                            @lang('profile.pending_request') <a style="color: black; font-weight: bolder;" href="{{ route('profile.details', App\User::find($request->sender)->username) }}">{{ App\User::find($request->sender)->username }}</a>
                                         </td>
                                         <td width="30%;">
                                             <a style="cursor: pointer;" class="label success" href="{{ route('profile.answerFriendRequest', ['sender' => $request->sender, 'answer' => 'accepted']) }}">
@@ -88,28 +94,29 @@
                     </div>
                     <div id="links-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="links-panel-label">
 
-                        <h2 class="title">Linked Accounts</h2>
+                        <h2 class="title">@lang('profile.linked_accounts')</h2>
                                                 
                         <div class="row" style="margin-top: 10px;">
                             <div class="large-16 columns">
                                 @if(Auth::user()->discordLink != null)
                                     <b>Discord</b> ID: {{ Auth::user()->discordLink->discord_id }}; {{ Auth::user()->discordLink->discord_name }}#{{ Auth::user()->discordLink->discord_discriminator }}
                                 @else
-                                    <a class="fa fa-link" href="{{ route('profile.linkDiscord') }}"> Link your discord account</a>
+                                    <a class="fa fa-link" href="{{ route('profile.linkDiscord') }}"> @lang('profile.link_account')</a>
                                 @endif
                             </div>
                         </div>
                     </div>
+
                     <div id="avatar-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="avatar-panel-label">
-                        <h2 class="title">Manage your avatar</h2>
+                        <h2 class="title">@lang('profile.avatar.manage')</h2>
                         <div class="row team" style="margin-bottom: 2rem;">
                             <div class="large-8 columns">
-                                <p>Add your own personal avatar below.</p>
-                                <p>We suggest images with the dimensions of 1:1 as we force the format after upload.</p>
+                                <p>@lang('profile.avatar.below_1')</p>
+                                <p>@lang('profile.avatar.below_2')</p>
                                 <form action="{{ route('profile.addAvatar') }}" method="POST" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                     <input type="file" name="image" required>
-                                    <button type="submit" class="lime-button" style="float: left;">Submit Avatar</button>
+                                    <button type="submit" class="lime-button" style="float: left;">@lang('profile.avatar.submit')</button>
                                 </form>
                             </div>
                             @if(Auth::user()->avatar != null)
@@ -121,15 +128,15 @@
                     </div>
 
                     <div id="signature-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="signature-panel-label">
-                        <h2 class="title">Manage your signature</h2>
+                        <h2 class="title">@lang('profile.signature.manage')</h2>
                         <div class="row team" style="margin-bottom: 2rem;">
                             <div class="large-8 columns">
-                                <p>Add your own personal signature below.</p>
-                                <p>We suggest images with the dimensions of 900 x 250px</p>
+                                <p>@lang('profile.signature.below_1')</p>
+                                <p>@lang('profile.signature.below_2')</p>
                                 <form action="{{ route('profile.addSignature') }}" method="POST" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                     <input type="file" name="image" required>
-                                    <button type="submit" class="lime-button" style="float: left;">Submit Signature</button>
+                                    <button type="submit" class="lime-button" style="float: left;">@lang('profile.signature.submit')</button>
                                 </form>
                             </div>
                             @if(Auth::user()->signature != null)
@@ -141,7 +148,7 @@
                     </div>
 
                     <div id="description-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="description-panel-label">
-                        <h2 class="title">Manage your description</h2>
+                        <h2 class="title">@lang('profile.description.manage')</h2>
                         <div class="row" style="margin-bottom: 2rem;">
                             <div class="large-8 columns">
                                 <form method="post" action="{{ route('profile.addDescription') }}">
@@ -150,7 +157,7 @@
                                         <textarea name="description" id="editor1" rows="5" cols="40" placeholder="What do you have on your mind?" required></textarea>
                                     </label>
                                     <br>
-                                    <button type="submit" class="lime-button" name="submit" style="float: left;">Add description</button>
+                                    <button type="submit" class="lime-button" name="submit" style="float: left;">@lang('profile.description.submit')</button>
                                     <script>
                                         CKEDITOR.replace( 'editor1', {
                                             uiColor: '#E2D3C0'
@@ -160,6 +167,57 @@
                             </div>
                             <div class="large-8 columns">
                                 {!! Auth::user()->description !!}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="change-password-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="description-panel-label">
+                        <h2 class="title">@lang('profile.change_password')</h2>
+                        <div class="row" style="margin-bottom: 2rem;">
+                            <div class="large-8 columns">
+                                <form method="post" action="{{ route('profile.changePassword') }}">
+                                    {{ csrf_field() }}
+                                    <label> @lang('profile.current_password') <b style="color: black;"></b>
+                                        <input type="password" name="current_password" required>
+                                    </label>
+
+                                    <label> @lang('profile.new_password') <b style="color: black;"></b>
+                                        <input type="password" name="new_password" required>
+                                    </label>
+
+                                    <label> @lang('profile.new_password_confirmed') <b style="color: black;"></b>
+                                        <input type="password" name="new_password_confirmed" required>
+                                    </label>
+
+                                    <button type="submit" class="lime-button" name="submit" style="float: left;">@lang('profile.change_password')</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="language-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="language-panel-label">
+                        <h2 class="title">@lang('profile.change_language')</h2>
+                        <div class="row" style="margin-bottom: 2rem;">
+                            <div class="large-8 columns">
+                                <form method="post" action="{{ route('setLanguage') }}">
+                                    {{ csrf_field() }}
+                                    <label>  <b style="color: black;"></b>
+                                        <select name="language" class="select2">
+                                            <option {{ Session::get('locale') == 'en' ? 'selected' : '' }} value="en">@lang('profile.en')</option>
+                                            <option {{ Session::get('locale') == 'da' ? 'selected' : '' }} value="da">@lang('profile.da')</option>
+                                            <option {{ Session::get('locale') == 'fr' ? 'selected' : '' }} value="fr">@lang('profile.fr')</option>
+                                            <option {{ Session::get('locale') == 'se' ? 'selected' : '' }} value="se">@lang('profile.se')</option>
+                                            <option {{ Session::get('locale') == 'de' ? 'selected' : '' }} value="de">@lang('profile.de')</option>
+                                            <option {{ Session::get('locale') == 'nl' ? 'selected' : '' }} value="nl">@lang('profile.nl')</option>
+                                            <option {{ Session::get('locale') == 'es' ? 'selected' : '' }} value="es">@lang('profile.es')</option>
+                                            <option {{ Session::get('locale') == 'pl' ? 'selected' : '' }} value="pl">@lang('profile.pl')</option>
+                                            <option {{ Session::get('locale') == 'ru' ? 'selected' : '' }} value="ru">@lang('profile.ru')</option>
+                                            <option {{ Session::get('locale') == 'fi' ? 'selected' : '' }} value="fi">@lang('profile.fi')</option>
+                                        </select>
+                                    </label>
+
+                                    <button type="submit" class="lime-button" name="submit" style="float: left;">@lang('profile.change_language')</button>
+                                </form>
                             </div>
                         </div>
                     </div>

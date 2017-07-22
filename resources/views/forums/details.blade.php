@@ -13,10 +13,10 @@
                 <nav>
                     <h3>
                         <small>
-                            <a href="{{ route('forums.lists') }}">Forum</a>
+                            <a href="{{ route('forums.lists') }}">@lang('layout.forum')</a>
                              / 
                         </small>
-                        {{ $forum->name }}
+                        @lang('forum.' . strtolower($forum->name))
                     </h3>
                 </nav>
                 <div class="big-sep"></div>
@@ -27,9 +27,9 @@
             <table>
                 <thead>
                 <tr>
-                    <th>Title</th>
-                    <th>Replies</th>
-                    <th>Last post</th>
+                    <th>@lang('forum.title')</th>
+                    <th>@lang('forum.replies')</th>
+                    <th>@lang('forum.last_post')</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -42,19 +42,19 @@
                             <p style="margin-bottom: 0rem;">
                                 <b><a href="{{ route('forums.posts', [$forum->id, $topic->id]) }}">{{ $topic->name }}</a></b><br />
                                 {{ $topic->description }}<br />
-                                <small>by <a href="{{ route('profile.details', \App\User::find($topic->user_id)->username) }}">{{ \App\User::find($topic->user_id)->username }}</a></small>
+                                <small>by <a href="{{ route('profile.details', $topic->author->username) }}">{{ $topic->author->username }}</a></small>
                             </p>
                         </td>
-                        <td>{{ $topic->comments()->count() }}</td>
+                        <td>{{ $topic->comments->count() }}</td>
                         <td>
                             @if($topic->comments->count() > 0)
                                 <p style="margin-bottom: 0rem;">
                                     <a href="{{ route('forums.posts', [$forum->id, $topic->id]) }}#{{ $topic->comments->last()->id }}">{{ $topic->comments->last()->created_at->diffForHumans() }}</a><br />
-                                    <small>by <a href="{{ route('profile.details', \App\User::find($topic->comments->last()->user_id)->username) }}">{{ \App\User::find($topic->comments->last()->user_id)->username }}</a></small>
+                                    <small>by <a href="{{ route('profile.details', $topic->comments->last()->author->username) }}">{{ $topic->comments->last()->author->username }}</a></small>
                                 </p>
                             @else
                                 <p style="margin-bottom: 0rem;">
-                                    No comments posted yet
+                                    @lang('forum.no_comments')
                                 </p>
                             @endif
                         </td>
@@ -79,22 +79,22 @@
                 <div class="small-16 large-16 columns callout">
                     <form method="post" action="{{ route('forums.details.doCreate', $forum->id) }}">
                         {{ csrf_field() }}
-                        <b style="color: black;">Create new topic</b>
+                        <b style="color: black;">@lang('forum.create_new')</b>
                         <br><br>
 
-                        <label> <b style="color: black;">Title</b>
+                        <label> <b style="color: black;">@lang('forum.title')</b>
                             <input type="text" name="name" required>
                         </label>
 
-                        <label> <b style="color: black;">Description</b>
+                        <label> <b style="color: black;">@lang('forum.description')</b>
                             <input type="text" name="description" required>
                         </label>
 
-                        <label> <b style="color: black;">Write your post</b>
+                        <label> <b style="color: black;">@lang('forum.write_post')</b>
                             <textarea name="text" id="editor1" rows="5" cols="40" placeholder="Write your post here..." required></textarea>
                         </label>
                         <br>
-                        <button type="submit" class="lime-button" name="submit" style="float: right;">Create Topic</button>
+                        <button type="submit" class="lime-button" name="submit" style="float: right;">@lang('forum.create_topic')</button>
                         <script>
                             CKEDITOR.replace( 'editor1', {
                                 uiColor: '#E2D3C0'

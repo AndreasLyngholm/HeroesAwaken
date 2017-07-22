@@ -8,8 +8,10 @@ use function App\can;
 use App\Jobs\NotificationQueue;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Queue;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -32,8 +34,8 @@ class HomeController extends Controller
 
     public function team()
     {
-        $staffs = Role::where('slug', 'staff')->first()->users;
         $leads = Role::where('slug', 'awokenlead')->first()->users;
+        $staffs = Role::where('slug', 'staff')->first()->users;
         $devs = Role::where('slug', 'awokendev')->first()->users;
         return view('team', compact('staffs', 'leads', 'devs'));
     }
@@ -49,5 +51,16 @@ class HomeController extends Controller
     {
         Download::create(['user_id' => Auth::id()]);
         return redirect()->away('https://dl.heroesawaken.com/HeroesAwakenTutorial.zip');
+    }
+
+    public function setLanguage()
+    {
+        if (! Session::has('locale'))
+        {
+            Session::put('locale', Input::get('language'));
+        } else {
+            Session::put('locale', Input::get('language'));
+        }
+        return redirect()->back();
     }
 }

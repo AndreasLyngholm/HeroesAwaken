@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use function App\logAction;
 use Illuminate\Http\Request;
 use App\Permission;
 use App\Role;
@@ -101,6 +102,7 @@ class UserController extends Controller {
             $permissions[ucfirst($parts[0])][] = ['access'=> ucfirst($parts[1]), 'description'=>$permission->description];
 
         }
+
         return view('admin.users.roles.add', compact('permissions'));
 
     }
@@ -118,6 +120,9 @@ class UserController extends Controller {
         $role->slug = strtolower(Input::get('name'));
         $role->save();
         $role->permissions()->sync($permissions);
+
+        logAction(request()->route()->action['can'], 'Role ' . Input::get('name') . ' was added.', request()->route()->action);
+
         return \Redirect::route('admin.user.roles')->withSuccess('The role has been created.');
     }
     #endregion
@@ -128,12 +133,17 @@ class UserController extends Controller {
     public function assignRole(User $user)
     {
         $user->roles()->attach(Input::get('role'));
+
+        logAction(request()->route()->action['can'], Input::get('role') . ' was assigned to ' . $user->username, request()->route()->action);
+
         return redirect()->back();
     }
 
     public function removeRole(User $user, $roleId)
     {
+        $role = Role::find($roleId)->title;
         $user->roles()->detach($roleId);
+        logAction(request()->route()->action['can'], $role . ' was removed from ' . Input::get('name'), request()->route()->action);
         return redirect()->back();
     }
 

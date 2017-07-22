@@ -12,7 +12,7 @@
             <div class="small-16 columns">
                 <nav>
                     <h3>
-                        Forum
+                        @lang('layout.forum')
                     </h3>
                 </nav>
                 <div class="big-sep"></div>
@@ -23,17 +23,17 @@
             <table>
                 <thead>
                 <tr>
-                    <th>Forum name</th>
-                    <th>Posts</th>
-                    <th>Comments</th>
-                    <th>Last post</th>
+                    <th>@lang('forum.forum_name')</th>
+                    <th>@lang('forum.posts')</th>
+                    <th>@lang('forum.comments')</th>
+                    <th>@lang('forum.last_post')</th>
                 </tr>
                 </thead>
                 <tbody>
                     {{--<tr class="forum-category">--}}
                         {{--<td colspan="5">Official Threads</td>--}}
                     {{--</tr>--}}
-                    @foreach(\App\Forum::all() as $index => $forum)
+                    @foreach($forums as $index => $forum)
                         <tr>
                             <td style="width:75%">
                                 <p style="margin-bottom: 0rem;">
@@ -41,17 +41,17 @@
                                     {{ $forum->description }}
                                 </p>
                             </td>
-                            <td>{{ $forum->topics()->count() }}</td>
+                            <td>{{ $forum->topics->count() }}</td>
                             <td>{{ $forum->countComments() }}</td>
                             <td>
-                                @if($forum->lastComment())
+                                @if($forum->topics->last())
                                     <p style="margin-bottom: 0rem;">
-                                        <a href="{{ route('forums.posts', [$forum->id, $forum->lastComment()->topic_id]) }}#{{ $forum->lastComment()->id }}">{{ $forum->lastComment()->created_at->diffForHumans() }}</a><br />
-                                        <small>by <a href="{{ route('profile.details', \App\User::find($forum->lastComment()->user_id)->username) }}">{{ \App\User::find($forum->lastComment()->user_id)->username }}</a></small>
+                                        <a href="{{ route('forums.posts', [$forum->id, $forum->topics->last()->topic_id]) }}">{{ $forum->topics->last()->created_at->diffForHumans() }}</a><br />
+                                        <small>@lang('forum.by') <a href="{{ route('profile.details', $forum->topics->last()->author->username) }}">{{ $forum->topics->last()->author->username }}</a></small>
                                     </p>
                                 @else
                                     <p style="margin-bottom: 0rem;">
-                                        No comments posted yet
+                                        @lang('forum.no_comments')
                                     </p>
                                 @endif
                             </td>

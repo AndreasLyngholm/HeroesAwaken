@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Jobs\NotificationQueue;
+use function App\logAction;
 use App\News;
 use App\User;
 use Carbon\Carbon;
@@ -14,6 +15,7 @@ use Illuminate\Support\Facades\Queue;
 
 class NewsController extends Controller
 {
+
     public function lists()
     {
     	return view('admin.news.lists');
@@ -33,8 +35,9 @@ class NewsController extends Controller
             'user_id' => Auth::id(),
         ]);
 
-        foreach (User::pluck('id')->all() as $id)
-            Queue::push(new NotificationQueue($id, ['news' => true]));
+        Queue::push(new NotificationQueue(['news' => true]));
+
+        logAction(request()->route()->action['can'], 'Created news', request()->route()->action);
 
 		return redirect()->back()->with('success', 'Your news post was submitted');
     }
@@ -52,12 +55,15 @@ class NewsController extends Controller
             'user_id' => Auth::id(),
         ]);
 
+        logAction(request()->route()->action['can'], 'Edited news', request()->route()->action);
+
         return redirect()->back()->with('success', 'Your news post was successfully updated!');
     }
 
     public function delete(News $news)
     {
         $news->delete();
+        logAction(request()->route()->action['can'], 'Deleted news', request()->route()->action);
         return redirect()->back()->with('success', 'Your news post was successfully deleted!');
     }
 }

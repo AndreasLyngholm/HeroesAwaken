@@ -21,6 +21,11 @@ Route::get('home', function () {
     return redirect()->route('home');
 });
 
+Route::post('set-language', [
+    'as' => 'setLanguage',
+    'uses' => 'HomeController@setLanguage'
+]);
+
 Route::get('set-state/{state}', [
     'as' => 'setState',
     'uses' => 'HomeController@setState'
@@ -62,6 +67,11 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth'
     Route::get('/', [
         'as' => 'lists',
         'uses' => 'ProfileController@lists'
+    ]);
+
+    Route::post('change/password', [
+        'as' => 'changePassword',
+        'uses' => 'ProfileController@changePassword'
     ]);
 
     Route::get('link/discord', [
@@ -113,13 +123,25 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
         'uses' => 'ForumsController@forumsLists'
     ]);
 
+    Route::get('comment/delete/{comment}', [
+        'middleware' => ['auth', 'acl'],
+        'as' => 'commentDelete',
+        'uses' => 'ForumsController@commentDelete'
+    ]);
+
+    Route::get('topic/delete/{topic}', [
+        'middleware' => ['auth', 'acl'],
+        'as' => 'topicDelete',
+        'uses' => 'ForumsController@topicDelete'
+    ]);
+
     Route::get('{forum}', [
         'as' => 'details',
         'uses' => 'ForumsController@forumsDetails'
     ]);
 
     Route::post('{forum}/create', [
-        'middleware' => 'auth',
+        'middleware' => ['auth', 'acl'],
         'as' => 'details.doCreate',
         'uses' => 'ForumsController@forumsDetailsDoCreate',
         'can'  => 'forum.topic'
@@ -132,7 +154,7 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
     ]);
 
     Route::post('{forum}/{topic}/create', [
-        'middleware' => 'auth',
+        'middleware' => ['auth', 'acl'],
         'as' => 'posts.doCreate',
         'uses' => 'ForumsController@forumsPostsDoCreate',
         'can'  => 'forum.comment'
@@ -252,6 +274,15 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
             'as' => 'news.doEdit',
             'uses' => 'NewsController@doEdit',
             'can' => 'news.manage'
+        ]);
+    });
+
+    Route::group(['prefix' => 'audit'], function ()
+    {
+        Route::get('/', [
+            'as' => 'audit.lists',
+            'uses' => 'AuditController@lists',
+            'can' => 'audit.manage'
         ]);
     });
 

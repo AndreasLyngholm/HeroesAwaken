@@ -10,55 +10,57 @@
 
         <div class="row">
             <div class="small-16 columns">
-                <h1>Get in Touch!</h1>
+                <h1>@lang('contact.get_in_touch')</h1>
                 <div class="big-sep"></div>
             </div>
         </div>
 
         <div class="row">
             <div class="small-16 large-8 columns">
-                <h4>How to get in touch</h4>
-                <p>If you have any bug reports, any questions, or just want to become a part of our community, you can reach us on our
-                    <a href="https://discordapp.com/invite/WhK8RgX">Discord channel</a>
-                    or
-                    <a href="https://www.facebook.com/Heroes-Awaken-197852317403720/?fref=ts">Facebook page</a>!
-                    
-                </p>
+                <h4>@lang('contact.how_to')</h4>
+                <p>@lang('contact.how_to_description')</p>
                 <p>
                     We do not have any official Email and Telephone you can contact at the moment.
                 </p>
             </div>
             <div class="small-16 large-7 columns">
                 <div class="row small-up-1 medium-up-2">
-                    <h4>People to contact</h4>
+                    <h4>@lang('contact.to_contact')</h4>
                     <!--address-->
                     <div class="column">
-                        <h5>Staff</h5>
+                        <h5>AwokenLead</h5>
                         <address>
                             <p>
                                 MakaHost<br>
-                                Absent<br>
-                                Doge :-)<br>
-                                Synaxis<br>
-                                Ray<br>
-                                Warp Productions<br>
-                                Heax<br>
+                                Lyngholm<br>
+                                Crowscream<br>
+                                Spencer<br>
                             </p>
                         </address>
                     </div>
                     <!--//address-->
                     <!--address-->
                     <div class="column">
-                        <h5>Devs</h5>
+                        <h5>Staff</h5>
                         <address>
                             <p>
-                                Lyngholm<br>
-                                Wazz<br>
-                                SD149<br>
+                                Absent<br> 
                                 Snow<br>
-                                Vahdek<br>
-                                Crowscream<br>
+                                Ray<br>
+                            </p>
+                        </address>
+                    </div>
+                    <!--//address-->
+                    <!--address-->
+                    <div class="column">
+                        <h5>AwokenDevs</h5>
+                        <address>
+                            <p>
+                                Wazz<br>
                                 Lord Squirrel<br>
+                                Jefalo<br>
+                                Lars.n7<br>
+                                Warpy<br>
                             </p>
                         </address>
                     </div>
@@ -69,7 +71,6 @@
                         <address>
                             <p>
                                 DraksTOP<br>
-                                Lagniss<br>
                                 LordHardness_<br>
                                 MeanSpeed<br>
                                 Pasolero<br>

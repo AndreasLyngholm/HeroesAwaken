@@ -3974,8 +3974,8 @@ output {
 
 /* line 40, ../../foundation/bower_components/foundation-sites/scss/components/_badge.scss */
 .badge {
-  display: inline-block;
-  padding: 0.3em;
+  display: inline;
+  padding: 0.1em 0.5em 0.5em 0.5em;
   min-width: 2.1em;
   font-size: 0.6rem;
   text-align: center;
@@ -4178,8 +4178,7 @@ div.google-auto-placede:after {
 /* line 180, ../../foundation/bower_components/foundation-sites/scss/components/_menu.scss */
 .menu > li > a img,
 .menu > li > a i {
-  margin-right: 0.25rem;
-  display: inline-block;
+  display: inline;
 }
 /* line 100, ../../foundation/bower_components/foundation-sites/scss/components/_menu.scss */
 .menu > li {
@@ -4261,7 +4260,6 @@ div.google-auto-placede:after {
 /* line 289, ../../foundation/bower_components/foundation-sites/scss/components/_menu.scss */
 .menu .active > a {
   color: #fff;
-  background: #8ab15f;
 }
 
 /* line 295, ../../foundation/bower_components/foundation-sites/scss/components/_menu.scss */
@@ -4457,13 +4455,12 @@ div.google-auto-placede:after {
 }
 /* line 68, ../../foundation/bower_components/foundation-sites/scss/components/_dropdown-menu.scss */
 .dropdown.menu > li.is-dropdown-submenu-parent > a {
-  padding-right: 1.5rem;
   position: relative;
 }
 /* line 73, ../../foundation/bower_components/foundation-sites/scss/components/_dropdown-menu.scss */
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
   content: '';
-  display: block;
+  display: none;
   width: 0;
   height: 0;
   border: inset 5px;
@@ -6377,13 +6374,15 @@ body h1 a:hover, body h1 a:active, body h1 a:focus, body h2 a:hover, body h2 a:a
 @media screen and (min-width: 64em) {
   /* line 63, ../scss/_app-styles.scss */
   #main-header #main-nav ul.main-menu {
-  margin: 2.06667rem 0 0;
+  margin: 1.7rem 0 0;
   }
 }
 /* line 68, ../scss/_app-styles.scss */
 #main-header #main-nav ul.main-menu li {
   display: inline-block;
-  margin-right: 2.66667rem;
+}
+.main-menu > li {
+  margin-right: 1rem;
 }
 /* line 71, ../scss/_app-styles.scss */
 #main-header #main-nav ul.main-menu li:last-child {
@@ -7452,7 +7451,6 @@ footer.main-footer p.copyright {
 /* line 594, ../scss/_app-styles.scss */
 .team .column.team-member div.photo, .team .team-member.columns div.photo {
   background: none;
-  height: 280px;
   padding: 0.5rem 0;
   margin-bottom: 1rem;
 }
@@ -7681,20 +7679,20 @@ table td, table th {
 	float: left;
 	background-color: #E2D3C0;
 	color: #000000;
-	width: 25%; 
-	padding-bottom: 20px; 
+	width: 25%;
+	padding-bottom: 20px;
 	border-right: 2px solid #464646;
 }
 
 .post-left .username {
-	text-align: center; 
-	padding: 10px; 
-	background-color: #E2D3C0; 
+	text-align: center;
+	padding: 10px;
+	background-color: #E2D3C0;
 	margin-bottom: 5px;
 }
 
 .post-left .username a {
-	color: #464646; 
+	color: #464646;
 	font-weight: bold;
 }
 
@@ -7713,8 +7711,6 @@ table td, table th {
 
 .post-right {
 	float: left;
-	padding-bottom: 500em;
-	margin-bottom: -500em;
 	width: 75%;
 	overflow: hidden;
 }

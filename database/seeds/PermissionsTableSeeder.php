@@ -77,5 +77,29 @@ class PermissionsTableSeeder extends Seeder
             ['description' => 'Ability to add new news.']
         );
         #endregion
+
+        #region audit
+        Permission::updateOrCreate(
+            ['slug' => 'audit.manage'],
+            ['description' => 'Access to audit panel.']
+        );
+        #endregion
+
+        #region game
+        Permission::updateOrCreate(
+            ['slug' => 'game.matchmake'],
+            ['description' => 'Ability to use matchmaking ingame.']
+        );
+
+        Permission::updateOrCreate(
+            ['slug' => 'game.login'],
+            ['description' => 'Ability to log into the game.']
+        );
+
+        Permission::updateOrCreate(
+            ['slug' => 'game.createHero'],
+            ['description' => 'Ability to create a hero for the game.']
+        );
+        #endregion
     }
 }

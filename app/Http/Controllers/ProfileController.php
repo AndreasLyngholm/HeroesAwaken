@@ -9,6 +9,7 @@ use App\UserSignature;
 use App\UserDiscord;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 use Intervention\Image\Facades\Image;
@@ -180,11 +181,24 @@ class ProfileController extends Controller
                     'discord_name' => $user->username,
                     'discord_email' => $user->email,
                     'discord_discriminator' => $user->discriminator,
-
                 ]);
 
             return redirect()->route('profile.lists')->with('success', 'We linked your discord account!');
+        }
+    }
 
+    public function changePassword()
+    {
+        if (Hash::check(Input::get('current_password'), Auth::user()->password)) {
+            if(Input::get('new_password') == Input::get('new_password_confirmed'))
+            {
+                Auth::user()->update(['password', Hash::make(Input::get('new_password'))]);
+                return redirect()->back()->with('success', 'Your password was changed!');
+            }
+            else
+                return redirect()->back()->with('error', 'The two new passwords do not match!');
+        } else {
+            return redirect()->back()->with('error', 'Your current password does not match your input.');
         }
     }
 }
