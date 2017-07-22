@@ -29,7 +29,7 @@
                         'name_url': 'http://www.reviveheroes.com/en/hero/checkHeroNameAvailability',
                         'price': 0,
                         'help': {
-                            'default': ['Welcome to Revive Heroes',
+                            'default': ['Welcome to Heroes Awoken',
                                 'I&#039;m a %heroClass% for the %faction%. If you want to, you can change my role on the battlefield and team loyalties to the right.'
                             ],
                             'baseMSGPersonaClassStats': {
@@ -236,7 +236,7 @@
                             <span id="cancelName">back<span class="decoration"></span></span>
                             <span id="chooseName">OK<span class="decoration"></span></span>
                         </div>
-                        <div class="error">This name is yours soldier! But first we must move this fancy page to the reviveheroes.com</div>
+                        <div class="error">This name is yours soldier! But first we must move this fancy page to the HeroesAwaken.com</div>
                     </div>
                 </div>
             </form>

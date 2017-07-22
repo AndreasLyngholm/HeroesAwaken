@@ -10,36 +10,36 @@ return [
     |
     */
 
-    'forum_name' => 'Forum name',
-    'posts' => 'Posts',
-    'comments' => 'Comments',
-    'last_post' => 'Last Post',
+    'forum_name' => 'Foorumin nimi',
+    'posts' => 'Aiheet',
+    'comments' => 'Viestit',
+    'last_post' => 'Viimeisin viesti',
     'by' => 'By',
-    'no_comments' => 'No comments posted yet',
+    'no_comments' => 'Ei viestejä',
 
-    'general' => 'General',
-    'general_description' => 'Discuss about anything that\'s HeroesAwaken related that doesn\'t fit in the other categories.',
+    'general' => 'Yleinen',
+    'general_description' => 'Yleistä keskustelua HeroesAwakenista.',
 
     'off_topic' => 'Off-topic',
-    'off_topic_description' => 'Discuss non-HeroesAwaken topics in here.',
+    'off_topic_description' => 'Keskustelua kaikista muista asioista täällä.',
 
-    'recruits' => 'Recruits',
-    'recruits_description' => 'Do you want to offer your service?',
+    'recruits' => 'Palvelukset',
+    'recruits_description' => 'Haluatko tarjota palveluitasi?',
 
-    'feedback' => 'Feedback & Suggestions',
-    'feedback_description' => 'Do you have feedback or suggestions to changes?',
+    'feedback' => 'Palaute ja Ehdotukset',
+    'feedback_description' => 'Haluatko antaa palautetta tai ehdottaa jotain?',
 
-    'title' => 'Title',
-    'replies' => 'Replies',
-    'create_new' => 'Create new topic',
-    'description' => 'Description',
-    'write_post' => 'Write your post',
-    'create_topic' => 'Create Topic',
+    'title' => 'Otsikko',
+    'replies' => 'Vastaukset',
+    'create_new' => 'Luo uusi aihe',
+    'description' => 'Kuvaus',
+    'write_post' => 'Viestisi',
+    'create_topic' => 'Lähetä',
 
-    'member_since' => 'Member since',
+    'member_since' => 'Liittynyt',
     'heroes' => 'Heroes',
-    'write_comment' => 'Write comment',
-    'add_comment' => 'Add comment',
+    'write_comment' => 'Vastaa',
+    'add_comment' => 'Lähetä',
 
 
 ];

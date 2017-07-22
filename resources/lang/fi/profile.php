@@ -10,45 +10,45 @@ return [
     |
     */
 
-    'friend_list' => 'Friend list',
-    'username' => 'Username',
+    'friend_list' => 'Kaverilista',
+    'username' => 'Nimi',
     'status' => 'Status',
-    'options' => 'Options',
-    'remove_friend' => 'Remove friend',
+    'options' => 'Asetukset',
+    'remove_friend' => 'Poista kaveri',
     'pending_request' => 'You have a pending friend request from ',
-    'friend_requests' => 'Friend Requests',
+    'friend_requests' => 'Kaveripyynnöt',
 
-    'linked_accounts' => 'Linked Accounts',
-    'link_account' => 'Link your discord account',
+    'linked_accounts' => 'Linkitetyt tilit',
+    'link_account' => 'Linkitä Discord käyttäjäsi',
 
     'avatar' => [
         'title' => 'Avatar',
-        'manage' => 'Manage your avatar',
-        'below_1' => 'Add your own personal avatar below.',
+        'manage' => 'Muokkaa avatariasi',
+        'below_1' => 'Lisää oma avatarisi.',
         'below_2' => 'We suggest images with the dimensions of 1:1 as we force the format after upload.',
         'submit' => 'Submit avatar',
     ],
 
     'signature' => [
-        'title' => 'Signature',
-        'manage' => 'Manage your signature',
-        'below_1' => 'Add your own personal signature below.',
+        'title' => 'Allekirjoitus',
+        'manage' => 'Muokkaa allekirjoitustasi',
+        'below_1' => 'Lisää oma allekirjoituksesi.',
         'below_2' => 'We suggest images with the dimensions of 900 x 250px',
-        'submit' => 'Submit signature',
+        'submit' => 'Lähetä',
     ],
 
     'description' => [
-        'title' => 'Description',
-        'manage' => 'Manage your description',
-        'submit' => 'Add description',
+        'title' => 'Kuvaus',
+        'manage' => 'Muokkaa kuvaustasi',
+        'submit' => 'Lisää kuvaus',
     ],
 
-    'change_password' => 'Change Password',
-    'current_password' => 'Current Password',
-    'new_password' => 'New Password',
-    'new_password_confirmed' => 'New Password Confirmed',
+    'change_password' => 'Vaihda salasana',
+    'current_password' => 'Nykyinen salasana',
+    'new_password' => 'Uusi salasana',
+    'new_password_confirmed' => 'Uusi salasana vahvistettu',
 
-    'change_language' => 'Change Language',
+    'change_language' => 'Vaihda kieli',
     'en' => 'English',
     'da' => 'Danish',
     'fr' => 'French',
