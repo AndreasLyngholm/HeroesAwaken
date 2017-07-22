@@ -11,12 +11,12 @@ return [
     */
 
     'home' => 'Hjem',
-    'news' => 'Nyheder',
+    'news' => 'Nyheter',
     'forum' => 'Forum',
     'team' => 'Team',
     'contact' => 'Kontakt',
     'profile' => 'Profil',
-    'login' => 'Log ind',
-    'logout' => 'Log ud',
+    'login' => 'Logg inn',
+    'logout' => 'Logg ut',
 
 ];

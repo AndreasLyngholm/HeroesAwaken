@@ -10,36 +10,36 @@ return [
     |
     */
 
-    'forum_name' => 'Forum name',
+    'forum_name' => 'Forum navn',
     'posts' => 'Posts',
-    'comments' => 'Comments',
-    'last_post' => 'Last Post',
-    'by' => 'By',
-    'no_comments' => 'No comments posted yet',
+    'comments' => 'Kommentare',
+    'last_post' => 'Seneste post',
+    'by' => 'Af',
+    'no_comments' => 'Ingen kommentare endnu',
 
     'general' => 'General',
-    'general_description' => 'Discuss about anything that\'s HeroesAwaken related that doesn\'t fit in the other categories.',
+    'general_description' => 'Diskussioner om HeroesAwaken indenfor andre områder end nederstående',
 
     'off_topic' => 'Off-topic',
-    'off_topic_description' => 'Discuss non-HeroesAwaken topics in here.',
+    'off_topic_description' => 'Diskuter ikke-HeroesAwaken områder herinde.',
 
     'recruits' => 'Recruits',
-    'recruits_description' => 'Do you want to offer your service?',
+    'recruits_description' => 'Vil du vise dit værd?',
 
-    'feedback' => 'Feedback & Suggestions',
-    'feedback_description' => 'Do you have feedback or suggestions to changes?',
+    'feedback' => 'Feedback og anbefalinger',
+    'feedback_description' => 'Har du noget feedback eller anbefalinger?',
 
-    'title' => 'Title',
-    'replies' => 'Replies',
-    'create_new' => 'Create new topic',
-    'description' => 'Description',
-    'write_post' => 'Write your post',
-    'create_topic' => 'Create Topic',
+    'title' => 'Titel',
+    'replies' => 'Svar',
+    'create_new' => 'Nyt opslag',
+    'description' => 'Beskrivelse',
+    'write_post' => 'Skriv dit opslag',
+    'create_topic' => 'Nyt opslag',
 
-    'member_since' => 'Member since',
+    'member_since' => 'Medlem siden',
     'heroes' => 'Heroes',
-    'write_comment' => 'Write comment',
-    'add_comment' => 'Add comment',
+    'write_comment' => 'Skriv kommentar',
+    'add_comment' => 'Tilføj kommentar',
 
 
 ];

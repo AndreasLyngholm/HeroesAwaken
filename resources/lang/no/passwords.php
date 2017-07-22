@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'password' => 'Dit password skal vÃ¦re mindst 6 tegn langt og matche.',
-    'reset' => 'Dit password er blevet resat!',
-    'sent' => 'Vi har sendt dig en email med password reset linket!',
-    'token' => 'Denne password token er invalid.',
-    'user' => "Vi kan ikke finde en bruger med denne email.",
+    'password' => 'Passord må bestå av minst seks tegn og passe bekreftelsen',
+    'reset' => 'Passordet ditt har blitt tilbakestilt!',
+    'sent' => 'Vi har sendt deg lenke for tilbakestilling av passord på epost!',
+    'token' => 'Tilbakestilling av passord mislykket.',
+    'user' => "Vi kan ikke finne en bruker med den epostaddressen",
 
 ];

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Disse kriterier matcher ikke.',
-    'throttle' => 'For mange forsÃ¸g. PrÃ¸v igen om :seconds sekunder.',
+    'failed' => 'Du har oppgitt et ugyldig brukernavn og/eller passord.',
+    'throttle' => 'For mange innloggingsforsøk. Vennligst prøv igjen senere',
 
 ];
