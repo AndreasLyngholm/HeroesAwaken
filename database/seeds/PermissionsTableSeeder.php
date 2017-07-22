@@ -84,5 +84,22 @@ class PermissionsTableSeeder extends Seeder
             ['description' => 'Access to audit panel.']
         );
         #endregion
+
+        #region game
+        Permission::updateOrCreate(
+            ['slug' => 'game.matchmake'],
+            ['description' => 'Ability to use matchmaking ingame.']
+        );
+
+        Permission::updateOrCreate(
+            ['slug' => 'game.login'],
+            ['description' => 'Ability to log into the game.']
+        );
+
+        Permission::updateOrCreate(
+            ['slug' => 'game.matchmake'],
+            ['description' => 'Ability to create a hero for the game.']
+        );
+        #endregion
     }
 }
