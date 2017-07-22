@@ -12,7 +12,7 @@
             <div class="small-16 columns">
                 <nav>
                     <h3>
-                        Forum
+                        @lang('layout.forum')
                     </h3>
                 </nav>
                 <div class="big-sep"></div>
@@ -23,10 +23,10 @@
             <table>
                 <thead>
                 <tr>
-                    <th>Forum name</th>
-                    <th>Posts</th>
-                    <th>Comments</th>
-                    <th>Last post</th>
+                    <th>@lang('forum.forum_name')</th>
+                    <th>@lang('forum.posts')</th>
+                    <th>@lang('forum.comments')</th>
+                    <th>@lang('forum.last_post')</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -47,11 +47,11 @@
                                 @if($forum->topics->last())
                                     <p style="margin-bottom: 0rem;">
                                         <a href="{{ route('forums.posts', [$forum->id, $forum->topics->last()->topic_id]) }}">{{ $forum->topics->last()->created_at->diffForHumans() }}</a><br />
-                                        <small>by <a href="{{ route('profile.details', $forum->topics->last()->author->username) }}">{{ $forum->topics->last()->author->username }}</a></small>
+                                        <small>@lang('forum.by') <a href="{{ route('profile.details', $forum->topics->last()->author->username) }}">{{ $forum->topics->last()->author->username }}</a></small>
                                     </p>
                                 @else
                                     <p style="margin-bottom: 0rem;">
-                                        No comments posted yet
+                                        @lang('forum.no_comments')
                                     </p>
                                 @endif
                             </td>

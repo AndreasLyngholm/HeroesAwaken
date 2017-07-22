@@ -10,7 +10,7 @@
 
     <div class="row">
         <div class="small-16 columns">
-            <h1>News</h1>
+            <h1>@lang('layout.news')</h1>
             <div class="big-sep"></div>
         </div>
     </div>

@@ -13,9 +13,9 @@
                 <nav class="float-left">
                     <h3>
                         <small>
-                            <a href="{{ route('forums.lists') }}">Forum</a>
+                            <a href="{{ route('forums.lists') }}">@lang('layout.forum')</a>
                              /
-                             <a href="{{ route('forums.details', $forum->id) }}">{{ $forum->name }}</a>
+                             <a href="{{ route('forums.details', $forum->id) }}">@lang('forum.' . strtolower($forum->name))</a>
                              /
                         </small>
                         {{ $topic->name }}
@@ -47,15 +47,15 @@
 
 									<table>
 										<tr class="joindate">
-											<td>Member since:</td>
+											<td>@lang('forum.member_since')</td>
 											<td>{{ $topic->author->created_at->format('d-m-Y') }}</td>
 										</tr>
 										<tr class="posts">
-											<td>Comments:</td>
+											<td>@lang('forum.comments')</td>
 											<td>{{ $topic->author->comments()->count() }}</td>
 										</tr>
 										<tr class="heroes">
-											<td>Heroes:</td>
+											<td>@lang('forum.heroes')</td>
 											<td>0</td>
 										<tr>
 									</table>
@@ -118,15 +118,15 @@
 									</div>
 									<table>
 										<tr class="joindate">
-											<td>Member since:</td>
+											<td>@lang('forum.member_since')</td>
 											<td>{{ $comment->author->created_at->format('d-m-Y') }}</td>
 										</tr>
 										<tr class="posts">
-											<td>Comments:</td>
+											<td>@lang('forum.comments')</td>
 											<td>{{ $comment->author->comments->count() }}</td>
 										</tr>
 										<tr class="heroes">
-											<td>Heroes:</td>
+											<td>@lang('forum.heroes')</td>
 											<td>0</td>
 										<tr>
 									</table>
@@ -147,11 +147,11 @@
                                         |
                                         @if(! Auth::user()->isFriend($comment->user_id))
                                             @if(\App\FriendRequest::where('receiver', Auth::user()->id)->where('sender', $comment->user_id)->exists())
-                                                <a class="pull-right" href="{{ route('profile.addFriend', $comment->user_id) }}"> <i class="fa fa-user-plus"></i> </a>
+                                                <a href="{{ route('profile.addFriend', $comment->user_id) }}"> <i class="fa fa-user-plus"></i> </a>
                                             @elseif(\App\FriendRequest::where('sender', Auth::user()->id)->where('receiver', $comment->user_id)->exists())
-                                                <i class="fa fa-hourglass-end pull-right"></i>
+                                                <i class="fa fa-hourglass-end"></i>
                                             @else
-                                                <a class="pull-right" href="{{ route('profile.addFriend', $comment->user_id) }}"> <i class="fa fa-user-plus"></i> </a>
+                                                <a href="{{ route('profile.addFriend', $comment->user_id) }}"> <i class="fa fa-user-plus"></i> </a>
                                             @endif
                                         @else
                                             <i class="fa fa-check"></i>
@@ -201,11 +201,11 @@
                             <div id="note"></div>
                             <form method="post" action="{{ route('forums.posts.doCreate', [$forum->id, $topic->id]) }}">
                                 {{ csrf_field() }}
-                                <label> <b style="color: black;">Write comment</b>
+                                <label> <b style="color: black;">@lang('forum.write_comment')</b>
                                     <textarea name="comment" id="editor1" rows="5" cols="40" placeholder="What do you have on your mind?"  required></textarea>
                                 </label>
                                 <br>
-                                <button type="submit" class="lime-button" name="submit" style="float: right;">Add comment</button>
+                                <button type="submit" class="lime-button" name="submit" style="float: right;">@lang('forum.add_comment')</button>
                                 <script>
                                     CKEDITOR.replace( 'editor1', {
                                         uiColor: '#E2D3C0'

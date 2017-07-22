@@ -16,6 +16,11 @@ Route::get('home', function () {
     return redirect()->route('home');
 });
 
+Route::post('set-language', [
+    'as' => 'setLanguage',
+    'uses' => 'HomeController@setLanguage'
+]);
+
 Route::get('set-state/{state}', [
     'as' => 'setState',
     'uses' => 'HomeController@setState'
