@@ -10,36 +10,36 @@ return [
     |
     */
 
-    'forum_name' => 'Forum name',
-    'posts' => 'Posts',
-    'comments' => 'Comments',
-    'last_post' => 'Last Post',
-    'by' => 'By',
-    'no_comments' => 'No comments posted yet',
+    'forum_name' => 'Nombre del foro',
+    'posts' => 'Temas',
+    'comments' => 'Comentarios',
+    'last_post' => 'Último tema',
+    'by' => 'Por',
+    'no_comments' => 'No hay comentarios todavía',
 
     'general' => 'General',
-    'general_description' => 'Discuss about anything that\'s HeroesAwaken related that doesn\'t fit in the other categories.',
+    'general_description' => 'Discute sobre cualquier cosa relacionada a Heroes Awaken que no se relacione con otra categoría.',
 
     'off_topic' => 'Off-topic',
-    'off_topic_description' => 'Discuss non-HeroesAwaken topics in here.',
+    'off_topic_description' => 'Discute sobre temas que no tengan relación con Heroes Awaken.',
 
-    'recruits' => 'Recruits',
-    'recruits_description' => 'Do you want to offer your service?',
+    'recruits' => 'Reclutamiento',
+    'recruits_description' => '¿Quieres ofrecer tu servicio?',
 
-    'feedback' => 'Feedback & Suggestions',
-    'feedback_description' => 'Do you have feedback or suggestions to changes?',
+    'feedback' => 'Comentarios y Sugerencias',
+    'feedback_description' => '¿Tienes algún comentario o quieres proponer una sugerencia?',
 
-    'title' => 'Title',
-    'replies' => 'Replies',
-    'create_new' => 'Create new topic',
-    'description' => 'Description',
-    'write_post' => 'Write your post',
-    'create_topic' => 'Create Topic',
+    'title' => 'Título',
+    'replies' => 'Respuestas',
+    'create_new' => 'Crear nuevo tema',
+    'description' => 'Descripción',
+    'write_post' => 'Escribe tu tema',
+    'create_topic' => 'Crear tema',
 
-    'member_since' => 'Member since',
+    'member_since' => 'Miembro desde',
     'heroes' => 'Heroes',
-    'write_comment' => 'Write comment',
-    'add_comment' => 'Add comment',
+    'write_comment' => 'Escribir comentario',
+    'add_comment' => 'Enviar comentario',
 
 
 ];
