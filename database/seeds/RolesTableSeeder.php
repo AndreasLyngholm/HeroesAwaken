@@ -35,5 +35,15 @@ class RolesTableSeeder extends Seeder
             ['slug'  => 'moderator']
         );
         $moderator->permissions()->sync([6, 7, 8, 9, 10, 11]);
+
+        $leads = Role::updateOrCreate(
+            ['title' => 'Awoken Lead'],
+            ['slug'  => 'awokenlead']
+        );
+
+        $dev = Role::updateOrCreate(
+            ['title' => 'Awoken Dev'],
+            ['slug'  => 'awokendev']
+        );
     }
 }
