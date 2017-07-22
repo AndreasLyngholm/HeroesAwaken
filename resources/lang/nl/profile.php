@@ -10,43 +10,43 @@ return [
     |
     */
 
-    'friend_list' => 'Friend list',
-    'username' => 'Username',
+    'friend_list' => 'Vrienden lijst',
+    'username' => 'Gebruikersnaam',
     'status' => 'Status',
-    'options' => 'Options',
-    'remove_friend' => 'Remove friend',
-    'pending_request' => 'You have a pending friend request from ',
-    'friend_requests' => 'Friend Requests',
+    'options' => 'Opties',
+    'remove_friend' => 'Vriend verwijderen',
+    'pending_request' => 'Je hebt een vriendenverzoek in afwachting van ',
+    'friend_requests' => 'Vriendschapsverzoeken',
 
-    'linked_accounts' => 'Linked Accounts',
-    'link_account' => 'Link your discord account',
+    'linked_accounts' => 'Verbonden Accounts',
+    'link_account' => 'Verbind je discord account',
 
     'avatar' => [
         'title' => 'Avatar',
-        'manage' => 'Manage your avatar',
-        'below_1' => 'Add your own personal avatar below.',
-        'below_2' => 'We suggest images with the dimensions of 1:1 as we force the format after upload.',
-        'submit' => 'Submit avatar',
+        'manage' => 'Beheer je avatar',
+        'below_1' => 'Voeg je persoonlijke avatar hieronder toe.',
+        'below_2' => 'We bevelen plaatjes aan met dimensies van 1:1, aangezien we dit forceren na de upload.',
+        'submit' => 'Avatar indienen',
     ],
 
     'signature' => [
-        'title' => 'Signature',
-        'manage' => 'Manage your signature',
-        'below_1' => 'Add your own personal signature below.',
-        'below_2' => 'We suggest images with the dimensions of 900 x 250px',
-        'submit' => 'Submit signature',
+        'title' => 'Handtekening',
+        'manage' => 'Beheer je handtekeningen',
+        'below_1' => 'Voeg je persoonlijke handtekening hieronder toe.',
+        'below_2' => 'We bevelen plaatjes aan met dimensies van 900x250 pixels.',
+        'submit' => 'Handtekening indienen',
     ],
 
     'description' => [
-        'title' => 'Description',
-        'manage' => 'Manage your description',
-        'submit' => 'Add description',
+        'title' => 'Omschrijving',
+        'manage' => 'Beheer je omschrijving',
+        'submit' => 'Voeg een omschrijving toe',
     ],
 
-    'change_password' => 'Change Password',
-    'current_password' => 'Current Password',
-    'new_password' => 'New Password',
-    'new_password_confirmed' => 'New Password Confirmed',
+    'change_password' => 'Verander wachtwoord',
+    'current_password' => 'Huidig wachtwoord',
+    'new_password' => 'Nieuw wachtwoord',
+    'new_password_confirmed' => 'Nieuw wachtwoord bevestigd',
 
     'change_language' => 'Change Language',
     'en' => 'English',

@@ -10,36 +10,36 @@ return [
     |
     */
 
-    'forum_name' => 'Forum name',
-    'posts' => 'Posts',
-    'comments' => 'Comments',
-    'last_post' => 'Last Post',
-    'by' => 'By',
-    'no_comments' => 'No comments posted yet',
+    'forum_name' => 'Forum naam',
+    'posts' => 'Berichten',
+    'comments' => 'Commentaren',
+    'last_post' => 'Laatste Bericht',
+    'by' => 'Door',
+    'no_comments' => 'Nog geen berichten geplaatst.',
 
-    'general' => 'General',
-    'general_description' => 'Discuss about anything that\'s HeroesAwaken related that doesn\'t fit in the other categories.',
+    'general' => 'Algemeen',
+    'general_description' => 'Praat over iets dat HeroesAwaken gerelateerd is, dat niet bij een andere categorie thuishoort.',
 
     'off_topic' => 'Off-topic',
-    'off_topic_description' => 'Discuss non-HeroesAwaken topics in here.',
+    'off_topic_description' => 'Praat over onderwerpen die niets met HeroesAwaken te maken hebben',
 
-    'recruits' => 'Recruits',
-    'recruits_description' => 'Do you want to offer your service?',
+    'recruits' => 'Sollicitaties',
+    'recruits_description' => 'Wil je ons helpen?',
 
-    'feedback' => 'Feedback & Suggestions',
-    'feedback_description' => 'Do you have feedback or suggestions to changes?',
+    'feedback' => 'Feedback & Suggesties',
+    'feedback_description' => 'Heb je feedback of suggesties?',
 
-    'title' => 'Title',
-    'replies' => 'Replies',
-    'create_new' => 'Create new topic',
-    'description' => 'Description',
-    'write_post' => 'Write your post',
-    'create_topic' => 'Create Topic',
+    'title' => 'Titel',
+    'replies' => 'Antwoorden',
+    'create_new' => 'Maak een nieuw topic',
+    'description' => 'Omschrijving',
+    'write_post' => 'Schrijf je bericht',
+    'create_topic' => 'Maak Topic',
 
-    'member_since' => 'Member since',
-    'heroes' => 'Heroes',
-    'write_comment' => 'Write comment',
-    'add_comment' => 'Add comment',
+    'member_since' => 'Lid sinds',
+    'heroes' => 'Helden',
+    'write_comment' => 'Schrijf commentaar',
+    'add_comment' => 'Voeg commentaar toe',
 
 
 ];
