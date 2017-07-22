@@ -1,0 +1,3857 @@
+#login-page-form
+{
+	margin: 20px auto;
+	width: 300px;
+}
+#login-page-form p
+{
+	padding-bottom: 1em;
+}
+ul.login-links
+{
+	margin-left: 2px;
+	width: 200px;
+}
+ul.login-links a
+{
+	color: #000000;
+	text-decoration: underline;
+}
+#ie_historyFrame
+{
+	display: none;
+	height: 0px;
+	width: 0px;
+}
+#firefox_anchorDiv
+{
+	display: none;
+	height: 0px;
+	width: 0px;
+}
+#safari_formDiv
+{
+	display: none;
+	height: 0px;
+	width: 0px;
+}
+#safari_rememberDiv
+{
+	display: none;
+	height: 0px;
+	width: 0px;
+}
+#heroimage
+{
+	background: url("create_hero_bg.png") 26px 1px no-repeat;
+	margin-left: 13px;
+}
+#content #heroimage
+{
+	background: url("border.png") 26px top no-repeat;
+	height: 563px;
+	margin-left: 0;
+	padding-left: 6px;
+	padding-top: 3px;
+	width: 936px;
+}
+#user.createHero #container
+{
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 970px;
+}
+#user.createHero #container object
+{
+	margin-left: -15px;
+}
+body
+					 	 	 	 				#user.createHero #content
+{
+	text-align: center;
+}
+#create-hero-name-form
+{
+	margin: 15px 20px;
+}
+#create-hero-name-form .magmaFormElementWrapper,#create-hero-name-form .magmaLabel,#create-hero-name-form .bfhButton
+{
+	float: left;
+	margin-right: 10px;
+}
+#create-hero-name-form .magmaLabel
+{
+	margin-top: 6px;
+}
+#create-hero-name-form .magmaLabel.error
+{
+	background: none;
+	padding-left: 0;
+}
+#create-hero-name-form .bfhButton
+{
+	margin-top: 2px;
+}
+#create-hero-name-form .magmaError
+{
+	padding-left: 0;
+	position: absolute;
+	top: 44px;
+}
+body.stripped
+{
+	background: url("register_bg.html") no-repeat center top !important;
+}
+body.stripped #generic-error-container
+{
+	display: none;
+}
+.referrer
+{
+	color: white;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	height: 39px;
+	left: 229px;
+	line-height: 39px;
+	padding-left: 10px;
+	position: absolute;
+	text-align: center;
+	top: 55px;
+	width: 621px;
+}
+body.lang-ru .referrer
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+.referrer span, .referrer img
+{
+	margin: 0 3px;
+	vertical-align: middle;
+}
+.affiliateLogo
+{
+	left: 775px;
+	position: absolute;
+	top: 60px;
+}
+.steps
+{
+	color: #fff;
+	display: block;
+	float: left;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.6em;
+	height: 39px;
+	margin-top: 2px;
+	position: relative;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+}
+body.lang-ru .steps
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+.steps .index
+{
+	margin-right: 5px;
+}
+.steps li
+{
+	display: block;
+	float: left;
+	margin: 0 1px;
+	position: relative;
+}
+.steps li > span
+{
+	display: block;
+	float: left;
+	height: 39px;
+	line-height: 36px;
+	margin: 0 1px;
+	opacity: 0.7;
+	padding: 0 25px;
+	position: relative;
+}
+.steps li.done:before
+{
+	background: url("done_icon.png") no-repeat;
+	content: '';
+	height: 45px;
+	left: 0;
+	position: absolute;
+	top: -4px;
+	width: 38px;
+}
+.steps li.done .index
+{
+	visibility: hidden;
+}
+.steps li.done > span
+{
+	opacity: 1;
+}
+.steps li.current
+{
+	background: url("step_bg.png") no-repeat;
+	background-color: #501515;
+	border: 2px solid #000;
+	border-width: 0 2px 0 0;
+	margin: 0;
+}
+.steps li.current + li
+{
+	border-left: 1px solid #000;
+	margin-left: 0;
+}
+.steps li.current + li > span
+{
+	border-left: 1px solid #b9453e;
+	margin-left: 0;
+}
+.steps li.current > span
+{
+	opacity: 1;
+}
+.go_to_site
+{
+	background: #8b342f;
+	border-bottom: 1px solid #b9453e;
+	box-shadow: 0 0 5px 3px black;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 auto;
+	moz-box-shadow: 0 0 5px 3px black;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 90;
+}
+body.ie7 .reg_content .custom-checkbox
+{
+	margin: 5px 0;
+}
+body.ie7 .reg_content .custom-checkbox label
+{
+	position: relative;
+}
+body.ie7 .reg_content input[type=checkbox],body.ie8 .reg_content input[type=checkbox],body.ie9 .reg_content input[type=checkbox]
+{
+	margin: 0;
+}
+form .hero_wrapper,form .webpersona_wrapper
+{
+	clear: left;
+	min-height: 75px;
+	overflow: hidden;
+}
+.hero_wrapper .magmaInput
+{
+	margin-top: 17px;
+}
+.new_content .magmaInput.hero input[type=text]
+{
+	width: 166px;
+}
+label.hero_icon
+{
+	float: left;
+	height: 65px;
+	padding-top: 0;
+	width: 65px;
+}
+.content_wrapper
+{
+	margin: 0 15px 20px;
+	min-height: 495px;
+	padding: 1px 0 1px 0;
+	position: relative;
+}
+.new_content:before
+{
+	background: url("box_decoration_top.png") -16px 0 no-repeat;
+	content: "";
+	display: block;
+	height: 85px;
+	position: absolute;
+	right: -36px;
+	top: -51px;
+	width: 577px;
+}
+body.ie8 .new_content:before
+{
+	right: -34px;
+}
+.new_content:after
+{
+	background: url("box_decoration_bottom.png") 0 0 no-repeat;
+	bottom: -30px;
+	content: "";
+	display: block;
+	height: 75px;
+	position: absolute;
+	right: -22px;
+	width: 589px;
+}
+.launch_game .new_content:before,.launch_game .new_content:after
+{
+	display: none;
+}
+#content .content_wrapper.install_plugin
+{
+	background: none;
+}
+.content_wrapper.launch_game
+{
+	background: url("launch_game_bg.png") no-repeat right 65px;
+}
+.launch_game .new_content
+{
+	background: url("launch_game_content_bg.png") no-repeat 510px 10px #c5bba7;
+	height: 364px;
+	margin-right: 20px;
+	padding-bottom: 15px;
+	width: 644px;
+}
+.launch_game .supported
+{
+	border: 2px solid #000;
+	border-radius: 4px;
+	height: 360px;
+	moz-border-radius: 4px;
+	webkit-border-radius: 4px;
+	width: 640px;
+}
+.launch_game .supported iframe
+{
+	display: block;
+}
+.new_content
+{
+	background: url("spatter1.png") repeat-x center -20px #c5bba7;
+	behavior: url("PIE.html");
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	box-shadow: 0 0 0 2px #000;
+	color: #000;
+	margin: 30px 90px 30px auto;
+	min-height: 135px;
+	moz-border-radius: 5px;
+	moz-box-shadow: 0 0 0 2px #000;
+	padding: 25px;
+	position: relative;
+	webkit-border-radius: 5px;
+	webkit-box-shadow: 0 0 0 2px #000;
+	width: 500px;
+	z-index: 1;
+}
+.new_content .header
+{
+	background: #8b342f;
+	behavior: url("PIE.html");
+	border: 1px solid #c54e47;
+	border-bottom-width: 0;
+	border-radius: 3px 3px 0 0;
+	box-shadow: 0 0 0 2px #000;
+	height: 8px;
+	left: -1px;
+	moz-border-radius-topleft: 3px;
+	moz-border-radius-topright: 3px;
+	moz-box-shadow: 0 0 0 2px #000;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	webkit-border-top-left-radius: 3px;
+	webkit-border-top-right-radius: 3px;
+	webkit-box-shadow: 0 0 0 2px #000;
+}
+.new_content .header h2
+{
+	background: url("red_header.png") no-repeat right top;
+	bottom: 0;
+	color: #fff;
+	display: block;
+	font-size: 1.3em;
+	height: 30px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 20px 0 6px;
+	position: absolute;
+	right: -3px;
+}
+.new_content .header h2:before
+{
+	background: url("red_header_left.png") no-repeat left top;
+	content: '';
+	display: block;
+	height: 22px;
+	left: -20px;
+	position: absolute;
+	top: 0px;
+	width: 20px;
+}
+.new_content h3
+{
+	color: #fff;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+}
+body.lang-ru .new_content h3
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+.cta
+{
+	background: url("cta.png") no-repeat;
+	left: 25px;
+	position: absolute;
+	text-indent: -9999px;
+	top: 5px;
+	z-index: 3;
+}
+.install_plugin .new_content,.launch_game .new_content,.login_ea_account .new_content
+{
+	margin-top: 100px;
+}
+.install_plugin .cta,.launch_game .cta,.login_ea_account .cta
+{
+	left: 155px;
+}
+.content_wrapper .mood
+{
+	background: url("register_form_cta_bg.png") no-repeat;
+	bottom: 0;
+	height: 419px;
+	left: 30px;
+	position: absolute;
+	width: 184px;
+	z-index: 2;
+}
+.install_plugin .cta
+{
+	background-position: -7px -464px;
+	height: 124px;
+	left: 132px;
+	top: 5px;
+	width: 311px;
+}
+.launch_game .cta
+{
+	background-position: -7px -603px;
+	height: 124px;
+	width: 311px;
+}
+.create_new_account .cta
+{
+	background-position: -94px -738px;
+	height: 168px;
+	width: 196px;
+}
+.upgrade_account .cta
+{
+	background-position: -94px -346px;
+	height: 107px;
+	width: 196px;
+}
+.login_ea_account .cta
+{
+	background-position: -7px -216px;
+	height: 118px;
+	width: 307px;
+}
+.new_content label
+{
+	clear: left;
+	display: block;
+	z-index: 2;
+}
+.ie7 .new_content .header,.ie8 .new_content .header
+{
+	left: 0px;
+	right: 0px;
+}
+form.login:before,div.register:before
+{
+	background-image: url("login_box_top.png");
+	height: 294px;
+	right: -58px;
+	top: -42px;
+	width: 75px;
+}
+form.login:after,div.register:after
+{
+	background-image: url("login_box_bottom.png");
+	bottom: -32px;
+	height: 41px;
+	left: -9px;
+	right: auto;
+	width: 180px;
+}
+form.login
+{
+	background-position: center -3px;
+	float: left;
+	margin: 10px 0 0 80px;
+	min-height: 190px;
+	padding: 40px 80px 25px;
+	width: 250px;
+}
+div.register
+{
+	background-position: center -3px;
+	float: right;
+	margin: 10px 80px 0 0;
+	min-height: 210px;
+	padding: 25px 40px 20px;
+	width: 220px;
+}
+form.login .header,div.register .header
+{
+	height: 20px;
+}
+form.login .header h2,div.register .header h2
+{
+	background: url("login_headers.png") no-repeat left center;
+	height: 63px;
+	left: -10px;
+	position: absolute;
+	text-indent: -9999px;
+	top: -20px;
+}
+form.login .header h2
+{
+	width: 203px;
+}
+div.register .header h2
+{
+	background-position: -229px center;
+	width: 265px;
+}
+form.login .header h2:before, div.register .header h2:before
+{
+	display: none;
+}
+div.register a.register
+{
+	background: url("join_now_link.png") center center no-repeat;
+	display: block;
+	height: 200px;
+	text-indent: -9999px;
+	width: 220px;
+}
+form .optional
+{
+	font-weight: bold;
+}
+form.login .bfhButton
+{
+	float: right;
+}
+.notSupportedBrowser, .notWindows
+{
+	display: none;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px 0;
+	text-align: center;
+	width: 480px;
+}
+.notSupportedBrowser a
+{
+	display: block;
+	float: left;
+	margin-left: 60px;
+	padding: 5px;
+}
+.notSupportedBrowser a:hover
+{
+	background: #b6a896;
+}
+.supported > .firefox, .supported > .firefox3, .supported > .ie, .supported > .ie8, .supported > .chrome
+{
+	display: none;
+}
+.install_plugin .instructions
+{
+	background-color: #B6A896;
+	behavior: url("PIE.html");
+	border-radius: 5px;
+	color: #000;
+	display: block;
+	font-weight: normal;
+	line-height: 1.2em;
+	margin: 10px 0 20px;
+	moz-border-radius: 5px;
+	padding: 10px 0 15px;
+	position: relative;
+	text-align: center;
+	webkit-border-radius: 5px;
+}
+.install_plugin .install_plugin_steps
+{
+	display: none;
+}
+.install_plugin .install_plugin_steps img
+{
+	border: 1px solid #000;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	display: block;
+	margin: 10px auto;
+	max-height: 200px;
+	max-width: 487px;
+}
+.install_plugin .show_more
+{
+	background: url("expand.png") no-repeat right center;
+	font-weight: bold;
+	padding-right: 11px;
+	text-decoration: none;
+}
+.install_plugin .show_more:hover
+{
+	text-decoration: underline;
+}
+.install_plugin .instructions.install
+{
+	background-image: url("plugin_indicator_icon.png");
+	background-position: 90px 20px;
+	background-repeat: no-repeat;
+	min-height: 55px;
+	padding-left: 140px;
+	padding-top: 30px;
+	text-align: left;
+}
+.install_plugin .instructions.install span
+{
+	display: block;
+	margin-bottom: 15px;
+}
+.install_plugin .chrome
+{
+	display: none;
+}
+.install_plugin .chrome .instructions
+{
+	padding: 5px 50px 20px;
+	text-align: left;
+}
+.install_plugin .chrome .chrome_uninstall_manual,.install_plugin .chrome .chrome_manual,.install_plugin .chrome .chrome_webstore
+{
+	display: none;
+}
+.install_plugin .chrome .chrome_webstore .instructions
+{
+	display: block;
+	padding: 20px;
+	text-align: center;
+}
+.install_plugin .chrome span.install
+{
+	background: url("buttons.png") no-repeat;
+	background-position: left -31px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 30px;
+	line-height: 25px;
+	margin-right: 10px;
+	overflow: visible;
+	padding: 0 5px 0 25px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+}
+body.lang-ru .install_plugin .chrome span.install
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+.install_plugin .chrome span.install .decoration
+{
+	background: url("buttons.png") no-repeat;
+	display: block;
+	height: 30px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+.install_plugin .chrome span.install:before
+{
+	background: url("ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 8px;
+	position: absolute;
+	top: 6px;
+	width: 13px;
+}
+.install_plugin .chrome span.install:hover
+{
+	text-decoration: none;
+}
+.install_plugin .chrome span.install.disabled
+{
+	background-position: left 0px;
+	cursor: default;
+}
+.install_plugin .chrome span.install.disabled .decoration
+{
+	background-position: right 0px;
+}
+.install_plugin .chrome span.install.disabled:hover
+{
+	background-position: left 0px;
+}
+.install_plugin .chrome span.install.disabled:hover .decoration
+{
+	background-position: right 0px;
+}
+.install_plugin .chrome span.install .decoration
+{
+	background-position: right -31px;
+}
+.install_plugin .chrome span.install:hover
+{
+	background-position: left -62px;
+}
+.install_plugin .chrome span.install:hover .decoration
+{
+	background-position: right -62px;
+}
+.launch_game
+{
+	background: url("link_icon.png") no-repeat left center;
+	font-weight: bold;
+	padding-left: 11px;
+	text-decoration: none;
+}
+.launch_game:hover
+{
+	text-decoration: underline;
+}
+.plugin_indicator
+{
+	display: none;
+	height: 162px;
+	position: fixed;
+	width: 91px;
+	z-index: 100;
+}
+.plugin_indicator.topright
+{
+	background: url("plugin_indicator_up.png") no-repeat 0 0;
+	right: 130px;
+	top: 10px;
+}
+.plugin_indicator.topleft
+{
+	background: url("plugin_indicator_up.png") no-repeat 0 0;
+	left: 250px;
+	top: 130px;
+}
+.plugin_indicator.bottom
+{
+	background: url("plugin_indicator.png") no-repeat 0 0;
+	bottom: 60px;
+}
+.plugin_indicator.bottomleft
+{
+	background: url("plugin_indicator.png") no-repeat 0 0;
+	bottom: 10px;
+	left: 200px;
+}
+.new_content input[type=checkbox]
+{
+	float: left;
+	margin: 5px;
+}
+.magmaLabel.error
+{
+	background: transparent;
+	padding-left: 0;
+}
+#login_signup .magmaError
+{
+	right: 50px;
+	width: 135px;
+}
+.change_account,.new_content .magmaError
+{
+	background: url("icon_warning.png") no-repeat 5px 5px #b6a896;
+	behavior: url("PIE.html");
+	border-radius: 5px;
+	color: #000;
+	font-size: 0.85em;
+	font-weight: normal;
+	line-height: 1.2em;
+	margin-top: 3px;
+	moz-border-radius: 5px;
+	padding: 5px 7px 5px 25px;
+	position: absolute;
+	right: 25px;
+	webkit-border-radius: 5px;
+	width: 210px;
+}
+.change_account
+{
+	background-image: none;
+	padding-left: 7px;
+	text-align: center;
+	width: 228px;
+}
+.new_content .magmaError.info
+{
+	background-image: url("icon_info.png");
+}
+.hero_wrapper .magmaError
+{
+	margin-top: 20px;
+}
+#emailCheck
+{
+	background: url("email_form_bg.png") no-repeat;
+	border: none;
+	height: 544px;
+	margin: -20px 0 0 180px;
+	position: relative;
+	text-align: center;
+	width: 646px;
+	z-index: 1;
+}
+#emailCheck .cta
+{
+	background-position: -3px -7px;
+	height: 199px;
+	left: 319px;
+	top: 52px;
+	width: 309px;
+}
+#emailCheck .magmaFormElementWrapper
+{
+	left: 110px;
+	padding-bottom: 0;
+	position: absolute;
+	top: 390px;
+	width: 340px;
+}
+#emailCheck label
+{
+	font-size: 1.1em;
+	padding: 0;
+}
+#emailCheck .description
+{
+	font-size: 1em;
+	font-weight: bold;
+	left: 181px;
+	position: absolute;
+	text-align: center;
+	top: 435px;
+	width: 200px;
+}
+#emailCheck .magmaInput
+{
+	margin-left: 70px;
+}
+#emailCheck input
+{
+	padding-right: 17px;
+	text-align: left;
+	width: 165px;
+}
+#emailCheck .magmaError
+{
+	background: url("icon_warning.png") no-repeat;
+	display: block;
+	float: right;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	right: 77px;
+	text-indent: -99999px;
+	top: 7px;
+	width: 15px;
+}
+#emailCheck button.next
+{
+	bottom: 18px;
+	right: 96px;
+}
+#emailCheck button.next.disabled
+{
+	background-position: left -255px;
+}
+#emailCheck button.next.submitted
+{
+	background-position: left -424px;
+}
+form.login .magmaError
+{
+	background: url("icon_warning.png") no-repeat;
+	display: block;
+	height: 15px;
+	margin: 6px 0 0;
+	padding: 0;
+	position: absolute;
+	right: 85px;
+	text-indent: -99999px;
+	width: 15px;
+}
+form.login .magmaErrors
+{
+	color: #000;
+}
+button.next
+{
+	background: url("next.png") no-repeat transparent;
+	bottom: -34px;
+	height: 85px;
+	overflow: visible;
+	position: absolute;
+	right: -73px;
+	text-indent: -9999px;
+	width: 123px;
+	z-index: 2;
+}
+button.next:focus, button.next:hover
+{
+	background-position: left -85px;
+}
+button.next.disabled
+{
+	background-position: left -170px;
+	cursor: default;
+}
+button.next.disabled:hover:before
+{
+	background: url("disabled_submit_tooltip.png") no-repeat;
+	content: "";
+	display: block;
+	height: 91px;
+	left: -40px;
+	position: absolute;
+	top: -70px;
+	width: 167px;
+}
+button.next.submitted
+{
+	background-position: left -339px;
+}
+button.next.submitted div.spinner
+{
+	height: 86px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 76px;
+}
+button.next.submitted:after
+{
+	display: block;
+}
+button.next.submitted:hover:before
+{
+	display: none;
+}
+button.next:after
+{
+	background: url("loader.gif") no-repeat 0 0;
+	bottom: 7px;
+	content: '';
+	display: none;
+	height: 32px;
+	left: 21px;
+	position: relative;
+	width: 32px;
+}
+#register .email
+{
+	float: left;
+}
+#register select
+{
+	border: 2px solid #000;
+	border-radius: 4px;
+	padding: 1px;
+}
+body.ie7 #register select
+{
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0,color=#000000) progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0,color=#000000) progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1,color=#000000) progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1,color=#000000);
+}
+#register select:focus
+{
+	border-width: 3px;
+	padding: 0;
+}
+#register select#dob_month,#register select#dob_day,#register select#dob_year
+{
+	width: 80px;
+}
+#register select#country
+{
+	width: 250px;
+}
+.new_content .magmaInput input[type=text],.new_content .magmaInput input[type=password]
+{
+	width: 231px;
+}
+.content_wrapper .magmaAfter,.content_wrapper .magmaRequired
+{
+	display: none;
+}
+.reg_content p
+{
+	border: 10px solid #f00;
+	font-size: 11px;
+	font-weight: normal;
+}
+.link_container a,.new_content label,.new_content .magmaLabel
+{
+	font-size: 11px;
+	font-weight: bold;
+	padding: 10px 0 0;
+}
+.checkbox
+{
+	clear: left;
+}
+body.ie7 .checkbox
+{
+	padding-top: 10px;
+}
+.checkbox label
+{
+	background-color: #b6a896;
+	border-radius: 5px;
+	clear: none;
+	float: none;
+	font-weight: normal;
+	margin-top: 10px;
+	moz-border-radius: 5px;
+	padding: 5px 5px 5px 30px;
+	webkit-border-radius: 5px;
+	width: auto;
+}
+.checkbox .magmaError
+{
+	background-position: 0 0;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+	right: 10px;
+	text-indent: -9999px;
+	width: 15px;
+}
+.new_content a
+{
+	color: #222;
+	text-decoration: underline;
+}
+.magmaFormElementWrapper
+{
+	padding-bottom: 0;
+}
+.link_container
+{
+	overflow: hidden;
+}
+.link_container a
+{
+	clear: left;
+	display: block;
+	float: left;
+	margin-bottom: 2px;
+}
+#verify-account
+{
+	margin: 0 auto 10px;
+	width: 300px;
+}
+#verify-account .verify-message
+{
+	margin-bottom: 1em;
+}
+#resend-activation
+{
+	margin: 20px auto;
+	width: 300px;
+}
+#reset-password
+{
+	margin: 20px auto;
+	width: 300px;
+}
+#user.resetPassword #password-warning
+{
+	color: #ffe366;
+	display: none;
+	font-weight: bold;
+	z-index: 3;
+}
+#mtx, #cash
+{
+	width: 940px;
+}
+#mtx .trow1 a,#mtx .trow2 a,#cash .trow1 a,#cash .trow2 a
+{
+	color: #8B342F;
+}
+#mtx .cache-info-container,#cash .cache-info-container
+{
+	margin-top: 4px;
+}
+.mtxcontainertop
+{
+	background: url("mtxcontainerTop.gif") left top no-repeat;
+	color: #FFFFFF;
+	height: 36px;
+	width: 940px;
+}
+.mtxcontainertop H2
+{
+	margin-left: 20px;
+	padding-top: 7px;
+}
+.mtxcontainermid
+{
+	background: url("mtxconteinerMid.gif") left top repeat-y;
+	padding-top: 10px;
+	width: 940px;
+}
+.mtxcontainerbot
+{
+	background: url("mtxconteinerBot.gif") left bottom no-repeat;
+	height: 32px;
+	width: 940px;
+}
+UL.mtxtabs
+{
+	background: url("tabscontainerbg.gif") left top no-repeat;
+	height: 38px;
+	margin: 10px auto 0;
+	width: 780px;
+}
+UL.mtxtabs LI
+{
+	background: url("mtxtabs.gif") -217px top no-repeat;
+	float: left;
+	height: 33px;
+	line-height: 30px;
+	list-style: none;
+	margin: 5px 0 0 20px;
+	width: 208px;
+}
+UL.mtxtabs LI.mtxselected
+{
+	background: url("mtxtabs.gif") left top no-repeat;
+}
+UL.mtxtabs LI A
+{
+	color: #FFFFFF;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+ul.mtxtabs li.mtxselected a
+{
+	cursor: default;
+	text-decoration: none;
+}
+.currentbalance
+{
+	background: url("currentbalancebg.gif") left top no-repeat;
+	font-size: 11px;
+	font-weight: bold;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 auto;
+	width: 780px;
+}
+.currentbalance SPAN
+{
+	margin-left: 20px;
+}
+.currentbalance A
+{
+	color: #8F3435;
+}
+TABLE.mtxtable
+{
+	margin: 0 auto;
+	width: 780px;
+}
+TABLE.mtxtable TD, TABLE.mtxtable TH
+{
+	text-align: center;
+	vertical-align: middle;
+}
+TABLE.mtxtable TH
+{
+	background: url("mtxtable-headerbg.gif") right top no-repeat;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 30px;
+}
+TABLE.mtxtable TH.lasttd
+{
+	background: url("mtxtable-headerbg-right.gif") right top no-repeat;
+}
+TABLE.mtxtable TH.firsttd
+{
+	background: url("mtxtable-headerbg-left.gif") left top no-repeat;
+	width: 125px;
+}
+TABLE.mtxtable .trow1 TD
+{
+	background: #F5F5F5 url("trow1separator.gif") right top repeat-y;
+	padding: 5px 0;
+}
+TABLE.mtxtable TD.fullcolspan
+{
+	background-image: none;
+	border-left: 2px solid #000000;
+	border-right: 2px solid #000000;
+}
+TABLE.mtxtable .trow2 TD
+{
+	background: #E0DBD3 url("trow2separator.gif") right top repeat-y;
+	padding: 5px 0;
+}
+TABLE.mtxtable TD.firsttd
+{
+	border-left: 2px solid #000000;
+}
+TABLE.mtxtable TD.lasttd
+{
+	background-image: none;
+	border-right: 2px solid #000000;
+}
+TABLE.mtxtable TD.itemimage
+{
+	text-align: left;
+}
+TABLE.mtxtable IMG
+{
+	height: 64px;
+	margin: 0 10px;
+	vertical-align: middle;
+	width: 64px;
+}
+.mtxtablefoot
+{
+	background: url("mtxtable-footbg.gif") left top no-repeat;
+	height: 31px;
+	margin: 0 auto;
+	width: 780px;
+}
+#cash .mtxcontainertop
+{
+	background: url("cashconteinerTop.gif") left top no-repeat;
+}
+#cash TABLE.mtxtable TH
+{
+	background: url("cashtable-headerbg.gif") right top no-repeat;
+}
+#cash TABLE.mtxtable TH.lasttd
+{
+	background: url("cashtable-headerbg-right.gif") right top no-repeat;
+}
+#cash TABLE.mtxtable TH.firsttd
+{
+	background: url("cashtable-headerbg-left.gif") left top no-repeat;
+	width: 165px;
+}
+#cash .mtxtablefoot
+{
+	background: url("cashtable-footbg.gif") left top no-repeat;
+}
+#userprofile
+{
+}
+#userprofile .userprofileheader
+{
+	background: url("profileheader.png") left top no-repeat;
+	height: 51px;
+	width: 940px;
+}
+#userprofile .userprofileheader h2
+{
+	color: #ffffff;
+	float: left;
+	margin-left: 60px;
+	padding-top: 22px;
+}
+#userprofile .userprofileheader a
+{
+	color: white;
+}
+#userprofile .userprofileheader .header-buttons
+{
+	padding: 21px 6px 0 0;
+}
+#userprofile .userprofileheader .header-button
+{
+	float: right;
+	margin-left: 10px;
+}
+#userprofile .userprofileheader .header-button *
+{
+	cursor: pointer;
+}
+#userprofile .heroitem
+{
+	background: url("heroitembg.gif") left top no-repeat;
+	height: 102px;
+	margin: 0 auto 10px;
+	width: 436px;
+}
+#userprofile .heroitem h3
+{
+	margin: 0 0 0 12px;
+	padding-top: 3px;
+}
+#userprofile .heroitem h3 a
+{
+	color: #ffffff;
+}
+#userprofile .heroinfo
+{
+	position: relative;
+}
+#userprofile .heroinfo .heroavatar
+{
+	height: 64px;
+	left: 8px;
+	position: absolute;
+	top: 7px;
+	width: 64px;
+}
+#userprofile .factclasslevel
+{
+	left: 88px;
+	position: absolute;
+	top: 22px;
+}
+#userprofile .factclasslevel dt,#userprofile .factclasslevel dd
+{
+	float: left;
+}
+#userprofile .factclasslevel dt
+{
+	_background: url("sprite-user-profile.gif") no-repeat;
+	background: url("sprite-user-profile.png") no-repeat;
+	height: 32px;
+	width: 32px;
+}
+#userprofile .factclasslevel dd
+{
+	color: #000000;
+	font-weight: bold;
+	line-height: 32px;
+	margin: 0 20px 0 5px;
+}
+#userprofile .factclasslevel dd.faction
+{
+	width: 55px;
+}
+#userprofile .factclasslevel dd.heroclass
+{
+	width: 75px;
+}
+#userprofile .factclasslevel dd.level
+{
+	width: 0px;
+}
+#userprofile dt.royal
+{
+	background-position: -460px 0;
+}
+#userprofile dt.national
+{
+	background-position: -420px 0;
+}
+#userprofile dt.commando
+{
+	background-position: -300px 0;
+}
+#userprofile dt.gunner
+{
+	background-position: -340px 0;
+}
+#userprofile dt.soldier
+{
+	background-position: -380px 0;
+}
+#userprofile dt.level-1
+{
+	background-position: -500px 0;
+}
+#userprofile dt.level-2
+{
+	background-position: -540px 0;
+}
+#userprofile dt.level-3
+{
+	background-position: -580px 0;
+}
+#userprofile dt.level-4
+{
+	background-position: -620px 0;
+}
+#userprofile dt.level-5
+{
+	background-position: -660px 0;
+}
+#userprofile dt.level-6
+{
+	background-position: -700px 0;
+}
+#userprofile dt.level-7
+{
+	background-position: -740px 0;
+}
+#userprofile dt.level-8
+{
+	background-position: -780px 0;
+}
+#userprofile dt.level-9
+{
+	background-position: -820px 0;
+}
+#userprofile dt.level-10
+{
+	background-position: -860px 0;
+}
+#userprofile dt.level-11
+{
+	background-position: -900px 0;
+}
+#userprofile dt.level-12
+{
+	background-position: -940px 0;
+}
+#userprofile dt.level-13
+{
+	background-position: -980px 0;
+}
+#userprofile dt.level-14
+{
+	background-position: -1020px 0;
+}
+#userprofile dt.level-15
+{
+	background-position: -1060px 0;
+}
+#userprofile dt.level-16
+{
+	background-position: -1100px 0;
+}
+#userprofile dt.level-17
+{
+	background-position: -1140px 0;
+}
+#userprofile dt.level-18
+{
+	background-position: -1180px 0;
+}
+#userprofile dt.level-19
+{
+	background-position: -1220px 0;
+}
+#userprofile dt.level-20
+{
+	background-position: -1260px 0;
+}
+#userprofile dt.level-21
+{
+	background-position: -1300px 0;
+}
+#userprofile dt.level-22
+{
+	background-position: -1340px 0;
+}
+#userprofile dt.level-23
+{
+	background-position: -1380px 0;
+}
+#userprofile dt.level-24
+{
+	background-position: -1420px 0;
+}
+#userprofile dt.level-25
+{
+	background-position: -1460px 0;
+}
+#userprofile dt.level-26
+{
+	background-position: -1500px 0;
+}
+#userprofile dt.level-27
+{
+	background-position: -1540px 0;
+}
+#userprofile dt.level-28
+{
+	background-position: -1580px 0;
+}
+#userprofile dt.level-29
+{
+	background-position: -1620px 0;
+}
+#userprofile dt.level-30
+{
+	background-position: -1660px 0;
+}
+#userprofile .no-heroes
+{
+	margin: 0px 10px 10px;
+}
+#userprofile table.profileforums
+{
+	border: solid #000000;
+	border-width: 2px 1px;
+	margin: 0 auto 5px;
+	width: 772px;
+}
+#userprofile table.profileforums .tcat
+{
+	background-color: #4b4b4b;
+	color: #ffffff;
+	font-weight: bold;
+}
+#userprofile table.profileforums .trow1
+{
+	background-color: #f6f4f0;
+}
+#userprofile table.profileforums .trow2
+{
+	background-color: #e0dbd3;
+}
+#userprofile table.profileforums td
+{
+	border-right: 1px solid #ccc;
+	padding: 5px 10px;
+}
+#userprofile table.profileforums td.tcat
+{
+	border-right: 1px solid #2f2f2f;
+}
+#userprofile .userprofileheader .player-name
+{
+	padding-left: 25px;
+	position: relative;
+}
+#userprofile .userprofileheader .friendlink
+{
+	bottom: 3px;
+	left: 0;
+	right: auto;
+	top: auto;
+}
+#userprofile .medals
+{
+	border-radius: 10px;
+	moz-border-radius: 10px;
+	padding: 3px;
+	position: relative;
+	width: 294px;
+	z-index: 3;
+}
+#userprofile .medals > .inner
+{
+	background: url("spatterTop.png") left top no-repeat #c4baa6;
+	background: url("spatterTop.png") left top no-repeat, url("spatterTop.png") right top no-repeat #c4baa6;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	box-shadow: 0 0 0 3px black;
+	moz-border-radius: 5px;
+	moz-box-shadow: 0 0 0 3px black;
+	position: relative;
+	z-index: 1;
+}
+.ie7 #userprofile .medals > .inner, .ie8 #userprofile .medals > .inner
+{
+	behavior: url("PIE.html");
+}
+#userprofile .medals:before, #userprofile .medals:after
+{
+	background: url("narrowShadow.png") no-repeat left top;
+	content: '';
+	height: 107px;
+	position: absolute;
+	width: 296px;
+}
+#userprofile .medals:before
+{
+	right: -5px;
+	top: -5px;
+}
+#userprofile .medals:after
+{
+	background-position: left bottom;
+	bottom: -6px;
+	left: -5px;
+}
+#userprofile .medals > .inner
+{
+	min-height: 120px;
+}
+.ie7 #userprofile .medals:before, .ie7 #userprofile .medals:after, .ie8 #userprofile .medals:before, .ie8 #userprofile .medals:after
+{
+	display: none;
+}
+#userprofile .medals:before, #userprofile .medals:after
+{
+	background: none;
+}
+#userprofile .medals > .inner
+{
+	background-image: url("newsList_bg.jpg");
+	background-repeat: repeat;
+}
+#userprofile .medals > .inner h2
+{
+	background: transparent url("sprite-box-graphics.png") no-repeat 0 -1600px;
+	padding: 7px 0 20px 10px;
+	text-transform: lowercase;
+}
+#userprofile .medals > .inner .medal-wrapper
+{
+	background: transparent url("wood-shelf_334x110.png") repeat-y center -8px;
+	margin: 0 -21px;
+	overflow: hidden;
+	padding: 0 25px 0;
+	width: 284px;
+}
+#userprofile .medals > .inner .medal-wrapper .medal-item
+{
+	background: transparent url("medal-item.png") no-repeat top left;
+	display: block;
+	float: left;
+	margin: 0 0 29px -1px;
+	padding: 4px 3px 3px;
+}
+#userprofile .medals > .inner .medal-wrapper .no-medals
+{
+	background: #e0dbd3;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 7px;
+	box-shadow: 0 1px 0 2px black;
+	font-weight: bold;
+	height: 43px;
+	margin: 1px 12px 39px;
+	moz-border-radius: 7px;
+	moz-box-shadow: 0 1px 0 2px black;
+	padding: 15px 15px 5px;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+.ie7 #userprofile .medals > .inner .medal-wrapper .no-medals, .ie8 #userprofile .medals > .inner .medal-wrapper .no-medals
+{
+	behavior: url("PIE.html");
+}
+body.ie7 #userprofile .medals > .inner .medal-wrapper
+{
+	padding-bottom: 25px;
+}
+#userprofile .infoicon, #heroprofile .infoicon
+{
+	background: url("info-icon.gif") left top no-repeat;
+	height: 40px;
+	left: -6px;
+	position: absolute;
+	top: -5px;
+	width: 40px;
+}
+#userprofile .profileinfo h2, #heroprofile .profileinfo h2
+{
+	text-indent: 24px;
+}
+#userprofile table.profileinfo, #heroprofile table.profileinfo
+{
+	margin: 0 auto 10px;
+	width: 292px;
+}
+table.profileinfo a
+{
+	color: #fffb00;
+}
+table.profileinfo .odd
+{
+	background-color: #752324;
+}
+table.profileinfo .even
+{
+	background-color: #8f3435;
+}
+table.profileinfo .rowhead td
+{
+	font-size: 16px;
+	margin-top: 10px;
+	text-align: center;
+}
+table.profileinfo .rowhead a
+{
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+table.profileinfo th
+{
+	color: #f0efcb;
+	padding: 2px 3px;
+	text-align: right;
+	width: 50%;
+}
+table.profileinfo td
+{
+	color: #fff;
+	padding: 2px 3px;
+	text-align: left;
+	width: 50%;
+}
+table.profileinfo .player-name
+{
+	display: inline;
+	padding-right: 22px;
+	position: relative;
+}
+#heroprofile .heroprofileheader
+{
+	background: url("heroprofileheader.gif") left top no-repeat;
+	height: 46px;
+	width: 940px;
+}
+#heroprofile .heroprofileheader h2, #heroprofile .heroprofileheader h3
+{
+	color: #ffffff;
+	float: left;
+	margin-left: 20px;
+	padding-top: 12px;
+}
+#heroprofile .heroprofileheader h3
+{
+	color: #fffb00;
+}
+.heroprofileheader ul.stats
+{
+	float: left;
+}
+.heroprofileheader li
+{
+	_background: url("sprite-user-profile.gif") no-repeat;
+	background: url("sprite-user-profile.png") no-repeat;
+	float: left;
+	height: 32px;
+	margin: 7px 0 0 10px;
+	width: 32px;
+}
+#heroprofile .heroprofileheader .cache
+{
+	background: none;
+	color: #ffffff;
+	float: right;
+	margin: 15px 20px 0 0;
+	width: auto;
+}
+.heroprofileheader li.faction-royal
+{
+	background-position: -460px 0;
+}
+.heroprofileheader li.faction-national
+{
+	background-position: -420px 0;
+}
+.heroprofileheader li.class-commando
+{
+	background-position: -300px 0;
+}
+.heroprofileheader li.class-gunner
+{
+	background-position: -340px 0;
+}
+.heroprofileheader li.class-soldier
+{
+	background-position: -380px 0;
+}
+.heroprofileheader li.level-1
+{
+	background-position: -500px 0;
+}
+.heroprofileheader li.level-2
+{
+	background-position: -540px 0;
+}
+.heroprofileheader li.level-3
+{
+	background-position: -580px 0;
+}
+.heroprofileheader li.level-4
+{
+	background-position: -620px 0;
+}
+.heroprofileheader li.level-5
+{
+	background-position: -660px 0;
+}
+.heroprofileheader li.level-6
+{
+	background-position: -700px 0;
+}
+.heroprofileheader li.level-7
+{
+	background-position: -740px 0;
+}
+.heroprofileheader li.level-8
+{
+	background-position: -780px 0;
+}
+.heroprofileheader li.level-9
+{
+	background-position: -820px 0;
+}
+.heroprofileheader li.level-10
+{
+	background-position: -860px 0;
+}
+.heroprofileheader li.level-11
+{
+	background-position: -900px 0;
+}
+.heroprofileheader li.level-12
+{
+	background-position: -940px 0;
+}
+.heroprofileheader li.level-13
+{
+	background-position: -980px 0;
+}
+.heroprofileheader li.level-14
+{
+	background-position: -1020px 0;
+}
+.heroprofileheader li.level-15
+{
+	background-position: -1060px 0;
+}
+.heroprofileheader li.level-16
+{
+	background-position: -1100px 0;
+}
+.heroprofileheader li.level-17
+{
+	background-position: -1140px 0;
+}
+.heroprofileheader li.level-18
+{
+	background-position: -1180px 0;
+}
+.heroprofileheader li.level-19
+{
+	background-position: -1220px 0;
+}
+.heroprofileheader li.level-20
+{
+	background-position: -1260px 0;
+}
+.heroprofileheader li.level-21
+{
+	background-position: -1300px 0;
+}
+.heroprofileheader li.level-22
+{
+	background-position: -1340px 0;
+}
+.heroprofileheader li.level-23
+{
+	background-position: -1380px 0;
+}
+.heroprofileheader li.level-24
+{
+	background-position: -1420px 0;
+}
+.heroprofileheader li.level-25
+{
+	background-position: -1460px 0;
+}
+.heroprofileheader li.level-26
+{
+	background-position: -1500px 0;
+}
+.heroprofileheader li.level-27
+{
+	background-position: -1540px 0;
+}
+.heroprofileheader li.level-28
+{
+	background-position: -1580px 0;
+}
+.heroprofileheader li.level-29
+{
+	background-position: -1620px 0;
+}
+.heroprofileheader li.level-30
+{
+	background-position: -1660px 0;
+}
+#heroprofile .currenthero
+{
+	position: relative;
+}
+#heroprofile .currenthero .items
+{
+	position: relative;
+	z-index: 1;
+}
+#heroprofile .currenthero .items img
+{
+	display: block;
+	float: left;
+	margin-bottom: 8px;
+	margin-right: 168px;
+}
+#heroprofile .currenthero .items img.right
+{
+	margin-right: 0;
+}
+#heroprofile .currenthero .heroimage
+{
+	height: 360px;
+	left: 71px;
+	position: absolute;
+	top: 0;
+	width: 158px;
+}
+#heroprofile .currenthero .heroimage.mugshot
+{
+	height: 398px;
+	left: 0;
+	top: -20px;
+	width: 300px;
+}
+#heroprofile .content
+{
+	padding-bottom: 8px;
+}
+#heroprofile .content .content
+{
+	padding-bottom: 0px;
+}
+.bfhTabBox p
+{
+	padding: 10px;
+}
+.missions .bfhTabBox p
+{
+	padding: 0px;
+}
+.missions .bfhTabBox p.empty
+{
+	padding: 10px;
+}
+.missions .bfhTabBox .current-missions ul
+{
+	_margin-left: 10px;
+	margin: 0 4px 4px 38px;
+}
+.missions .current-missions li
+{
+	float: left;
+	margin: 0 15px 10px 0;
+	position: relative;
+	width: 160px;
+}
+.missions .current-missions li,.missions .all-missions li.mission
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+.missions .all-missions ul.mission-groups
+{
+	height: 280px;
+	margin: 0 1px 1px;
+	overflow: auto;
+	position: relative;
+}
+.missions .all-missions li.mission-group
+{
+	border-bottom: 1px solid #999;
+	border-top: 1px solid #fff;
+	padding: 10px 0px 10px 10px;
+	vertical-align: bottom;
+}
+.missions .all-missions li.mission-group:first-child
+{
+	border-top: none;
+}
+.missions .all-missions li.mission-group .description
+{
+	float: left;
+	font-weight: bold;
+	width: 125px;
+}
+.missions .all-missions li.mission-group ul
+{
+	float: left;
+	margin-left: 10px;
+	width: 420px;
+}
+.missions .all-missions li.mission-group ul li.mission
+{
+	float: left;
+	margin-right: 5px;
+	position: relative;
+	text-align: center;
+	width: 100px;
+}
+.missions .bfhTabBox li img,.missions .bfhTabBox li .img
+{
+	display: block;
+	height: 66px;
+	margin-bottom: 2px;
+	width: 100px;
+}
+.missions .bfhTabBox li div.status
+{
+	_background-image: url("mission-status.gif");
+	background: url("mission-status.png") no-repeat;
+	height: 22px;
+	left: 80px;
+	position: absolute;
+	text-indent: -999em;
+	top: 46px;
+	width: 22px;
+}
+.missions .bfhTabBox li div.complete
+{
+	background-position: 0 -25px;
+}
+.missions .bfhTabBox li div.not
+{
+	background-position: 0 0;
+}
+#heroprofile .abilities h2
+{
+	padding-left: 53px;
+}
+#heroprofile .abilities p
+{
+	padding: 5px 10px;
+}
+#heroprofile .abilities .abilities-icon
+{
+	background: url("abilities-icon.gif") left top no-repeat;
+	height: 50px;
+	left: -12px;
+	position: absolute;
+	top: 5px;
+	width: 67px;
+}
+#heroprofile .abilities ul
+{
+	_margin-left: 0px;
+	margin-left: 4px;
+}
+#heroprofile .abilities li
+{
+	_margin-left: 0px;
+	float: left;
+	height: 66px;
+	list-style-position: inside;
+	list-style-type: none;
+	margin: 0 6px 8px 0;
+	position: relative;
+	width: 66px;
+}
+#heroprofile .abilities .ability-icon
+{
+	_background: url("ability-icons.gif") no-repeat;
+	background: url("ability-icons.png") no-repeat;
+	font-weight: bold;
+	height: 25px;
+	line-height: 24px;
+	position: absolute;
+	right: -2px;
+	text-align: center;
+	top: 44px;
+	width: 26px;
+}
+#heroprofile .abilities .iconlock
+{
+	background-position: 0 -28px;
+	text-indent: -999em;
+}
+.mwv li
+{
+	list-style-position: inside;
+	list-style-type: none;
+	margin: 4px 10px 16px 4px;
+	position: relative;
+}
+.mwv li .map-image, .mwv li .vehicle-image, .mwv li .weapon-image
+{
+	float: left;
+	height: 66px;
+	margin: 5px 8px 0 0;
+	width: 66px;
+}
+.mwv li h3
+{
+	font-size: 11px;
+	margin-bottom: 2px;
+	margin-top: -15px;
+	text-transform: capitalize;
+}
+.mwv li table
+{
+	width: 496px;
+}
+.mwv li table thead td
+{
+	text-transform: capitalize;
+}
+.mwv .other-weapons
+{
+	padding: 0 4px 16px;
+}
+.mwv .other-weapons li
+{
+	float: left;
+	margin: 0;
+	padding: 3px 0;
+	width: 282px;
+}
+.mwv .other-weapons li h3
+{
+	margin: 20px 0 3px;
+}
+.mwv .other-weapons li .dfw
+{
+	padding: 0;
+}
+.mwv .other-weapons li img
+{
+	margin-top: 0;
+}
+.mwv col.table-col-best-score
+{
+}
+.mwv col.table-col-time
+{
+	width: 130px;
+}
+.mwv col.table-col-wins,.mwv col.table-col-losses,.mwv col.table-col-ratio
+{
+	width: 75px;
+}
+.mwv col.table-col-kills,.mwv col.table-col-killed-using,.mwv col.table-col-accuracy
+{
+	width: 90px;
+}
+.mwv col.table-col-road-kills
+{
+	width: 120px;
+}
+.mwv col.table-col-destroyed,.mwv col.table-col-deaths-from-vehicle,.mwv col.table-col-deaths-while-in-vehicle
+{
+	width: 60px;
+}
+#heroprofile .signature .content p
+{
+	padding-bottom: 5px;
+	text-align: center;
+}
+#heroprofile .signature .content p a
+{
+	display: block;
+}
+#heroprofile .signature .content p a:hover
+{
+	text-decoration: none;
+}
+#heroprofile .signature .content p a:hover span
+{
+	text-decoration: underline;
+}
+#signature-report
+{
+	padding-right: 40px;
+	padding-top: 10px;
+}
+.events table
+{
+	float: left;
+	margin: 0 0 10px 10px;
+	width: 275px;
+}
+.events tr.alt
+{
+	background: #ccc5b9;
+}
+.events td
+{
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px 0;
+}
+.events .event_count
+{
+	color: black;
+	font-weight: bold;
+	padding-right: 5px;
+	text-align: right;
+}
+#heroprofile #not_in_cache p
+{
+	padding: 0 10px 20px;
+}
+#heroprofile #not_in_cache #spinner
+{
+	margin: 10px 0 40px 210px;
+}
+#update-account .form-wrapper
+{
+	margin: 10px auto;
+	width: 500px;
+}
+#update-account .optin-message
+{
+	font-weight: bold;
+	margin: 2px 2px 1em;
+}
+#update-account .magmaCheckboxWrapper
+{
+	margin-bottom: 0.5em;
+}
+#update-account a.profileEAcom
+{
+	background: url("buttons.png") no-repeat;
+	background-position: left -31px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 30px;
+	line-height: 25px;
+	margin-right: 10px;
+	margin-top: 5px;
+	overflow: visible;
+	padding: 0 5px 0 25px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+}
+body.lang-ru #update-account a.profileEAcom
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#update-account a.profileEAcom .decoration
+{
+	background: url("buttons.png") no-repeat;
+	display: block;
+	height: 30px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+#update-account a.profileEAcom:before
+{
+	background: url("ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 8px;
+	position: absolute;
+	top: 6px;
+	width: 13px;
+}
+#update-account a.profileEAcom:hover
+{
+	text-decoration: none;
+}
+#update-account a.profileEAcom.disabled
+{
+	background-position: left 0px;
+	cursor: default;
+}
+#update-account a.profileEAcom.disabled .decoration
+{
+	background-position: right 0px;
+}
+#update-account a.profileEAcom.disabled:hover
+{
+	background-position: left 0px;
+}
+#update-account a.profileEAcom.disabled:hover .decoration
+{
+	background-position: right 0px;
+}
+#update-account a.profileEAcom .decoration
+{
+	background-position: right -31px;
+}
+#update-account a.profileEAcom:hover
+{
+	background-position: left -62px;
+}
+#update-account a.profileEAcom:hover .decoration
+{
+	background-position: right -62px;
+}
+.search-noresults
+{
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	text-align: center;
+}
+.search-results
+{
+	margin: 0 0 10px 10px;
+}
+ul.searchresults
+{
+	float: left;
+	margin: 0 10px 10px 0;
+	width: 174px;
+}
+ul.searchresults li
+{
+	padding-bottom: 10px;
+}
+.moreresults
+{
+	height: 25px;
+	padding: 10px;
+	text-align: center;
+}
+.moreresults form
+{
+	display: inline;
+}
+.moreresults .bfhButton
+{
+	margin: 0 10px;
+}
+.moreresults .float-right
+{
+	float: right;
+}
+.moreresults .float-left
+{
+	float: left;
+}
+.searchPersona-form
+{
+	height: 173px;
+	margin: 10px 20px;
+}
+.searchPersona-form .magmaFormElementWrapper
+{
+	float: left;
+	margin-left: 10px;
+	position: relative;
+}
+.searchPersona-form select
+{
+	display: block;
+	margin: 5px 0 4px;
+}
+.searchPersona-form .bfhButton
+{
+	margin: 20px 0 0 10px;
+}
+.mygroups .bfhBox-lightbeige h2.bfhBox-heading
+{
+	background: url("groups-title2.png") no-repeat;
+	display: block;
+	height: 40px;
+	margin: -9px 0 0 -12px;
+	padding: 15px 0 0 65px;
+	width: 302px;
+}
+.mygroups ul
+{
+	color: #000;
+}
+.mygroups li
+{
+	height: 64px;
+	list-style: none;
+	margin: 0 10px;
+	padding: 5px 0 5px 74px;
+	position: relative;
+}
+.mygroups li h3
+{
+	font-size: 13px;
+	margin: 0 0 2px 0;
+	padding: 0;
+}
+.mygroups .group-icon
+{
+	background: #fff;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.mygroups .group-icon,.mygroups .group-icon-border
+{
+	background-position: -3px -3px;
+	height: 58px;
+	margin: 3px;
+	width: 58px;
+}
+.mygroups .group-icon-border
+{
+	background: url("icon-64-border.png") no-repeat;
+	height: 64px;
+	margin: -3px;
+	width: 64px;
+}
+.mygroups a
+{
+	color: black;
+}
+.mygroups .text
+{
+	padding: 4px 0 12px 30px;
+}
+body#user.newCurrency
+{
+	background: url("register_bg.html") no-repeat center 32px !important;
+}
+#new-currency-info
+{
+	margin-bottom: 20px;
+}
+#new-currency-info .grid-row-first.grid-row-last
+{
+	background: url("new-currency-bg-header.png") no-repeat top center;
+	margin-top: 25px;
+	padding-top: 10px;
+}
+#new-currency-info .grid-center
+{
+	background: url("new-currency-bg.png") repeat-y bottom left;
+	padding-top: 15px;
+	text-align: center;
+	width: 554px;
+}
+#new-currency-info .bfhBox
+{
+	margin: 0 auto 15px;
+	text-align: left;
+	width: 500px;
+}
+#new-currency-info .currency-message
+{
+	border-radius: 10px;
+	moz-border-radius: 10px;
+	overflow: hidden;
+	padding: 10px 30px;
+	webkit-border-radius: 10px;
+}
+#new-currency-info .bfhBox .content p
+{
+	margin: 0 0 1em 0;
+}
+#new-currency-info .new-currency-header
+{
+	background: url("new-currency-header.png") no-repeat top left;
+	border-bottom: #FCC;
+	border-radius: 2px 2px 0 0;
+	height: 134px;
+	left: 28px;
+	position: relative;
+	top: 4px;
+	width: 534px;
+}
+#new-currency-info table
+{
+	margin-bottom: 10px;
+}
+#new-currency-info table .last
+{
+	min-width: 100px;
+}
+#new-currency-info table td
+{
+	font-size: 12px;
+}
+#new-currency-info table th
+{
+	border-bottom: 1px solid black;
+	box-shadow: inset 0 0 0 1px #4b8fc4;
+	font-size: 11px;
+	height: 22px;
+}
+#new-currency-info table th.only .tbg,#new-currency-info table td.only .tbg
+{
+	height: 22px;
+	margin: 0;
+	padding: 0 5px;
+}
+#new-currency-info .label-wrapper
+{
+	background: #752324;
+	border-radius: 5px;
+	color: #fff;
+	margin: 0 0 1em;
+	moz-border-radius: 5px;
+	padding: 10px;
+	webkit-border-radius: 5px;
+}
+#new-currency-info .magmaFormElementWrapper
+{
+	padding: 0;
+}
+#new-currency-info .label-wrapper label
+{
+	background: none;
+	display: block;
+	text-indent: 25px;
+}
+#new-currency-info .label-wrapper a
+{
+	color: #DCC;
+}
+#new-currency-info .label-wrapper a:hover
+{
+	color: #FFF;
+}
+#new-currency-info .currency_accept
+{
+	float: right;
+	margin-right: 0;
+}
+#new-currency-info .sender-bar
+{
+	background: url("new-currency-footer.png") no-repeat top center;
+	bottom: -9px;
+	height: 45px;
+	position: relative;
+	width: 554px;
+}
+#createHero
+{
+	border-radius: 10px;
+	margin: 0 auto;
+	moz-border-radius: 10px;
+	padding: 3px;
+	position: relative;
+	width: 852px;
+	z-index: 3;
+}
+#createHero > .inner
+{
+	background: url("spatterTop.png") left top no-repeat #c4baa6;
+	background: url("spatterTop.png") left top no-repeat, url("spatterTop.png") right top no-repeat #c4baa6;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	box-shadow: 0 0 0 3px black;
+	moz-border-radius: 5px;
+	moz-box-shadow: 0 0 0 3px black;
+	position: relative;
+	z-index: 1;
+}
+.ie7 #createHero > .inner, .ie8 #createHero > .inner
+{
+	behavior: url("PIE.html");
+}
+#createHero:before, #createHero:after
+{
+	background: url("fullShadow.png") no-repeat left top;
+	content: '';
+	height: 134px;
+	position: absolute;
+	width: 840px;
+}
+#createHero:before
+{
+	right: -5px;
+	top: -13px;
+}
+#createHero:after
+{
+	background-position: left bottom;
+	bottom: -14px;
+	left: -5px;
+}
+#createHero > .inner
+{
+	min-height: 120px;
+}
+.ie7 #createHero:before, .ie7 #createHero:after, .ie8 #createHero:before, .ie8 #createHero:after
+{
+	display: none;
+}
+#createHero table
+{
+	display: none;
+}
+#createHero > .inner
+{
+	background: url("bg.jpg") no-repeat -1px -1px;
+	height: 504px;
+	padding: 23px 38px 0 459px;
+}
+#createHero .heroType
+{
+	background: no-repeat;
+}
+#createHero.selectedFaction2 .heroType
+{
+	background-image: url("royal_bg.png");
+}
+#createHero.selectedFaction2 .characteristics .faction1
+{
+	display: none;
+}
+#createHero.selectedFaction2.selectedHeroClass0 .preview .doll
+{
+	background-image: url("royalCommando.png");
+}
+#createHero.selectedFaction2.selectedHeroClass1 .preview .doll
+{
+	background-image: url("royalSoldier.png");
+}
+#createHero.selectedFaction2.selectedHeroClass2 .preview .doll
+{
+	background-image: url("royalGunner.png");
+}
+#createHero.selectedFaction1 .heroType
+{
+	background-image: url("national_bg.png");
+}
+#createHero.selectedFaction1 .preview .face
+{
+	left: 105px;
+	top: 19px;
+}
+#createHero.selectedFaction1 .heroClass > li
+{
+	background-image: url("icon_national_classes.png");
+}
+#createHero.selectedFaction1 .characteristics .faction2
+{
+	display: none;
+}
+#createHero.selectedFaction1.selectedHeroClass0 .preview .doll
+{
+	background-image: url("nationalCommando.png");
+}
+#createHero.selectedFaction1.selectedHeroClass1 .preview .doll
+{
+	background-image: url("nationalSoldier.png");
+}
+#createHero.selectedFaction1.selectedHeroClass2 .preview .doll
+{
+	background-image: url("nationalGunner.png");
+}
+#createHero.barbershop h1
+{
+	background: url("barbershop_bg.png") no-repeat;
+	font-size: 2.9em;
+	height: 57px;
+	line-height: 50px;
+	margin: 0;
+	text-align: center;
+	text-transform: lowercase;
+}
+#createHero .faction
+{
+	height: 47px;
+	position: relative;
+}
+#createHero .faction .faction2
+{
+	background: url("faction_royal.png") no-repeat;
+	height: 67px;
+	left: -30px;
+	position: absolute;
+	top: -22px;
+	width: 200px;
+}
+#createHero .faction .faction1
+{
+	background: url("faction_national.png") no-repeat;
+	height: 67px;
+	position: absolute;
+	right: -34px;
+	top: -22px;
+	width: 200px;
+}
+#createHero .heroClass
+{
+	clear: both;
+	overflow: hidden;
+	padding: 12px 0 12px 13px;
+}
+#createHero .heroClass > li
+{
+	background: url("icon_royal_classes.png") no-repeat;
+	float: left;
+	height: 79px;
+	margin-left: 20px;
+	width: 82px;
+}
+#createHero .heroClass .heroClass0
+{
+	background-position: -166px top;
+}
+#createHero .heroClass .heroClass0:hover
+{
+	background-position: -166px bottom;
+}
+#createHero .heroClass .heroClass1
+{
+	background-position: 0 top;
+}
+#createHero .heroClass .heroClass1:hover
+{
+	background-position: 0 bottom;
+}
+#createHero .heroClass .heroClass2
+{
+	background-position: -83px top;
+}
+#createHero .heroClass .heroClass2:hover
+{
+	background-position: -83px bottom;
+}
+#createHero.selectedHeroClass0 .heroClass0
+{
+	background-position: -166px bottom;
+}
+#createHero.selectedHeroClass1 .heroClass1
+{
+	background-position: 0 bottom;
+}
+#createHero.selectedHeroClass2 .heroClass2
+{
+	background-position: -83px bottom;
+}
+#createHero .characteristics
+{
+	background: url("characteristics.png") no-repeat;
+}
+#createHero .hairSelector
+{
+	background: url("hairSelector.png") no-repeat;
+	clear: both;
+	height: 235px;
+	margin: -3px 2px 0;
+	position: relative;
+}
+#createHero .hairSelector.baseMSGAppearanceHairStyleStats
+{
+	background-position: right top;
+}
+#createHero .hairSelector.baseMSGAppearanceHairStyleStats .facialHair ul
+{
+	display: none;
+}
+#createHero .hairSelector.facial_ui_name .hair ul
+{
+	display: none;
+}
+#createHero .hairSelector > li
+{
+	left: 0;
+	position: absolute;
+	top: 48px;
+	width: 350px;
+}
+#createHero .hairSelector h2
+{
+	background: url("hairSelectorIcons.png") no-repeat;
+	height: 42px;
+	margin: 0;
+	position: absolute;
+	top: -48px;
+	width: 132px;
+}
+#createHero .hairSelector .hair h2
+{
+	background-position: center -37px;
+	left: 40px;
+}
+#createHero .hairSelector .facialHair h2
+{
+	background-position: center 3px;
+	right: 40px;
+}
+#createHero .hairSelector ul
+{
+	text-align: center;
+}
+#createHero .hairSelector .facialHair li, #createHero .hairSelector .hair li
+{
+	float: left;
+	height: 92px;
+	overflow: hidden;
+	position: relative;
+	width: 69px;
+}
+#createHero .hairSelector .facialHair li:hover, #createHero .hairSelector .hair li:hover
+{
+	background: url("icon_bg.png") no-repeat 5px 10px;
+}
+#createHero .hairSelector .facialHair .facialHair128 .icon_facialHair
+{
+	background-position: -345px -186px;
+}
+#createHero .hairSelector .facialHair .facialHair104 .icon_facialHair
+{
+	background-position: -345px -186px;
+}
+#createHero .hairSelector .facialHair .facialHair126 .icon_facialHair
+{
+	background-position: -345px -278px;
+}
+#createHero .hairSelector .facialHair .facialHair102 .icon_facialHair
+{
+	background-position: -345px -278px;
+}
+#createHero .hairSelector .facialHair .facialHair133 .icon_facialHair
+{
+	background-position: -345px -370px;
+}
+#createHero .hairSelector .facialHair .facialHair109 .icon_facialHair
+{
+	background-position: -345px -370px;
+}
+#createHero .hairSelector .facialHair .facialHair131 .icon_facialHair
+{
+	background-position: -345px -462px;
+}
+#createHero .hairSelector .facialHair .facialHair107 .icon_facialHair
+{
+	background-position: -345px -462px;
+}
+#createHero .hairSelector .facialHair .facialHair127 .icon_facialHair
+{
+	background-position: -345px -554px;
+}
+#createHero .hairSelector .facialHair .facialHair103 .icon_facialHair
+{
+	background-position: -345px -554px;
+}
+#createHero .hairSelector .facialHair .facialHair129 .icon_facialHair
+{
+	background-position: -345px -646px;
+}
+#createHero .hairSelector .facialHair .facialHair105 .icon_facialHair
+{
+	background-position: -345px -646px;
+}
+#createHero .hairSelector .facialHair .facialHair130 .icon_facialHair
+{
+	background-position: -345px -738px;
+}
+#createHero .hairSelector .facialHair .facialHair106 .icon_facialHair
+{
+	background-position: -345px -738px;
+}
+#createHero .hairSelector .facialHair .facialHair132 .icon_facialHair
+{
+	background-position: -345px -830px;
+}
+#createHero .hairSelector .facialHair .facialHair108 .icon_facialHair
+{
+	background-position: -345px -830px;
+}
+#createHero .hairSelector .facialHair .facialHair0 .icon_facialHair
+{
+	background-position: -345px -922px;
+}
+#createHero .hairSelector .hair .hair83 .icon_hair
+{
+	background-position: 0px -186px;
+}
+#createHero .hairSelector .hair .hair121 .icon_hair
+{
+	background-position: 0px -186px;
+}
+#createHero .hairSelector .hair .hair82 .icon_hair
+{
+	background-position: 0px -278px;
+}
+#createHero .hairSelector .hair .hair120 .icon_hair
+{
+	background-position: 0px -278px;
+}
+#createHero .hairSelector .hair .hair85 .icon_hair
+{
+	background-position: 0px -370px;
+}
+#createHero .hairSelector .hair .hair123 .icon_hair
+{
+	background-position: 0px -370px;
+}
+#createHero .hairSelector .hair .hair87 .icon_hair
+{
+	background-position: 0px -462px;
+}
+#createHero .hairSelector .hair .hair125 .icon_hair
+{
+	background-position: 0px -462px;
+}
+#createHero .hairSelector .hair .hair84 .icon_hair
+{
+	background-position: 0px -554px;
+}
+#createHero .hairSelector .hair .hair122 .icon_hair
+{
+	background-position: 0px -554px;
+}
+#createHero .hairSelector .hair .hair86 .icon_hair
+{
+	background-position: 0px -646px;
+}
+#createHero .hairSelector .hair .hair124 .icon_hair
+{
+	background-position: 0px -646px;
+}
+#createHero .hairSelector .hair .hair0 .icon_hair
+{
+	background-position: 0px -738px;
+}
+#createHero.selectedHair0 .hair0, #createHero.selectedHair82 .hair82, #createHero.selectedHair83 .hair83, #createHero.selectedHair84 .hair84, #createHero.selectedHair85 .hair85, #createHero.selectedHair86 .hair86, #createHero.selectedHair87 .hair87, #createHero.selectedHair120 .hair120, #createHero.selectedHair121 .hair121, #createHero.selectedHair122 .hair122, #createHero.selectedHair123 .hair123, #createHero.selectedHair124 .hair124, #createHero.selectedHair125 .hair125, #createHero.selectedFacialHair0 .facialHair0, #createHero.selectedFacialHair102 .facialHair102, #createHero.selectedFacialHair103 .facialHair103, #createHero.selectedFacialHair104 .facialHair104, #createHero.selectedFacialHair105 .facialHair105, #createHero.selectedFacialHair106 .facialHair106, #createHero.selectedFacialHair107 .facialHair107, #createHero.selectedFacialHair108 .facialHair108, #createHero.selectedFacialHair109 .facialHair109, #createHero.selectedFacialHair126 .facialHair126, #createHero.selectedFacialHair127 .facialHair127, #createHero.selectedFacialHair128 .facialHair128, #createHero.selectedFacialHair129 .facialHair129, #createHero.selectedFacialHair130 .facialHair130, #createHero.selectedFacialHair131 .facialHair131, #createHero.selectedFacialHair132 .facialHair132, #createHero.selectedFacialHair133 .facialHair133
+{
+	background: url("icon_bg.png") no-repeat 5px 10px;
+}
+#createHero .colorSelector
+{
+	height: 46px;
+	padding-top: 7px;
+}
+#createHero .colorSelector h2
+{
+	clear: left;
+	color: black;
+	float: left;
+	font-size: 1.2em;
+	margin: 0;
+	text-align: right;
+	text-shadow: none;
+	width: 150px;
+}
+#createHero .skinColor, #createHero .hairColor
+{
+	float: left;
+	padding: 4px 0 3px 10px;
+	width: 180px;
+}
+#createHero .skinColor li, #createHero .hairColor li
+{
+	border-radius: 5px;
+	box-shadow: 0 0 0 2px black;
+	float: left;
+	height: 7px;
+	margin: 0 3px;
+	moz-border-radius: 5px;
+	moz-box-shadow: 0 0 0 2px black;
+	padding: 2px;
+	width: 7px;
+}
+#createHero .skinColor li:hover, #createHero .hairColor li:hover
+{
+	box-shadow: 0 0 0 2px black, 0 0 0 3px white;
+	moz-box-shadow: 0 0 0 2px black, 0 0 0 3px white;
+}
+#createHero .skinColor .skinColor9
+{
+	background: #f8d6b2;
+}
+#createHero .skinColor .skinColor8
+{
+	background: #febe7c;
+}
+#createHero .skinColor .skinColor7
+{
+	background: #ea943c;
+}
+#createHero .skinColor .skinColor6
+{
+	background: #ec8212;
+}
+#createHero .skinColor .skinColor5
+{
+	background: #cc7820;
+}
+#createHero .skinColor .skinColor4
+{
+	background: #ac5c00;
+}
+#createHero .skinColor .skinColor3
+{
+	background: #8a4a00;
+}
+#createHero .skinColor .skinColor2
+{
+	background: #682800;
+}
+#createHero .skinColor .skinColor1
+{
+	background: #2e2017;
+}
+#createHero.selectedSkinColor1 .skinColor1, #createHero.selectedSkinColor2 .skinColor2, #createHero.selectedSkinColor3 .skinColor3, #createHero.selectedSkinColor4 .skinColor4, #createHero.selectedSkinColor5 .skinColor5, #createHero.selectedSkinColor6 .skinColor6, #createHero.selectedSkinColor7 .skinColor7, #createHero.selectedSkinColor8 .skinColor8, #createHero.selectedSkinColor9 .skinColor9, #createHero.selectedHairColor1 .hairColor1, #createHero.selectedHairColor2 .hairColor2, #createHero.selectedHairColor3 .hairColor3, #createHero.selectedHairColor4 .hairColor4, #createHero.selectedHairColor5 .hairColor5
+{
+	border: 2px solid #fff;
+	padding: 0;
+}
+#createHero .hairColor .hairColor1
+{
+	background: #f8e5b2;
+}
+#createHero .hairColor .hairColor3
+{
+	background: #ff7352;
+}
+#createHero .hairColor .hairColor5
+{
+	background: #c59d81;
+}
+#createHero .hairColor .hairColor2
+{
+	background: #8e664a;
+}
+#createHero .hairColor .hairColor4
+{
+	background: #2e2017;
+}
+#createHero .actions
+{
+	background: url("actions_bg.png") no-repeat left bottom;
+	overflow: hidden;
+	padding: 7px;
+}
+#createHero .actions #saveHero, #createHero .actions .fund
+{
+	background: url("buttons_large.png") no-repeat;
+	background-position: left -41px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 40px;
+	line-height: 35px;
+	margin-right: 10px;
+	overflow: visible;
+	padding: 0 11px 0 30px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+	width: 115px;
+}
+body.lang-ru #createHero .actions #saveHero, body.lang-ru #createHero .actions .fund
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#createHero .actions #saveHero .decoration, #createHero .actions .fund .decoration
+{
+	background: url("buttons_large.png") no-repeat;
+	display: block;
+	height: 40px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+#createHero .actions #saveHero:before, #createHero .actions .fund:before
+{
+	background: url("ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 11px;
+	position: absolute;
+	top: 12px;
+	width: 13px;
+}
+#createHero .actions #saveHero:hover, #createHero .actions .fund:hover
+{
+	text-decoration: none;
+}
+#createHero .actions #saveHero.disabled, #createHero .actions .fund.disabled
+{
+	background-position: left 0px;
+	cursor: default;
+}
+#createHero .actions #saveHero.disabled .decoration, #createHero .actions .fund.disabled .decoration
+{
+	background-position: right 0px;
+}
+#createHero .actions #saveHero.disabled:hover, #createHero .actions .fund.disabled:hover
+{
+	background-position: left 0px;
+}
+#createHero .actions #saveHero.disabled:hover .decoration, #createHero .actions .fund.disabled:hover .decoration
+{
+	background-position: right 0px;
+}
+#createHero .actions #saveHero .decoration, #createHero .actions .fund .decoration
+{
+	background-position: right -41px;
+}
+#createHero .actions #saveHero:hover, #createHero .actions .fund:hover
+{
+	background-position: left -82px;
+}
+#createHero .actions #saveHero:hover .decoration, #createHero .actions .fund:hover .decoration
+{
+	background-position: right -82px;
+}
+#createHero .actions .fund
+{
+	display: none;
+}
+#createHero .actions #randomHero
+{
+	background: url("buttons_large.png") no-repeat;
+	background-position: left -123px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 40px;
+	line-height: 35px;
+	margin-right: 10px;
+	overflow: visible;
+	padding: 0 11px 0 30px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+	width: 115px;
+}
+body.lang-ru #createHero .actions #randomHero
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#createHero .actions #randomHero .decoration
+{
+	background: url("buttons_large.png") no-repeat;
+	display: block;
+	height: 40px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+#createHero .actions #randomHero:before
+{
+	background: url("ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 11px;
+	position: absolute;
+	top: 12px;
+	width: 13px;
+}
+#createHero .actions #randomHero:hover
+{
+	text-decoration: none;
+}
+#createHero .actions #randomHero.disabled
+{
+	background-position: left 0px;
+	cursor: default;
+}
+#createHero .actions #randomHero.disabled .decoration
+{
+	background-position: right 0px;
+}
+#createHero .actions #randomHero.disabled:hover
+{
+	background-position: left 0px;
+}
+#createHero .actions #randomHero.disabled:hover .decoration
+{
+	background-position: right 0px;
+}
+#createHero .actions #randomHero .decoration
+{
+	background-position: right -123px;
+}
+#createHero .actions #randomHero:hover
+{
+	background-position: left -164px;
+}
+#createHero .actions #randomHero:hover .decoration
+{
+	background-position: right -164px;
+}
+#createHero .actions .price
+{
+	background: url("currencyIcons.png") no-repeat 100px 1px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 2px solid #000;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	float: left;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-family: HeaderFont;
+	font-size: 1.8em;
+	height: 34px;
+	line-height: 32px;
+	margin-top: 1px;
+	moz-border-radius: 5px;
+	padding-right: 48px;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	width: 105px;
+}
+body.lang-ru #createHero .actions .price
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#createHero .preview
+{
+	background: url("shadow.png") no-repeat -35px 445px;
+	height: 500px;
+	left: -1px;
+	position: absolute;
+	top: 20px;
+	width: 420px;
+}
+#createHero .preview .face
+{
+	height: 92px;
+	left: 107px;
+	overflow: hidden;
+	position: absolute;
+	top: 10px;
+	width: 69px;
+}
+#createHero .preview .doll
+{
+	background-position: 0 75px;
+	background-repeat: no-repeat;
+	height: 485px;
+	left: 25px;
+	position: absolute;
+	top: 0;
+	width: 305px;
+}
+#createHero .preview .help
+{
+	background-color: #fff;
+	border: 2px solid #000;
+	left: 210px;
+	padding: 8px 10px 12px;
+	position: absolute;
+	top: 20px;
+	webkit-text-stroke-width: 0.1px;
+	width: 200px;
+}
+#createHero .preview .help:before
+{
+	background: url("bubbleArrow.png") no-repeat;
+	content: '';
+	height: 19px;
+	left: -43px;
+	position: absolute;
+	top: 30px;
+	width: 43px;
+}
+#createHero .preview .help .header, #createHero .preview .help .bodyText
+{
+	font-family: ComicFont;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+}
+#createHero .preview .help .header
+{
+	display: block;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+}
+#createHero .preview .help .bodyText
+{
+	line-height: 1.3em;
+}
+#createHero .overlay
+{
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#createHero .overlay .nameSelector
+{
+	background-color: #fff;
+	border: 2px solid #000;
+	left: 210px;
+	padding: 8px 10px 12px;
+	position: absolute;
+	top: 20px;
+	webkit-text-stroke-width: 0.1px;
+	width: 200px;
+	z-index: 2;
+}
+#createHero .overlay .nameSelector:before
+{
+	background: url("bubbleArrow.png") no-repeat;
+	content: '';
+	height: 19px;
+	left: -43px;
+	position: absolute;
+	top: 30px;
+	width: 43px;
+}
+#createHero .overlay .nameSelector .header, #createHero .overlay .nameSelector .bodyText
+{
+	font-family: ComicFont;
+	font-weight: bold;
+	text-align: center;
+}
+#createHero .overlay .nameSelector .header
+{
+	display: block;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+}
+#createHero .overlay .nameSelector .bodyText
+{
+	line-height: 1.3em;
+}
+#createHero .overlay .nameSelector .heroName
+{
+	border: 2px solid #000;
+	border-radius: 5px;
+	display: block;
+	font-size: 1.1em;
+	height: 16px;
+	line-height: 16px;
+	margin-bottom: 5px;
+	moz-border-radius: 5px;
+	padding: 2px;
+	text-align: left;
+	width: 180px;
+}
+#createHero .overlay .nameSelector #chooseName
+{
+	background: url("buttons.png") no-repeat;
+	background-position: left -31px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 30px;
+	line-height: 25px;
+	margin-right: 10px;
+	overflow: visible;
+	padding: 0 5px 0 25px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+}
+body.lang-ru #createHero .overlay .nameSelector #chooseName
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#createHero .overlay .nameSelector #chooseName .decoration
+{
+	background: url("buttons.png") no-repeat;
+	display: block;
+	height: 30px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+#createHero .overlay .nameSelector #chooseName:before
+{
+	background: url("ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 8px;
+	position: absolute;
+	top: 6px;
+	width: 13px;
+}
+#createHero .overlay .nameSelector #chooseName:hover
+{
+	text-decoration: none;
+}
+#createHero .overlay .nameSelector #chooseName.disabled
+{
+	background-position: left 0px;
+	cursor: default;
+}
+#createHero .overlay .nameSelector #chooseName.disabled .decoration
+{
+	background-position: right 0px;
+}
+#createHero .overlay .nameSelector #chooseName.disabled:hover
+{
+	background-position: left 0px;
+}
+#createHero .overlay .nameSelector #chooseName.disabled:hover .decoration
+{
+	background-position: right 0px;
+}
+#createHero .overlay .nameSelector #chooseName .decoration
+{
+	background-position: right -31px;
+}
+#createHero .overlay .nameSelector #chooseName:hover
+{
+	background-position: left -62px;
+}
+#createHero .overlay .nameSelector #chooseName:hover .decoration
+{
+	background-position: right -62px;
+}
+#createHero .overlay .nameSelector #cancelName
+{
+	background: url("buttons.png") no-repeat;
+	background-position: left -217px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 30px;
+	line-height: 25px;
+	margin-right: 10px;
+	overflow: visible;
+	padding: 0 5px 0 25px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+}
+body.lang-ru #createHero .overlay .nameSelector #cancelName
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#createHero .overlay .nameSelector #cancelName .decoration
+{
+	background: url("buttons.png") no-repeat;
+	display: block;
+	height: 30px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+#createHero .overlay .nameSelector #cancelName:before
+{
+	background: url("ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 8px;
+	position: absolute;
+	top: 6px;
+	width: 13px;
+}
+#createHero .overlay .nameSelector #cancelName:hover
+{
+	text-decoration: none;
+}
+#createHero .overlay .nameSelector #cancelName.disabled
+{
+	background-position: left 0px;
+	cursor: default;
+}
+#createHero .overlay .nameSelector #cancelName.disabled .decoration
+{
+	background-position: right 0px;
+}
+#createHero .overlay .nameSelector #cancelName.disabled:hover
+{
+	background-position: left 0px;
+}
+#createHero .overlay .nameSelector #cancelName.disabled:hover .decoration
+{
+	background-position: right 0px;
+}
+#createHero .overlay .nameSelector #cancelName .decoration
+{
+	background-position: right -217px;
+}
+#createHero .overlay .nameSelector #cancelName:hover
+{
+	background-position: left -248px;
+}
+#createHero .overlay .nameSelector #cancelName:hover .decoration
+{
+	background-position: right -248px;
+}
+#createHero .overlay .error
+{
+	background-color: white;
+	border: 2px solid black;
+	color: black;
+	display: none;
+	font-size: 0.9em;
+	left: 220px;
+	padding: 3px 15px 5px;
+	position: absolute;
+	text-align: center;
+	top: 128px;
+	width: 170px;
+	z-index: 1;
+}
+.hairSelector .icon_shadow, .hairSelector .icon_skin, .hairSelector .icon_facialHair, .hairSelector .icon_hair, .hairSelector .facialFeatures, .preview .face .icon_shadow, .preview .face .icon_skin, .preview .face .icon_facialHair, .preview .face .icon_hair, .preview .face .facialFeatures
+{
+	background: no-repeat;
+	display: block;
+	height: 92px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 69px;
+}
+.selectedFaction1 .hairSelector .icon_shadow, .selectedFaction1 .hairSelector .icon_skin, .selectedFaction1 .hairSelector .icon_facialHair, .selectedFaction1 .hairSelector .icon_hair, .selectedFaction1 .hairSelector .facialFeatures, .selectedFaction1 .preview .face .icon_shadow, .selectedFaction1 .preview .face .icon_skin, .selectedFaction1 .preview .face .icon_facialHair, .selectedFaction1 .preview .face .icon_hair, .selectedFaction1 .preview .face .facialFeatures
+{
+	background-image: url("national.png");
+}
+.selectedFaction2 .hairSelector .icon_shadow, .selectedFaction2 .hairSelector .icon_skin, .selectedFaction2 .hairSelector .icon_facialHair, .selectedFaction2 .hairSelector .icon_hair, .selectedFaction2 .hairSelector .facialFeatures, .selectedFaction2 .preview .face .icon_shadow, .selectedFaction2 .preview .face .icon_skin, .selectedFaction2 .preview .face .icon_facialHair, .selectedFaction2 .preview .face .icon_hair, .selectedFaction2 .preview .face .facialFeatures
+{
+	background-image: url("royal.png");
+}
+.hairSelector .icon_shadow, .preview .face .icon_shadow
+{
+	background-position: -621px -2px;
+}
+.selectedSkinColor1 .hairSelector .icon_skin, .selectedSkinColor1 .preview .face .icon_skin
+{
+	background-position: -552px -2px;
+}
+.selectedSkinColor2 .hairSelector .icon_skin, .selectedSkinColor2 .preview .face .icon_skin
+{
+	background-position: -483px -2px;
+}
+.selectedSkinColor3 .hairSelector .icon_skin, .selectedSkinColor3 .preview .face .icon_skin
+{
+	background-position: -414px -2px;
+}
+.selectedSkinColor4 .hairSelector .icon_skin, .selectedSkinColor4 .preview .face .icon_skin
+{
+	background-position: -345px -2px;
+}
+.selectedSkinColor5 .hairSelector .icon_skin, .selectedSkinColor5 .preview .face .icon_skin
+{
+	background-position: -276px -2px;
+}
+.selectedSkinColor6 .hairSelector .icon_skin, .selectedSkinColor6 .preview .face .icon_skin
+{
+	background-position: -207px -2px;
+}
+.selectedSkinColor7 .hairSelector .icon_skin, .selectedSkinColor7 .preview .face .icon_skin
+{
+	background-position: -138px -2px;
+}
+.selectedSkinColor8 .hairSelector .icon_skin, .selectedSkinColor8 .preview .face .icon_skin
+{
+	background-position: -69px -2px;
+}
+.selectedSkinColor9 .hairSelector .icon_skin, .selectedSkinColor9 .preview .face .icon_skin
+{
+	background-position: 0px -2px;
+}
+.hairSelector .icon_hair, .preview .face .icon_hair
+{
+	width: 450px;
+}
+.selectedHair83 .hairSelector .icon_hair, .selectedHair83 .preview .face .icon_hair
+{
+	background-position: 0px -186px;
+}
+.selectedHair121 .hairSelector .icon_hair, .selectedHair121 .preview .face .icon_hair
+{
+	background-position: 0px -186px;
+}
+.selectedHair82 .hairSelector .icon_hair, .selectedHair82 .preview .face .icon_hair
+{
+	background-position: 0px -278px;
+}
+.selectedHair120 .hairSelector .icon_hair, .selectedHair120 .preview .face .icon_hair
+{
+	background-position: 0px -278px;
+}
+.selectedHair85 .hairSelector .icon_hair, .selectedHair85 .preview .face .icon_hair
+{
+	background-position: 0px -370px;
+}
+.selectedHair123 .hairSelector .icon_hair, .selectedHair123 .preview .face .icon_hair
+{
+	background-position: 0px -370px;
+}
+.selectedHair87 .hairSelector .icon_hair, .selectedHair87 .preview .face .icon_hair
+{
+	background-position: 0px -462px;
+}
+.selectedHair125 .hairSelector .icon_hair, .selectedHair125 .preview .face .icon_hair
+{
+	background-position: 0px -462px;
+}
+.selectedHair84 .hairSelector .icon_hair, .selectedHair84 .preview .face .icon_hair
+{
+	background-position: 0px -554px;
+}
+.selectedHair122 .hairSelector .icon_hair, .selectedHair122 .preview .face .icon_hair
+{
+	background-position: 0px -554px;
+}
+.selectedHair86 .hairSelector .icon_hair, .selectedHair86 .preview .face .icon_hair
+{
+	background-position: 0px -646px;
+}
+.selectedHair124 .hairSelector .icon_hair, .selectedHair124 .preview .face .icon_hair
+{
+	background-position: 0px -646px;
+}
+.selectedHair0 .hairSelector .icon_hair, .selectedHair0 .preview .face .icon_hair
+{
+	background-position: 0px -738px;
+}
+.hairSelector .icon_facialHair, .preview .face .icon_facialHair
+{
+	width: 350px;
+}
+.selectedFacialHair128 .hairSelector .icon_facialHair, .selectedFacialHair128 .preview .face .icon_facialHair
+{
+	background-position: -345px -186px;
+}
+.selectedFacialHair104 .hairSelector .icon_facialHair, .selectedFacialHair104 .preview .face .icon_facialHair
+{
+	background-position: -345px -186px;
+}
+.selectedFacialHair126 .hairSelector .icon_facialHair, .selectedFacialHair126 .preview .face .icon_facialHair
+{
+	background-position: -345px -278px;
+}
+.selectedFacialHair102 .hairSelector .icon_facialHair, .selectedFacialHair102 .preview .face .icon_facialHair
+{
+	background-position: -345px -278px;
+}
+.selectedFacialHair133 .hairSelector .icon_facialHair, .selectedFacialHair133 .preview .face .icon_facialHair
+{
+	background-position: -345px -370px;
+}
+.selectedFacialHair109 .hairSelector .icon_facialHair, .selectedFacialHair109 .preview .face .icon_facialHair
+{
+	background-position: -345px -370px;
+}
+.selectedFacialHair131 .hairSelector .icon_facialHair, .selectedFacialHair131 .preview .face .icon_facialHair
+{
+	background-position: -345px -462px;
+}
+.selectedFacialHair107 .hairSelector .icon_facialHair, .selectedFacialHair107 .preview .face .icon_facialHair
+{
+	background-position: -345px -462px;
+}
+.selectedFacialHair127 .hairSelector .icon_facialHair, .selectedFacialHair127 .preview .face .icon_facialHair
+{
+	background-position: -345px -554px;
+}
+.selectedFacialHair103 .hairSelector .icon_facialHair, .selectedFacialHair103 .preview .face .icon_facialHair
+{
+	background-position: -345px -554px;
+}
+.selectedFacialHair129 .hairSelector .icon_facialHair, .selectedFacialHair129 .preview .face .icon_facialHair
+{
+	background-position: -345px -646px;
+}
+.selectedFacialHair105 .hairSelector .icon_facialHair, .selectedFacialHair105 .preview .face .icon_facialHair
+{
+	background-position: -345px -646px;
+}
+.selectedFacialHair130 .hairSelector .icon_facialHair, .selectedFacialHair130 .preview .face .icon_facialHair
+{
+	background-position: -345px -738px;
+}
+.selectedFacialHair106 .hairSelector .icon_facialHair, .selectedFacialHair106 .preview .face .icon_facialHair
+{
+	background-position: -345px -738px;
+}
+.selectedFacialHair132 .hairSelector .icon_facialHair, .selectedFacialHair132 .preview .face .icon_facialHair
+{
+	background-position: -345px -830px;
+}
+.selectedFacialHair108 .hairSelector .icon_facialHair, .selectedFacialHair108 .preview .face .icon_facialHair
+{
+	background-position: -345px -830px;
+}
+.selectedFacialHair0 .hairSelector .icon_facialHair, .selectedFacialHair0 .preview .face .icon_facialHair
+{
+	background-position: -345px -922px;
+}
+.selectedHairColor1 .hairSelector .icon_hair, .selectedHairColor1 .hairSelector .icon_facialHair, .selectedHairColor1 .preview .face .icon_hair, .selectedHairColor1 .preview .face .icon_facialHair
+{
+	left: 0px;
+}
+.selectedHairColor3 .hairSelector .icon_hair, .selectedHairColor3 .hairSelector .icon_facialHair, .selectedHairColor3 .preview .face .icon_hair, .selectedHairColor3 .preview .face .icon_facialHair
+{
+	left: -69px;
+}
+.selectedHairColor5 .hairSelector .icon_hair, .selectedHairColor5 .hairSelector .icon_facialHair, .selectedHairColor5 .preview .face .icon_hair, .selectedHairColor5 .preview .face .icon_facialHair
+{
+	left: -138px;
+}
+.selectedHairColor2 .hairSelector .icon_hair, .selectedHairColor2 .hairSelector .icon_facialHair, .selectedHairColor2 .preview .face .icon_hair, .selectedHairColor2 .preview .face .icon_facialHair
+{
+	left: -207px;
+}
+.selectedHairColor4 .hairSelector .icon_hair, .selectedHairColor4 .hairSelector .icon_facialHair, .selectedHairColor4 .preview .face .icon_hair, .selectedHairColor4 .preview .face .icon_facialHair
+{
+	left: -276px;
+}
+.hairSelector .facialFeatures, .preview .face .facialFeatures
+{
+	background-position: 0px -94px;
+}
+.barbershopBanner
+{
+	background: url("bg.png") no-repeat;
+	height: 99px;
+	position: relative;
+	width: 296px;
+}
+.barbershopBanner a
+{
+	background: url("buttons_large.png") no-repeat;
+	background-position: left -41px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 40px;
+	line-height: 35px;
+	margin-right: 10px;
+	overflow: visible;
+	padding: 0 11px 0 30px;
+	position: absolute;
+	position: relative;
+	right: 10px;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+	top: 26px;
+}
+body.lang-ru .barbershopBanner a
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+.barbershopBanner a .decoration
+{
+	background: url("buttons_large.png") no-repeat;
+	display: block;
+	height: 40px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+.barbershopBanner a:before
+{
+	background: url("ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 11px;
+	position: absolute;
+	top: 12px;
+	width: 13px;
+}
+.barbershopBanner a:hover
+{
+	text-decoration: none;
+}
+.barbershopBanner a.disabled
+{
+	background-position: left 0px;
+	cursor: default;
+}
+.barbershopBanner a.disabled .decoration
+{
+	background-position: right 0px;
+}
+.barbershopBanner a.disabled:hover
+{
+	background-position: left 0px;
+}
+.barbershopBanner a.disabled:hover .decoration
+{
+	background-position: right 0px;
+}
+.barbershopBanner a .decoration
+{
+	background-position: right -41px;
+}
+.barbershopBanner a:hover
+{
+	background-position: left -82px;
+}
+.barbershopBanner a:hover .decoration
+{
+	background-position: right -82px;
+}
+.barbershopBanner .icon
+{
+	background-repeat: no-repeat;
+	height: 60px;
+	left: 33px;
+	position: absolute;
+	top: 13px;
+	width: 45px;
+}
+.barbershopBanner .icon.national
+{
+	background-image: url("national.gif");
+}
+.barbershopBanner .icon.royal
+{
+	background-image: url("royal.gif");
+}
+.cobranding-widget.location-header
+{
+	padding: 8px;
+	padding-top: 0;
+	text-align: center;
+}
