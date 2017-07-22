@@ -7,6 +7,7 @@ use App\EntranceUser;
 use App\User;
 use App\Year;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Input;
 
 function me()
@@ -36,4 +37,16 @@ function logAction($permission, $action, $log)
         'ip_address' => request()->ip(),
         'log' => $log
     ]);
+}
+
+function onlineCount()
+{
+    $count = 0;
+    Cache::remember('onlineUsers', 15, function() use ($count){
+        foreach (User::pluck('id') as $id)
+            if(Cache::has('user-is-online-' . $id));
+                $count++;
+        return $count;
+    });
+    return Cache::get('onlineUsers');
 }

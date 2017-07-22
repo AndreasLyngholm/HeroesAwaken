@@ -11,6 +11,7 @@
             <div class="top-bar" style="background-color: transparent;" id="responsive-menu">
                 <div class="top-bar-left" style="background-color: transparent;">
                     <ul class="dropdown menu" style="background-color: transparent;" data-dropdown-menu>
+                        <li class="menu-text">Online Users: {{ \App\onlineCount() }}</li>
                         <li class="menu-text">Admin Dashboard</li>
                         @if(\App\can('user.update'))
                             <li class="has-submenu @if(Request::is('admin/users*')) active @endif">
