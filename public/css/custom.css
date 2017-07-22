@@ -1,0 +1,70 @@
+@font-face {
+	font-family: 'HeaderFont';
+	src: url("../images/herocreator/SofiaProSemiBold.eot");
+	src: url("../images/herocreator/SofiaProSemiBold.eot#iefix") format('embedded-opentype'), 
+	url("../images/herocreator/SofiaProSemiBold.woff") format('woff'),
+    url("../images/herocreator/SofiaProSemiBold.ttf") format('truetype');
+}
+        
+@font-face {
+	font-family: 'ComicFont';
+	src: url("../images/herocreator/CaptainComicProBoldItalic.eot");
+	src: url("../images/herocreator/CaptainComicProBoldItalic.eot#iefix") format('embedded-opentype'), 
+	url("../images/herocreator/CaptainComicProBoldItalic.woff") format('woff'),
+    url("../images/herocreator/CaptainComicProBoldItalic.ttf") format('truetype');
+}
+
+#createHero {
+	background: no-repeat center 0;
+	font: 12px/1.3em Arial, sans-serif;
+	margin: 0;
+}
+
+#createHero li {
+	padding: 0;
+}
+
+#createHero dl, ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#createHero h1, h2 {
+	color: #fff;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+}
+#createHero h1 {
+	font-size: 1.6em;
+	line-height: 122.3%;
+	margin-bottom: .7em;
+}
+#createHero h2 {
+	font-size: 1.6em;
+	line-height: 1.2em;
+	margin-bottom: .6em;
+}
+#createHero h3 {
+	font-size: 1.3em;
+	line-height: 125.0%;
+	margin-bottom: .5em;
+}
+#createHero h4 {
+	font-size: 1.3em;
+	line-height: 126.7%;
+	margin-bottom: .4em;
+}
+#createHero h5 {
+	font-size: 1.2em;
+	line-height: 128.5%;
+	margin-bottom: .3em;
+}
+#createHero h6 {
+	font-size: 1em;
+	line-height: 130.8%;
+	margin-bottom: .2em;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit !important;
+}
