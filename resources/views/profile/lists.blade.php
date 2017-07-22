@@ -68,7 +68,7 @@
                         
                             @if(Auth::user()->friendRequests()->count() > 0)
                             <div class="large-8 columns">
-                                <h2>@lang('profile.friend_requests')</h2>
+                                <h2>@lang('profile.pending_request')</h2>
                                 <table>
                                     <tbody>
                                     @foreach(Auth::user()->friendRequests as $request)                  
