@@ -11,8 +11,8 @@
     @yield('styles')
 
 
-    <script type="text/javascript" src="{{ asset('images/herocreator/js-3.js') }}?v1"></script>
-    <script type="text/javascript" src="{{ asset('images/herocreator/js-2.js') }}?v1"></script>
+    <script type="text/javascript" src="{{ asset('images/herocreator/js-3.js') }}?v2"></script>
+    <script type="text/javascript" src="{{ asset('images/herocreator/js-2.js') }}?v2"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('images/herocreator/css-3.css') }}?v1" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('images/herocreator/css-2.css') }}?v1" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/custom.css') }}?v1" />
