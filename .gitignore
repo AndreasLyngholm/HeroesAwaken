@@ -10,3 +10,5 @@ Homestead.yaml
 npm-debug.log
 .env
 Vagrantfile
+/public/images/signatures
+/public/images/avatars
