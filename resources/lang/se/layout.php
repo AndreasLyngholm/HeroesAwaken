@@ -10,13 +10,13 @@ return [
     |
     */
 
-    'home' => 'Home',
-    'news' => 'News',
+    'home' => 'Startsida',
+    'news' => 'Nyheter',
     'forum' => 'Forum',
-    'team' => 'Team',
-    'contact' => 'Contact',
-    'profile' => 'Profile',
-    'login' => 'Login',
-    'logout' => 'Logout',
+    'team' => 'Arbetslag',
+    'contact' => 'Kontakta',
+    'profile' => 'Profil',
+    'login' => 'Logga in',
+    'logout' => 'Logga ut',
 
 ];

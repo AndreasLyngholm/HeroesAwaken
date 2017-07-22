@@ -10,36 +10,36 @@ return [
     |
     */
 
-    'forum_name' => 'Forum name',
-    'posts' => 'Posts',
-    'comments' => 'Comments',
-    'last_post' => 'Last Post',
-    'by' => 'By',
-    'no_comments' => 'No comments posted yet',
+    'forum_name' => 'Forum namn',
+    'posts' => 'inlägg',
+    'comments' => 'Kommentarer',
+    'last_post' => 'Senaste inlägget',
+    'by' => 'Av',
+    'no_comments' => 'Inga kommentarer än så länge',
 
-    'general' => 'General',
-    'general_description' => 'Discuss about anything that\'s HeroesAwaken related that doesn\'t fit in the other categories.',
+    'general' => 'Allmänt',
+    'general_description' => 'Diskutera om allt som är relaterat till Heroes Awaken och saker som inte passar in i andra kategorier.',
 
-    'off_topic' => 'Off-topic',
-    'off_topic_description' => 'Discuss non-HeroesAwaken topics in here.',
+    'off_topic' => 'Orelevant',
+    'off_topic_description' => 'Diskutera om ämnen som inte är relaterat med Heroes Awaken.',
 
-    'recruits' => 'Recruits',
-    'recruits_description' => 'Do you want to offer your service?',
+    'recruits' => 'Rekryter',
+    'recruits_description' => 'Vill du erbjuda din tjänst?',
 
-    'feedback' => 'Feedback & Suggestions',
-    'feedback_description' => 'Do you have feedback or suggestions to changes?',
+    'feedback' => 'Respons & Förslag',
+    'feedback_description' => 'Har du feedback eller förslag till ändringar?',
 
-    'title' => 'Title',
-    'replies' => 'Replies',
-    'create_new' => 'Create new topic',
-    'description' => 'Description',
-    'write_post' => 'Write your post',
-    'create_topic' => 'Create Topic',
+    'title' => 'Titel',
+    'replies' => 'Svar',
+    'create_new' => 'Skapa nytt ämne',
+    'description' => 'Beskrivning',
+    'write_post' => 'Skriv ditt inlägg',
+    'create_topic' => 'Skapa inlägg',
 
-    'member_since' => 'Member since',
-    'heroes' => 'Heroes',
-    'write_comment' => 'Write comment',
-    'add_comment' => 'Add comment',
+    'member_since' => 'Medlem sedan',
+    'heroes' => 'Hjältar',
+    'write_comment' => 'Skriv kommentar',
+    'add_comment' => 'Lägg till kommentar',
 
 
 ];

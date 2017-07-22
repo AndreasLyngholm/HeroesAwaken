@@ -15,7 +15,6 @@
             </div>
         </div>
 
-
         <div class="row">
 		
 		    <script>
@@ -23,7 +22,7 @@
                     'use strict';
                     window.BFH = window.BFH || {};
                     window.BFH.barbershopSettings = {
-                        '_csrf_token': '27abda305fa9ac541bc8c5a65cea575f',
+                        '_csrf_token': '{{ csrf_field() }}',
                         'nameRequired': true,
                         'barbershop': false,
                         'name_url': 'http://www.reviveheroes.com/en/hero/checkHeroNameAvailability',
@@ -57,7 +56,8 @@
 
             </script>
 
-            <form id="createHero" action="#" method="post">
+            <form id="createHero" action="{{ route('profile.createHero') }}" method="post">
+                {{ csrf_field() }}
                 <div class="inner">
                     <table>
                         <tr>
@@ -234,16 +234,12 @@
                             <span class="header">Give me a name!</span>
                             <input class="heroName" type="text" name="heroName" maxlength="16" />
                             <span id="cancelName">back<span class="decoration"></span></span>
-                            <span id="chooseName">OK<span class="decoration"></span></span>
+                            <input id="chooseName" type="submit" value="Create"><span class="decoration"></span>
                         </div>
-                        <div class="error">This name is yours soldier! But first we must move this fancy page to the HeroesAwaken.com</div>
+                        {{--<div class="error">This name is yours soldier! But first we must move this fancy page to the HeroesAwaken.com</div>--}}
                     </div>
                 </div>
             </form>
-			
-			
-			
-			
         </div>
 
     </section>
