@@ -65,6 +65,6 @@
 	margin-bottom: .2em;
 }
 
-*, *:before, *:after {
+#herocreatorpage *, #herocreatorpage  *:before, #herocreatorpage  *:after {
 	box-sizing: inherit !important;
 }
