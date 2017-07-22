@@ -16,7 +16,7 @@ return [
     'options' => 'Options',
     'remove_friend' => 'Remove friend',
     'pending_request' => 'You have a pending friend request from ',
-    'friend_requests' => 'Friend Reguests',
+    'friend_requests' => 'Friend Requests',
 
     'linked_accounts' => 'Linked Accounts',
     'link_account' => 'Link your discord account',
