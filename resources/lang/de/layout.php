@@ -14,8 +14,8 @@ return [
     'news' => 'News',
     'forum' => 'Forum',
     'team' => 'Team',
-    'contact' => 'Contact',
-    'profile' => 'Profile',
+    'contact' => 'Kontakt',
+    'profile' => 'Profil',
     'login' => 'Login',
     'logout' => 'Logout',
 
