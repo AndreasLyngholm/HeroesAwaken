@@ -10,36 +10,36 @@ return [
     |
     */
 
-    'forum_name' => 'Forum name',
-    'posts' => 'Posts',
-    'comments' => 'Comments',
-    'last_post' => 'Last Post',
-    'by' => 'By',
-    'no_comments' => 'No comments posted yet',
+    'forum_name' => 'Nom du forum',
+    'posts' => 'Sujets',
+    'comments' => 'Commentaires',
+    'last_post' => 'Dernier sujet',
+    'by' => 'par',
+    'no_comments' => 'Aucun commentaire publié ',
 
     'general' => 'General',
-    'general_description' => 'Discuss about anything that\'s HeroesAwaken related that doesn\'t fit in the other categories.',
+    'general_description' => 'Parlez de tout ce qui à un rapport avec HeroesAwaken et qui ne rentre pas dans les autres catégories.',
 
-    'off_topic' => 'Off-topic',
-    'off_topic_description' => 'Discuss non-HeroesAwaken topics in here.',
+    'off_topic' => 'Hors sujet',
+    'off_topic_description' => 'Parlez de tout ce qui ne concerne pas HeroesAwaken.',
 
-    'recruits' => 'Recruits',
-    'recruits_description' => 'Do you want to offer your service?',
+    'recruits' => 'Recrutement',
+    'recruits_description' => 'Vous voulez proposer vos services ?',
 
-    'feedback' => 'Feedback & Suggestions',
-    'feedback_description' => 'Do you have feedback or suggestions to changes?',
+    'feedback' => 'Propositions et remarques',
+    'feedback_description' => 'Vous avez une proposition ou une remarque à faire partager?',
 
-    'title' => 'Title',
-    'replies' => 'Replies',
-    'create_new' => 'Create new topic',
-    'description' => 'Description',
-    'write_post' => 'Write your post',
-    'create_topic' => 'Create Topic',
+    'title' => 'Titre',
+    'replies' => 'Réponses',
+    'create_new' => 'Créer un nouveau sujet',
+    'description' => 'Déscription',
+    'write_post' => 'Rédiger votre sujet',
+    'create_topic' => 'Créer un sujet',
 
-    'member_since' => 'Member since',
-    'heroes' => 'Heroes',
-    'write_comment' => 'Write comment',
-    'add_comment' => 'Add comment',
+    'member_since' => 'Membre depuis',
+    'heroes' => 'Héros',
+    'write_comment' => 'Ecrire un commentaire',
+    'add_comment' => 'Ajouter un commentaire',
 
 
 ];

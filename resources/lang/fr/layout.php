@@ -10,13 +10,14 @@ return [
     |
     */
 
-    'home' => 'Home',
-    'news' => 'News',
+    'home' => 'Accueil',
+    'news' => 'Nouveautés',
     'forum' => 'Forum',
     'team' => 'Team',
-    'contact' => 'Contact',
-    'profile' => 'Profile',
-    'login' => 'Login',
-    'logout' => 'Logout',
+    'contact' => 'Contacter',
+    'profile' => 'Profil',
+    'login' => 'Connexion',
+    'logout' => 'Déconnexion'
+	',
 
 ];

@@ -36,7 +36,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach(\App\News::all() as $news)
+                    @foreach(\App\News::all()->sortByDesc('created_at') as $news)
                         <tr>
                             <td class="large-3">{{ $news->title }}</td>
                             <td>{{ $news->date->format('d M Y') }}</td>
