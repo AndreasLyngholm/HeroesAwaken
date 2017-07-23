@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'password' => 'Salasanassa on oltava vähintään kuusi merkkiä ja vahvistuksen on täsmättävä.',
-    'reset' => 'Salasanasi on vaihdettu!',
-    'sent' => 'Olemme lähettäneet sähköpostiosoitteeseesi linkin salasanan vaihtoa varten!',
-    'token' => 'Linkki on vanhentunut.',
-    'user' => "Tällä sähköpostiosoitteella ei löydy käyttäjää.",
+    'password' => 'Parolalar en az altı karakter olmalıdır ve onayla eşleşmelidir.',
+    'reset' => 'Şifreniz sıfırlandı!',
+    'sent' => 'Şifre sıfırlama bağlantınızı e-posta ile gönderdik!',
+    'token' => 'Bu şifre sıfırlama simgesi geçersiz.',
+    'user' => "Bu e-posta adresine sahip bir kullanıcı bulamıyoruz.",
 
 ];

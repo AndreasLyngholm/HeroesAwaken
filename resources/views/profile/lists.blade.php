@@ -203,19 +203,19 @@
                                     {{ csrf_field() }}
                                     <label>  <b style="color: black;"></b>
                                         <select name="language" class="select2">
-                                            <option {{ Session::get('locale') == 'en' ? 'selected' : '' }} value="en">@lang('profile.en')</option>
-                                            <option {{ Session::get('locale') == 'da' ? 'selected' : '' }} value="da">@lang('profile.da')</option>
-                                            <option {{ Session::get('locale') == 'fr' ? 'selected' : '' }} value="fr">@lang('profile.fr')</option>
-                                            <option {{ Session::get('locale') == 'se' ? 'selected' : '' }} value="se">@lang('profile.se')</option>
-                                            <option {{ Session::get('locale') == 'de' ? 'selected' : '' }} value="de">@lang('profile.de')</option>
-                                            <option {{ Session::get('locale') == 'nl' ? 'selected' : '' }} value="nl">@lang('profile.nl')</option>
-                                            <option {{ Session::get('locale') == 'es' ? 'selected' : '' }} value="es">@lang('profile.es')</option>
-                                            <option {{ Session::get('locale') == 'pl' ? 'selected' : '' }} value="pl">@lang('profile.pl')</option>
-                                            <option {{ Session::get('locale') == 'ru' ? 'selected' : '' }} value="ru">@lang('profile.ru')</option>
-                                            <option {{ Session::get('locale') == 'fi' ? 'selected' : '' }} value="fi">@lang('profile.fi')</option>
+                                            <option {{ Session::get('locale') == 'en' ? 'selected' : '' }} value="en">English</option>
+                                            <option {{ Session::get('locale') == 'da' ? 'selected' : '' }} value="da">Danish</option>
+                                            <option {{ Session::get('locale') == 'fr' ? 'selected' : '' }} value="fr">French</option>
+                                            <option {{ Session::get('locale') == 'se' ? 'selected' : '' }} value="se">Swedish</option>
+                                            <option {{ Session::get('locale') == 'de' ? 'selected' : '' }} value="de">German</option>
+                                            <option {{ Session::get('locale') == 'nl' ? 'selected' : '' }} value="nl">Dutch</option>
+                                            <option {{ Session::get('locale') == 'es' ? 'selected' : '' }} value="es">Spanish</option>
+                                            <option {{ Session::get('locale') == 'pl' ? 'selected' : '' }} value="pl">Polish</option>
+                                            <option {{ Session::get('locale') == 'ru' ? 'selected' : '' }} value="ru">Russian</option>
+                                            <option {{ Session::get('locale') == 'fi' ? 'selected' : '' }} value="fi">Finnish</option>
+                                            <option {{ Session::get('locale') == 'tr' ? 'selected' : '' }} value="tr">Turkish</option>
                                         </select>
                                     </label>
-
                                     <button type="submit" class="lime-button" name="submit" style="float: left;">@lang('profile.change_language')</button>
                                 </form>
                             </div>
