@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
     @yield('styles')
 
-    <script type="text/javascript" src="{{ asset('js/js-3.js') }}?v2"></script>
+    <script type="text/javascript" src="{{ asset('js/js-3.js') }}?v3"></script>
     <script type="text/javascript" src="{{ asset('js/js-2.js') }}?v3"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/custom.css') }}?v2" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/custom.css') }}" />
 
     <!-- THIS MUST BE LOADED HERE! DO NOT REMOVE -->
     <script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>

@@ -1,3 +1,29 @@
+footer.main-footer ul.social-icons li a svg {
+    height: 40px;
+    width: 40px;
+}
+footer.main-footer ul.social-icons li a[title="Discord"] svg:hover {
+    fill: #7289DA;
+}
+footer.main-footer ul.social-icons li a[title="Twitter"] svg:hover {
+    fill: #00aced;
+}
+footer.main-footer ul.social-icons li a[title="Facebook"] svg:hover {
+    fill: #3b5998;
+}
+footer.main-footer ul.social-icons li a[title="Youtube"] svg:hover {
+    fill: #bb0000;
+}
+footer.main-footer ul.social-icons li a[title="Steam"] svg:hover {
+    fill: #231F20;
+}
+footer.main-footer ul.social-icons li a[title="Twitch"] svg:hover {
+    fill: #6441A4;
+}
+
+/*=============================================
+=              Hero Creation CSS              =
+=============================================*/
 @font-face {
 	font-family: 'HeaderFont';
 	src: url("../images/herocreator/SofiaProSemiBold.eot");
