@@ -11,35 +11,35 @@ return [
     */
 
     'forum_name' => 'Foorumin nimi',
-    'posts' => 'Aiheet',
-    'comments' => 'Viestit',
-    'last_post' => 'Viimeisin viesti',
-    'by' => 'By',
-    'no_comments' => 'Ei viestejä',
+    'posts' => 'Viestit',
+    'comments' => 'Kommentit',
+    'last_post' => 'Uusin viesti',
+    'by' => '',
+    'no_comments' => 'Ei kommentteja vielä',
 
-    'general' => 'Yleinen',
-    'general_description' => 'Yleistä keskustelua HeroesAwakenista.',
+    'general' => 'Yleinen keskustelu',
+    'general_description' => 'HeroesAwakeniin liittyvää keskustelua, joka ei kuulu muihin kategorioihin.',
 
-    'off_topic' => 'Off-topic',
-    'off_topic_description' => 'Keskustelua kaikista muista asioista täällä.',
+    'off_topic' => 'Aiheeseen liittymätön keskustelu',
+    'off_topic_description' => 'Täällä voit keskustella HeroesAwakeniin liittymättömistä aiheista.',
 
-    'recruits' => 'Palvelukset',
-    'recruits_description' => 'Haluatko tarjota palveluitasi?',
+    'recruits' => 'Rekrytointi',
+    'recruits_description' => 'Haluatko auttaa?.',
 
-    'feedback' => 'Palaute ja Ehdotukset',
-    'feedback_description' => 'Haluatko antaa palautetta tai ehdottaa jotain?',
+    'feedback' => 'Palaute ja ehdotukset',
+    'feedback_description' => 'Haluatko antaa palautetta tai ehdotuksia?',
 
     'title' => 'Otsikko',
-    'replies' => 'Vastaukset',
+    'replies' => 'Vastauksia',
     'create_new' => 'Luo uusi aihe',
     'description' => 'Kuvaus',
-    'write_post' => 'Viestisi',
-    'create_topic' => 'Lähetä',
+    'write_post' => 'Kirjoita viestisi',
+    'create_topic' => 'Luo aihe',
 
-    'member_since' => 'Liittynyt',
-    'heroes' => 'Heroes',
-    'write_comment' => 'Vastaa',
-    'add_comment' => 'Lähetä',
+    'member_since' => 'Liittynyt jäseneksi',
+    'heroes' => 'Sankareita',
+    'write_comment' => 'Kirjoita kommentti',
+    'add_comment' => 'Lisää kommentti',
 
 
 ];

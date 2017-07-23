@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Nämä kirjautumistiedot eivät täsmää.',
-    'throttle' => 'Liikaa kirjautumisyrityksiä. Ole hyvä ja yritä uudelleen :seconds sekunnin kuluttua.',
+    'failed' => 'Bu kimlik bilgileri kayıtlarımızla uyuşmuyor.',
+    'throttle' => 'Çok fazla giriş denemesi. Lütfen saniyeler içinde saniye içinde tekrar deneyin.', example: please try again in 5 seconds-> lütfen 5 saniye içinde tekrar deneyin.
 
 ];
