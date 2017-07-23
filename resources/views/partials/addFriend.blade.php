@@ -2,11 +2,11 @@
     |
     @if(! Auth::user()->isFriend($user_id))
         @if(\App\FriendRequest::where('receiver', Auth::user()->id)->where('sender', $user_id)->exists())
-            <a class="pull-right" href="{{ route('profile.addFriend', $user_id) }}"> <i class="fa fa-user-plus"></i> </a>
+            <a href="{{ route('profile.addFriend', $user_id) }}"> <i class="fa fa-user-plus"></i> </a>
         @elseif(\App\FriendRequest::where('sender', Auth::user()->id)->where('receiver', $user_id)->exists())
-            <i class="fa fa-hourglass-end pull-right"></i>
+            <i class="fa fa-hourglass-end"></i>
         @else
-            <a class="pull-right" href="{{ route('profile.addFriend', $user_id) }}"> <i class="fa fa-user-plus"></i> </a>
+            <a href="{{ route('profile.addFriend', $user_id) }}"> <i class="fa fa-user-plus"></i> </a>
         @endif
     @else
         <i class="fa fa-check"></i>
