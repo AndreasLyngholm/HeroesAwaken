@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 return [
 
@@ -11,12 +11,13 @@ return [
     */
 
     'home' => 'Accueil',
-    'news' => 'Nouveautés',
+    'news' => 'Actualités',
     'forum' => 'Forum',
     'team' => 'Team',
-    'contact' => 'Contacter',
+    'contact' => 'Contact',
     'profile' => 'Profil',
     'login' => 'Connexion',
-    'logout' => 'Déconnexion',
+    'logout' => 'Déconnexion'
+	',
 
 ];

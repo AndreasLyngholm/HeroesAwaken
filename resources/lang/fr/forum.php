@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 return [
 
@@ -14,25 +14,25 @@ return [
     'posts' => 'Sujets',
     'comments' => 'Commentaires',
     'last_post' => 'Dernier sujet',
-    'by' => 'par',
+    'by' => 'Par',
     'no_comments' => 'Aucun commentaire publié ',
 
-    'general' => 'General',
-    'general_description' => 'Parlez de tout ce qui à un rapport avec HeroesAwaken et qui ne rentre pas dans les autres catégories.',
+    'general' => 'Général',
+    'general_description' => 'Discutez à propos de tout ce qui est en lien avec HeroesAwaken qui ne convient pas aux autres catégories.',
 
     'off_topic' => 'Hors sujet',
-    'off_topic_description' => 'Parlez de tout ce qui ne concerne pas HeroesAwaken.',
+    'off_topic_description' => 'Discutez de tout ce qui ne concerne pas HeroesAwaken ici.',
 
     'recruits' => 'Recrutement',
-    'recruits_description' => 'Vous voulez proposer vos services ?',
+    'recruits_description' => 'Voulez-vous proposer vos services ?',
 
     'feedback' => 'Propositions et remarques',
-    'feedback_description' => 'Vous avez une proposition ou une remarque à faire partager?',
+    'feedback_description' => 'Avez-vous des propositions ou des remarques à nous transmettre?',
 
     'title' => 'Titre',
     'replies' => 'Réponses',
     'create_new' => 'Créer un nouveau sujet',
-    'description' => 'Déscription',
+    'description' => 'Description',
     'write_post' => 'Rédiger votre sujet',
     'create_topic' => 'Créer un sujet',
 

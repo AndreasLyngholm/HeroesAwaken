@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 return [
 
@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Les informations fournies ne correspondent pas.',
+    'failed' => Les informations d'identification fournies ne correspondent pas.',
     'throttle' => 'Trop de tentatives de connexion. Veuillez réessayer dans :seconds secondes.',
 
 ];

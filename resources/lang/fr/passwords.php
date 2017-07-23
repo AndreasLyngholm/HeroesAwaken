@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 return [
 
@@ -15,8 +15,8 @@ return [
 
     'password' => 'Votre mot de passe doit contenir au moins 6 caractères.',
     'reset' => 'Votre mot de passe a bien été réinitialisé!',
-    'sent' => 'Nous avons envoyé un lien permettant de réinitialiser votre mot de passe à votre adresse mail !',
-    'token' => 'Ce lien n"est pas valide.',
-    'user' => "Nous n'arrivons pas à trouver d'utilisateur avec cette adresse mail.",
+    'sent' => 'Nous avons envoyé un lien de réinitialisation de votre mot de passe à votre adresse mail!',
+    'token' => 'Cette clé de réinitialisation de mot de passe est invalide.',
+    'user' => "Nous n'avons pas trouvé d'utilisateur associé à cette adresse e-mail.",
 
 ];

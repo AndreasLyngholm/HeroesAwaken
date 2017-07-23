@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 return [
 
@@ -10,37 +10,37 @@ return [
     |
     */
 
-    'friend_list' => 'Liste d""amis',
+    'friend_list' => 'Liste d"amis',
     'username' => 'Nom d"utilisateur',
-    'status' => 'Status',
+    'status' => 'Statut',
     'options' => 'Options',
     'remove_friend' => 'Supprimer cet ami',
-    'pending_request' => 'Vous avez une demande d"ami en attente ',
-    'friend_requests' => 'Demande d"ami',
+    'pending_request' => 'Vous avez une demande d"ami en attente de',
+    'friend_requests' => 'Demandes d"ami',
 
-    'linked_accounts' => 'Compte lié',
+    'linked_accounts' => 'Comptes liés',
     'link_account' => 'Lier votre compte Discord',
 
     'avatar' => [
         'title' => 'Avatar',
-        'manage' => 'Gerer votre avatar',
-        'below_1' => 'Ajouter votre propre avatar .',
-        'below_2' => 'Nous suggérons une image de dimensions 1:1 parce que nous forcons le format après le télechargement.',
+        'manage' => 'Gérer votre avatar',
+        'below_1' => 'Ajouter votre propre avatar personnel en dessous.',
+        'below_2' => 'Nous suggérons une image de dimensions 1:1 comme nous la redimensionnons après la mise en ligne.',
         'submit' => 'Envoyer votre avatar',
     ],
 
     'signature' => [
         'title' => 'Signature',
-        'manage' => 'Gerer votre signature',
-        'below_1' => 'Ajouter votre propre signature',
+        'manage' => 'Gérer votre signature',
+        'below_1' => 'Ajouter votre propre signature personnelle en dessou',
         'below_2' => 'Nous suggérons une image de taille 900 x 250px',
         'submit' => 'Envoyer votre signature',
     ],
 
     'description' => [
-        'title' => 'Déscription',
-        'manage' => 'gérer votre déscription ',
-        'submit' => 'Ajouter une déscription',
+        'title' => 'Description',
+        'manage' => 'Gérer votre description ',
+        'submit' => 'Ajouter une description',
     ],
 
     'change_password' => 'Changer de mot de passe',
