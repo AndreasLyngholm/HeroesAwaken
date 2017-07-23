@@ -14,7 +14,7 @@ class Comment extends Model
 
     public function post()
     {
-        return $this->belongsTo('App\Post');
+        return $this->belongsTo('App\Topic', 'topic_id');
     }
 
     public function author()
