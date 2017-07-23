@@ -15,7 +15,7 @@ return [
 
     'password' => 'Wachtwoord moet minstens zes karakters bevatten en overeenkomen met bevestiging.',
     'reset' => 'Je wachtwoord is hersteld!',
-    'sent' => 'Een email is verzonden waarmee je je wachtwoord kunt herstellen',
+    'sent' => 'We hebben een email verzonden met een link waarmee u uw wachtwoord kunt herstellen',
     'token' => 'Dit wachtwoord reset token is ongeldig.',
     'user' => "We hebben geen gebruiker kunnen vinden met dit e-mailadres",
 

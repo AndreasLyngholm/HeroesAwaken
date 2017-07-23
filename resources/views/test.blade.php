@@ -28,7 +28,7 @@
                         'name_url': 'http://www.reviveheroes.com/en/hero/checkHeroNameAvailability',
                         'price': 0,
                         'help': {
-                            'default': ['Welcome to Heroes Awoken',
+                            'default': ['Welcome to Heroes Awaken',
                                 'I&#039;m a %heroClass% for the %faction%. If you want to, you can change my role on the battlefield and team loyalties to the right.'
                             ],
                             'baseMSGPersonaClassStats': {
@@ -56,7 +56,7 @@
 
             </script>
 
-            <form id="createHero" action="{{ route('profile.createHero') }}" method="post">
+            <form id="createHero"  method="post"><!-- action=" route('profile.createHero') " -->
                 {{ csrf_field() }}
                 <div class="inner">
                     <table>
@@ -243,5 +243,12 @@
         </div>
 
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.getElementById("randomHero").click()
+        }, false);
+
+    </script>
 
 @endsection

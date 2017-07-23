@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Deze referenties komen niet overeen met ons archief ',
+    'failed' => 'Deze referenties komen niet overeen met onze gegevens.',
     'throttle' => 'Te veel aanmeldpogingen. Probeer het opnieuw in :seconden seconden.',
 
 ];

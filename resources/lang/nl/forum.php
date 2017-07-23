@@ -17,8 +17,8 @@ return [
     'by' => 'Door',
     'no_comments' => 'Er zijn nog geen reacties geplaatst',
 
-    'general' => 'Discussies',
-    'general_description' => 'Bespreek over alles wat Heroes Awaken gerelateerd is en niet in andere categorieën past',
+    'general' => 'Algemeen',
+    'general_description' => 'Bespreek over alles wat Heroes Awaken gerelateerd is en niet in andere categorie&#235n past',
 
     'off_topic' => 'Off-topic',
     'off_topic_description' => 'Bespreek niet gerelateerde Heroes Awaken zaken hier',
@@ -37,7 +37,7 @@ return [
     'create_topic' => 'Maak onderwerp',
 
     'member_since' => 'Lid sinds',
-    'heroes' => Helden',
+    'heroes' => 'Helden',
     'write_comment' => 'Schrijf reactie',
     'add_comment' => 'Voeg reactie toe',
 

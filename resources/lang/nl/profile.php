@@ -14,18 +14,18 @@ return [
     'username' => 'Gebruikersnaam',
     'status' => 'Status',
     'options' => 'Opties',
-    'remove_friend' => 'Verwijderd vriend',
+    'remove_friend' => 'Vriend verwijderen',
     'pending_request' => 'U heeft een vriendschapsverzoek van ',
     'friend_requests' => 'Vriendschapsverzoeken',
 
-    'linked_accounts' => 'Gekoppelde accounts',
-    'link_account' => 'Koppel je Discord account',
+    'linked_accounts' => 'Verbonden accounts',
+    'link_account' => 'Verbind je Discord account',
 
     'avatar' => [
         'title' => 'Avatar',
         'manage' => 'Bewerk je avatar',
         'below_1' => 'Voeg hier je persoonlijke avatar toe.',
-        'below_2' => 'We raden je aan afbeeldingen te gebruiken met een 1:1 afmeting. ',
+        'below_2' => 'We raden je aan afbeeldingen te gebruiken met een 1:1 afmeting.',
         'submit' => 'Voeg Avatar toe',
     ],
 
@@ -33,7 +33,7 @@ return [
         'title' => 'Handtekening',
         'manage' => 'Bewerk je handtekening',
         'below_1' => 'Voeg hier uw eigen handtekening toe.',
-        'below_2' => 'We raden afbeeldingen aan met afmetingen van 900x250. ',
+        'below_2' => 'We raden afbeeldingen aan met afmetingen van 900x250.',
         'submit' => 'Voeg handtekening toe',
     ],
 
