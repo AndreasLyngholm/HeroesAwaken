@@ -23,7 +23,7 @@ class CreateGameStatsTable extends Migration
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
-            $table->index(['user_id', 'heroID', 'statsKey']);
+            $table->unique(['user_id', 'heroID', 'statsKey']);
 
             // Not setting foreign key for heroID because it can also be userID for some stats...
         });
