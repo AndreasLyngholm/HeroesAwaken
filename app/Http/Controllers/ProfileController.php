@@ -183,6 +183,10 @@ class ProfileController extends Controller
                     'discord_discriminator' => $user->discriminator,
                 ]);
 
+            // Tell bot to refresh role of user
+            $client = new \GuzzleHttp\Client();
+            $res = $client->get('https://bot.heroesawaken.com/api/refresh/' . $user->id);
+
             return redirect()->route('profile.lists')->with('success', 'We linked your discord account!');
         }
     }
