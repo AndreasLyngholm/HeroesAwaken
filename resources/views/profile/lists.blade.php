@@ -211,7 +211,7 @@
                                             <option {{ Session::get('locale') == 'nl' ? 'selected' : '' }} value="nl">Dutch</option>
                                             <option {{ Session::get('locale') == 'es' ? 'selected' : '' }} value="es">Spanish</option>
                                             <option {{ Session::get('locale') == 'pl' ? 'selected' : '' }} value="pl">Polish</option>
-                                            <option {{ Session::get('locale') == 'ru' ? 'selected' : '' }} value="ru">Russian</option>
+                                            {{--<option {{ Session::get('locale') == 'ru' ? 'selected' : '' }} value="ru">Russian</option>--}}
                                             <option {{ Session::get('locale') == 'fi' ? 'selected' : '' }} value="fi">Finnish</option>
                                             <option {{ Session::get('locale') == 'tr' ? 'selected' : '' }} value="tr">Turkish</option>
                                         </select>
