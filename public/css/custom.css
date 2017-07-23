@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'HeaderFont';
 	src: url("../images/herocreator/SofiaProSemiBold.eot");
-	src: url("../images/herocreator/SofiaProSemiBold.eot#iefix") format('embedded-opentype'), 
+	src: url("../images/herocreator/SofiaProSemiBold.eot#iefix") format('embedded-opentype'),
 	url("../images/herocreator/SofiaProSemiBold.woff") format('woff'),
     url("../images/herocreator/SofiaProSemiBold.ttf") format('truetype');
 }
@@ -9,7 +9,7 @@
 @font-face {
 	font-family: 'ComicFont';
 	src: url("../images/herocreator/CaptainComicProBoldItalic.eot");
-	src: url("../images/herocreator/CaptainComicProBoldItalic.eot#iefix") format('embedded-opentype'), 
+	src: url("../images/herocreator/CaptainComicProBoldItalic.eot#iefix") format('embedded-opentype'),
 	url("../images/herocreator/CaptainComicProBoldItalic.woff") format('woff'),
     url("../images/herocreator/CaptainComicProBoldItalic.ttf") format('truetype');
 }
@@ -18,6 +18,11 @@
 	background: no-repeat center 0;
 	font: 12px/1.3em Arial, sans-serif;
 	margin: 0;
+    box-sizing: initial;
+}
+
+#createHero *, #createHero *:before, #createHero *:after {
+    box-sizing: initial;
 }
 
 #createHero li {
@@ -28,6 +33,10 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+#createHero ul ul {
+    margin-left: 0;
 }
 
 #createHero h1, h2 {
@@ -67,4 +76,1198 @@
 
 #herocreatorpage *, #herocreatorpage  *:before, #herocreatorpage  *:after {
 	box-sizing: inherit !important;
+}
+
+#createHero
+{
+	border-radius: 10px;
+	margin: 0 auto;
+	moz-border-radius: 10px;
+	padding: 3px;
+	position: relative;
+	width: 852px;
+	z-index: 3;
+}
+#createHero > .inner
+{
+	background: url("../images/herocreator/spatterTop.png") left top no-repeat #c4baa6;
+	background: url("../images/herocreator/spatterTop.png") left top no-repeat, url("../images/herocreator/spatterTop.png") right top no-repeat #c4baa6;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	box-shadow: 0 0 0 3px black;
+	moz-border-radius: 5px;
+	moz-box-shadow: 0 0 0 3px black;
+	position: relative;
+	z-index: 1;
+}
+.ie7 #createHero > .inner, .ie8 #createHero > .inner
+{
+	behavior: url("../images/herocreator/PIE.html");
+}
+#createHero:before, #createHero:after
+{
+	background: url("../images/herocreator/fullShadow.png") no-repeat left top;
+	content: '';
+	height: 134px;
+	position: absolute;
+	width: 840px;
+}
+#createHero:before
+{
+	right: -5px;
+	top: -13px;
+}
+#createHero:after
+{
+	background-position: left bottom;
+	bottom: -14px;
+	left: -5px;
+}
+#createHero > .inner
+{
+	min-height: 120px;
+}
+.ie7 #createHero:before, .ie7 #createHero:after, .ie8 #createHero:before, .ie8 #createHero:after
+{
+	display: none;
+}
+#createHero table
+{
+	display: none;
+}
+#createHero > .inner
+{
+	background: url("../images/herocreator/bg.jpg") no-repeat -1px -1px;
+	height: 504px;
+	padding: 23px 38px 0 459px;
+}
+#createHero .heroType
+{
+	background: no-repeat;
+}
+#createHero.selectedFaction2 .heroType
+{
+	background-image: url("../images/herocreator/royal_bg.png");
+}
+#createHero.selectedFaction2 .characteristics .faction1
+{
+	display: none;
+}
+#createHero.selectedFaction2.selectedHeroClass0 .preview .doll
+{
+	background-image: url("../images/herocreator/royalCommando.png");
+}
+#createHero.selectedFaction2.selectedHeroClass1 .preview .doll
+{
+	background-image: url("../images/herocreator/royalSoldier.png");
+}
+#createHero.selectedFaction2.selectedHeroClass2 .preview .doll
+{
+	background-image: url("../images/herocreator/royalGunner.png");
+}
+#createHero.selectedFaction1 .heroType
+{
+	background-image: url("../images/herocreator/national_bg.png");
+}
+#createHero.selectedFaction1 .preview .face
+{
+	left: 105px;
+	top: 19px;
+}
+#createHero.selectedFaction1 .heroClass > li
+{
+	background-image: url("../images/herocreator/icon_national_classes.png");
+}
+#createHero.selectedFaction1 .characteristics .faction2
+{
+	display: none;
+}
+#createHero.selectedFaction1.selectedHeroClass0 .preview .doll
+{
+	background-image: url("../images/herocreator/nationalCommando.png");
+}
+#createHero.selectedFaction1.selectedHeroClass1 .preview .doll
+{
+	background-image: url("../images/herocreator/nationalSoldier.png");
+}
+#createHero.selectedFaction1.selectedHeroClass2 .preview .doll
+{
+	background-image: url("../images/herocreator/nationalGunner.png");
+}
+#createHero.barbershop h1
+{
+	background: url("../images/herocreator/barbershop_bg.png") no-repeat;
+	font-size: 2.9em;
+	height: 57px;
+	line-height: 50px;
+	margin: 0;
+	text-align: center;
+	text-transform: lowercase;
+}
+#createHero .faction
+{
+	height: 47px;
+	position: relative;
+}
+#createHero .faction .faction2
+{
+	background: url("../images/herocreator/faction_royal.png") no-repeat;
+	height: 67px;
+	left: -30px;
+	position: absolute;
+	top: -22px;
+	width: 200px;
+}
+#createHero .faction .faction1
+{
+	background: url("../images/herocreator/faction_national.png") no-repeat;
+	height: 67px;
+	position: absolute;
+	right: -34px;
+	top: -22px;
+	width: 200px;
+}
+#createHero .heroClass
+{
+	clear: both;
+	overflow: hidden;
+	padding: 12px 0 12px 13px;
+}
+#createHero .heroClass > li
+{
+	background: url("../images/herocreator/icon_royal_classes.png") no-repeat;
+	float: left;
+	height: 79px;
+	margin-left: 20px;
+	width: 82px;
+}
+#createHero .heroClass .heroClass0
+{
+	background-position: -166px top;
+}
+#createHero .heroClass .heroClass0:hover
+{
+	background-position: -166px bottom;
+}
+#createHero .heroClass .heroClass1
+{
+	background-position: 0 top;
+}
+#createHero .heroClass .heroClass1:hover
+{
+	background-position: 0 bottom;
+}
+#createHero .heroClass .heroClass2
+{
+	background-position: -83px top;
+}
+#createHero .heroClass .heroClass2:hover
+{
+	background-position: -83px bottom;
+}
+#createHero.selectedHeroClass0 .heroClass0
+{
+	background-position: -166px bottom;
+}
+#createHero.selectedHeroClass1 .heroClass1
+{
+	background-position: 0 bottom;
+}
+#createHero.selectedHeroClass2 .heroClass2
+{
+	background-position: -83px bottom;
+}
+#createHero .characteristics
+{
+	background: url("../images/herocreator/characteristics.png") no-repeat;
+}
+#createHero .hairSelector
+{
+	background: url("../images/herocreator/hairSelector.png") no-repeat;
+	clear: both;
+	height: 235px;
+	margin: -3px 2px 0;
+	position: relative;
+}
+#createHero .hairSelector.baseMSGAppearanceHairStyleStats
+{
+	background-position: right top;
+}
+#createHero .hairSelector.baseMSGAppearanceHairStyleStats .facialHair ul
+{
+	display: none;
+}
+#createHero .hairSelector.facial_ui_name .hair ul
+{
+	display: none;
+}
+#createHero .hairSelector > li
+{
+	left: 0;
+	position: absolute;
+	top: 48px;
+	width: 350px;
+}
+#createHero .hairSelector h2
+{
+	background: url("../images/herocreator/hairSelectorIcons.png") no-repeat;
+	height: 42px;
+	margin: 0;
+	position: absolute;
+	top: -48px;
+	width: 132px;
+}
+#createHero .hairSelector .hair h2
+{
+	background-position: center -37px;
+	left: 40px;
+}
+#createHero .hairSelector .facialHair h2
+{
+	background-position: center 3px;
+	right: 40px;
+}
+#createHero .hairSelector ul
+{
+	text-align: center;
+}
+#createHero .hairSelector .facialHair li, #createHero .hairSelector .hair li
+{
+	float: left;
+	height: 92px;
+	overflow: hidden;
+	position: relative;
+	width: 69px;
+}
+#createHero .hairSelector .facialHair li:hover, #createHero .hairSelector .hair li:hover
+{
+	background: url("../images/herocreator/icon_bg.png") no-repeat 5px 10px;
+}
+#createHero .hairSelector .facialHair .facialHair128 .icon_facialHair
+{
+	background-position: -345px -186px;
+}
+#createHero .hairSelector .facialHair .facialHair104 .icon_facialHair
+{
+	background-position: -345px -186px;
+}
+#createHero .hairSelector .facialHair .facialHair126 .icon_facialHair
+{
+	background-position: -345px -278px;
+}
+#createHero .hairSelector .facialHair .facialHair102 .icon_facialHair
+{
+	background-position: -345px -278px;
+}
+#createHero .hairSelector .facialHair .facialHair133 .icon_facialHair
+{
+	background-position: -345px -370px;
+}
+#createHero .hairSelector .facialHair .facialHair109 .icon_facialHair
+{
+	background-position: -345px -370px;
+}
+#createHero .hairSelector .facialHair .facialHair131 .icon_facialHair
+{
+	background-position: -345px -462px;
+}
+#createHero .hairSelector .facialHair .facialHair107 .icon_facialHair
+{
+	background-position: -345px -462px;
+}
+#createHero .hairSelector .facialHair .facialHair127 .icon_facialHair
+{
+	background-position: -345px -554px;
+}
+#createHero .hairSelector .facialHair .facialHair103 .icon_facialHair
+{
+	background-position: -345px -554px;
+}
+#createHero .hairSelector .facialHair .facialHair129 .icon_facialHair
+{
+	background-position: -345px -646px;
+}
+#createHero .hairSelector .facialHair .facialHair105 .icon_facialHair
+{
+	background-position: -345px -646px;
+}
+#createHero .hairSelector .facialHair .facialHair130 .icon_facialHair
+{
+	background-position: -345px -738px;
+}
+#createHero .hairSelector .facialHair .facialHair106 .icon_facialHair
+{
+	background-position: -345px -738px;
+}
+#createHero .hairSelector .facialHair .facialHair132 .icon_facialHair
+{
+	background-position: -345px -830px;
+}
+#createHero .hairSelector .facialHair .facialHair108 .icon_facialHair
+{
+	background-position: -345px -830px;
+}
+#createHero .hairSelector .facialHair .facialHair0 .icon_facialHair
+{
+	background-position: -345px -922px;
+}
+#createHero .hairSelector .hair .hair83 .icon_hair
+{
+	background-position: 0 -186px;
+}
+#createHero .hairSelector .hair .hair121 .icon_hair
+{
+	background-position: 0 -186px;
+}
+#createHero .hairSelector .hair .hair82 .icon_hair
+{
+	background-position: 0 -278px;
+}
+#createHero .hairSelector .hair .hair120 .icon_hair
+{
+	background-position: 0 -278px;
+}
+#createHero .hairSelector .hair .hair85 .icon_hair
+{
+	background-position: 0 -370px;
+}
+#createHero .hairSelector .hair .hair123 .icon_hair
+{
+	background-position: 0 -370px;
+}
+#createHero .hairSelector .hair .hair87 .icon_hair
+{
+	background-position: 0 -462px;
+}
+#createHero .hairSelector .hair .hair125 .icon_hair
+{
+	background-position: 0 -462px;
+}
+#createHero .hairSelector .hair .hair84 .icon_hair
+{
+	background-position: 0 -554px;
+}
+#createHero .hairSelector .hair .hair122 .icon_hair
+{
+	background-position: 0 -554px;
+}
+#createHero .hairSelector .hair .hair86 .icon_hair
+{
+	background-position: 0 -646px;
+}
+#createHero .hairSelector .hair .hair124 .icon_hair
+{
+	background-position: 0 -646px;
+}
+#createHero .hairSelector .hair .hair0 .icon_hair
+{
+	background-position: 0 -738px;
+}
+#createHero.selectedHair0 .hair0, #createHero.selectedHair82 .hair82, #createHero.selectedHair83 .hair83, #createHero.selectedHair84 .hair84, #createHero.selectedHair85 .hair85, #createHero.selectedHair86 .hair86, #createHero.selectedHair87 .hair87, #createHero.selectedHair120 .hair120, #createHero.selectedHair121 .hair121, #createHero.selectedHair122 .hair122, #createHero.selectedHair123 .hair123, #createHero.selectedHair124 .hair124, #createHero.selectedHair125 .hair125, #createHero.selectedFacialHair0 .facialHair0, #createHero.selectedFacialHair102 .facialHair102, #createHero.selectedFacialHair103 .facialHair103, #createHero.selectedFacialHair104 .facialHair104, #createHero.selectedFacialHair105 .facialHair105, #createHero.selectedFacialHair106 .facialHair106, #createHero.selectedFacialHair107 .facialHair107, #createHero.selectedFacialHair108 .facialHair108, #createHero.selectedFacialHair109 .facialHair109, #createHero.selectedFacialHair126 .facialHair126, #createHero.selectedFacialHair127 .facialHair127, #createHero.selectedFacialHair128 .facialHair128, #createHero.selectedFacialHair129 .facialHair129, #createHero.selectedFacialHair130 .facialHair130, #createHero.selectedFacialHair131 .facialHair131, #createHero.selectedFacialHair132 .facialHair132, #createHero.selectedFacialHair133 .facialHair133
+{
+	background: url("../images/herocreator/icon_bg.png") no-repeat 5px 10px;
+}
+#createHero .colorSelector
+{
+	height: 46px;
+	padding-top: 7px;
+}
+#createHero .colorSelector h2
+{
+	clear: left;
+	color: black;
+	float: left;
+	font-size: 1.2em;
+	margin: 0;
+	text-align: right;
+	text-shadow: none;
+	width: 150px;
+}
+#createHero .skinColor, #createHero .hairColor
+{
+	float: left;
+	padding: 4px 0 3px 10px;
+	width: 180px;
+}
+#createHero .skinColor li, #createHero .hairColor li
+{
+	border-radius: 5px;
+	box-shadow: 0 0 0 2px black;
+	float: left;
+	height: 7px;
+	margin: 0 3px;
+	moz-border-radius: 5px;
+	moz-box-shadow: 0 0 0 2px black;
+	padding: 2px;
+	width: 7px;
+}
+#createHero .skinColor li:hover, #createHero .hairColor li:hover
+{
+	box-shadow: 0 0 0 2px black, 0 0 0 3px white;
+	moz-box-shadow: 0 0 0 2px black, 0 0 0 3px white;
+}
+#createHero .skinColor .skinColor9
+{
+	background: #f8d6b2;
+}
+#createHero .skinColor .skinColor8
+{
+	background: #febe7c;
+}
+#createHero .skinColor .skinColor7
+{
+	background: #ea943c;
+}
+#createHero .skinColor .skinColor6
+{
+	background: #ec8212;
+}
+#createHero .skinColor .skinColor5
+{
+	background: #cc7820;
+}
+#createHero .skinColor .skinColor4
+{
+	background: #ac5c00;
+}
+#createHero .skinColor .skinColor3
+{
+	background: #8a4a00;
+}
+#createHero .skinColor .skinColor2
+{
+	background: #682800;
+}
+#createHero .skinColor .skinColor1
+{
+	background: #2e2017;
+}
+#createHero.selectedSkinColor1 .skinColor1, #createHero.selectedSkinColor2 .skinColor2, #createHero.selectedSkinColor3 .skinColor3, #createHero.selectedSkinColor4 .skinColor4, #createHero.selectedSkinColor5 .skinColor5, #createHero.selectedSkinColor6 .skinColor6, #createHero.selectedSkinColor7 .skinColor7, #createHero.selectedSkinColor8 .skinColor8, #createHero.selectedSkinColor9 .skinColor9, #createHero.selectedHairColor1 .hairColor1, #createHero.selectedHairColor2 .hairColor2, #createHero.selectedHairColor3 .hairColor3, #createHero.selectedHairColor4 .hairColor4, #createHero.selectedHairColor5 .hairColor5
+{
+	border: 2px solid #fff;
+	padding: 0;
+}
+#createHero .hairColor .hairColor1
+{
+	background: #f8e5b2;
+}
+#createHero .hairColor .hairColor3
+{
+	background: #ff7352;
+}
+#createHero .hairColor .hairColor5
+{
+	background: #c59d81;
+}
+#createHero .hairColor .hairColor2
+{
+	background: #8e664a;
+}
+#createHero .hairColor .hairColor4
+{
+	background: #2e2017;
+}
+#createHero .actions
+{
+	background: url("../images/herocreator/actions_bg.png") no-repeat left bottom;
+	overflow: hidden;
+	padding: 7px;
+}
+#createHero .actions #saveHero, #createHero .actions .fund
+{
+	background: url("../images/herocreator/buttons_large.png") no-repeat;
+	background-position: left -41px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 40px;
+	line-height: 35px;
+	margin-right: 10px;
+	overflow: visible;
+	padding: 0 11px 0 30px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+	width: 115px;
+}
+body.lang-ru #createHero .actions #saveHero, body.lang-ru #createHero .actions .fund
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#createHero .actions #saveHero .decoration, #createHero .actions .fund .decoration
+{
+	background: url("../images/herocreator/buttons_large.png") no-repeat;
+	display: block;
+	height: 40px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+#createHero .actions #saveHero:before, #createHero .actions .fund:before
+{
+	background: url("../images/herocreator/ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 11px;
+	position: absolute;
+	top: 12px;
+	width: 13px;
+}
+#createHero .actions #saveHero:hover, #createHero .actions .fund:hover
+{
+	text-decoration: none;
+}
+#createHero .actions #saveHero.disabled, #createHero .actions .fund.disabled
+{
+	background-position: left 0;
+	cursor: default;
+}
+#createHero .actions #saveHero.disabled .decoration, #createHero .actions .fund.disabled .decoration
+{
+	background-position: right 0;
+}
+#createHero .actions #saveHero.disabled:hover, #createHero .actions .fund.disabled:hover
+{
+	background-position: left 0;
+}
+#createHero .actions #saveHero.disabled:hover .decoration, #createHero .actions .fund.disabled:hover .decoration
+{
+	background-position: right 0;
+}
+#createHero .actions #saveHero .decoration, #createHero .actions .fund .decoration
+{
+	background-position: right -41px;
+}
+#createHero .actions #saveHero:hover, #createHero .actions .fund:hover
+{
+	background-position: left -82px;
+}
+#createHero .actions #saveHero:hover .decoration, #createHero .actions .fund:hover .decoration
+{
+	background-position: right -82px;
+}
+#createHero .actions .fund
+{
+	display: none;
+}
+#createHero .actions #randomHero
+{
+	background: url("../images/herocreator/buttons_large.png") no-repeat;
+	background-position: left -123px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 40px;
+	line-height: 35px;
+	margin-right: 10px;
+	overflow: visible;
+	padding: 0 11px 0 30px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+	width: 115px;
+}
+body.lang-ru #createHero .actions #randomHero
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#createHero .actions #randomHero .decoration
+{
+	background: url("../images/herocreator/buttons_large.png") no-repeat;
+	display: block;
+	height: 40px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+#createHero .actions #randomHero:before
+{
+	background: url("../images/herocreator/ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 11px;
+	position: absolute;
+	top: 12px;
+	width: 13px;
+}
+#createHero .actions #randomHero:hover
+{
+	text-decoration: none;
+}
+#createHero .actions #randomHero.disabled
+{
+	background-position: left 0;
+	cursor: default;
+}
+#createHero .actions #randomHero.disabled .decoration
+{
+	background-position: right 0;
+}
+#createHero .actions #randomHero.disabled:hover
+{
+	background-position: left 0;
+}
+#createHero .actions #randomHero.disabled:hover .decoration
+{
+	background-position: right 0;
+}
+#createHero .actions #randomHero .decoration
+{
+	background-position: right -123px;
+}
+#createHero .actions #randomHero:hover
+{
+	background-position: left -164px;
+}
+#createHero .actions #randomHero:hover .decoration
+{
+	background-position: right -164px;
+}
+#createHero .actions .price
+{
+	background: url("../images/herocreator/currencyIcons.png") no-repeat 100px 1px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 2px solid #000;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	float: left;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-family: HeaderFont;
+	font-size: 1.8em;
+	height: 34px;
+	line-height: 32px;
+	margin-top: 1px;
+	moz-border-radius: 5px;
+	padding-right: 48px;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	width: 105px;
+}
+body.lang-ru #createHero .actions .price
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#createHero .preview
+{
+	background: url("../images/herocreator/shadow.png") no-repeat -35px 445px;
+	height: 500px;
+	left: -1px;
+	position: absolute;
+	top: 20px;
+	width: 420px;
+}
+#createHero .preview .face
+{
+	height: 92px;
+	left: 107px;
+	overflow: hidden;
+	position: absolute;
+	top: 10px;
+	width: 69px;
+}
+#createHero .preview .doll
+{
+	background-position: 0 75px;
+	background-repeat: no-repeat;
+	height: 485px;
+	left: 25px;
+	position: absolute;
+	top: 0;
+	width: 305px;
+}
+#createHero .preview .help
+{
+	background-color: #fff;
+	border: 2px solid #000;
+	left: 210px;
+	padding: 8px 10px 12px;
+	position: absolute;
+	top: 20px;
+	webkit-text-stroke-width: 0.1px;
+	width: 200px;
+}
+#createHero .preview .help:before
+{
+	background: url("../images/herocreator/bubbleArrow.png") no-repeat;
+	content: '';
+	height: 19px;
+	left: -43px;
+	position: absolute;
+	top: 30px;
+	width: 43px;
+}
+#createHero .preview .help .header, #createHero .preview .help .bodyText
+{
+	font-family: ComicFont;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+}
+#createHero .preview .help .header
+{
+	display: block;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+}
+#createHero .preview .help .bodyText
+{
+	line-height: 1.3em;
+}
+#createHero .overlay
+{
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#createHero .overlay .nameSelector
+{
+	background-color: #fff;
+	border: 2px solid #000;
+	left: 210px;
+	padding: 8px 10px 12px;
+	position: absolute;
+	top: 20px;
+	webkit-text-stroke-width: 0.1px;
+	width: 200px;
+	z-index: 2;
+}
+#createHero .overlay .nameSelector:before
+{
+	background: url("../images/herocreator/bubbleArrow.png") no-repeat;
+	content: '';
+	height: 19px;
+	left: -43px;
+	position: absolute;
+	top: 30px;
+	width: 43px;
+}
+#createHero .overlay .nameSelector .header, #createHero .overlay .nameSelector .bodyText
+{
+	font-family: ComicFont;
+	font-weight: bold;
+	text-align: center;
+}
+#createHero .overlay .nameSelector .header
+{
+	display: block;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+}
+#createHero .overlay .nameSelector .bodyText
+{
+	line-height: 1.3em;
+}
+#createHero .overlay .nameSelector .heroName
+{
+	border: 2px solid #000;
+	border-radius: 5px;
+	display: block;
+	font-size: 1.1em;
+	height: 16px;
+	line-height: 16px;
+	margin-bottom: 5px;
+	moz-border-radius: 5px;
+	padding: 2px;
+	text-align: left;
+	width: 180px;
+}
+#createHero .overlay .nameSelector #chooseName
+{
+	background: url("../images/herocreator/buttons.png") no-repeat;
+	background-position: left -31px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 30px;
+	line-height: 25px;
+	margin-right: 10px;
+	overflow: visible;
+	padding: 0 5px 0 25px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+}
+body.lang-ru #createHero .overlay .nameSelector #chooseName
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#createHero .overlay .nameSelector #chooseName .decoration
+{
+	background: url("../images/herocreator/buttons.png") no-repeat;
+	display: block;
+	height: 30px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+#createHero .overlay .nameSelector #chooseName:before
+{
+	background: url("../images/herocreator/ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 8px;
+	position: absolute;
+	top: 6px;
+	width: 13px;
+}
+#createHero .overlay .nameSelector #chooseName:hover
+{
+	text-decoration: none;
+}
+#createHero .overlay .nameSelector #chooseName.disabled
+{
+	background-position: left 0;
+	cursor: default;
+}
+#createHero .overlay .nameSelector #chooseName.disabled .decoration
+{
+	background-position: right 0;
+}
+#createHero .overlay .nameSelector #chooseName.disabled:hover
+{
+	background-position: left 0;
+}
+#createHero .overlay .nameSelector #chooseName.disabled:hover .decoration
+{
+	background-position: right 0;
+}
+#createHero .overlay .nameSelector #chooseName .decoration
+{
+	background-position: right -31px;
+}
+#createHero .overlay .nameSelector #chooseName:hover
+{
+	background-position: left -62px;
+}
+#createHero .overlay .nameSelector #chooseName:hover .decoration
+{
+	background-position: right -62px;
+}
+#createHero .overlay .nameSelector #cancelName
+{
+	background: url("../images/herocreator/buttons.png") no-repeat;
+	background-position: left -217px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'HeaderFont', Arial, sans-serif;
+	font-size: 1.4em;
+	height: 30px;
+	line-height: 25px;
+	margin-right: 10px;
+	overflow: visible;
+	padding: 0 5px 0 25px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 2px 1px 0 black, 2px 1px 0 black, -2px 1px 0 black, -2px -1px 0 black, 2px -1px 0 black, 1px 2px 0 black, 1px 2px 0 black, -1px 2px 0 black, -1px -2px 0 black, 1px -2px 0 black, 2px 2px 0 black, 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, 1px 1px 0 black, 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 1px black;
+	text-transform: lowercase;
+}
+body.lang-ru #createHero .overlay .nameSelector #cancelName
+{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#createHero .overlay .nameSelector #cancelName .decoration
+{
+	background: url("../images/herocreator/buttons.png") no-repeat;
+	display: block;
+	height: 30px;
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 8px;
+}
+#createHero .overlay .nameSelector #cancelName:before
+{
+	background: url("../images/herocreator/ministore-sprite.png") no-repeat -136px -48px;
+	content: "";
+	height: 15px;
+	left: 8px;
+	position: absolute;
+	top: 6px;
+	width: 13px;
+}
+#createHero .overlay .nameSelector #cancelName:hover
+{
+	text-decoration: none;
+}
+#createHero .overlay .nameSelector #cancelName.disabled
+{
+	background-position: left 0;
+	cursor: default;
+}
+#createHero .overlay .nameSelector #cancelName.disabled .decoration
+{
+	background-position: right 0;
+}
+#createHero .overlay .nameSelector #cancelName.disabled:hover
+{
+	background-position: left 0;
+}
+#createHero .overlay .nameSelector #cancelName.disabled:hover .decoration
+{
+	background-position: right 0;
+}
+#createHero .overlay .nameSelector #cancelName .decoration
+{
+	background-position: right -217px;
+}
+#createHero .overlay .nameSelector #cancelName:hover
+{
+	background-position: left -248px;
+}
+#createHero .overlay .nameSelector #cancelName:hover .decoration
+{
+	background-position: right -248px;
+}
+#createHero .overlay .error
+{
+	background-color: white;
+	border: 2px solid black;
+	color: black;
+	display: none;
+	font-size: 0.9em;
+	left: 220px;
+	padding: 3px 15px 5px;
+	position: absolute;
+	text-align: center;
+	top: 128px;
+	width: 170px;
+	z-index: 1;
+}
+.hairSelector .icon_shadow, .hairSelector .icon_skin, .hairSelector .icon_facialHair, .hairSelector .icon_hair, .hairSelector .facialFeatures, .preview .face .icon_shadow, .preview .face .icon_skin, .preview .face .icon_facialHair, .preview .face .icon_hair, .preview .face .facialFeatures
+{
+	background: no-repeat;
+	display: block;
+	height: 92px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 69px;
+}
+.selectedFaction1 .hairSelector .icon_shadow, .selectedFaction1 .hairSelector .icon_skin, .selectedFaction1 .hairSelector .icon_facialHair, .selectedFaction1 .hairSelector .icon_hair, .selectedFaction1 .hairSelector .facialFeatures, .selectedFaction1 .preview .face .icon_shadow, .selectedFaction1 .preview .face .icon_skin, .selectedFaction1 .preview .face .icon_facialHair, .selectedFaction1 .preview .face .icon_hair, .selectedFaction1 .preview .face .facialFeatures
+{
+	background-image: url("../images/herocreator/national.png");
+}
+.selectedFaction2 .hairSelector .icon_shadow, .selectedFaction2 .hairSelector .icon_skin, .selectedFaction2 .hairSelector .icon_facialHair, .selectedFaction2 .hairSelector .icon_hair, .selectedFaction2 .hairSelector .facialFeatures, .selectedFaction2 .preview .face .icon_shadow, .selectedFaction2 .preview .face .icon_skin, .selectedFaction2 .preview .face .icon_facialHair, .selectedFaction2 .preview .face .icon_hair, .selectedFaction2 .preview .face .facialFeatures
+{
+	background-image: url("../images/herocreator/royal.png");
+}
+.hairSelector .icon_shadow, .preview .face .icon_shadow
+{
+	background-position: -621px -2px;
+}
+.selectedSkinColor1 .hairSelector .icon_skin, .selectedSkinColor1 .preview .face .icon_skin
+{
+	background-position: -552px -2px;
+}
+.selectedSkinColor2 .hairSelector .icon_skin, .selectedSkinColor2 .preview .face .icon_skin
+{
+	background-position: -483px -2px;
+}
+.selectedSkinColor3 .hairSelector .icon_skin, .selectedSkinColor3 .preview .face .icon_skin
+{
+	background-position: -414px -2px;
+}
+.selectedSkinColor4 .hairSelector .icon_skin, .selectedSkinColor4 .preview .face .icon_skin
+{
+	background-position: -345px -2px;
+}
+.selectedSkinColor5 .hairSelector .icon_skin, .selectedSkinColor5 .preview .face .icon_skin
+{
+	background-position: -276px -2px;
+}
+.selectedSkinColor6 .hairSelector .icon_skin, .selectedSkinColor6 .preview .face .icon_skin
+{
+	background-position: -207px -2px;
+}
+.selectedSkinColor7 .hairSelector .icon_skin, .selectedSkinColor7 .preview .face .icon_skin
+{
+	background-position: -138px -2px;
+}
+.selectedSkinColor8 .hairSelector .icon_skin, .selectedSkinColor8 .preview .face .icon_skin
+{
+	background-position: -69px -2px;
+}
+.selectedSkinColor9 .hairSelector .icon_skin, .selectedSkinColor9 .preview .face .icon_skin
+{
+	background-position: 0 -2px;
+}
+.hairSelector .icon_hair, .preview .face .icon_hair
+{
+	width: 450px;
+}
+.selectedHair83 .hairSelector .icon_hair, .selectedHair83 .preview .face .icon_hair
+{
+	background-position: 0 -186px;
+}
+.selectedHair121 .hairSelector .icon_hair, .selectedHair121 .preview .face .icon_hair
+{
+	background-position: 0 -186px;
+}
+.selectedHair82 .hairSelector .icon_hair, .selectedHair82 .preview .face .icon_hair
+{
+	background-position: 0 -278px;
+}
+.selectedHair120 .hairSelector .icon_hair, .selectedHair120 .preview .face .icon_hair
+{
+	background-position: 0 -278px;
+}
+.selectedHair85 .hairSelector .icon_hair, .selectedHair85 .preview .face .icon_hair
+{
+	background-position: 0 -370px;
+}
+.selectedHair123 .hairSelector .icon_hair, .selectedHair123 .preview .face .icon_hair
+{
+	background-position: 0 -370px;
+}
+.selectedHair87 .hairSelector .icon_hair, .selectedHair87 .preview .face .icon_hair
+{
+	background-position: 0 -462px;
+}
+.selectedHair125 .hairSelector .icon_hair, .selectedHair125 .preview .face .icon_hair
+{
+	background-position: 0 -462px;
+}
+.selectedHair84 .hairSelector .icon_hair, .selectedHair84 .preview .face .icon_hair
+{
+	background-position: 0 -554px;
+}
+.selectedHair122 .hairSelector .icon_hair, .selectedHair122 .preview .face .icon_hair
+{
+	background-position: 0 -554px;
+}
+.selectedHair86 .hairSelector .icon_hair, .selectedHair86 .preview .face .icon_hair
+{
+	background-position: 0 -646px;
+}
+.selectedHair124 .hairSelector .icon_hair, .selectedHair124 .preview .face .icon_hair
+{
+	background-position: 0 -646px;
+}
+.selectedHair0 .hairSelector .icon_hair, .selectedHair0 .preview .face .icon_hair
+{
+	background-position: 0 -738px;
+}
+.hairSelector .icon_facialHair, .preview .face .icon_facialHair
+{
+	width: 350px;
+}
+.selectedFacialHair128 .hairSelector .icon_facialHair, .selectedFacialHair128 .preview .face .icon_facialHair
+{
+	background-position: -345px -186px;
+}
+.selectedFacialHair104 .hairSelector .icon_facialHair, .selectedFacialHair104 .preview .face .icon_facialHair
+{
+	background-position: -345px -186px;
+}
+.selectedFacialHair126 .hairSelector .icon_facialHair, .selectedFacialHair126 .preview .face .icon_facialHair
+{
+	background-position: -345px -278px;
+}
+.selectedFacialHair102 .hairSelector .icon_facialHair, .selectedFacialHair102 .preview .face .icon_facialHair
+{
+	background-position: -345px -278px;
+}
+.selectedFacialHair133 .hairSelector .icon_facialHair, .selectedFacialHair133 .preview .face .icon_facialHair
+{
+	background-position: -345px -370px;
+}
+.selectedFacialHair109 .hairSelector .icon_facialHair, .selectedFacialHair109 .preview .face .icon_facialHair
+{
+	background-position: -345px -370px;
+}
+.selectedFacialHair131 .hairSelector .icon_facialHair, .selectedFacialHair131 .preview .face .icon_facialHair
+{
+	background-position: -345px -462px;
+}
+.selectedFacialHair107 .hairSelector .icon_facialHair, .selectedFacialHair107 .preview .face .icon_facialHair
+{
+	background-position: -345px -462px;
+}
+.selectedFacialHair127 .hairSelector .icon_facialHair, .selectedFacialHair127 .preview .face .icon_facialHair
+{
+	background-position: -345px -554px;
+}
+.selectedFacialHair103 .hairSelector .icon_facialHair, .selectedFacialHair103 .preview .face .icon_facialHair
+{
+	background-position: -345px -554px;
+}
+.selectedFacialHair129 .hairSelector .icon_facialHair, .selectedFacialHair129 .preview .face .icon_facialHair
+{
+	background-position: -345px -646px;
+}
+.selectedFacialHair105 .hairSelector .icon_facialHair, .selectedFacialHair105 .preview .face .icon_facialHair
+{
+	background-position: -345px -646px;
+}
+.selectedFacialHair130 .hairSelector .icon_facialHair, .selectedFacialHair130 .preview .face .icon_facialHair
+{
+	background-position: -345px -738px;
+}
+.selectedFacialHair106 .hairSelector .icon_facialHair, .selectedFacialHair106 .preview .face .icon_facialHair
+{
+	background-position: -345px -738px;
+}
+.selectedFacialHair132 .hairSelector .icon_facialHair, .selectedFacialHair132 .preview .face .icon_facialHair
+{
+	background-position: -345px -830px;
+}
+.selectedFacialHair108 .hairSelector .icon_facialHair, .selectedFacialHair108 .preview .face .icon_facialHair
+{
+	background-position: -345px -830px;
+}
+.selectedFacialHair0 .hairSelector .icon_facialHair, .selectedFacialHair0 .preview .face .icon_facialHair
+{
+	background-position: -345px -922px;
+}
+.selectedHairColor1 .hairSelector .icon_hair, .selectedHairColor1 .hairSelector .icon_facialHair, .selectedHairColor1 .preview .face .icon_hair, .selectedHairColor1 .preview .face .icon_facialHair
+{
+	left: 0;
+}
+.selectedHairColor3 .hairSelector .icon_hair, .selectedHairColor3 .hairSelector .icon_facialHair, .selectedHairColor3 .preview .face .icon_hair, .selectedHairColor3 .preview .face .icon_facialHair
+{
+	left: -69px;
+}
+.selectedHairColor5 .hairSelector .icon_hair, .selectedHairColor5 .hairSelector .icon_facialHair, .selectedHairColor5 .preview .face .icon_hair, .selectedHairColor5 .preview .face .icon_facialHair
+{
+	left: -138px;
+}
+.selectedHairColor2 .hairSelector .icon_hair, .selectedHairColor2 .hairSelector .icon_facialHair, .selectedHairColor2 .preview .face .icon_hair, .selectedHairColor2 .preview .face .icon_facialHair
+{
+	left: -207px;
+}
+.selectedHairColor4 .hairSelector .icon_hair, .selectedHairColor4 .hairSelector .icon_facialHair, .selectedHairColor4 .preview .face .icon_hair, .selectedHairColor4 .preview .face .icon_facialHair
+{
+	left: -276px;
+}
+.hairSelector .facialFeatures, .preview .face .facialFeatures
+{
+	background-position: 0 -94px;
 }
