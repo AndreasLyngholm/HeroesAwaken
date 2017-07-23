@@ -17,7 +17,6 @@ return [
     'contact' => 'Contacter',
     'profile' => 'Profil',
     'login' => 'Connexion',
-    'logout' => 'Déconnexion'
-	',
+    'logout' => 'Déconnexion',
 
 ];
