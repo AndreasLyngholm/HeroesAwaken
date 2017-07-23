@@ -43,8 +43,8 @@ function onlineCount()
 {
     $count = 0;
     Cache::remember('onlineUsers', 15, function() use ($count){
-        foreach (User::pluck('id')->all() as $id)
-            if(Cache::has('user-is-online-' . $id));
+        foreach (User::all()->pluck('id')->all() as $id)
+            if(Cache::has('user-is-online-' . $id))
                 $count++;
         return $count;
     });

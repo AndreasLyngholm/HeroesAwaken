@@ -71,6 +71,7 @@ class UserController extends Controller {
     public function details(User $user)
     {
         $roles = $user->roles()->pluck('id', 'title')->all();
+        $user = $user->with('comments', 'comments.post')->first();
         $applicableRoles = Role::whereNotIn('id', $roles)->pluck('title', 'id')->all();
         return view('admin.users.management.details', compact('user', 'roles', 'applicableRoles', 'payments'));
     }
