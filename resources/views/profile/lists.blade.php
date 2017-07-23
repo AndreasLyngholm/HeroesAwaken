@@ -214,6 +214,7 @@
                                             {{--<option {{ Session::get('locale') == 'ru' ? 'selected' : '' }} value="ru">Russian</option>--}}
                                             <option {{ Session::get('locale') == 'fi' ? 'selected' : '' }} value="fi">Finnish</option>
                                             <option {{ Session::get('locale') == 'tr' ? 'selected' : '' }} value="tr">Turkish</option>
+                                            <option {{ Session::get('locale') == 'po' ? 'selected' : '' }} value="po">Portuguese</option>
                                         </select>
                                     </label>
                                     <button type="submit" class="lime-button" name="submit" style="float: left;">@lang('profile.change_language')</button>
