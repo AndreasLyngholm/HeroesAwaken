@@ -10,36 +10,36 @@ return [
     |
     */
 
-    'forum_name' => 'Forum name',
-    'posts' => 'Posts',
-    'comments' => 'Comments',
-    'last_post' => 'Last Post',
-    'by' => 'By',
-    'no_comments' => 'No comments posted yet',
+    'forum_name' => 'Nazwa na forum',
+    'posts' => 'Posty',
+    'comments' => 'Komentarze',
+    'last_post' => 'Ostatni post',
+    'by' => 'Od',
+    'no_comments' => 'Brak jakichkolwiek komentarzy',
 
-    'general' => 'General',
-    'general_description' => 'Discuss about anything that\'s HeroesAwaken related that doesn\'t fit in the other categories.',
+    'general' => 'Dyskusja ogólna',
+    'general_description' => 'G³ówna dyskusja o HeroesAwaken.',
 
     'off_topic' => 'Off-topic',
-    'off_topic_description' => 'Discuss non-HeroesAwaken topics in here.',
+    'off_topic_description' => 'Dyskusja o wszystkim, nie dotycz¹cym HeroesAwaken.',
 
-    'recruits' => 'Recruits',
-    'recruits_description' => 'Do you want to offer your service?',
+    'recruits' => 'Rekruci',
+    'recruits_description' => 'Chcia³byœ zaoferowaæ swoj¹ pomoc?',
 
-    'feedback' => 'Feedback & Suggestions',
-    'feedback_description' => 'Do you have feedback or suggestions to changes?',
+    'feedback' => 'Opinie i Sugestie',
+    'feedback_description' => 'Masz do zaoferowania swoj¹ opinie i zmiany jakie mog³yby nast¹piæ?',
 
-    'title' => 'Title',
-    'replies' => 'Replies',
-    'create_new' => 'Create new topic',
-    'description' => 'Description',
-    'write_post' => 'Write your post',
-    'create_topic' => 'Create Topic',
+    'title' => 'Tytu³',
+    'replies' => 'Odpowiedzi',
+    'create_new' => 'Stwóz nowy temat',
+    'description' => 'Opis',
+    'write_post' => 'Napisz swój post',
+    'create_topic' => 'Stwórz temat',
 
-    'member_since' => 'Member since',
-    'heroes' => 'Heroes',
-    'write_comment' => 'Write comment',
-    'add_comment' => 'Add comment',
+    'member_since' => 'U¿ytkownik od',
+    'heroes' => 'Postacie',
+    'write_comment' => 'Napisz komentarz',
+    'add_comment' => 'Dodaj komentarz',
 
 
 ];

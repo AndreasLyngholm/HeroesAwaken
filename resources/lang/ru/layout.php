@@ -10,13 +10,13 @@ return [
     |
     */
 
-    'home' => 'Home',
-    'news' => 'News',
-    'forum' => 'Forum',
-    'team' => 'Team',
-    'contact' => 'Contact',
-    'profile' => 'Profile',
-    'login' => 'Login',
-    'logout' => 'Logout',
+    'home' => 'На главную',
+    'news' => 'Новости',
+    'forum' => 'Форум',
+    'team' => 'Наша команда',
+    'contact' => 'Контакты',
+    'profile' => 'Профиль',
+    'login' => 'Войти',
+    'logout' => 'Выйти',
 
 ];

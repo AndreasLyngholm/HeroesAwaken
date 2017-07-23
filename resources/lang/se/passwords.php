@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'Lösenord' => 'Lösenord måste vara minst sex tecken och matcha bekräftelsen.',
-    'Återställ' => 'Ditt lösenord har återställts!',
-    'sent' => 'vi har skickat en återställningslänk till din email',
-    'token' => 'Återställningen av lösenordet misslyckades.',
-    'Användare' => "Vi kan inte hitta en användare med en sån e-postadress",
+    'L&ouml;senord' => 'L&ouml;senord m&aring;ste vara minst sex tecken och matcha bekr&auml;ftelsen.',
+    '&aring;terst&auml;ll' => 'Ditt l&ouml;senord har &aring;terstÃ¤llts!',
+    'Skickat' => 'Vi har skickat en &aring;terst&auml;llningsl&auml;nk till din e-postadress',
+    'token' => '&aring;terst&auml;llningen av l&ouml;senordet misslyckades.',
+    'Anv&auml;ndare' => "Vi kan inte hitta en anv&auml;ndare med en den e-postadressen",
 
 ];

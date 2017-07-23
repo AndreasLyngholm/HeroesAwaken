@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'Misslyckades' => 'Dessa referenser matchar inte våra uppgifter.',
-    'throttle' => 'För många inloggningsförsök. Var god och försök igen om :sekunder sekunder.',
+    'failed' => 'Dessa referenser matchar inte v&aring;ra uppgifter.',
+    'throttle' => 'F&ouml;r m&aring;nga inloggningsf&ouml;rs&ouml;k. Var god och f&ouml;rs&ouml;k igen om :sekunder sekunder.',
 
 ];

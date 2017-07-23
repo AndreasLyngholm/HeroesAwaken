@@ -10,36 +10,36 @@ return [
     |
     */
 
-    'forum_name' => 'Forum name',
-    'posts' => 'Posts',
-    'comments' => 'Comments',
-    'last_post' => 'Last Post',
-    'by' => 'By',
-    'no_comments' => 'No comments posted yet',
+    'forum_name' => 'Название форума',
+    'posts' => 'Сообщений',
+    'comments' => 'Комментариев',
+    'last_post' => 'Последнее сообщение',
+    'by' => 'написал/а',
+    'no_comments' => 'Ещё не оставлено комментариев',
 
-    'general' => 'General',
-    'general_description' => 'Discuss about anything that\'s HeroesAwaken related that doesn\'t fit in the other categories.',
+    'general' => 'Главная',
+    'general_description' => 'Обсуждайте всё что связано с HeroesAwaken, но не попало в другие разделы.',
 
-    'off_topic' => 'Off-topic',
-    'off_topic_description' => 'Discuss non-HeroesAwaken topics in here.',
+    'off_topic' => 'Офф-топ',
+    'off_topic_description' => 'Обсуждайте всё, что не связано с HeroesAwaken',
 
-    'recruits' => 'Recruits',
-    'recruits_description' => 'Do you want to offer your service?',
+    'recruits' => 'Рекруты',
+    'recruits_description' => 'Вы хотите нам помочь?',
 
-    'feedback' => 'Feedback & Suggestions',
-    'feedback_description' => 'Do you have feedback or suggestions to changes?',
+    'feedback' => 'Отзывы и предложения',
+    'feedback_description' => 'У вас есть отзыв или предложения?',
 
-    'title' => 'Title',
-    'replies' => 'Replies',
-    'create_new' => 'Create new topic',
-    'description' => 'Description',
-    'write_post' => 'Write your post',
-    'create_topic' => 'Create Topic',
+    'title' => 'Заголовок',
+    'replies' => 'Ответы',
+    'create_new' => 'Создать новую тему',
+    'description' => 'Описание',
+    'write_post' => 'Написать своё сообщение',
+    'create_topic' => 'Создать тему',
 
-    'member_since' => 'Member since',
-    'heroes' => 'Heroes',
-    'write_comment' => 'Write comment',
-    'add_comment' => 'Add comment',
+    'member_since' => 'Участник с',
+    'heroes' => 'Героев',
+    'write_comment' => 'Написать комментарий',
+    'add_comment' => 'Добавить комментарий',
 
 
 ];
