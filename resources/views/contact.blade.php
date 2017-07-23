@@ -19,9 +19,7 @@
             <div class="small-16 large-8 columns">
                 <h4>@lang('contact.how_to')</h4>
                 <p>@lang('contact.how_to_description')</p>
-                <p>
-                    We do not have any official Email and Telephone you can contact at the moment.
-                </p>
+                <p>@lang('contact.no_email_or_phone')</p>
             </div>
             <div class="small-16 large-7 columns">
                 <div class="row small-up-1 medium-up-2">
