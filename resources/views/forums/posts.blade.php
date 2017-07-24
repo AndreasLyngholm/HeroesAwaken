@@ -36,13 +36,9 @@
 							</div>
 							<div class="user-content">
 								@if($topic->author->avatar != null)
-								<a href="{{ route('profile.details', $user->username) }}">
 								<img src="{{ str_replace("?", "", route('home', $topic->author->avatar)) }}">
-								</a>
 								@else
-								<a href="{{ route('profile.details', $user->username) }}">
 								<img src="{{ asset('images/placeholders/comment.png') }}">
-								</a>
 								@endif
 								<div class="user-info">
                                     <div class="tag dev" style="color: white; padding: 5px; margin: 5px auto; width: 80%; border-radius: 10px; background: radial-gradient(ellipse at center, #88332E 0%,#88332E 66%,#88332E 100%);">
