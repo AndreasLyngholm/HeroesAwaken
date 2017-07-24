@@ -13,8 +13,8 @@ return [
     |
     */
 
-    'previous' => '&laquo; íàçàä',
-    'next' => 'âïåð¸ä &raquo;',
+    'previous' => '&laquo; Ð½Ð°Ð·Ð°Ð´',
+    'next' => 'Ð²Ð¿ÐµÑ€Ñ‘Ð´ &raquo;',
 
 ];
 
