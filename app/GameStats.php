@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class GameStats extends Model
 {
-    protected $fillable = ['user_id', 'herId', 'statsKey', 'statsValue'];
+    protected $fillable = ['user_id', 'heroID', 'statsKey', 'statsValue'];
 }

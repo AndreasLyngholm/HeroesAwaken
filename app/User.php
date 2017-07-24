@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username', 'email', 'password', 'country', 'language', 'birthday', 'description', 'ip_address', 'notifications', 'avatar', 
+        'username', 'email', 'password', 'country', 'language', 'birthday', 'description', 'ip_address', 'notifications', 'avatar', 'game_token'
     ];
 
     protected $casts = [
@@ -31,7 +31,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token', 'game_token',
+        'password', 'remember_token'
     ];
 
     public function heroes()

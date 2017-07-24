@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\AuthenticationToken;
-use function App\Http\me;
+use function App\me;
 use App\User;
 use Carbon\Carbon;
 use Exception;
