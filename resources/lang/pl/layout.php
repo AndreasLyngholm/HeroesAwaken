@@ -10,8 +10,8 @@ return [
     |
     */
 
-    'home' => 'Strona G³ówna',
-    'news' => 'Aktualnoœci',
+    'home' => 'Strona G&#322;&#243;wna',
+    'news' => 'Aktualnosci',
     'forum' => 'Fora',
     'team' => 'Ekipa',
     'contact' => 'Kontakt',
