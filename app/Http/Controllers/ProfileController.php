@@ -186,8 +186,9 @@ class ProfileController extends Controller
                 ]);
 
             // Tell bot to refresh role of user
+            // 329078443687936001 = guildID of HeroesAwaken Discord
             $client = new \GuzzleHttp\Client();
-            $res = $client->get('https://bot.heroesawaken.com/api/refresh/' . $user->id);
+            $res = $client->get('https://bot.heroesawaken.com/api/refresh/329078443687936001/' . $user->id);
 
             return redirect()->route('profile.lists')->with('success', 'We linked your discord account!');
         }

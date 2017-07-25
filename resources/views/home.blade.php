@@ -52,7 +52,7 @@
                 <article class="about-us-summary">
                     <h2>The Heroes Awaken project</h2>
                     <p>
-                      The Heroes Awaken project started with a little boys childhood that got ruined when EA closed their servers for Battlefield Heroes 2015-07-14. Makahost saw this opportunity to prove his love towards people whose childhood was to play Battlefield Heroes. After some trouble with the project, Makahost joined Revive Network in hope of help with his project. Things did not turn out well so Makahost decided to finish the game on his own. This community is now called Heroes Awaken and is being developed by a team of geeks.
+                      Listen up soldiers! This is classified information! Heroes Awaken is dedicated to restoring online gameplay to our favorite Play4Free title, Battlefield Heroes. Upset by the fact the game was shutdown in mid-2015, talents from all corners of the globe teamed up to make a dream come true. With most introductory research and proof of concepts completed, the Awaken team is moving at blazing speeds. Keep coming back for more soldier, because we are going to win the war! Woo-hoo!
                     </p>
                 </article>
             </div>
