@@ -97,7 +97,7 @@ class PermissionsTableSeeder extends Seeder
         );
 
         Permission::updateOrCreate(
-            ['slug' => 'game.createHero'],
+            ['slug' => 'game.createhero'],
             ['description' => 'Ability to create a hero for the game.']
         );
         #endregion

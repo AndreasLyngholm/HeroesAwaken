@@ -64,6 +64,18 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth'
         'uses' => 'ProfileController@lists'
     ]);
 
+    Route::get('create/hero', [
+        'as' => 'createHero',
+        'uses' => 'ProfileController@createHero',
+        'can' => 'game.createhero'
+    ]);
+
+    Route::post('create/hero', [
+        'as' => 'doCreateHero',
+        'uses' => 'ProfileController@doCreateHero',
+        'can' => 'game.createhero'
+    ]);
+
     Route::post('change/password', [
         'as' => 'changePassword',
         'uses' => 'ProfileController@changePassword'

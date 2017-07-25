@@ -56,7 +56,7 @@
 
             </script>
 
-            <form id="createHero"  method="post"><!-- action=" route('profile.createHero') " -->
+            <form id="createHero" action="{{ route('profile.doCreateHero') }}" method="post">
                 {{ csrf_field() }}
                 <div class="inner">
                     <table>

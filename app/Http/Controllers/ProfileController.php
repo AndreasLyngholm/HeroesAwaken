@@ -210,6 +210,11 @@ class ProfileController extends Controller
 
     public function createHero()
     {
+        return view('profile.createHero');
+    }
+
+    public function doCreateHero()
+    {
         $hero = GameHeroes::create([
             'user_id' => Auth::id(),
             'heroName' => Input::get('nameCharacterText'),

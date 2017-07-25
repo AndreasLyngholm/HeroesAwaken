@@ -16,6 +16,11 @@
         <div class="row collapse">
             <div class="small-2 columns">
                 <ul id="admin-actions-tab" class="tabs vertical">
+                    @if(\App\can('game.createhero'))
+                        <li class="tabs-title is-active" role="presentation" style="background-color: #8AB15F">
+                            <a href="{{ route('profile.createHero') }}" role="tab" aria-selected="false">Create Hero</a>
+                        </li>
+                    @endif
                     <li class="tabs-title is-active" role="presentation" >
                         <a id="friends-panel-label" href="#friends-panel" role="tab" aria-controls="friends-panel" aria-selected="true">@lang('profile.friend_list')</a>
                     </li>
