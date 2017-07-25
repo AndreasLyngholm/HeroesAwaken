@@ -286,5 +286,7 @@ class ProfileController extends Controller
             'statsKey' => 'c_ft',
             'statsValue' => Input::get('facial_ui_name')
         ]);
+
+        return redirect()->route('home')->with('success', 'Your hero was created!');
     }
 }
