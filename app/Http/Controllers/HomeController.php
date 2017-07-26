@@ -29,7 +29,11 @@ class HomeController extends Controller
 
     public function contact()
     {
-        return view('contact');
+        $leads = Role::where('slug', 'awokenlead')->first()->users;
+        $staffs = Role::where('slug', 'staff')->first()->users;
+        $devs = Role::where('slug', 'awokendev')->first()->users;
+        $communitymanager = Role::where('slug', 'communitymanager')->first()->users;
+        return view('contact', compact('staffs', 'leads', 'devs', 'communitymanager'));
     }
 
     public function team()
