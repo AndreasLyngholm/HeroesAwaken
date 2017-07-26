@@ -32,8 +32,8 @@ class HomeController extends Controller
         $leads = Role::where('slug', 'awokenlead')->first()->users;
         $staffs = Role::where('slug', 'staff')->first()->users;
         $devs = Role::where('slug', 'awokendev')->first()->users;
-        $communitymanager = Role::where('slug', 'communitymanager')->first()->users;
-        return view('contact', compact('staffs', 'leads', 'devs', 'communitymanager'));
+        $communitymanagers = Role::where('slug', 'communitymanager')->first()->users;
+        return view('contact', compact('staffs', 'leads', 'devs', 'communitymanagers'));
     }
 
     public function team()

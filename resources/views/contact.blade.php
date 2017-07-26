@@ -43,7 +43,7 @@
                         <h5>Staff</h5>
                         <address>
                             <p>
-                            @foreach($staff as $user)
+                            @foreach($staffs as $user)
                                 <!--team-member-->
                                 <a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a><br>
                                 <!--//team-member-->
@@ -71,7 +71,7 @@
                         <h5>Community Managers</h5>
                         <address>
                             <p>
-                            @foreach($communitymanager as $user)
+                            @foreach($communitymanagers as $user)
                                 <!--team-member-->
                                 <a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a><br>
                                 <!--//team-member-->
