@@ -76,6 +76,17 @@
                                 <h2>@lang('profile.friend_requests')</h2>
                                 <table>
                                     <tbody>
+                                    <tr>
+                                        <td width="50%">
+                                            <a style="cursor: pointer;" class="label success" href="{{ route('profile.answerAll', ['answer' => 'accepted']) }}">
+                                                <i class="fa fa-check"></i> Accept all requests
+                                            </a>
+                                        <td width="50%">
+                                            <a style="cursor: pointer;" class="label alert" href="{{ route('profile.answerAll', ['answer' => 'declined']) }}">
+                                                <i class="fa fa-ban"></i> Decline all requests
+                                            </a></td>
+                                        </td>
+                                    </tr>
                                     @foreach(Auth::user()->friendRequests as $request)                  
                                     <tr>
                                         <td width="70%;">

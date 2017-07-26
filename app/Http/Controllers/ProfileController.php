@@ -299,4 +299,12 @@ class ProfileController extends Controller
         if(GameHeroes::where('heroName', Input::get('heroName'))->exists())
             return 'This username is already taken!';
     }
+
+    public function answerAll()
+    {
+        foreach (Auth::user()->friendRequests as $request)
+            Auth::user()->friendRequestAnswer($request->sender, Input::get('answer'));
+
+        return redirect()->back()->with('success', Input::get('answer') == 'accepted' ? 'You accepted the all friend requests!' : 'You declined the all friend requests!');
+    }
 }

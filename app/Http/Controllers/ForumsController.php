@@ -53,7 +53,7 @@ class ForumsController extends Controller
 
     public function forumsPosts(Forum $forum, Topic $topic) //POSTS
     {
-        $comments = Comment::where('topic_id', $topic->id)->with('author', 'author.comments', 'author.roles')->paginate(25);
+        $comments = Comment::where('topic_id', $topic->id)->with('author', 'author.comments', 'author.roles', 'author.heroes')->paginate(25);
         return view('forums.posts', compact('forum', 'topic', 'comments'));
     }
 

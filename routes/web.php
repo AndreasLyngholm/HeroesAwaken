@@ -97,6 +97,11 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth'
         'uses' => 'ProfileController@answerFriendRequest'
     ]);
 
+    Route::get('answerAll', [
+        'as' => 'answerAll',
+        'uses' => 'ProfileController@answerAll'
+    ]);
+
     Route::post('signature', [
         'as' => 'addSignature',
         'uses' => 'ProfileController@addSignature'

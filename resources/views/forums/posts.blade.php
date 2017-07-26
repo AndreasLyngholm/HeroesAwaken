@@ -56,7 +56,7 @@
 										</tr>
 										<tr class="heroes">
 											<td>@lang('forum.heroes')</td>
-											<td>0</td>
+											<td>{{ $topic->author->heroes->count() }}</td>
 										<tr>
 									</table>
 								</div>
@@ -127,7 +127,7 @@
 										</tr>
 										<tr class="heroes">
 											<td>@lang('forum.heroes')</td>
-											<td>0</td>
+											<td>{{ $comment->author->heroes->count() }}</td>
 										<tr>
 									</table>
 								</div>
