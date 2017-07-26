@@ -216,6 +216,10 @@ class ProfileController extends Controller
 
     public function doCreateHero()
     {
+        if (GameHeroes::where('user_id', Auth::id())->exists())
+            return redirect()->back()->with('error', 'You are only allowed to have one hero right now!');
+
+
         $hero = GameHeroes::create([
             'user_id' => Auth::id(),
             'heroName' => Input::get('nameCharacterText'),
@@ -288,5 +292,11 @@ class ProfileController extends Controller
         ]);
 
         return redirect()->route('home')->with('success', 'Your hero was created!');
+    }
+
+    public function createHeroAvailability()
+    {
+        if(GameHeroes::where('heroName', Input::get('heroName'))->exists())
+            return 'This username is already taken!';
     }
 }

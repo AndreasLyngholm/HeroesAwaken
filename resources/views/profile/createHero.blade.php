@@ -25,7 +25,7 @@
                         '_csrf_token': '{{ csrf_field() }}',
                         'nameRequired': true,
                         'barbershop': false,
-                        'name_url': 'http://www.reviveheroes.com/en/hero/checkHeroNameAvailability',
+                        'name_url': '{{ route('profile.createHeroAvailability') }}',
                         'price': 0,
                         'help': {
                             'default': ['Welcome to Heroes Awaken',
@@ -231,12 +231,12 @@
                     </div>
                     <div class="overlay">
                         <div class="nameSelector">
-                            <span class="header">Give me a name!</span>
+                            <span style="color: black;" class="header">Give me a name!</span>
                             <input class="heroName" type="text" name="heroName" maxlength="16" />
                             <span id="cancelName">back<span class="decoration"></span></span>
-                            <input id="chooseName" type="submit" value="Create"><span class="decoration"></span>
+                            <span id="chooseName">Create<span class="decoration"></span></span>
                         </div>
-                        {{--<div class="error">This name is yours soldier! But first we must move this fancy page to the HeroesAwaken.com</div>--}}
+                        <div class="error">This username is already taken! Please try another one!</div>
                     </div>
                 </div>
             </form>
@@ -248,7 +248,6 @@
         document.addEventListener('DOMContentLoaded', function(){
             document.getElementById("randomHero").click()
         }, false);
-
     </script>
 
 @endsection

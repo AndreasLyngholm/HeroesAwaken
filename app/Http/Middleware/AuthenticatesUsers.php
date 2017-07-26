@@ -108,6 +108,8 @@ trait AuthenticatesUsers
      */
     protected function authenticated(Request $request, $user)
     {
+        if (is_null($user->game_token))
+            $user->game_token = str_random(32);
         $user->ip_address = $request->ip();
         $user->save();
     }

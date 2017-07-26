@@ -39,6 +39,7 @@ class ApiController extends Controller
             'additional' => Input::get('additional', []),
             'expire_at' => date('Y-m-d H:i:s', strtotime('+3 month'))
         ]);
+        Auth::user()->update(['game_token' => str_random(32)]);
         return ['token'=>$authToken->token];
     }
 

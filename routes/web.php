@@ -76,6 +76,12 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth'
         'can' => 'game.createhero'
     ]);
 
+    Route::post('create/hero/availability', [
+        'as' => 'createHeroAvailability',
+        'uses' => 'ProfileController@createHeroAvailability',
+        'can' => 'game.createhero'
+    ]);
+
     Route::post('change/password', [
         'as' => 'changePassword',
         'uses' => 'ProfileController@changePassword'
