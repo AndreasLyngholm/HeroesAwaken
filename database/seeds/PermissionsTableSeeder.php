@@ -100,6 +100,16 @@ class PermissionsTableSeeder extends Seeder
             ['slug' => 'game.createhero'],
             ['description' => 'Ability to create a hero for the game.']
         );
+
+        Permission::updateOrCreate(
+            ['slug' => 'game.multipleheroes'],
+            ['description' => 'Ability to create multiple heroes for the game.']
+        );
+
+        Permission::updateOrCreate(
+            ['slug' => 'game.unlimitedheroes'],
+            ['description' => 'Ability to create unlimited heroes for the game.']
+        );
         #endregion
     }
 }

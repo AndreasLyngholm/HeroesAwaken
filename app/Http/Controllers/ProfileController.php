@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use function App\can;
 use App\FriendRequest;
 use App\GameHeroes;
 use App\GameStats;
@@ -211,14 +212,30 @@ class ProfileController extends Controller
 
     public function createHero()
     {
+        if(can('game.unlimitedheroes'))
+            $heroesAllowed = 1000;
+        elseif(can('game.multipleheroes'))
+            $heroesAllowed = 2;
+        else
+            $heroesAllowed = 1;
+
+        if(GameHeroes::where('user_id', Auth::id())->count() >= $heroesAllowed)
+            return redirect()->route('home')->with('error', 'You have reached the limit of ' . $heroesAllowed . ' heroes per account!');
+
         return view('profile.createHero');
     }
 
     public function doCreateHero()
     {
-        if (GameHeroes::where('user_id', Auth::id())->exists())
-            return redirect()->back()->with('error', 'You are only allowed to have one hero right now!');
+        if(can('game.unlimitedheroes'))
+            $heroesAllowed = 1000;
+        elseif(can('game.multipleheroes'))
+            $heroesAllowed = 2;
+        else
+            $heroesAllowed = 1;
 
+        if(GameHeroes::where('user_id', Auth::id())->count() >= $heroesAllowed)
+            return redirect()->route('home')->with('error', 'You have reached the limit of ' . $heroesAllowed . ' heroes per account!');
 
         $hero = GameHeroes::create([
             'user_id' => Auth::id(),

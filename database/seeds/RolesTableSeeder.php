@@ -22,19 +22,19 @@ class RolesTableSeeder extends Seeder
             ['title' => 'Administrator'],
             ['slug'  => 'administrator']
         );
-        $administrator->permissions()->sync([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]);
+        $administrator->permissions()->sync([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18]);
 
         $staff = Role::updateOrCreate(
             ['title' => 'Staff'],
             ['slug'  => 'staff']
         );
-        $staff->permissions()->sync([6, 7, 8, 9, 10, 11]);
+        $staff->permissions()->sync([6, 7, 8, 9, 10, 11, 17]);
 
         $moderator = Role::updateOrCreate(
             ['title' => 'Moderator'],
             ['slug'  => 'moderator']
         );
-        $moderator->permissions()->sync([6, 7, 8, 9, 10, 11]);
+        $moderator->permissions()->sync([6, 7, 8, 9, 10, 11, 17]);
 
         $leads = Role::updateOrCreate(
             ['title' => 'Awoken Lead'],
