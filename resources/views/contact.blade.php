@@ -29,10 +29,11 @@
                         <h5>AwokenLead</h5>
                         <address>
                             <p>
-                                MakaHost<br>
-                                Lyngholm<br>
-                                Crowscream<br>
-                                Spencer<br>
+                            @foreach($leads as $user)
+                                <!--team-member-->
+                                <a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a><br>
+                                <!--//team-member-->
+                            @endforeach
                             </p>
                         </address>
                     </div>
@@ -42,9 +43,11 @@
                         <h5>Staff</h5>
                         <address>
                             <p>
-                                Absent<br> 
-                                Snow<br>
-                                Ray<br>
+                            @foreach($staffs as $user)
+                                <!--team-member-->
+                                <a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a><br>
+                                <!--//team-member-->
+                            @endforeach
                             </p>
                         </address>
                     </div>
@@ -54,11 +57,11 @@
                         <h5>AwokenDevs</h5>
                         <address>
                             <p>
-                                Wazz<br>
-                                Lord Squirrel<br>
-                                Jefalo<br>
-                                Lars.n7<br>
-                                Warpy<br>
+                            @foreach($devs as $user)
+                                <!--team-member-->
+                                <a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a><br>
+                                <!--//team-member-->
+                            @endforeach
                             </p>
                         </address>
                     </div>
@@ -68,11 +71,11 @@
                         <h5>Community Managers</h5>
                         <address>
                             <p>
-                                DraksTOP<br>
-                                LordHardness_<br>
-                                MeanSpeed<br>
-                                Pasolero<br>
-                                BFHPTPIRATE<br>
+                            @foreach($communitymanagers as $user)
+                                <!--team-member-->
+                                <a href="{{ route('profile.details', $user->username) }}">{{ $user->username }}</a><br>
+                                <!--//team-member-->
+                            @endforeach
                             </p>
                         </address>
                     </div>
