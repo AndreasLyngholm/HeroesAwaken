@@ -237,6 +237,13 @@ class ProfileController extends Controller
                         ]);
                 }
 
+                $message_extra = '';
+                if (isset($user->alphatester))
+                {
+                    Auth::user()->roles()->attach('Tester');
+                    $message_extra = ' You\'ve been added to the Heroes Awaken alpha test group! Check Discord for more info!';
+                }
+                
                 if(UserRevive::where('user_id', Auth::id())->exists())
                 {
                     UserRevive::where('user_id', Auth::id())->first()->update([
@@ -245,7 +252,7 @@ class ProfileController extends Controller
                         'revive_email' => $user->email,
                         'revive_role' => $user->role
                     ]);
-                    return redirect()->route('profile.lists')->with('success', 'We updated your Revive Network account link!');
+                    return redirect()->route('profile.lists')->with('success', 'We updated your Revive Network account link! '.$message_extra);
                 }
                 else
                 {
@@ -256,7 +263,7 @@ class ProfileController extends Controller
                         'revive_email' => $user->email,
                         'revive_role' => $user->role
                     ]);
-                    return redirect()->route('profile.lists')->with('success', 'We linked your Revive Network account!');
+                    return redirect()->route('profile.lists')->with('success', 'We linked your Revive Network account!'.$message_extra);
                 }
             }
             else
