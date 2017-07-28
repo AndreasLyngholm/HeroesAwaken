@@ -240,7 +240,7 @@ class ProfileController extends Controller
                 $message_extra = '';
                 if (isset($user->alphatester))
                 {
-                    Auth::user()->roles()->attach('Tester');
+                    Auth::user()->roles()->attach(9);
                     $message_extra = ' You\'ve been added to the Heroes Awaken alpha test group! Check Discord for more info!';
                 }
                 
