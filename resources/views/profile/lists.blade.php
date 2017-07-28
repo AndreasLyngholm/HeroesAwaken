@@ -133,7 +133,7 @@
                                     <br>
                                     <a href="{{ route('profile.linkDiscord') }}"><i class="fa fa-link"></i> Refresh</a>
                                 @else
-                                    <a href="{{ route('profile.linkDiscord') }}"> @lang('profile.link_account')</a>
+                                    <a href="{{ route('profile.linkDiscord') }}"><i class="fa fa-link"></i> Link your Discord (discord.com) Account!</a>
                                 @endif
                             </div>
                         </div>
@@ -148,13 +148,13 @@
                                 </a>
                             </div>
                             <div style="line-height: 32px; padding-left: 12px;">
-                                Account:
                                 @if(Auth::user()->reviveLink != null)
+                                    Account:
                                     <a style="font-size: 18px;" href="https://battlelog.co/bfhq.php?id={{ Auth::user()->reviveLink->revive_id }}" target="_blank">{{ Auth::user()->reviveLink->revive_name }}
                                     <br>
                                     <a href="{{ route('profile.linkRevive') }}"><i class="fa fa-link"></i> Refresh</a>
                                 @else
-                                    <a href="{{ route('profile.linkRevive') }}"><i class=""@lang('profile.link_account')</a>
+                                    <a href="{{ route('profile.linkRevive') }}"><i class="fa fa-link"></i> Link your Revive Network (battlelog.co) Account!</a>
                                 @endif
                             </div>
                         </div>
