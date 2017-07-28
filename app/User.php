@@ -207,7 +207,7 @@ class User extends Authenticatable
 
     public function isRole($role)
     {
-        $roles = $this->roles()->lists('slug')->all();
+        $roles = $this->roles()->pluck('slug')->all();
         return in_array($role, $roles);
     }
     #endregion
