@@ -92,6 +92,11 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth'
         'uses' => 'ProfileController@linkDiscord'
     ]);
 
+    Route::get('link/revive', [
+        'as' => 'linkRevive',
+        'uses' => 'ProfileController@linkRevive'
+    ]);
+
     Route::get('answerFriendRequest', [
         'as' => 'answerFriendRequest',
         'uses' => 'ProfileController@answerFriendRequest'

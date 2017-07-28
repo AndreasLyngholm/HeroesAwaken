@@ -64,6 +64,11 @@ class User extends Authenticatable
         return $this->hasOne('App\UserDiscord');
     }
 
+    public function reviveLink()
+    {
+        return $this->hasOne('App\UserRevive');
+    }
+
     public function friends()
     {
         $friends = new Collection();
