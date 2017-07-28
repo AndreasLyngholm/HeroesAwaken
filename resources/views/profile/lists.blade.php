@@ -259,7 +259,7 @@
                                         <select name="language" class="select2">
                                             <option {{ Session::get('locale') == 'en' ? 'selected' : '' }} value="en">English</option>
                                             <option {{ Session::get('locale') == 'da' ? 'selected' : '' }} value="da">Danish</option>
-                                            <option {{ Session::get('locale') == 'fr' ? 'selected' : '' }} value="fr">French</option>
+                                            <!-- <option {{ Session::get('locale') == 'fr' ? 'selected' : '' }} value="fr">French</option> !-->
                                             <option {{ Session::get('locale') == 'se' ? 'selected' : '' }} value="se">Swedish</option>
                                             <option {{ Session::get('locale') == 'de' ? 'selected' : '' }} value="de">German</option>
                                             <option {{ Session::get('locale') == 'nl' ? 'selected' : '' }} value="nl">Dutch</option>
