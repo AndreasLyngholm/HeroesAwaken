@@ -16,7 +16,10 @@ class CreateUserReviveTable extends Migration
         Schema::create('user_revive', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->bigInteger('revive_id')->unsigned();
+            $table->integer('revive_id')->unsigned();
+            $table->string('revive_name')->nullable();
+            $table->string('revive_email')->nullable();
+            $table->string('revive_role')->nullable();
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
