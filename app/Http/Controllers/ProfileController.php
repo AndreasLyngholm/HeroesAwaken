@@ -239,7 +239,7 @@ class ProfileController extends Controller
 
                     if (isset($user->alphatester))
                     {
-                        if (!Auth::user()->hasRole('tester'))
+                        if (!Auth::user()->isRole('tester'))
                         {
                             Auth::user()->roles()->attach(9);
                         }
