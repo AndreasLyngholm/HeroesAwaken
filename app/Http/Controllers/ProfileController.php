@@ -225,7 +225,8 @@ class ProfileController extends Controller
             {
                 $token_info = json_decode($res->getBody());
                 $user = $token_info->user;
-
+                
+                $message_extra = '';
                 // See if we can scoop their discord id, too (if not already linked)
                 if (isset($user->discord_id) && isset($user->discord_name))
                 {
@@ -235,13 +236,14 @@ class ProfileController extends Controller
                             'discord_id' => $user->discord_id,
                             'discord_name' => $user->discord_name
                         ]);
-                }
 
-                $message_extra = '';
-                if (isset($user->alphatester))
-                {
-                    Auth::user()->roles()->attach(9);
-                    $message_extra = ' You\'ve been added to the Heroes Awaken alpha test group! Check Discord for more info!';
+                    if (isset($user->alphatester))
+                    {
+                        Auth::user()->roles()->attach(9);
+                        $message_extra = '<br><br>Heroes Awaken alpha access granted! Check Discord for more info!';
+                        $client = new \GuzzleHttp\Client();
+                        $res = $client->get('https://bot.heroesawaken.com/api/refresh/329078443687936001/' . $user->discord_id);
+                    }
                 }
                 
                 if(UserRevive::where('user_id', Auth::id())->exists())
