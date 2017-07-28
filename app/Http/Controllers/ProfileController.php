@@ -238,13 +238,17 @@ class ProfileController extends Controller
                 }
 
                 if(UserRevive::where('user_id', Auth::id())->exists())
+                {
                     UserRevive::where('user_id', Auth::id())->first()->update([
                         'revive_id' => $user->id,
                         'revive_name' => $user->username,
                         'revive_email' => $user->email,
                         'revive_role' => $user->role
                     ]);
+                    return redirect()->route('profile.lists')->with('success', 'We updated your Revive Network account link!');
+                }
                 else
+                {
                     UserRevive::create([
                         'user_id' => Auth::id(),
                         'revive_id' => $user->id,
@@ -252,11 +256,13 @@ class ProfileController extends Controller
                         'revive_email' => $user->email,
                         'revive_role' => $user->role
                     ]);
+                    return redirect()->route('profile.lists')->with('success', 'We linked your Revive Network account!');
+                }
             }
-
-
-
-            return redirect()->route('profile.lists')->with('success', 'We linked your Revive Network account!');
+            else
+            {
+                return redirect()->back()->with('error', 'There was a critical error linking your Revive Network account!');
+            }
         }
     }
 
