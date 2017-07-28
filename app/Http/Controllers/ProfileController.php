@@ -239,7 +239,10 @@ class ProfileController extends Controller
 
                     if (isset($user->alphatester))
                     {
-                        Auth::user()->roles()->attach(9);
+                        if (!Auth::user()->hasRole('tester'))
+                        {
+                            Auth::user()->roles()->attach(9);
+                        }
                         $message_extra = '<br><br>Heroes Awaken alpha access granted! Check Discord for more info!';
                         $client = new \GuzzleHttp\Client();
                         $res = $client->get('https://bot.heroesawaken.com/api/refresh/329078443687936001/' . $user->discord_id);
