@@ -313,7 +313,7 @@ class ProfileController extends Controller
         if(can('game.unlimitedheroes'))
             $heroesAllowed = 1000;
         elseif(can('game.multipleheroes'))
-            $heroesAllowed = 2;
+            $heroesAllowed = 3;
         else
             $heroesAllowed = 1;
 
