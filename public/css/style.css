@@ -7744,6 +7744,10 @@ table td, table th {
     .post .message .content {
         padding: 10px;
     }
+
+    .post .message .content img {
+        max-width: 75% !important;
+    }
 }
 
 @media(max-width: 1024px) {
