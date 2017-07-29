@@ -106,21 +106,21 @@
 								</div>
 								<div class="user-info">
 									<div class="tag">
-										Developer
+                                        {{ $topic->author->roles->last()->title }}
 									</div>
 									<table class="stats">
 										<tbody>
 										<tr>
 											<td>@lang('forum.member_since')</td>
-											<td>{{ $topic->author->created_at->format('d-m-Y') }}</td>
+											<td>{{ $comment->author->created_at->format('d-m-Y') }}</td>
 										</tr>
 										<tr>
 											<td>@lang('forum.comments')</td>
-											<td>{{ $topic->author->comments()->count() }}</td>
+											<td>{{ $comment->author->comments()->count() }}</td>
 										</tr>
 										<tr>
 											<td>@lang('forum.heroes')</td>
-											<td>{{ $topic->author->heroes->count() }}</td>
+											<td>{{ $comment->author->heroes->count() }}</td>
 										<tr>
 										</tbody>
 									</table>
