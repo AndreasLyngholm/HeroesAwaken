@@ -106,7 +106,7 @@
 								</div>
 								<div class="user-info">
 									<div class="tag">
-										Developer
+                                        {{ $topic->author->roles->last()->title }}
 									</div>
 									<table class="stats">
 										<tbody>
