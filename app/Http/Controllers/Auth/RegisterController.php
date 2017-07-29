@@ -75,4 +75,82 @@ class RegisterController extends Controller
 
         return $user;
     }
+
+    public function loginOauthRevive()
+    {
+        $provider = new \League\OAuth2\Client\Provider\GenericProvider([
+            'clientId' => 'heroesawaken_login_'.(App::environment('local') ? '_local' : ''),
+            'clientSecret' => 'xf05a3q8vv86nei0igpcblw7p9hfy27m',
+            'urlAuthorize' => 'https://battlelog.co/oauth/authorize/',
+            'urlAccessToken' => 'https://battlelog.co/oauth/token/',
+            'urlResourceOwnerDetails' => 'https://battlelog.co/oauth/tokeninfo/'
+        ]);
+
+        // If we don't have an authorization code then get one
+        if (!isset($_GET['code'])) {
+            header('Location: ' . $provider->getAuthorizationUrl());
+            exit;
+        } else {
+
+            $token = $provider->getAccessToken('authorization_code', [
+                'code' => $_GET['code'],
+            ]);
+
+            $client = new GuzzleHttp\Client();
+            $res = $client->get('https://battlelog.co/oauth/tokeninfo/?access_token='.$token);
+
+            if ($res->getStatusCode() == 200)
+            {
+                $token_info = json_decode($res->getBody());
+                $user = $token_info->user;
+
+                // See if we can scoop their discord id, too (if not already linked)
+                if (isset($user->discord_id) && isset($user->discord_name))
+                {
+                    if(!UserDiscord::where('user_id', Auth::id())->exists())
+                    {
+                        UserDiscord::create([
+                            'user_id' => Auth::id(),
+                            'discord_id' => $user->discord_id,
+                            'discord_name' => $user->discord_name
+                        ]);
+
+                        $client = new \GuzzleHttp\Client();
+                        $res = $client->get('https://bot.heroesawaken.com/api/refresh/329078443687936001/' . $user->discord_id);
+                    }
+                }
+
+                if(UserRevive::where('user_id', Auth::id())->exists())
+                {
+                    UserRevive::where('user_id', Auth::id())->first()->update([
+                        'revive_id' => $user->id,
+                        'revive_name' => $user->username,
+                        'revive_email' => $user->email,
+                        'revive_role' => $user->role
+                    ]);
+                    return redirect()->route('profile.lists')->with('success', 'We updated your Revive Network account link!');
+                }
+                else
+                {
+                    UserRevive::create([
+                        'user_id' => Auth::id(),
+                        'revive_id' => $user->id,
+                        'revive_name' => $user->username,
+                        'revive_email' => $user->email,
+                        'revive_role' => $user->role
+                    ]);
+                    return redirect()->route('profile.lists')->with('success', 'We linked your Revive Network account!');
+                }
+            }
+            else
+            {
+                return redirect()->back()->with('error', 'There was a critical error linking your Revive Network account!');
+            }
+        }
+    }
+
+    public function showRegistrationForm()
+    {
+        return view('auth.register');
+    }
 }
