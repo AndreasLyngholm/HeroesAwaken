@@ -70,7 +70,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                        
+
                             @if(Auth::user()->friendRequests()->count() > 0)
                             <div class="large-8 columns">
                                 <h2>@lang('profile.friend_requests')</h2>
@@ -87,7 +87,7 @@
                                             </a></td>
                                         </td>
                                     </tr>
-                                    @foreach(Auth::user()->friendRequests as $request)                  
+                                    @foreach(Auth::user()->friendRequests as $request)
                                     <tr>
                                         <td width="70%;">
                                             @lang('profile.pending_request') <a style="color: black; font-weight: bolder;" href="{{ route('profile.details', App\User::find($request->sender)->username) }}">{{ App\User::find($request->sender)->username }}</a>
@@ -111,16 +111,54 @@
                     <div id="links-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="links-panel-label">
 
                         <h2 class="title">@lang('profile.linked_accounts')</h2>
-                                                
-                        <div class="row" style="margin-top: 10px;">
-                            <div class="large-16 columns">
+                        <hr>
+                        <div style="margin-top: 10px;">
+                            <div style="width: 120px; height: 58px; font-size: 12px;">
+                                <a href="https://discord.com" target="_blank" style="color: #777;">
+                                    <img src="/images/links/discord.png" />
+                                    <span style="padding-left: 18px;">
+                                        www.discord.com
+                                    </span>
+                                </a>
+                            </div>
+                            <div style="line-height: 32px; padding-left: 12px;">
                                 @if(Auth::user()->discordLink != null)
-                                    <b>Discord</b> ID: {{ Auth::user()->discordLink->discord_id }}; {{ Auth::user()->discordLink->discord_name }}#{{ Auth::user()->discordLink->discord_discriminator }}
+                                    Account:
+                                    <span style="font-size: 18px;">
+                                        {{ Auth::user()->discordLink->discord_name }}
+                                        @if(Auth::user()->discordLink->discord_discriminator != null)
+                                            #{{ Auth::user()->discordLink->discord_discriminator }}
+                                        @endif
+                                    </span>
+                                    <br>
+                                    <a href="{{ route('profile.linkDiscord') }}"><i class="fa fa-link"></i> Refresh</a>
                                 @else
-                                    <a class="fa fa-link" href="{{ route('profile.linkDiscord') }}"> @lang('profile.link_account')</a>
+                                    <a href="{{ route('profile.linkDiscord') }}"><i class="fa fa-link"></i> Link your Discord (discord.com) Account!</a>
                                 @endif
                             </div>
                         </div>
+                        <hr>
+                        <div style="margin-top: 10px;">
+                            <div style="width: 120px; height: 58px; font-size: 12px;">
+                                <a href="https://battlelog.co" target="_blank" style="padding-top: 8px; color: #777;">
+                                    <img src="/images/links/revive.png" />
+                                    <span style="padding-left: 18px;">
+                                        www.battlelog.co
+                                    </span>
+                                </a>
+                            </div>
+                            <div style="line-height: 32px; padding-left: 12px;">
+                                @if(Auth::user()->reviveLink != null)
+                                    Account:
+                                    <a style="font-size: 18px;" href="https://battlelog.co/bfhq.php?id={{ Auth::user()->reviveLink->revive_id }}" target="_blank">{{ Auth::user()->reviveLink->revive_name }}
+                                    <br>
+                                    <a href="{{ route('profile.linkRevive') }}"><i class="fa fa-link"></i> Refresh</a>
+                                @else
+                                    <a href="{{ route('profile.linkRevive') }}"><i class="fa fa-link"></i> Link your Revive Network (battlelog.co) Account!</a>
+                                @endif
+                            </div>
+                        </div>
+                        <hr>
                     </div>
 
                     <div id="avatar-panel" class="tabs-panel" role="tabpanel" aria-hidden="true" aria-labelledby="avatar-panel-label">
@@ -221,7 +259,7 @@
                                         <select name="language" class="select2">
                                             <option {{ Session::get('locale') == 'en' ? 'selected' : '' }} value="en">English</option>
                                             <option {{ Session::get('locale') == 'da' ? 'selected' : '' }} value="da">Danish</option>
-                                            <option {{ Session::get('locale') == 'fr' ? 'selected' : '' }} value="fr">French</option>
+                                            <!-- <option {{ Session::get('locale') == 'fr' ? 'selected' : '' }} value="fr">French</option> !-->
                                             <option {{ Session::get('locale') == 'se' ? 'selected' : '' }} value="se">Swedish</option>
                                             <option {{ Session::get('locale') == 'de' ? 'selected' : '' }} value="de">German</option>
                                             <option {{ Session::get('locale') == 'nl' ? 'selected' : '' }} value="nl">Dutch</option>

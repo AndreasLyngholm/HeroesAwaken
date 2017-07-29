@@ -64,6 +64,11 @@ class User extends Authenticatable
         return $this->hasOne('App\UserDiscord');
     }
 
+    public function reviveLink()
+    {
+        return $this->hasOne('App\UserRevive');
+    }
+
     public function friends()
     {
         $friends = new Collection();
@@ -202,7 +207,7 @@ class User extends Authenticatable
 
     public function isRole($role)
     {
-        $roles = $this->roles()->lists('slug')->all();
+        $roles = $this->roles()->pluck('slug')->all();
         return in_array($role, $roles);
     }
     #endregion

@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use function App\can;
+use App;
 use App\FriendRequest;
 use App\GameHeroes;
 use App\GameStats;
 use App\User;
+use GuzzleHttp;
 use App\UserFriend;
 use App\UserSignature;
 use App\UserDiscord;
+use App\UserRevive;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -195,6 +198,86 @@ class ProfileController extends Controller
         }
     }
 
+    public function linkRevive()
+    {
+        $provider = new \League\OAuth2\Client\Provider\GenericProvider([
+            'clientId' => 'heroesawaken'.(App::environment('local') ? '_local' : ''),
+            'clientSecret' => 'fx05a3q8vv86nie0pwiglcb7p9yfh27m',
+            'urlAuthorize' => 'https://battlelog.co/oauth/authorize/',
+            'urlAccessToken' => 'https://battlelog.co/oauth/token/',
+            'urlResourceOwnerDetails' => 'https://battlelog.co/oauth/tokeninfo/'
+        ]);
+
+        // If we don't have an authorization code then get one
+        if (!isset($_GET['code'])) {
+            header('Location: ' . $provider->getAuthorizationUrl());
+            exit;
+        } else {
+
+            $token = $provider->getAccessToken('authorization_code', [
+                'code' => $_GET['code'],
+            ]);
+
+            $client = new GuzzleHttp\Client();
+            $res = $client->get('https://battlelog.co/oauth/tokeninfo/?access_token='.$token);
+
+            if ($res->getStatusCode() == 200)
+            {
+                $token_info = json_decode($res->getBody());
+                $user = $token_info->user;
+                
+                $message_extra = '';
+                // See if we can scoop their discord id, too (if not already linked)
+                if (isset($user->discord_id) && isset($user->discord_name))
+                {
+                    if(!UserDiscord::where('user_id', Auth::id())->exists())
+                        UserDiscord::create([
+                            'user_id' => Auth::id(),
+                            'discord_id' => $user->discord_id,
+                            'discord_name' => $user->discord_name
+                        ]);
+
+                    if (isset($user->alphatester))
+                    {
+                        if (!Auth::user()->isRole('tester'))
+                        {
+                            Auth::user()->roles()->attach(9);
+                        }
+                        $message_extra = ' Heroes Awaken alpha access granted! Check Discord for more info!';
+                        $client = new \GuzzleHttp\Client();
+                        $res = $client->get('https://bot.heroesawaken.com/api/refresh/329078443687936001/' . $user->discord_id);
+                    }
+                }
+                
+                if(UserRevive::where('user_id', Auth::id())->exists())
+                {
+                    UserRevive::where('user_id', Auth::id())->first()->update([
+                        'revive_id' => $user->id,
+                        'revive_name' => $user->username,
+                        'revive_email' => $user->email,
+                        'revive_role' => $user->role
+                    ]);
+                    return redirect()->route('profile.lists')->with('success', 'We updated your Revive Network account link! '.$message_extra);
+                }
+                else
+                {
+                    UserRevive::create([
+                        'user_id' => Auth::id(),
+                        'revive_id' => $user->id,
+                        'revive_name' => $user->username,
+                        'revive_email' => $user->email,
+                        'revive_role' => $user->role
+                    ]);
+                    return redirect()->route('profile.lists')->with('success', 'We linked your Revive Network account!'.$message_extra);
+                }
+            }
+            else
+            {
+                return redirect()->back()->with('error', 'There was a critical error linking your Revive Network account!');
+            }
+        }
+    }
+
     public function changePassword()
     {
         if (Hash::check(Input::get('current_password'), Auth::user()->password)) {
@@ -215,7 +298,7 @@ class ProfileController extends Controller
         if(can('game.unlimitedheroes'))
             $heroesAllowed = 1000;
         elseif(can('game.multipleheroes'))
-            $heroesAllowed = 2;
+            $heroesAllowed = 3;
         else
             $heroesAllowed = 1;
 
@@ -230,7 +313,7 @@ class ProfileController extends Controller
         if(can('game.unlimitedheroes'))
             $heroesAllowed = 1000;
         elseif(can('game.multipleheroes'))
-            $heroesAllowed = 2;
+            $heroesAllowed = 3;
         else
             $heroesAllowed = 1;
 
