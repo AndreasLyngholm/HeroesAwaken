@@ -7697,6 +7697,9 @@ table td, table th {
     border-radius: 10px;
     background: radial-gradient(ellipse at center, #88332E 0%,#88332E 66%,#88332E 100%);
 }
+.post .message .content {
+    overflow: auto;
+}
 .post .signature {
     text-align: center;
 }
