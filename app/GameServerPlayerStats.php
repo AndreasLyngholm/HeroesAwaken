@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GameServerPlayerstats extends Model
+class GameServerPlayerStats extends Model
 {
     protected $fillable = ['gid', 'pid', 'statsKey', 'statsValue'];
 }
