@@ -56,7 +56,7 @@
                                 </td>
                                 <td>
                                     <span style="line-height: 24px;">
-                                        <img src="/images/flags-24/{{ $player['geoip']['iso_code'] }}.png" title="{{ $player['geoip']['city'] }}, {{ $player['geoip']['state_name'] }}, {{ $player['geoip']['country']}}" style="margin-top: -2px;" />
+                                        <img src="/images/flags-24/{{ $player['geoip']['iso_code'] }}.png" title="{{ $player['geoip']['state_name'] }}, {{ $player['geoip']['country']}}" style="margin-top: -2px;" />
                                         {{ $player['P-ping']->statsValue }}ms
                                     </span>
                                 </td>
