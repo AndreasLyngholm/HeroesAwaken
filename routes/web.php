@@ -184,6 +184,21 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
     ]);
 });
 
+// Games listing
+Route::group(['prefix' => 'games', 'as' => 'games.', 'namespace' => 'Games', 'middleware' => ['auth', 'acl']], function() {
+    Route::get('/', [
+        'as'    => 'games',
+        'uses' => 'GamesController@list',
+        'can' => 'game.matchmake'
+    ]);
+
+    Route::get('{gameid}', [
+        'as' => 'game.details',
+        'uses' => 'GamesController@details',
+        'can' => 'game.matchmake',
+    ]);
+});
+
 // Admin interface
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth', 'acl']], function () {
 
