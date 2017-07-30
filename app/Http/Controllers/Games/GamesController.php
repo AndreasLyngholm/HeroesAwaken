@@ -49,6 +49,10 @@ class GamesController extends BaseController
                 {
                     $activeplayers[$player->pid]['geoip'] = geoip($stat->statsValue);
                 }
+                if (!isset($activeplayers[$player->pid]['updated_at']) || $activeplayers[$player->pid]['updated_at'] < strtotime($stat->updated_at))
+                {
+                    $activeplayers[$player->pid]['updated_at'] = strtotime($stat->updated_at);
+                }
             }
             $hero = GameHeroes::where('id', $player->pid)->first();
             $activeplayers[$player->pid]['hero'] = $hero;
@@ -62,7 +66,12 @@ class GamesController extends BaseController
             {
                 continue;
             }
-            
+
+            if ((time() - $player['updated_at']) > 120)
+            {
+                continue;
+            }
+
             $playersByTeam['team'.$player['P-team']->statsValue][$pid] = $player;
         }
 
