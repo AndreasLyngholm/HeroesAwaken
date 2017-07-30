@@ -36,7 +36,7 @@ return [
     'write_post' => 'Yazınızı yazın',
     'create_topic' => 'Konu aç',
 
-    'member_since' => 'Den beri üye', example: he is member since 5 days. -> 5 günden beri üye.
+    'member_since' => 'Den beri üye', //example: he is member since 5 days. -> 5 günden beri üye.
     'heroes' => 'kahramanlar',
     'write_comment' => 'Yorum yaz',
     'add_comment' => 'yorum ekle',
