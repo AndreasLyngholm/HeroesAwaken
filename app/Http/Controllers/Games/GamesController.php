@@ -45,6 +45,10 @@ class GamesController extends BaseController
             $activeplayers[$player->pid] = [];
             foreach ($stats as $stat) {
                 $activeplayers[$player->pid][$stat->statsKey] = $stat;
+                if ($stat->statsKey == 'P-ip')
+                {
+                    $activeplayers[$player->pid]['geoip'] = geoip($stat->statsValue);
+                }
             }
             $hero = GameHeroes::where('id', $player->pid)->first();
             $activeplayers[$player->pid]['hero'] = $hero;
