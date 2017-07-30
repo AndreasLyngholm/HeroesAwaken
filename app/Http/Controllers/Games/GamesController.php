@@ -58,6 +58,11 @@ class GamesController extends BaseController
         $playersByTeam = ['team1' => [], 'team2' => []];
         foreach ($activeplayers as $pid => $player)
         {
+            if (!isset($player['P-team']))
+            {
+                continue;
+            }
+            
             $playersByTeam['team'.$player['P-team']->statsValue][$pid] = $player;
         }
 
