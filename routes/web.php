@@ -184,6 +184,19 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
     ]);
 });
 
+// Games listing
+Route::group(['prefix' => 'games', 'as' => 'games.', 'namespace' => 'Games'], function() {
+    Route::get('/', [
+        'as'    => 'games',
+        'uses' => 'GamesController@list',
+    ]);
+
+    Route::get('{gameid}', [
+        'as' => 'game.details',
+        'uses' => 'GamesController@details',
+    ]);
+});
+
 // Admin interface
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth', 'acl']], function () {
 

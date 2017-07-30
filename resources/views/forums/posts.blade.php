@@ -106,7 +106,7 @@
 								</div>
 								<div class="user-info">
 									<div class="tag">
-                                        {{ $topic->author->roles->last()->title }}
+                                        {{ $comment->author->roles->last()->title }}
 									</div>
 									<table class="stats">
 										<tbody>
