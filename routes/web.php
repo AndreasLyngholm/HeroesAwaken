@@ -185,17 +185,15 @@ Route::group(['prefix' => 'forums', 'as' => 'forums.'], function() {
 });
 
 // Games listing
-Route::group(['prefix' => 'games', 'as' => 'games.', 'namespace' => 'Games', 'middleware' => ['auth', 'acl']], function() {
+Route::group(['prefix' => 'games', 'as' => 'games.', 'namespace' => 'Games'], function() {
     Route::get('/', [
         'as'    => 'games',
         'uses' => 'GamesController@list',
-        'can' => 'game.matchmake'
     ]);
 
     Route::get('{gameid}', [
         'as' => 'game.details',
         'uses' => 'GamesController@details',
-        'can' => 'game.matchmake',
     ]);
 });
 
