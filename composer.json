@@ -9,6 +9,7 @@
         "barryvdh/laravel-debugbar": "^2.4",
         "doctrine/dbal": "^2.5",
         "fusion86/oauth2-discord": "^2.0",
+        "geoip2/geoip2": "~2.1",
         "guzzlehttp/guzzle": "^6.3",
         "intervention/image": "^2.4",
         "laravel/framework": "5.4.*",
