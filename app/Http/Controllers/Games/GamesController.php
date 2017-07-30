@@ -7,7 +7,9 @@ use App\GameServerStats;
 use App\User;
 use Illuminate\Routing\Controller as BaseController;
 use App\GameServerPlayerStats;
+use Ramsey\Uuid\Codec\TimestampFirstCombCodec;
 
+date_default_timezone_set("UTC");
 
 class GamesController extends BaseController
 {
