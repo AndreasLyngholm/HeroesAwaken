@@ -46,21 +46,27 @@ class GamesController extends BaseController
         foreach ($uniqueplayers as $player)
         {
             $stats = GameServerPlayerStats::where('pid', $player->pid)->get();
-            $activeplayers[$player->pid] = [];
+            $pl = [];
             foreach ($stats as $stat) {
-                $activeplayers[$player->pid][$stat->statsKey] = $stat;
+                $pl[$stat->statsKey] = $stat;
                 if ($stat->statsKey == 'P-ip')
                 {
-                    $activeplayers[$player->pid]['geoip'] = geoip($stat->statsValue);
+                    $pl['geoip'] = geoip($stat->statsValue);
                 }
-                if (!isset($activeplayers[$player->pid]['updated_at']) || $activeplayers[$player->pid]['updated_at'] < strtotime($stat->updated_at))
+                $best_time = strtotime($stat->created_at);
+                if (isset($stat->updated_at) && strtotime($stat->updated_at) > $best_time)
                 {
-                    $activeplayers[$player->pid]['updated_at'] = strtotime($stat->updated_at);
+                        $best_time = strtotime($stat->updated_at);
+                }
+                if (!isset($pl['updated_at']) || $best_time > $pl['updated_at'])
+                {
+                        $pl['updated_at'] = $best_time;
                 }
             }
             $hero = GameHeroes::where('id', $player->pid)->first();
-            $activeplayers[$player->pid]['hero'] = $hero;
-            $activeplayers[$player->pid]['user'] = User::where('id', $hero->user_id)->first();
+            $pl['hero'] = $hero;
+            $pl['user'] = User::where('id', $hero->user_id)->first();
+            $activeplayers[$player->pid] = $pl;
         }
 
         $playersByTeam = ['team1' => [], 'team2' => []];
