@@ -170,6 +170,11 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
+         * Third-party Service Providers...
+         */
+        \Torann\GeoIP\GeoIPServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
@@ -227,6 +232,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'GeoIP' => \Torann\GeoIP\Facades\GeoIP::class
 
     ],
 
