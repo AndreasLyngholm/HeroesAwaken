@@ -14,6 +14,7 @@
                     <h3>
                         {{ $game['NAME']->statsValue }}
                     </h3>
+                    Players: {{ floor((0.01 * $game['B-U-percent_full']->statsValue) * $game['MAX-PLAYERS']->statsValue) }} / {{ $game['MAX-PLAYERS']->statsValue }}
                 </nav>
                 <div class="big-sep"></div>
             </div>
