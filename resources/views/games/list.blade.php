@@ -39,7 +39,7 @@
                                 </a>
                             </td>
                             <td>
-                                {{ floor((0.01 * $game['B-U-percent_full']->statsValue) * $game['MAX-PLAYERS']->statsValue) }} / {{ $game['MAX-PLAYERS']->statsValue }}
+                                {{ ceil((0.01 * $game['B-U-percent_full']->statsValue) * $game['MAX-PLAYERS']->statsValue) }} / {{ $game['MAX-PLAYERS']->statsValue }}
                             </td>
                             <td>
                                 {{ $game['B-U-map_name']->statsValue }}
