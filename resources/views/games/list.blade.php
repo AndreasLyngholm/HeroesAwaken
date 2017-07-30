@@ -45,7 +45,8 @@
                                 {{ $game['B-U-map_name']->statsValue }}
                             </td>
                             <td>
-                                {{ $game['B-U-community_name']->statsValue }}
+                                <img src="/images/flags-24/{{ $game['geoip']['iso_code'] }}.png" title="{{ $game['geoip']['city'] }}, {{ $game['geoip']['state_name'] }}, {{ $game['geoip']['country']}}" style="margin-top: -2px;" />
+                                {{ $game['geoip']['continent'] }}
                             </td>
                         </tr>
                     @endforeach

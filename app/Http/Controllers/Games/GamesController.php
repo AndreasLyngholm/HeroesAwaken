@@ -22,6 +22,10 @@ class GamesController extends BaseController
             $activegames[$game->gid] = [];
             foreach ($stats as $stat) {
                 $activegames[$game->gid][$stat->statsKey] = $stat;
+                if ($stat->statsKey == 'B-U-server_ip')
+                {
+                    $activegames[$game->gid]['geoip'] = geoip($stat->statsValue);
+                }
             }
         }
 
