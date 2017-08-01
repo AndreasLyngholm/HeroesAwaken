@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <div class="row team" style="margin-bottom: 5rem;">
+        <div class="row" style="margin-bottom: 5rem;">
             <div class="large-16 columns">
                 @if($user->friends()->count() > 0)
                     <p>{{ $user->username }} has {{ $user->friends()->count() }} {{ $user->friends()->count() > 1 ? 'friends' : 'friend' }}</p>
