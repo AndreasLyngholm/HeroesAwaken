@@ -12,7 +12,7 @@
 
     <script type="text/javascript" src="{{ asset('js/js-3.js') }}?v4"></script>
     <script type="text/javascript" src="{{ asset('js/js-2.js') }}?v4"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/custom.css') }}?v5" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/custom.css') }}?v6" />
 
     <!-- THIS MUST BE LOADED HERE! DO NOT REMOVE -->
     <script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
