@@ -15,7 +15,7 @@
                       <li><a href="{{ route('login') }}">@lang('layout.login')</a></li>
                     @else
                     <li class="has-dropdown @if(Request::is('profile')) active @endif">
-                        <a @if(Request::is('profile')) class="active" @endif>{{ Auth::user()->username }} @if(Auth::user()->friendRequests->count() > 0)<b class="badge">{{ Auth::user()->friendRequests->count() }}</b>@endif</a>
+                        <a href="{{ route('profile.details', Auth::user()->username) }}" @if(Request::is('profile')) class="active" @endif>{{ Auth::user()->username }} @if(Auth::user()->friendRequests->count() > 0)<b class="badge">{{ Auth::user()->friendRequests->count() }}</b>@endif</a>
                         <ul class="menu">
                             <li><a href="{{ route('profile.lists') }}">@lang('layout.profile')</a></li>
                             @if(\App\can('game.createhero'))<li><a href="{{ route('profile.createHero') }}">Create Hero</a></li>@endif
