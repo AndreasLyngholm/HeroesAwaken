@@ -338,4 +338,11 @@ Route::group(['prefix' => 'api', 'as' => 'api.', 'namespace' => 'Api', 'middlewa
     Route::get('user', [
         'uses' => 'ApiController@user'
     ]);
+
+    Route::group(['prefix' => 'mm'], function ()
+    {
+        Route::get('findgame/{shardid}/{heroid}/{ipint}', [
+            'uses' => 'MatchmakingController@findgame'
+        ]);
+    });
 });
