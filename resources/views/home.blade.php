@@ -16,7 +16,7 @@
         <!--//slide 1-->
         <!--slide-2-->
 
-        <a class="slick-slide" href="https://discord.io/heroesawaken"><img src="{{ asset('images/slider_discord.png') }}" alt=""></a>
+        <a class="slick-slide" href="https://discord.gg/heroesawaken"><img src="{{ asset('images/slider_discord.png') }}" alt=""></a>
     {{--<div style="background: url({{ asset('images/placeholders/slider_2.jpg') }})">--}}
     {{--<div class="row">--}}
     {{--<div class="small-16 columns">--}}
