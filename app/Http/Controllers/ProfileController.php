@@ -324,6 +324,12 @@ class ProfileController extends Controller
         if(GameHeroes::where('user_id', Auth::id())->count() >= $heroesAllowed)
             return redirect()->route('home')->with('error', 'You have reached the limit of ' . $heroesAllowed . ' heroes per account!');
 
+        $validation = \Validator::make(Input::all(), [
+            'nameCharacterText' => 'required|regex:/^([a-zA-Z0-9.?\-_]*)$/'
+        ]);
+        if ($validation->fails())
+            return \Redirect::to(\URL::previous())->withErrors($validation)->withInput();
+
         $hero = GameHeroes::create([
             'user_id' => Auth::id(),
             'heroName' => Input::get('nameCharacterText'),
