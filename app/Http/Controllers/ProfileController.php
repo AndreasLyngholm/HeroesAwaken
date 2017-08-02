@@ -328,7 +328,7 @@ class ProfileController extends Controller
             'nameCharacterText' => 'required|regex:/^([a-zA-Z0-9.?\-_]*)$/'
         ]);
         if ($validation->fails())
-            return \Redirect::to(\URL::previous())->withErrors($validation)->withInput();
+            return \Redirect::to(\URL::previous())->with('error', 'Invalid HeroName')->withInput();
 
         $hero = GameHeroes::create([
             'user_id' => Auth::id(),
