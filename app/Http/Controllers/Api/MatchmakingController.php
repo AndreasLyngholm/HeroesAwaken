@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
 
 class MatchmakingController extends Controller
 {
@@ -10,6 +12,6 @@ class MatchmakingController extends Controller
         $geo = geoip($ip);
 
 
-
+        echo "1";
     }
 }
