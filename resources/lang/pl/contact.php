@@ -10,10 +10,10 @@ return [
     |
     */
 
-    'get_in_touch' => 'Skontaktuj siê z nami',
-    'how_to' => 'Chcia³byœ do nas do³¹czyæ?',
-    'how_to_description' => 'Je¿eli zauwa¿y³eœ bugi, masz pytania b¹dŸ zechcia³bys zostaæ czêœci¹ spo³ecznoœci znajdziesz nas na <a href="https://discordapp.com/invite/WhK8RgX">Kana³ Discord</a> or <a href="https://www.facebook.com/Heroes-Awaken-197852317403720/?fref=ts"> Fanpage</a>!',
-    'no_email_or_phone' => 'Aktualnie nie posiadamy oficialnego Email-a, Numeru telefonu, aby siê z nami skoktaktowaæ.',
+    'get_in_touch' => 'Skontaktuj siï¿½ z nami',
+    'how_to' => 'Chciaï¿½byï¿½ do nas doï¿½ï¿½czyï¿½?',
+    'how_to_description' => 'Jeï¿½eli zauwaï¿½yï¿½eï¿½ bugi, masz pytania bï¿½dï¿½ zechciaï¿½bys zostaï¿½ czï¿½ciï¿½ spoï¿½ecznoï¿½ci znajdziesz nas na <a href="https://discord.gg/heroesawaken">Kanaï¿½ Discord</a> or <a href="https://www.facebook.com/Heroes-Awaken-197852317403720/?fref=ts"> Fanpage</a>!',
+    'no_email_or_phone' => 'Aktualnie nie posiadamy oficialnego Email-a, Numeru telefonu, aby siï¿½ z nami skoktaktowaï¿½.',
     'to_contact' => 'Osoby do kontaktu',
 
 
