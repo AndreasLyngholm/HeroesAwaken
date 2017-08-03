@@ -38,9 +38,11 @@
                         @forelse($playerlist as $player)
                             <tr>
                                 <td style="width: 33%">
-                                    <a href="/profile/{{ $player['user']['username'] }}">
-                                        {{ $player['hero']['heroName'] }}
-                                    </a>
+                                    <p style="margin-bottom: 0rem;">
+                                        <a href="/profile/{{ $player['user']['username'] }}">
+                                            {{ $player['hero']['heroName'] }}
+                                        </a>
+                                    </p>
                                 </td>
                                 <td>
                                     {{ $player['P-level']->statsValue }}

@@ -34,9 +34,11 @@
 
                         <tr>
                             <td style="width:75%">
-                                <a href="/games/{{ $gid }}">
-                                    {{ $game['NAME']->statsValue }}
-                                </a>
+                                <p style="margin-bottom: 0rem;">
+                                    <a href="/games/{{ $gid }}">
+                                        {{ $game['NAME']->statsValue }}
+                                    </a>
+                                </p>
                             </td>
                             <td>
                                 {{ ceil((0.01 * $game['B-U-percent_full']->statsValue) * $game['MAX-PLAYERS']->statsValue) }} / {{ $game['MAX-PLAYERS']->statsValue }}
