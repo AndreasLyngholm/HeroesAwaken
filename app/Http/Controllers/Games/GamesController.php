@@ -29,6 +29,9 @@ class GamesController extends BaseController
                     $activegames[$game->gid]['geoip'] = geoip($stat->statsValue);
                 }
             }
+
+            // Remove (IP)
+            $activegames[$game->gid]["NAME"]->statsValue = preg_replace("/\([^)]+\)/","",$activegames[$game->gid]["NAME"]->statsValue);
         }
 
         return view('games.list', compact('activegames'));
