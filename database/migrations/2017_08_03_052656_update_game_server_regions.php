@@ -17,7 +17,6 @@ class UpdateGameServerRegions extends Migration
             $table->string('region', 2)->nullable()->change();
             $table->string('country', 2)->nullable()->change();
             $table->integer('weight')->nullable()->change();
-            $table->dropColumn(['created_at', 'updated_at']);
         });
     }
 
