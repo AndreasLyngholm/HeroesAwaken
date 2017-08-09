@@ -60,11 +60,9 @@ class GamesController extends BaseController
                 }
             }
 
-            // Remove (IP)
-            $gameData['NAME']->statsValue = preg_replace("/\([^)]+\)/","",$gameData['NAME']->statsValue);
-
             if (isset($gameData['geoip']) && isset($gameData['NAME']))
             {
+                $gameData['NAME']->statsValue = preg_replace("/\([^)]+\)/","",$gameData['NAME']->statsValue);
                 $activegames[$game->gid] = $gameData;
             }
         }
