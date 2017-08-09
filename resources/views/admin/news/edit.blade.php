@@ -33,7 +33,8 @@
                     <button type="submit" class="lime-button" name="submit" style="float: right;">Update news post</button>
                     <script>
                         CKEDITOR.replace( 'editor1', {
-                            uiColor: '#E2D3C0'
+                            uiColor: '#E2D3C0',
+                            removeButtons: 'Source'
                         });
                     </script>
                 </form>

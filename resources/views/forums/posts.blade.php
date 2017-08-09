@@ -195,7 +195,8 @@
 								<button type="submit" class="lime-button" name="submit" style="float: right;">@lang('forum.add_comment')</button>
 								<script>
                                     CKEDITOR.replace( 'editor1', {
-                                        uiColor: '#E2D3C0'
+                                        uiColor: '#E2D3C0',
+                                        removeButtons: 'Source'
                                     });
 								</script>
 							</form>

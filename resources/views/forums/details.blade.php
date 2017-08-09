@@ -14,7 +14,7 @@
                     <h3>
                         <small>
                             <a href="{{ route('forums.lists') }}">@lang('layout.forum')</a>
-                             / 
+                             /
                         </small>
                         @lang('forum.' . strtolower($forum->name))
                     </h3>
@@ -97,7 +97,8 @@
                         <button type="submit" class="lime-button" name="submit" style="float: right;">@lang('forum.create_topic')</button>
                         <script>
                             CKEDITOR.replace( 'editor1', {
-                                uiColor: '#E2D3C0'
+                                uiColor: '#E2D3C0',
+                                removeButtons: 'Source'
                             });
                         </script>
                     </form>
