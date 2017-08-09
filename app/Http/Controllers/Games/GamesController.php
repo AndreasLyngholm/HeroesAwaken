@@ -71,9 +71,9 @@ class GamesController extends BaseController
             if ($a === $b) return 0;
 
             if (floatval($a['B-U-percent_full']->statsValue) > floatval($b['B-U-percent_full']->statsValue))
-                return 1;
-            else
                 return -1;
+            else
+                return 1;
         });
 
         return view('games.list', compact('activegames', 'selectedregion'));
