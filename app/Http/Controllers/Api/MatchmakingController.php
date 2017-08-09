@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\GameHeroes;
 
 class MatchmakingController extends Controller
 {
@@ -11,7 +12,18 @@ class MatchmakingController extends Controller
         $ip = long2ip($ipint);
         $geo = geoip($ip);
 
+        $cont = $geo['continent'];
+
         // I know this isn't the best yet
+
+        $hero = GameHeroes::where('id', $heroid)->first();
+
+
+        $region = \DB::select('SELECT region FROM game_player_regions WHERE userid = ?', [$hero->user_id]);
+        if (count($region) > 0)
+        {
+            $cont = $region;
+        }
 
         $games = \DB::select("SELECT a.gid, b.statsValue as `percent_full`
             FROM games a
@@ -21,7 +33,7 @@ class MatchmakingController extends Controller
                 AND (region = ? OR region IS NULL)
                 AND (b.statsKey = 'B-U-percent_full' AND b.statsValue != '100')
             ORDER BY region DESC, percent_full DESC
-            ", [$shard, $geo['continent']]);
+            ", [$shard, $cont]);
 
         $results = [];
 

@@ -20,6 +20,24 @@
         </div>
 
         <div class="row">
+
+
+            <div style="background-color: rgba(255, 255, 255, 0.15)">
+                <div style="padding: 16px;">
+                    <form method="POST" action="/games">
+                        {{ csrf_field() }}
+                        <select name="region" style="width: 50%; float: left; margin-bottom: 0px;">
+                            <option value="AUTO" {{ ($selectedregion == '') ? 'selected' : '' }}>Automatic</option>
+                            <option value="EU" {{ ($selectedregion == 'EU') ? 'selected' : '' }}>Europe</option>
+                            <option value="NA" {{ ($selectedregion == 'NA') ? 'selected' : '' }}>North America</option>
+                        </select>
+                        <input type="submit" class="lime-button" style="height: 48px; width: 48%; margin-left: 1%; float: left; line-height: 24px;" value="Change Preferred Region" />
+                        <br style="clear: both;" />
+                    </form>
+                </div>
+            </div>
+
+
             <table>
                 <thead>
                 <tr>
