@@ -22,7 +22,7 @@ class MatchmakingController extends Controller
         $region = \DB::select('SELECT region FROM game_player_regions WHERE userid = ?', [$hero->user_id]);
         if (count($region) > 0)
         {
-            $cont = $region;
+            $cont = $region->region;
         }
 
         $games = \DB::select("SELECT a.gid, b.statsValue as `percent_full`
