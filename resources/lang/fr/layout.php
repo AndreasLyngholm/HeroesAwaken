@@ -13,7 +13,7 @@ return [
     'home' => 'Accueil',
     'news' => 'Actualités',
     'forum' => 'Forum',
-    'team' => 'Team',
+    'team' => 'Équipe',
     'contact' => 'Contact',
     'profile' => 'Profil',
     'login' => 'Connexion',
